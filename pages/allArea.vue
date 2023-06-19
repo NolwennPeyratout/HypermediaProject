@@ -3,24 +3,57 @@
 -->
 <template>
     <main>
-        <img id = "main-img" src = "~/assets/img/home-image.jpg" />
-        <h2>
-            This is the page for all Area
-        </h2>
+        <h1> Areas </h1>
+        <div id="card-container">
+            <Card v-for = "area in areas" :title = "area.name" :subtitle = "area.name" :link = "'/allArea/' + area.name" />
+        </div>
     </main>
 </template>
 
+<script>
+
+    export default defineNuxtComponent({
+        async asyncData() {
+            // useRuntimeConfig provide us with environment variables set up in the nuxtconfig file
+            const areas = await $fetch(useRuntimeConfig().baseURL + '/server/allArea')
+
+            return { areas }
+        }
+    })
+    
+</script>
+
 <style>
-    #main-img {
-    width: 80%;
-    max-width: 1000px;
-    height: auto;
+   #card-container
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-content: flex-start;
+        gap: 20px;
     }
 
-    main {
-        width: 100%;
+    main
+    {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        align-content: flex-start;
+        gap: 10px;
+    }
+
+    #form-container {
+        width: 90%;
+        border-radius: 10px;
+        border: 2px solid brown;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: flex-start;
+        gap: 20px;
+
+        background-color: burlywood;
+        padding: 20px;
     }
 </style>

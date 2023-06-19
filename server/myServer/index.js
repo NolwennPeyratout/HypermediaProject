@@ -19,9 +19,113 @@ const app = express()
 app.use(express.json())
 
 async function initDB() {
+
     const models = {}
 
     await db.authenticate()
+
+    models.Project = db.define('project', {
+        name: {
+            type: DataTypes.STRING,
+            primaryKey: true
+        },
+        presentation: {
+            type: DataTypes.TEXT,
+            allowNull: true
+        },
+        location: {
+            type: DataTypes.STRING,
+            allowNull: true
+        },
+        date: {
+            type: DataTypes.DATE,
+            allowNull: true
+        },
+        start_up: {
+            type: DataTypes.STRING,
+            allowNull: true
+        },
+        product_service: {
+            type: DataTypes.STRING,
+            allowNull: true
+        },
+        relevant: {
+            type: DataTypes.BOOLEAN,
+            allowNull: true
+        }
+    });
+
+    models.Person = db.define('person', {
+    id: {
+            type: DataTypes.INTEGER,
+            primaryKey: true,
+            autoIncrement: true
+        },
+        name: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        role: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        cv: {
+            type: DataTypes.TEXT,
+            allowNull: true
+        }
+    });
+    
+    models.Area = db.define('area', {
+        name: {
+            type: DataTypes.STRING,
+            primaryKey: true
+        },
+        description: {
+            type: DataTypes.TEXT,
+            allowNull: true
+        }
+    });
+
+    models.Supervise = db.define('supervise', {
+        person_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'people',
+                key: 'id'
+            }
+        },
+        project_name: {
+            type: DataTypes.STRING,
+            references: {
+                model: 'projects',
+                key: 'name'
+            }
+        }
+    });
+
+    models.Concern = db.define('concern', {
+        project_name: {
+            type: DataTypes.STRING,
+            references: {
+                model: 'projects',
+                key: 'name'
+            }
+        },
+        area_name: {
+            type: DataTypes.STRING,
+            references: {
+                model: 'areas',
+                key: 'name'
+            }
+        }
+    });
+
+    models.Project.belongsTo(models.Supervise, { foreignKey: 'project_name' });
+    models.Person.hasMany(models.Supervise, { foreignKey: 'person_id' });
+    models.Project.hasMany(models.Concern, { foreignKey: 'project_name' });
+    models.Area.hasMany(models.Concern, { foreignKey: 'area_name' });
+
+    /* from here TO REMOVE */
 
     models.Dog = db.define('dog', {
         name: {
@@ -56,6 +160,8 @@ async function initDB() {
     models.Location.hasMany(models.Dog)
     models.Dog.belongsTo(models.Location)
 
+        /* until here TO REMOVE */
+
     await db.sync({ force: true })
 
     await dbInitialization(models)
@@ -66,9 +172,16 @@ async function initDB() {
 async function initServer() {
     const models = await initDB()
 
+    app.get('/allArea', async (req, res) => {
+        const data = await models.Area.findAll();
+
+        res.status(200).json(data)
+    })
+
+    /* from here TO REMOVE */
+
     app.get('/dogs', async (req, res) => {
         const data = await models.Dog.findAll();
-
         res.status(200).json(data)
     })
 
@@ -202,6 +315,8 @@ async function initServer() {
             res.sendStatus(404)
         } 
     })
+
+    /* until here TO REMOVE */
 }
 
 initServer()
