@@ -5,7 +5,7 @@
     <main>
         <h1> Areas </h1>
         <div id="card-container">
-            <Card v-for = "area in areas" :title = "area.name" :subtitle = "area.name" :link = "'/allArea/' + area.name" />
+            <Card v-for = "area in areas" :title = "area.name" :subtitle = "area.name" :link = "'/areas/' + area.name" />
         </div>
     </main>
 </template>
@@ -15,7 +15,7 @@
     export default defineNuxtComponent({
         async asyncData() {
             // useRuntimeConfig provide us with environment variables set up in the nuxtconfig file
-            const areas = await $fetch(useRuntimeConfig().baseURL + '/server/allArea')
+            const areas = await $fetch(useRuntimeConfig().baseURL + '/server/areas')
 
             return { areas }
         }

@@ -7,7 +7,7 @@
         <nav>
             <NuxtLink to = "/">HOME</NuxtLink>
             <NuxtLink to = "/team">Team</NuxtLink>
-            <NuxtLink to = "/allArea">Areas</NuxtLink>
+            <NuxtLink to = "/areas">Areas</NuxtLink>
             <NuxtLink to = "/allProjects">Projects</NuxtLink>
             <NuxtLink to = "/dogs">DOGS</NuxtLink>
             <NuxtLink to = "/locations">LOCATIONS</NuxtLink>

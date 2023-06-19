@@ -172,10 +172,25 @@ async function initDB() {
 async function initServer() {
     const models = await initDB()
 
-    app.get('/allArea', async (req, res) => {
+    app.get('/areas', async (req, res) => {
         const data = await models.Area.findAll();
 
         res.status(200).json(data)
+    })
+
+    app.get('/areas/:id', async (req, res) => {
+        const data = await models.Area.findOne({
+            where: {
+                name: req.params.id
+            }
+        })
+
+        if (data) {
+            res.status(200).json(data)
+        }
+        else {
+            res.sendStatus(404)
+        }
     })
 
     /* from here TO REMOVE */
