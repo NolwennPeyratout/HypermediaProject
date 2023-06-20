@@ -1,11 +1,12 @@
 <!--
+
+import CircleContainer from '~/components/CircleContainer.vue';
     All Area Pages
 -->
 <template>
     <main>
-        <h1> Areas </h1>
-        <div id="card-container">
-            <Card v-for = "area in areas" :title = "area.name" :subtitle = "area.name" :link = "'/areas/' + area.name" />
+        <div id="areas-container">
+            <CircleContainer v-for = "area in areas" :title = "area.name" :link = "'/areas/' + area.name" />
         </div>
     </main>
 </template>
@@ -13,25 +14,24 @@
 <script>
 
     export default defineNuxtComponent({
-        async asyncData() {
-            // useRuntimeConfig provide us with environment variables set up in the nuxtconfig file
-            const areas = await $fetch(useRuntimeConfig().baseURL + '/server/areas')
-
-            return { areas }
-        }
-    })
+    async asyncData() {
+        // useRuntimeConfig provide us with environment variables set up in the nuxtconfig file
+        const areas = await $fetch(useRuntimeConfig().baseURL + "/server/areas");
+        return { areas };
+    },
+})
     
 </script>
 
 <style>
-   #card-container
+   #areas-container
     {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
-        align-content: flex-start;
-        gap: 20px;
+        align-content: center;
+        gap: 40px;
     }
 
     main
@@ -41,19 +41,8 @@
         justify-content: center;
         align-content: flex-start;
         gap: 10px;
+        height: 100vh;
+        background-color:aliceblue;
     }
 
-    #form-container {
-        width: 90%;
-        border-radius: 10px;
-        border: 2px solid brown;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-content: flex-start;
-        gap: 20px;
-
-        background-color: burlywood;
-        padding: 20px;
-    }
 </style>
