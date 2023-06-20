@@ -3,24 +3,45 @@
 -->
 <template>
     <main>
-        <img id = "main-img" src = "~/assets/img/home-image.jpg" />
-        <h2>
-            This is the page for all projects
-        </h2>
+        <h1> Projects </h1>
+        <div id="card-container">
+            <Card v-for = "project in projects" :title="project.name" :subtitle = "project.name" 
+            :link="'/allProjects/'+ project.name"/>
+
+        </div>
+
     </main>
 </template>
 
+<script>
+    export default defineNuxtComponent({
+        async asyncData() {
+            const projects = await
+            $fetch(useRuntimeConfig().baseURL + '/server/allProjects')
+
+            return{projects}
+        }
+    })
+</script>
+
+
 <style>
-    #main-img {
-    width: 80%;
-    max-width: 1000px;
-    height: auto;
+    #card-container
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-content: flex-start;
+        gap: 20px;
     }
 
-    main {
-        width: 100%;
+    main
+    {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        align-content: flex-start;
+        gap: 10px;
     }
 </style>

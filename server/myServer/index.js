@@ -178,6 +178,12 @@ async function initServer() {
         res.status(200).json(data)
     })
 
+    app.get('/allProjects', async (req, res) => {
+        const data = await models.Project.findAll();
+
+        res.status(200).json(data)
+    })
+
     app.get('/areas/:id', async (req, res) => {
         const data = await models.Area.findOne({
             where: {
