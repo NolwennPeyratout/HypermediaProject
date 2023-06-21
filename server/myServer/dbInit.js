@@ -315,21 +315,21 @@ export default async (models) => {
         }
     ]
 
-    await models.Concern.bulkCreate(concernModel[0])
-    await models.Concern.bulkCreate(concernModel[1])
-    await models.Concern.bulkCreate(concernModel[2])
-    await models.Concern.bulkCreate(concernModel[3])
-    await models.Concern.bulkCreate(concernModel[4])
-    await models.Concern.bulkCreate(concernModel[5])
-    await models.Concern.bulkCreate(concernModel[6])
-    await models.Concern.bulkCreate(concernModel[7])
-    await models.Concern.bulkCreate(concernModel[8])
-    await models.Concern.bulkCreate(concernModel[9])
-    await models.Concern.bulkCreate(concernModel[10])
-    await models.Concern.bulkCreate(concernModel[11])
-    await models.Concern.bulkCreate(concernModel[12])
-    await models.Concern.bulkCreate(concernModel[13])
-    await models.Concern.bulkCreate(concernModel[14])
+    await models.Concern.create(concernModel[0])
+    await models.Concern.create(concernModel[1])
+    await models.Concern.create(concernModel[2])
+    await models.Concern.create(concernModel[3])
+    await models.Concern.create(concernModel[4])
+    await models.Concern.create(concernModel[5])
+    await models.Concern.create(concernModel[6])
+    await models.Concern.create(concernModel[7])
+    await models.Concern.create(concernModel[8])
+    await models.Concern.create(concernModel[9])
+    await models.Concern.create(concernModel[10])
+    await models.Concern.create(concernModel[11])
+    await models.Concern.create(concernModel[12])
+    await models.Concern.create(concernModel[13])
+    await models.Concern.create(concernModel[14])
 
     /* from here TO REMOVE */
 

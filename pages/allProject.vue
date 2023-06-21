@@ -6,7 +6,7 @@
         <h1> Projects </h1>
         <div id="card-container">
             <Card v-for = "project in projects" :title="project.name" :subtitle = "project.name" 
-            :link="'/allProjects/'+ project.name"/>
+            :link="'/projects/'+ project.name"/>
 
         </div>
 
@@ -17,7 +17,7 @@
     export default defineNuxtComponent({
         async asyncData() {
             const projects = await
-            $fetch(useRuntimeConfig().baseURL + '/server/allProjects')
+            $fetch(useRuntimeConfig().baseURL + '/server/projects')
 
             return{projects}
         }

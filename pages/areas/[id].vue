@@ -3,15 +3,12 @@
 -->
 <template>
     <main>
+        <h1> {{ data[0].name }}</h1>
         <div class = "info-group">
             <img id = "main-img" src = "~/assets/img/home-image.jpg" />
-            <div id = "data-container">
-                <p class = "data">Name: <span>{{ area.name }}</span></p>
-                <p class = "data">City: <span>{{ area.name }}</span></p>
-            </div>
         </div>
-        <div id = "dog-card-container">
-            <SmallCard v-for = "dog of area.name" :link = "'/areas/' + area.name" :title = "area.name" :subtitle = "area.name"/>
+        <div id = "project-container">
+            <CircleContainer v-for = "project of data[1]" :link = "'/projects/' + project.id" :title = "project.name"/>
         </div>
     </main>
 </template>
@@ -26,57 +23,69 @@
         async asyncData() {
             // Despite using the options API, this.$route is not available in asyncData.
             const route = useRoute()
-            const area = await $fetch(useRuntimeConfig().baseURL + '/server/areas/' + route.params.id)
+            const data = []
+            data[0] = await $fetch(useRuntimeConfig().baseURL + '/server/areas/' + route.params.id)
+            data[1] = await $fetch(useRuntimeConfig().baseURL + '/server/projects/byarea/' + route.params.id)
 
             return {
-                area
+                data
             }
         }
-    })
+    })    
     
 </script>
 
 <style>
-    #dog-card-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 10px
-    }
-
-    #main-img {
+  #main-img {
     width: 30%;
     height: auto;
-    }
+  }
 
-    main {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .info-group {
-        width: 100%;
+  #project-container
+    {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
-        align-items: center;
         justify-content: center;
+        align-content: center;
         gap: 40px;
     }
 
-    .data {
-        font-weight: bolder;
-        font-size: 20pt
-    }
+  .info-group {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
 
-    .data span {
-        font-weight: 100;
-        font-size: 15pt;
-    }
+  .data {
+    font-weight: bolder;
+    font-size: 20pt;
+  }
 
-    #description {
-        padding: 0 20px 0 20px;
-        font-size: 15pt;
-    }
+  .data span {
+    font-weight: 100;
+    font-size: 15pt;
+  }
+
+  #description {
+    padding: 0 20px 0 20px;
+    font-size: 15pt;
+  }
+
+  .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
 </style>
