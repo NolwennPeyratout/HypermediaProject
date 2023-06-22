@@ -8,7 +8,7 @@
             <NuxtLink to = "/">HOME</NuxtLink>
             <NuxtLink to = "/team">Team</NuxtLink>
             <NuxtLink to = "/areas">Areas</NuxtLink>
-            <NuxtLink to = "/allProjects">Projects</NuxtLink>
+            <NuxtLink to = "/projects">Projects</NuxtLink>
             <NuxtLink to = "/dogs">DOGS</NuxtLink>
             <NuxtLink to = "/locations">LOCATIONS</NuxtLink>
             <NuxtLink to = "/about">ABOUT US</NuxtLink>

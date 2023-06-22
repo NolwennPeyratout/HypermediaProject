@@ -201,7 +201,7 @@ async function initServer() {
     })
 
     app.get('/projects/byarea/:id', async (req, res) => {
-// LEFT JOIN concerns WHERE concerns.area_name = :areaId
+
         try {
             const data = await db.query(
                 'SELECT * FROM projects p WHERE EXISTS(' + 
