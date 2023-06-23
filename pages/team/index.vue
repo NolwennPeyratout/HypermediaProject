@@ -12,14 +12,13 @@ import CircleContainer from '~/components/CircleContainer.vue';
 </template>
 
 <script>
-
     export default defineNuxtComponent({
     async asyncData() {
         // useRuntimeConfig provide us with environment variables set up in the nuxtconfig file
         const persons = await $fetch(useRuntimeConfig().baseURL + "/server/team");
-        console.log(persons)
         return { persons };
-    },
+    }
+    
 })
     
 </script>
