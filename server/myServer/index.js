@@ -218,6 +218,27 @@ async function initServer() {
           }
     })
 
+    app.get('/team', async (req, res) => {
+        const data = await models.Person.findAll();
+
+        res.status(200).json(data)
+    })
+
+    app.get('/team/:id', async (req, res) => {
+        const data = await models.Person.findOne({
+            where: {
+                name: req.params.id
+            }
+        })
+        
+        if (data) {
+            res.status(200).json(data)
+        }
+        else {
+            res.sendStatus(404)
+        }
+    })
+
     /* from here TO REMOVE */
 
     app.get('/dogs', async (req, res) => {

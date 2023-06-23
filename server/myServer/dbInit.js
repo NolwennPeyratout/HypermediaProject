@@ -10,10 +10,37 @@ export default async (models) => {
                 count: 4,
                 units: "paragraph"
             })
-        }
+        },
+        {
+            name: "Floria DeAngeli",
+            role: "Manager",
+            cv: loremIpsum({
+                count: 4,
+                units: "paragraph"
+            })
+        },
+        {
+            name: "Carolina Reaper",
+            role: "Specialis",
+            cv: loremIpsum({
+                count: 4,
+                units: "paragraph"
+            })
+        },
+        {
+            name: "Andrea Pucci",
+            role: "Specialist",
+            cv: loremIpsum({
+                count: 4,
+                units: "paragraph"
+            })
+        },
     ]
 
     const person0 = await models.Person.create(personModel[0])
+    const person1 = await models.Person.create(personModel[1])
+    const person2 = await models.Person.create(personModel[2])
+    const person3 = await models.Person.create(personModel[3])
 
     const projectModel = [
         {
