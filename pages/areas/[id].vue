@@ -4,9 +4,6 @@
 <template>
     <main>
         <h1> {{ data[0].name }}</h1>
-        <div class = "info-group">
-            <img id = "main-img" src = "~/assets/img/home-image.jpg" />
-        </div>
         <div id = "project-container">
             <CircleContainer v-for = "project of data[1]" :link = "'/projects/' + project.id" :title = "project.name"/>
         </div>

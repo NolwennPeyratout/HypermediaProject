@@ -29,14 +29,16 @@ export default defineNuxtComponent({
       const pathArray = this.$route.path.split('/')
       pathArray.shift()
       const breadcrumbs = pathArray.reduce((breadcrumbArray, path, idx) => {
+        if (path) {
         breadcrumbArray.push({
           to: breadcrumbArray[idx - 1]
-            ? '/' + breadcrumbArray[idx - 1].path + '/' + path
+            ? '/' + breadcrumbArray[idx - 1].title + '/' + path
             : '/' + path,
           title: path
-        })
+        })}
         return breadcrumbArray
       }, [])
+      console.log(breadcrumbs)
       return breadcrumbs
     }
     }
