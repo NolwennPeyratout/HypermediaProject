@@ -7,12 +7,12 @@
         <TheHeader />
         <ol class="breadcrumb">
           <li class="item">
-            <nuxt-link :to="'/'" class="breadcrump-item">
+            <nuxt-link :to="'/'" class="breadcrumb-item">
               Home
             </nuxt-link>
           </li>
           <li v-for="(item, i) in crumbs" :key="i" class="item">
-            <nuxt-link :to="item.to" class="breadcrump-item">
+            <nuxt-link :to="item.to" class="breadcrumb-item">
               {{ item.title }}
             </nuxt-link>
           </li>
@@ -72,10 +72,10 @@ export default defineNuxtComponent({
     li a {
       color: black;
     }
-    .breadcrump-item{
+    .breadcrumb-item{
       text-decoration: none;
     }
-    .breadcrump-item:hover{
+    .breadcrumb-item:hover{
       text-decoration: underline;
     }
 </style>
