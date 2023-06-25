@@ -72,6 +72,10 @@ async function initDB() {
         cv: {
             type: DataTypes.TEXT,
             allowNull: true
+        },
+        imgUrl:{
+            type: DataTypes.STRING,
+            allowNull:false
         }
     });
     

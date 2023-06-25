@@ -9,7 +9,8 @@ export default async (models) => {
             cv: loremIpsum({
                 count: 4,
                 units: "paragraph"
-            })
+            }),
+            imgUrl: "/_nuxt/assets/img/team/MarioRossi.jpg",
         },
         {
             name: "Floria DeAngeli",
@@ -17,7 +18,8 @@ export default async (models) => {
             cv: loremIpsum({
                 count: 4,
                 units: "paragraph"
-            })
+            }),
+            imgUrl: "/_nuxt/assets/img/team/FloriaDeAngeli.jpeg",
         },
         {
             name: "Carolina Reaper",
@@ -25,7 +27,8 @@ export default async (models) => {
             cv: loremIpsum({
                 count: 4,
                 units: "paragraph"
-            })
+            }),
+            imgUrl: "/_nuxt/assets/img/team/CarolinaReaper.jpeg",
         },
         {
             name: "Andrea Pucci",
@@ -33,7 +36,8 @@ export default async (models) => {
             cv: loremIpsum({
                 count: 4,
                 units: "paragraph"
-            })
+            }),
+            imgUrl: "/_nuxt/assets/img/team/AndreaPucci.jpeg",
         },
     ]
 

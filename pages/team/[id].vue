@@ -5,16 +5,16 @@
     <main>
         <h1> {{ data[0].name }}</h1>
         <div class = "info-group">
-            <img id = "main-img" src = "~/assets/img/home-image.jpg" />
+          <img id = "img-person" :src = "data[0].imgUrl"  />
+          <p class = "data">Name: <span>{{ data[0].name }}</span></p>
+          <p class = "data">Role: <span>{{ data[0].role }}</span></p>
         </div>
-        <div id = "project-container">
-            <CircleContainer v-for = "person of data[1]" :link = "'/team/' + person.id" :title = "person.name"/>
-        </div>
+        
     </main>
 </template>
 
 <script>
-    /*
+   /*
         The defineNuxtComponent gets us access to the asyncData property.
         This is the first function that is called by nuxt when the page is called.
         We can use this to pre-load the data to make it available to the user.
@@ -30,7 +30,7 @@
                 data
             }
         }
-    })    
+    })       
     
 </script>
 
@@ -86,5 +86,8 @@
   left: 0;
   bottom: 0;
   width: 100%;
+}
+#img-person{
+  max-width: 300px;
 }
 </style>

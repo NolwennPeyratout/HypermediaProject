@@ -38,7 +38,6 @@ export default defineNuxtComponent({
         })}
         return breadcrumbArray
       }, [])
-      console.log(breadcrumbs)
       return breadcrumbs
     }
     }
