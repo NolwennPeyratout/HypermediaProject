@@ -36,12 +36,4 @@
         gap: 20px;
     }
 
-    main
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: flex-start;
-        gap: 10px;
-    }
 </style>

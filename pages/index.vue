@@ -17,11 +17,4 @@
     max-width: 1000px;
     height: auto;
     }
-
-    main {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 </style>

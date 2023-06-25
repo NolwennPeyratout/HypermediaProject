@@ -10,7 +10,10 @@ export default async (models) => {
                 count: 4,
                 units: "paragraph"
             }),
-            imgUrl: "/_nuxt/assets/img/team/MarioRossi.jpg",
+            introduction:"He is the CEO of the company ....",
+            //Generated with :https://facestudio.app/
+            imgUrl: "/_nuxt/assets/img/team/MarioRossi.jpeg",
+
         },
         {
             name: "Floria DeAngeli",
@@ -19,6 +22,7 @@ export default async (models) => {
                 count: 4,
                 units: "paragraph"
             }),
+            introduction:"She is a manager in the company ....",
             imgUrl: "/_nuxt/assets/img/team/FloriaDeAngeli.jpeg",
         },
         {
@@ -28,6 +32,7 @@ export default async (models) => {
                 count: 4,
                 units: "paragraph"
             }),
+            introduction:"She is a specialist for Health's Project in the company ....",
             imgUrl: "/_nuxt/assets/img/team/CarolinaReaper.jpeg",
         },
         {
@@ -37,6 +42,7 @@ export default async (models) => {
                 count: 4,
                 units: "paragraph"
             }),
+            introduction:"She is a specialist for Food's Project in the company ....",
             imgUrl: "/_nuxt/assets/img/team/AndreaPucci.jpeg",
         },
     ]

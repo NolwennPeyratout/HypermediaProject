@@ -1,12 +1,19 @@
 <!--
 
+import RectangleContainer from '~/components/RectangleContainer.vue';
+
 import CircleContainer from '~/components/CircleContainer.vue';
     All Area Pages
 -->
 <template>
     <main>
+        <div id="top-team">
+            <h1>Our team</h1>
+            <b>Team introduction: </b> our team is made up of {{persons.length }}.
+        </div>
+        
         <div id="areas-container">
-            <CircleContainer v-for = "person in persons" :title = "person.name" :link = "'/team/' + person.name" :img-url="person.imgUrl" />
+            <RectangleContainer v-for = "person in persons" :title = "person.name" :link = "'/team/' + person.name" :img-url="person.imgUrl" :subtitle="person.introduction" :role="person.role"/>
         </div>
     </main>
 </template>
@@ -31,18 +38,11 @@ import CircleContainer from '~/components/CircleContainer.vue';
         flex-direction: row;
         justify-content: center;
         align-content: center;
-        gap: 40px;
+        gap: 20px;
     }
-
-    main
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: flex-start;
-        gap: 10px;
-        height: 100vh;
-        background-color:aliceblue;
+    #top-team{
+        width: 100%;
+        margin-bottom: 5%;
     }
 
 </style>
