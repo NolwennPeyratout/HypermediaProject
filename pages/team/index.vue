@@ -6,7 +6,7 @@ import CircleContainer from '~/components/CircleContainer.vue';
 <template>
     <main>
         <div id="areas-container">
-            <CircleContainer v-for = "person in persons" :title = "person.name" :link = "'/team/' + person.name" />
+            <CircleContainer v-for = "person in persons" :title = "person.name" :link = "'/team/' + person.name" :img-url="person.imgUrl" />
         </div>
     </main>
 </template>

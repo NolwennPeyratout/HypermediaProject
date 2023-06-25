@@ -2,7 +2,7 @@
     <div class="circle-container">
       <NuxtLink :to="link">
         <div class="circle">
-          <img src="~/assets/img/home-image.jpg" alt="Immagine del topic">
+          <img :src="imgUrl" alt="Immagine del topic">
         </div>
       </NuxtLink>
       <p class="title">{{ title }}</p>
@@ -11,7 +11,7 @@
   
 
 <script setup>
-    const props = defineProps(['title', 'link'])
+    const props = defineProps(['title', 'link','imgUrl'])
 </script>
 
 <style>
