@@ -12,7 +12,7 @@ import CircleContainer from '~/components/CircleContainer.vue';
             <b>Team introduction: </b> our team is made up of {{persons.length }}.
         </div>
         
-        <div id="areas-container">
+        <div id="rectangle-container">
             <RectangleContainer v-for = "person in persons" :title = "person.name" :link = "'/team/' + person.name" :img-url="person.imgUrl" :subtitle="person.introduction" :role="person.role"/>
         </div>
     </main>
@@ -31,14 +31,14 @@ import CircleContainer from '~/components/CircleContainer.vue';
 </script>
 
 <style>
-   #areas-container
+   #rectangle-container
     {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
         align-content: center;
-        gap: 20px;
+        gap: 5%;
     }
     #top-team{
         width: 100%;

@@ -3,11 +3,16 @@
 -->
 <template>
     <main>
-        <h1> {{ data[0].name }}</h1>
         <div class = "info-group">
-          <img id = "img-person" :src = "data[0].imgUrl"  />
-          <p class = "data">Name: <span>{{ data[0].name }}</span></p>
-          <p class = "data">Role: <span>{{ data[0].role }}</span></p>
+          <div id="container-img-person">
+            <img id = "img-person" :src = "data[0].imgUrl"  />
+          </div>
+          <div id="presentation-person">
+            <h1 id="person-name" class = "data"> <span>{{ data[0].name }}</span></h1>
+            <h3 id="person-role" class = "data"><span>{{ data[0].role }}</span></h3>
+            <p id="person-cv" class = "data-person">CV</p>
+            <p id="cv">{{ data[0].cv }}</p>
+        </div>
         </div>
         
     </main>
@@ -66,14 +71,14 @@
     gap: 40px;
   }
 
-  .data {
+  .data-person {
     font-weight: bolder;
-    font-size: 20pt;
+    font-size: 15pt;
   }
 
-  .data span {
+  .data-person span {
     font-weight: 100;
-    font-size: 15pt;
+    font-size: 10pt;
   }
 
   #description {
@@ -86,8 +91,49 @@
   left: 0;
   bottom: 0;
   width: 100%;
-}
-#img-person{
+  }
+
+  #img-person{
   max-width: 300px;
-}
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  #container-img-person{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #presentation-person{
+    width:49%;
+  }
+
+  #person-cv{
+    margin-bottom: 0%;
+    margin-top: 4%;
+  }
+
+  #person-name span{
+    font-weight: bolder;
+    font-size: 20pt;
+  }
+
+  #person-name{
+    margin-bottom: 0%;
+  }
+
+  #person-role{
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+
+  #person-role span{
+    font-weight: bolder;
+  }
+
+  #cv{
+    text-align: justify;
+    margin-top: 0%;
+    width: 50%;
+  }
 </style>

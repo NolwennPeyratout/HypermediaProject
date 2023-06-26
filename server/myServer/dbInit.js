@@ -7,10 +7,13 @@ export default async (models) => {
             name: "Mario Rossi",
             role: "CEO",
             cv: loremIpsum({
-                count: 4,
+                count: 3,
                 units: "paragraph"
             }),
-            introduction:"He is the CEO of the company ....",
+            introduction:loremIpsum({
+                count: 2,
+                units: "paragraph"
+            }),
             //Generated with :https://facestudio.app/
             imgUrl: "/_nuxt/assets/img/team/MarioRossi.jpeg",
 
@@ -19,30 +22,39 @@ export default async (models) => {
             name: "Floria DeAngeli",
             role: "Manager",
             cv: loremIpsum({
-                count: 4,
+                count: 3,
                 units: "paragraph"
             }),
-            introduction:"She is a manager in the company ....",
+            introduction:loremIpsum({
+                count: 2,
+                units: "paragraph"
+            }),
             imgUrl: "/_nuxt/assets/img/team/FloriaDeAngeli.jpeg",
         },
         {
             name: "Carolina Reaper",
-            role: "Specialis",
+            role: "Specialist",
             cv: loremIpsum({
-                count: 4,
+                count: 3,
                 units: "paragraph"
             }),
-            introduction:"She is a specialist for Health's Project in the company ....",
+            introduction:loremIpsum({
+                count: 2,
+                units: "paragraph"
+            }),
             imgUrl: "/_nuxt/assets/img/team/CarolinaReaper.jpeg",
         },
         {
             name: "Andrea Pucci",
             role: "Specialist",
             cv: loremIpsum({
-                count: 4,
+                count: 3,
                 units: "paragraph"
             }),
-            introduction:"She is a specialist for Food's Project in the company ....",
+            introduction:loremIpsum({
+                count: 2,
+                units: "paragraph"
+            }),
             imgUrl: "/_nuxt/assets/img/team/AndreaPucci.jpeg",
         },
     ]
