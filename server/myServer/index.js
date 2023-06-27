@@ -4,8 +4,11 @@ import { loremIpsum } from "lorem-ipsum"
 
 import { fileURLToPath } from "url"
 import path from "path"
-
 import dbInitialization from "./dbInit.js"
+    
+
+
+
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)

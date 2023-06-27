@@ -12,9 +12,12 @@
     "nuxt": "^3.3.3"
   },
   "dependencies": {
+    "bootstrap-vue": "^2.23.1",
     "express": "^4.18.2",
     "lorem-ipsum": "^2.0.8",
+    "nvm": "^0.0.4",
     "sequelize": "^6.30.0",
-    "sqlite3": "^5.1.6"
+    "sqlite3": "^5.1.6",
+    "vue3-carousel": "^0.3.1"
   }
 }

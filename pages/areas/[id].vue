@@ -2,87 +2,116 @@
     Page description for a single area.
 -->
 <template>
-    <main>
-        <h1> {{ data[0].name }}</h1>
-        <div id = "project-container">
-            <CircleContainer v-for = "project of data[1]" :link = "'/projects/' + project.id" :title = "project.name"/>
-        </div>
-    </main>
+  <main>  
+    <Carousel id="carousel" :autoplay="2000" :wrap-around="true" :items-to-show="1.1">
+      <Slide v-for="slide in slides" :key="slide">
+        <img :src="slide" class="carousel__item" :class="{ 'responsive-image': true }"/>
+      </Slide>
+      <template #addons>
+        <Pagination />
+      </template>
+    </Carousel>
+    
+    <div id="project-container">
+      <CircleContainer v-for="project of data[1]" :link="'/projects/' + project.id" :title="project.name" />
+    </div>
+  </main>
 </template>
 
 <script>
-    /*
-        The defineNuxtComponent gets us access to the asyncData property.
-        This is the first function that is called by nuxt when the page is called.
-        We can use this to pre-load the data to make it available to the user.
-    */
-    export default defineNuxtComponent({
-        async asyncData() {
-            // Despite using the options API, this.$route is not available in asyncData.
-            const route = useRoute()
-            const data = []
-            data[0] = await $fetch(useRuntimeConfig().baseURL + '/server/areas/' + route.params.id)
-            data[1] = await $fetch(useRuntimeConfig().baseURL + '/server/projects/byarea/' + route.params.id)
-
-            return {
-                data
-            }
-        }
-    })    
+    import { Carousel, Pagination, Slide } from 'vue3-carousel'
     
+    import 'vue3-carousel/dist/carousel.css'
+    
+    export default defineNuxtComponent({
+      name: 'Autoplay',
+      components: {
+        Carousel,
+        Slide,
+        Pagination,
+      },
+      async asyncData() {
+        const route = useRoute()
+        const data = []
+        data[0] = await $fetch(useRuntimeConfig().baseURL + '/server/areas/' + route.params.id)
+        data[1] = await $fetch(useRuntimeConfig().baseURL + '/server/projects/byarea/' + route.params.id)
+      
+        const slides = [
+          "/_nuxt/assets/img/food_area/food_1.jpg",
+          "/_nuxt/assets/img/food_area/food_2.jpg",
+          "/_nuxt/assets/img/food_area/food_3.jpg"
+        ]
+      
+        return {
+          data,
+          slides
+        }
+      },
+})
 </script>
 
 <style>
-  #main-img {
-    width: 30%;
-    height: auto;
-  }
 
-  main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  
+main {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  overflow-x: visible;
+}
 
-  #project-container
-    {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        align-content: center;
-        gap: 40px;
-    }
+#carousel{
+  width: 120%;
+  margin: 0;
+  align-content: center;
+}
 
-  .info-group {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-  }
+#project-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 40px;
+}
 
-  .data {
-    font-weight: bolder;
-    font-size: 20pt;
-  }
-
-  .data span {
-    font-weight: 100;
-    font-size: 15pt;
-  }
-
-  #description {
-    padding: 0 20px 0 20px;
-    font-size: 15pt;
-  }
-
-  .footer {
+.footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
 }
+
+.carousel__item {
+  min-height: 150px; 
+  width: 100%;  
+  background-color: var(--vc-clr-primary);
+  color: var(--vc-clr-white);
+  font-size: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel__slide {
+  padding: 0px;
+}
+
+.carousel__prev,
+.carousel__next {
+  box-sizing: content-box;
+  width: 100%;
+  border: 5px solid white;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: 100%;
+  object-fit:contain;
+}
+
 </style>
