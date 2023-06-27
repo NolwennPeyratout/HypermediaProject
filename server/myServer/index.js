@@ -52,6 +52,10 @@ async function initDB() {
         relevant: {
             type: DataTypes.BOOLEAN,
             allowNull: true
+        },
+        imgUrl:{
+            type: DataTypes.STRING,
+            allowNull:false
         }
     });
 
@@ -207,6 +211,21 @@ async function initServer() {
         const data = await models.Project.findAll();
 
         res.status(200).json(data)
+    })
+
+    app.get('/projects/:id', async (req, res) => {
+        const data = await models.Project.findOne({
+            where: {
+                name: req.params.id
+            }
+        })
+        
+        if (data) {
+            res.status(200).json(data)
+        }
+        else {
+            res.sendStatus(404)
+        }
     })
 
     app.get('/projects/byarea/:id', async (req, res) => {
