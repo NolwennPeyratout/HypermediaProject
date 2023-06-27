@@ -228,6 +228,38 @@ async function initServer() {
         }
     })
 
+    //Needed to display project area
+    app.get('/projects/:id/area', async (req, res) => {
+        const data = await models.Concern.findOne({
+            where: {
+                project_name: req.params.id
+            }
+        })
+        
+        if (data) {
+            res.status(200).json(data)
+        }
+        else {
+            res.sendStatus(404)
+        }
+    })
+
+    /*
+    app.get('/projects/:id/supervisor', async (req, res) => {       //Needed to display project supervisor
+        const data = await models.Supervise.findOne({
+            where: {
+                project_name: req.params.id
+            }
+        })
+        
+        if (data) {
+            res.status(200).json(data)
+        }
+        else {
+            res.sendStatus(404)
+        }
+    })*/
+
     app.get('/projects/byarea/:id', async (req, res) => {
 
         try {

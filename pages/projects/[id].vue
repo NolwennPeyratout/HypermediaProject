@@ -1,9 +1,9 @@
 <!--
     Page description for a single project.
 
-    Things to be added: 
-    - Project supervisor image (on the right) [TODO]
-    - Project area (on the right) [TODO]
+    TODO: 
+    - Project supervisor image (on the right)
+    - Project area image
 -->
 <template>
     <main>
@@ -22,7 +22,7 @@
                 <SmallCircleContainer :title="'Supervisor: ' + data[0].name" :link="'/projects/' + data[0].name" :img-url="data[0].imgUrl"/>
             </div>
             <div class="area-bubble">
-                <SmallCircleContainer :title="'Project Area: ' + data[0].name" :link="'/projects/' + data[0].name" :img-url="data[0].imgUrl"/>
+                <SmallCircleContainer :title="'Project Area: ' + data[1].area_name" :link="'/areas/' + data[1].area_name" :img-url="data[0].imgUrl"/>
             </div>
           </div>
         </div>
@@ -48,6 +48,7 @@
             const route = useRoute()
             const data = []
             data[0] = await $fetch(useRuntimeConfig().baseURL + '/server/projects/' + route.params.id)
+            data[1] = await $fetch(useRuntimeConfig().baseURL + '/server/projects/' + route.params.id + '/area')
 
             return {
                 data
