@@ -1,39 +1,38 @@
 <!--
-    All Project Pages
+    import { ProjectCard } from '~/.nuxt/components';
+    All Project Page
 -->
 <template>
     <main>
-        <h1> Projects </h1>
-        <div id="card-container">
-            <Card v-for = "project in projects" :title="project.name" :subtitle = "project.name" 
-            :link="'/projects/'+ project.name"/>
-
+        <div id="pageTop">
+            <h1>Projects</h1>
         </div>
-
+        <div id="projects-container">
+            <ProjectCard v-for = "project in projects" :title = "project.name" :link = "'/projects/' + project.name" :img-url="project.imgUrl"/>
+        </div>
     </main>
 </template>
 
 <script>
     export default defineNuxtComponent({
-        async asyncData() {
-            const projects = await
-            $fetch(useRuntimeConfig().baseURL + '/server/projects')
-
-            return{projects}
-        }
-    })
+    async asyncData() {
+        const projects = await $fetch(useRuntimeConfig().baseURL + "/server/projects");
+        return { projects };
+    }
+})
 </script>
 
 
 <style>
-    #card-container
+   #projects-container
     {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
-        align-content: flex-start;
+        align-content: center;
         gap: 20px;
+        margin-bottom: 5px;
     }
 
 </style>
