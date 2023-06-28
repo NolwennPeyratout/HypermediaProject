@@ -16,7 +16,7 @@
     </div>
     
     <div id="project-container">
-      <CircleContainer v-for="project of data[1]" :link="'/projects/' + project.id" :title="project.name" />
+      <CircleContainer v-for="project of data[1]" :link="'/projects/' + project.name" :title="project.name" />
     </div>
   </main>
 </template>
@@ -43,7 +43,7 @@
         const slides = [
           "/_nuxt/assets/img/food_area/bee.jpg",
           "/_nuxt/assets/img/food_area/fresh-bread.jpg",
-          "/_nuxt/assets/img/food_area/orange.jpg"
+          "/_nuxt/assets/img/food_area/orange.png"
         ]
       
         return {
