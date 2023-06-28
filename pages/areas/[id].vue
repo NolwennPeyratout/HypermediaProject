@@ -1,6 +1,5 @@
 <!--
     Page description for a single area.
-    commit a caso
 -->
 <template>
   <main> 
@@ -51,7 +50,7 @@
           slides
         }
       },
-})
+  })
 </script>
 
 <style>
@@ -66,9 +65,12 @@ main {
   overflow-x: visible;
 }
 
-.breadcrump{
-  z-index: 5;
+
+.breadcrumb{
+  position: relative;
+  z-index: 3;
 }
+
 
 #carousel-container {
   position: relative;
@@ -76,7 +78,7 @@ main {
   width: 100%;
   margin: 0;
   align-content: center;
-  z-index: 1;
+  z-index: 2;
 }
 
 #carousel {
@@ -86,7 +88,6 @@ main {
   width: 120%;
   margin: 0;
   align-content: center;
-  pointer-events: none;
 }
 
 #project-container {
@@ -97,7 +98,6 @@ main {
   align-content: center;
   gap: 40px;
   margin-top: 20px; 
-  z-index: 2;
 }
 
 .footer {
@@ -108,8 +108,7 @@ main {
 }
 
 .carousel__item {
-  /*min-height: 150px; */
-  height: 10%;
+  min-height: 150px; 
   width: 100%;  
   background-color: var(--vc-clr-primary);
   color: var(--vc-clr-white);
@@ -118,6 +117,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  pointer-events: none;
 }
 
 .carousel__slide {
