@@ -71,8 +71,7 @@ export default async (models) => {
             date: "23/04/2014",
             start_up: "Barilla",
             product_service: "cookies",
-            relevant:"true",
-            imgUrl: "/_nuxt/assets/img/projects/project1.jpg"
+            relevant:"true"
         },
         {
             name: "Apple Visor",            //2nd project (IT)
@@ -84,8 +83,7 @@ export default async (models) => {
             date: "15/05/2023",
             start_up: "Apple",
             product_service: "Mobile devices",
-            relevant:"true",
-            imgUrl: "/_nuxt/assets/img/projects/project2.jpg"
+            relevant:"true"
         },
         {
             name: "Lidar Scanner",                //3rd project (health)
@@ -97,8 +95,7 @@ export default async (models) => {
             date: "03/12/2007",
             start_up: "Ecolab s.r.l.",
             product_service: "Hospital scanners",
-            relevant:"true",
-            imgUrl: "/_nuxt/assets/img/projects/project3.jpg"
+            relevant:"true"
         },
         {
             name: "BioVegan Smoothies",                //4th project (food)
@@ -110,8 +107,7 @@ export default async (models) => {
             date: "30/04/2020",
             start_up: "Valfrutta",
             product_service: "smoothies",
-            relevant:"true",
-            imgUrl: "/_nuxt/assets/img/projects/project4.jpg"
+            relevant:"true"
         },
         {
             name: "Starlink",                //5th project (IT)
@@ -123,8 +119,7 @@ export default async (models) => {
             date: "01/11/2016",
             start_up: "SpaceX",
             product_service: "Internet system",
-            relevant:"true",
-            imgUrl: "/_nuxt/assets/img/projects/project5.jpeg"
+            relevant:"true"
         },
         {
             name: "The Next Hambuger",            //6th project (food)
@@ -136,8 +131,7 @@ export default async (models) => {
             date: "13/01/2017",
             start_up: "FoodEvolution",
             product_service: "3D-printed meat",
-            relevant:"true",
-            imgUrl: "/_nuxt/assets/img/projects/project6.jpg"
+            relevant:"true"
         },
         {                                       //7th project (health)
             name: "Heartless",                
@@ -149,8 +143,7 @@ export default async (models) => {
             date: "03/12/2021",
             start_up: "Maven Clinic",
             product_service: "3d-printed heart valves",
-            relevant:"true",
-            imgUrl: "/_nuxt/assets/img/projects/project7.jpeg"
+            relevant:"true"
         },
         {
             name: "Glucometer",                    //8th project (health)
@@ -162,8 +155,7 @@ export default async (models) => {
             date: "08/06/2015",
             start_up: "Medely",
             product_service: "Glucose monitoring device",
-            relevant:"true",
-            imgUrl: "/_nuxt/assets/img/projects/project8.jpg"
+            relevant:"true"
         },
         {
             name: "VotaMi",                //9th project (IT)
@@ -175,8 +167,7 @@ export default async (models) => {
             date: "26/03/2022",
             start_up: "MHackeroni",
             product_service: "fingerprint-based voting system",
-            relevant:"true",
-            imgUrl: "/_nuxt/assets/img/projects/project9.jpg" 
+            relevant:"true" 
         },
         {
             name: "Nutella",            //10th project (food)
@@ -188,8 +179,7 @@ export default async (models) => {
             date: "02/02/2011",
             start_up: "Ferrero S.p.a.",
             product_service: "hazelnut cream",
-            relevant:"true",
-            imgUrl: "/_nuxt/assets/img/projects/project10.jpg"
+            relevant:"true"
         },
         {
             name: "DetectionSystem",            //11th project (IT)
@@ -201,8 +191,7 @@ export default async (models) => {
             date: "31/08/2019",
             start_up: "NewWave Corporation",
             product_service: "Face detector",
-            relevant:"true",
-            imgUrl: "/_nuxt/assets/img/projects/project11.jpg"
+            relevant:"true"
         },
         {
             name: "Cancer Destroyer",            //12th project (health)
@@ -214,8 +203,7 @@ export default async (models) => {
             date: "20/06/2023",
             start_up: "Elevance Health",
             product_service: "Pills",
-            relevant:"true",
-            imgUrl: "/_nuxt/assets/img/projects/project12.jpg" 
+            relevant:"true"
         },
         {
             name: "Doriano Crackers",            //13th project (food)
@@ -227,8 +215,7 @@ export default async (models) => {
             date: "21/03/2013",
             start_up: "Doria",
             product_service: "Crackers",
-            relevant:"true",
-            imgUrl: "/_nuxt/assets/img/projects/project13.jpg"
+            relevant:"true"
         },
         {
             name: "Knox",            //14th project (IT)
@@ -240,8 +227,7 @@ export default async (models) => {
             date: "01/03/2018",
             start_up: "Samsung",
             product_service: "Security framework",
-            relevant:"true",
-            imgUrl: "/_nuxt/assets/img/projects/project14.jpg"
+            relevant:"true"
         },
         {
             name: "Paracetamolo",            //15th project (health)
@@ -253,8 +239,7 @@ export default async (models) => {
             date: "17/05/2014",
             start_up: "Angelini Industries",
             product_service: "Analgesic syrup",
-            relevant:"true",
-            imgUrl: "/_nuxt/assets/img/projects/project15.jpg"
+            relevant:"true"
         },
 
     ]
