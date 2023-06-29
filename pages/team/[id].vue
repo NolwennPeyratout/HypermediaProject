@@ -15,21 +15,37 @@
           </div>
         </div>
         
-        <div class="info-project">
-          <div id="projects-container">
-            <ProjectCard v-for = "project in data[1]" :title = "project.project_name" :link = "'/projects/' + project.project_name" :img-url="'/_nuxt/assets/img/projects/'+ project.project_name +'.jpg'"/>
-          </div>
+        <div id="carousel-container-person">
+          <Carousel id="carousel" :autoplay="4000" :wrap-around="true" :items-to-show="3">
+            <Slide v-for="project in data[1]" :key="project">
+              <NuxtLink :to="'/projects/' + project.project_name" class="link-box">
+                <img :src="'/_nuxt/assets/img/projects/'+ project.project_name +'.jpg'" class="carousel__item" :class="{ 'responsive-image': true }"/>
+              </NuxtLink>
+              </Slide>
+            <template #addons>
+              <Pagination />
+            </template>
+          </Carousel>
         </div>
     </main>
 </template>
 
 <script>
+    import { Carousel, Pagination, Slide } from 'vue3-carousel'
+    
+    import 'vue3-carousel/dist/carousel.css'
    /*
         The defineNuxtComponent gets us access to the asyncData property.
         This is the first function that is called by nuxt when the page is called.
         We can use this to pre-load the data to make it available to the user.
     */
     export default defineNuxtComponent({
+      name: 'Autoplay',
+      components: {
+        Carousel,
+        Slide,
+        Pagination,
+      },
         async asyncData() {
             // Despite using the options API, this.$route is not available in asyncData.
             const route = useRoute()
@@ -142,4 +158,63 @@
     margin-top: 0%;
     width: 50%;
   }
+
+  #carousel-container-person {
+  width: 100%;
+  margin: 0;
+  align-content: center;
+  z-index: 2;
+}
+
+#carousel {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%;
+  margin: 0;
+  align-content: center;
+}
+
+#project-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 40px;
+  margin-top: 20px; 
+}
+
+.carousel__item {
+  min-height: 150px; 
+  width: 100%;  
+  background-color: var(--vc-clr-primary);
+  color: var(--vc-clr-white);
+  font-size: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.carousel__slide {
+  padding: 0px;
+}
+
+.carousel__prev,
+.carousel__next {
+  box-sizing: content-box;
+  width: 100%;
+  border: 5px solid white;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: 350px;
+  object-fit:contain;
+  background-color: white;
+}
+
+
 </style>
