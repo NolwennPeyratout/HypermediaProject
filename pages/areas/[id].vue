@@ -5,8 +5,8 @@
   <main> 
     <div id="carousel-container">
       <Carousel id="carousel" :autoplay="2000" :wrap-around="true" :items-to-show="1.1">
-        <Slide v-for="slide in slides" :key="slide">
-          <img :src="slide" class="carousel__item" :class="{ 'responsive-image': true }"/>
+        <Slide v-for="slide in 3" :key="slide">
+          <img :src="'/_nuxt/assets/img/' + data[0].name + '_area/' + data[0].name + slide + '.jpg'" class="carousel__item" :class="{ 'responsive-image': true }"/>
         </Slide>
         <template #addons>
           <Pagination />
@@ -39,15 +39,8 @@
         data[0] = await $fetch(useRuntimeConfig().baseURL + '/server/areas/' + route.params.id)
         data[1] = await $fetch(useRuntimeConfig().baseURL + '/server/projects/byarea/' + route.params.id)
       
-        const slides = [
-          "/_nuxt/assets/img/food_area/bee.jpg",
-          "/_nuxt/assets/img/food_area/fresh-bread.jpg",
-          "/_nuxt/assets/img/food_area/orange.png"
-        ]
-      
         return {
-          data,
-          slides
+          data
         }
       },
   })

@@ -6,7 +6,8 @@ import CircleContainer from '~/components/CircleContainer.vue';
 <template>
     <main>
         <div id="areas-container">
-            <CircleContainer v-for = "area in areas" :title = "area.name" :link = "'/areas/' + area.name" />
+            <CircleContainer v-for = "area in areas" :title = "area.name" :link = "'/areas/' + area.name" 
+            :img-url="'/_nuxt/assets/img/' + area.name + '_area/' + area.name + '1.jpg'" />
         </div>
     </main>
 </template>
