@@ -5,7 +5,7 @@
     <main>
         <div class = "info-group">
           <div id="container-img-person">
-            <img id = "img-person" :src = "data[0].imgUrl"  />
+            <img id = "img-person" :src = "'/_nuxt/assets/img/team/'+data[0].name+'.jpeg'"  />
           </div>
           <div id="presentation-person">
             <h1 id="person-name" class = "data"> <span>{{ data[0].name }}</span></h1>

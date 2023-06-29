@@ -13,7 +13,7 @@ import CircleContainer from '~/components/CircleContainer.vue';
         </div>
         
         <div id="rectangle-container">
-            <RectangleContainer v-for = "person in persons" :title = "person.name" :link = "'/team/' + person.name" :img-url="person.imgUrl" :subtitle="person.introduction" :role="person.role"/>
+            <RectangleContainer v-for = "person in persons" :title = "person.name" :link = "'/team/' + person.name" :img-url="'/_nuxt/assets/img/team/'+person.name+'.jpeg'" :subtitle="person.introduction" :role="person.role"/>
         </div>
     </main>
 </template>

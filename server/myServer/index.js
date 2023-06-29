@@ -80,10 +80,6 @@ async function initDB() {
             type: DataTypes.TEXT,
             allowNull: true
         },
-        imgUrl:{
-            type: DataTypes.STRING,
-            allowNull:false
-        },
         introduction: {
             type: DataTypes.TEXT,
             allowNull: true

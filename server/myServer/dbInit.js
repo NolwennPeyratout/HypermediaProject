@@ -13,9 +13,8 @@ export default async (models) => {
             introduction:loremIpsum({
                 count: 2,
                 units: "paragraph"
-            }),
-            //Generated with :https://facestudio.app/
-            imgUrl: "/_nuxt/assets/img/team/MarioRossi.jpeg",
+            })
+            //images are generated with :https://facestudio.app/
 
         },
         {
@@ -28,8 +27,7 @@ export default async (models) => {
             introduction:loremIpsum({
                 count: 2,
                 units: "paragraph"
-            }),
-            imgUrl: "/_nuxt/assets/img/team/FloriaDeAngeli.jpeg",
+            })
         },
         {
             name: "Carolina Reaper",
@@ -41,8 +39,7 @@ export default async (models) => {
             introduction:loremIpsum({
                 count: 2,
                 units: "paragraph"
-            }),
-            imgUrl: "/_nuxt/assets/img/team/CarolinaReaper.jpeg",
+            })
         },
         {
             name: "Andrea Pucci",
@@ -54,8 +51,7 @@ export default async (models) => {
             introduction:loremIpsum({
                 count: 2,
                 units: "paragraph"
-            }),
-            imgUrl: "/_nuxt/assets/img/team/AndreaPucci.jpeg",
+            })
         },
     ]
 
