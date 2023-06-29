@@ -29,7 +29,7 @@
         </div>
 
         <div id="container-area-person">
-            <CircleContainer v-for = "area in data[2]" :title = "area.area_name" :link = "'/areas/' + area.area_name" />
+            <CircleContainer v-for = "area in data[2]" :title = "area.area_name" :link = "'/areas/' + area.area_name" :img-url="'/_nuxt/assets/img/' + area.area_name + '_area/' + area.area_name + '1.jpg'" />
         </div>
     </main>
 </template>
