@@ -55,10 +55,6 @@ async function initDB() {
         relevant: {
             type: DataTypes.BOOLEAN,
             allowNull: true
-        },
-        imgUrl:{
-            type: DataTypes.STRING,
-            allowNull:false
         }
     });
 
