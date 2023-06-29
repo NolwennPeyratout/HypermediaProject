@@ -15,7 +15,7 @@
     </div>
     
     <div id="project-container">
-      <CircleContainer v-for="project of data[1]" :link="'/projects/' + project.name" :title="project.name" />
+      <CircleContainer v-for="project of data[1]" :link="'/projects/' + project.name" :title="project.name" :img-url="'/_nuxt/assets/img/projects/'+ project.name +'.jpg'" />
     </div>
   </main>
 </template>
