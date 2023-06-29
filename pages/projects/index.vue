@@ -8,7 +8,7 @@
             <h1>Projects</h1>
         </div>
         <div id="projects-container">
-            <ProjectCard v-for = "project in projects" :title = "project.name" :link = "'/projects/' + project.name" :img-url="project.imgUrl"/>
+            <ProjectCard v-for = "project in projects" :title = "project.name" :link = "'/projects/' + project.name" :img-url="'/_nuxt/assets/img/projects/'+ project.name +'.jpg'"/>
         </div>
     </main>
 </template>

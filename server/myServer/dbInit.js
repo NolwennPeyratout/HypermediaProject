@@ -88,7 +88,7 @@ export default async (models) => {
             imgUrl: "/_nuxt/assets/img/projects/project2.jpg"
         },
         {
-            name: "Lidar scanner",                //3rd project (health)
+            name: "Lidar Scanner",                //3rd project (health)
             presentation: loremIpsum({
                 count: 4,
                 units: "paragraph"

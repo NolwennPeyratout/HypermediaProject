@@ -28,10 +28,10 @@
         </div>
         
         <div class = "project-images">
-            <img class = "image" :src = "data[0].imgUrl"  />
-            <img class = "image" :src = "data[0].imgUrl"  />
-            <img class = "image" :src = "data[0].imgUrl"  />
-            <img class = "image" :src = "data[0].imgUrl"  />
+            <img class = "image" :src = "'/_nuxt/assets/img/projects/'+ data[0].name +'.jpg'"  />
+            <img class = "image" :src = "'/_nuxt/assets/img/projects/'+ data[0].name +'.jpg'"   />
+            <img class = "image" :src = "'/_nuxt/assets/img/projects/'+ data[0].name +'.jpg'"   />
+            <img class = "image" :src = "'/_nuxt/assets/img/projects/'+ data[0].name +'.jpg'"   />
         </div>
     </main>
 </template>

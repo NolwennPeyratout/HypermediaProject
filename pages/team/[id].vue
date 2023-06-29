@@ -17,7 +17,7 @@
         
         <div class="info-project">
           <div id="projects-container">
-            <ProjectCard v-for = "project in data[1]" :title = "project.project_name" :link = "'/projects/' + project.project_name" :img-url="data[0].imgUrl"/>
+            <ProjectCard v-for = "project in data[1]" :title = "project.project_name" :link = "'/projects/' + project.project_name" :img-url="'/_nuxt/assets/img/projects/'+ project.project_name +'.jpg'"/>
           </div>
         </div>
     </main>
