@@ -305,7 +305,7 @@ export default async (models) => {
 
     const superviseModel = [
         {
-            person_name: person3.name,
+            person_name: person0.name,
             project_name: project0.name
         },
         {
@@ -313,7 +313,7 @@ export default async (models) => {
             project_name: project1.name
         },
         {
-            person_name: person0.name,
+            person_name: person3.name,
             project_name: project2.name
         },
         {
@@ -321,15 +321,15 @@ export default async (models) => {
             project_name: project3.name
         },
         {
-            person_name: person0.name,
+            person_name: person2.name,
             project_name: project4.name
         },
         {
-            person_name: person2.name,
+            person_name: person0.name,
             project_name: project5.name
         },
         {
-            person_name: person0.name,
+            person_name: person3.name,
             project_name: project6.name
         },
         {
@@ -337,15 +337,15 @@ export default async (models) => {
             project_name: project7.name
         },
         {
-            person_name: person0.name,
+            person_name: person1.name,
             project_name: project8.name
         },
         {
-            person_name: person3.name,
+            person_name: person0.name,
             project_name: project9.name
         },
         {
-            person_name: person1.name,
+            person_name: person0.name,
             project_name: project10.name
         },
         {
@@ -353,15 +353,15 @@ export default async (models) => {
             project_name: project11.name
         },
         {
-            person_name: person2.name,
+            person_name: person3.name,
             project_name: project12.name
         },
         {
-            person_name: person3.name,
+            person_name: person2.name,
             project_name: project13.name
         },
         {
-            person_name: person0.name,
+            person_name: person3.name,
             project_name: project14.name
         }
     ]

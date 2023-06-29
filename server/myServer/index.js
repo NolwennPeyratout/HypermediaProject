@@ -313,6 +313,25 @@ async function initServer() {
         }
     })
 
+    app.get('/team/:id/project/area', async (req, res) => {
+        try {
+            const data = await db.query(
+                'SELECT DISTINCT concerns.area_name ' + 
+                    'FROM concerns ' + 
+                    'LEFT JOIN supervises '+
+                    'ON concerns.project_name=supervises.project_name '+
+                    'WHERE supervises.person_name=:personName;', {
+                replacements: {personName: req.params.id},
+                model: models.Person,
+                mapToModel: true 
+              });
+        
+            res.status(200).json(data);
+          } catch (error) {
+            res.status(500).json({ error: 'Internal server error' });
+          }
+    })
+
     /* from here TO REMOVE */
 
     app.get('/dogs', async (req, res) => {

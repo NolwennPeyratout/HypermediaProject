@@ -5,7 +5,7 @@
           <img :src="imgUrl" alt="Immagine del topic">
         </div>
       </NuxtLink>
-      <p class="title">{{ title }}</p>
+      <p class="title-center">{{ title }}</p>
     </div>
   </template>
   
@@ -52,6 +52,9 @@
   top: 0;
   left: 0;
   z-index: 999;
+}
+.title-center{
+  text-align: center;
 }
 
 </style>  

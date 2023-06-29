@@ -3,7 +3,7 @@
 -->
 <template>
     <main>
-        <div class = "info-group">
+        <div id = "info-group">
           <div id="container-img-person">
             <img id = "img-person" :src = "'/_nuxt/assets/img/team/'+data[0].name+'.jpeg'"  />
           </div>
@@ -16,16 +16,20 @@
         </div>
         
         <div id="carousel-container-person">
-          <Carousel id="carousel" :autoplay="4000" :wrap-around="true" :items-to-show="3">
+          <Carousel id="carousel-person" :autoplay="4000" :wrap-around="true" :items-to-show="3">
             <Slide v-for="project in data[1]" :key="project">
               <NuxtLink :to="'/projects/' + project.project_name" class="link-box">
-                <img :src="'/_nuxt/assets/img/projects/'+ project.project_name +'.jpg'" class="carousel__item" :class="{ 'responsive-image': true }"/>
+                <img :src="'/_nuxt/assets/img/projects/'+ project.project_name +'.jpg'" class="carousel__item_person" :class="{ 'responsive-image': true }"/>
               </NuxtLink>
               </Slide>
             <template #addons>
               <Pagination />
             </template>
           </Carousel>
+        </div>
+
+        <div id="container-area-person">
+            <CircleContainer v-for = "area in data[2]" :title = "area.area_name" :link = "'/areas/' + area.area_name" />
         </div>
     </main>
 </template>
@@ -53,6 +57,7 @@
             const id = route.params.id
             data[0] = await $fetch(useRuntimeConfig().baseURL + '/server/team/' + id)
             data[1] = await $fetch(useRuntimeConfig().baseURL + '/server/team/' + id + '/project')
+            data[2] = await $fetch(useRuntimeConfig().baseURL + '/server/team/' + id + '/project/area')
             return {
                 data
             }
@@ -74,8 +79,7 @@
     align-items: center;
   }
 
-  #project-container
-    {
+  #project-container {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -84,13 +88,14 @@
         gap: 40px;
     }
 
-  .info-group {
+  #info-group {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 40px;
+    margin-bottom: 6%;
   }
 
   .data-person {
@@ -160,17 +165,18 @@
   }
 
   #carousel-container-person {
-  width: 100%;
+  width: 105%;
   margin: 0;
   align-content: center;
   z-index: 2;
+  margin-bottom: 6%;
 }
 
-#carousel {
+#carousel-person {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  width: 120%;
+  width: 100%;
   margin: 0;
   align-content: center;
 }
@@ -185,7 +191,7 @@
   margin-top: 20px; 
 }
 
-.carousel__item {
+.carousel__item_person {
   min-height: 150px; 
   width: 100%;  
   background-color: var(--vc-clr-primary);
@@ -214,6 +220,15 @@
   height: 350px;
   object-fit:contain;
   background-color: white;
+}
+
+#container-area-person{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
 }
 
 
