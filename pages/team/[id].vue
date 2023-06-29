@@ -12,9 +12,14 @@
             <h3 id="person-role" class = "data"><span>{{ data[0].role }}</span></h3>
             <p id="person-cv" class = "data-person">CV</p>
             <p id="cv">{{ data[0].cv }}</p>
-        </div>
+          </div>
         </div>
         
+        <div class="info-project">
+          <div id="projects-container">
+            <ProjectCard v-for = "project in data[1]" :title = "project.project_name" :link = "'/projects/' + project.project_name" :img-url="data[0].imgUrl"/>
+          </div>
+        </div>
     </main>
 </template>
 
@@ -29,8 +34,9 @@
             // Despite using the options API, this.$route is not available in asyncData.
             const route = useRoute()
             const data = []
-            data[0] = await $fetch(useRuntimeConfig().baseURL + '/server/team/' + route.params.id)
-
+            const id = route.params.id
+            data[0] = await $fetch(useRuntimeConfig().baseURL + '/server/team/' + id)
+            data[1] = await $fetch(useRuntimeConfig().baseURL + '/server/team/' + id + '/project')
             return {
                 data
             }

@@ -309,12 +309,83 @@ export default async (models) => {
 
     const superviseModel = [
         {
-            person_id: person0.id,
+            person_name: person3.name,
             project_name: project0.name
+        },
+        {
+            person_name: person2.name,
+            project_name: project1.name
+        },
+        {
+            person_name: person0.name,
+            project_name: project2.name
+        },
+        {
+            person_name: person1.name,
+            project_name: project3.name
+        },
+        {
+            person_name: person0.name,
+            project_name: project4.name
+        },
+        {
+            person_name: person2.name,
+            project_name: project5.name
+        },
+        {
+            person_name: person0.name,
+            project_name: project6.name
+        },
+        {
+            person_name: person1.name,
+            project_name: project7.name
+        },
+        {
+            person_name: person0.name,
+            project_name: project8.name
+        },
+        {
+            person_name: person3.name,
+            project_name: project9.name
+        },
+        {
+            person_name: person1.name,
+            project_name: project10.name
+        },
+        {
+            person_name: person1.name,
+            project_name: project11.name
+        },
+        {
+            person_name: person2.name,
+            project_name: project12.name
+        },
+        {
+            person_name: person3.name,
+            project_name: project13.name
+        },
+        {
+            person_name: person0.name,
+            project_name: project14.name
         }
     ]
 
-    await models.Supervise.bulkCreate(superviseModel)
+    //await models.Supervise.bulkCreate(superviseModel)
+    await models.Supervise.create(superviseModel[0])
+    await models.Supervise.create(superviseModel[1])
+    await models.Supervise.create(superviseModel[2])
+    await models.Supervise.create(superviseModel[3])
+    await models.Supervise.create(superviseModel[4])
+    await models.Supervise.create(superviseModel[5])
+    await models.Supervise.create(superviseModel[6])
+    await models.Supervise.create(superviseModel[7])
+    await models.Supervise.create(superviseModel[8])
+    await models.Supervise.create(superviseModel[9])
+    await models.Supervise.create(superviseModel[10])
+    await models.Supervise.create(superviseModel[11])
+    await models.Supervise.create(superviseModel[12])
+    await models.Supervise.create(superviseModel[13])
+    await models.Supervise.create(superviseModel[14])
 
     const concernModel = [                      //NB: area0 = food, area1 = health, area2 = it
         {

@@ -63,13 +63,13 @@ async function initDB() {
     });
 
     models.Person = db.define('person', {
-    id: {
+        id: {
             type: DataTypes.INTEGER,
-            primaryKey: true,
             autoIncrement: true
         },
         name: {
             type: DataTypes.STRING,
+            primaryKey: true,
             allowNull: false
         },
         role: {
@@ -103,11 +103,11 @@ async function initDB() {
     });
 
     models.Supervise = db.define('supervise', {
-        person_id: {
+        person_name: {
             type: DataTypes.INTEGER,
             references: {
                 model: 'people',
-                key: 'id'
+                key: 'name'
             }
         },
         project_name: {
@@ -137,7 +137,7 @@ async function initDB() {
     });
 
     models.Project.belongsTo(models.Supervise, { foreignKey: 'project_name' });
-    models.Person.hasMany(models.Supervise, { foreignKey: 'person_id' });
+    models.Person.hasMany(models.Supervise, { foreignKey: 'person_name' });
     models.Project.hasMany(models.Concern, { foreignKey: 'project_name' });
     models.Area.hasMany(models.Concern, { foreignKey: 'area_name' });
 
@@ -291,6 +291,21 @@ async function initServer() {
         const data = await models.Person.findOne({
             where: {
                 name: req.params.id
+            }
+        })
+        
+        if (data) {
+            res.status(200).json(data)
+        }
+        else {
+            res.sendStatus(404)
+        }
+    })
+
+    app.get('/team/:id/project', async (req, res) => {
+        const data = await models.Supervise.findAll({
+            where: {
+                person_name: req.params.id
             }
         })
         
