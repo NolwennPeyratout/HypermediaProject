@@ -126,7 +126,7 @@ main {
 
 .responsive-image {
   max-width: 100%;
-  height: 350px;
+  height: 400px;
   object-fit:contain;
   background-color: white;
 }
