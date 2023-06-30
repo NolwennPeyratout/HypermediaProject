@@ -1,7 +1,3 @@
-<!--
-    Footer of the page
--->
-
 <template>
     <footer>
         Made by me :)
@@ -9,15 +5,13 @@
 </template>
 
 <style>
-    footer
-    {
-        background-color: orange;
-        flex-shrink: 0;
+    footer {
+        background-color: #252525;
         text-align: center;
         margin-top: auto;
         border-top: 5px solid brown;
-        padding: 10px;
-
-        min-height: 1vh;
+        padding: 20px;
+        color: #fff;
+        font-size: 16px;
     }
 </style>
