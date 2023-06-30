@@ -19,10 +19,12 @@
           </div>
           <div class="bubbles-container">
             <div class="supervisor-bubble">
-                <SmallCircleContainer :title="'Supervisor: ' + data[0].name" :link="'/projects/' + data[0].name" :img-url="data[0].imgUrl"/>
+                <SmallCircleContainer :title="'Supervisor: ' + data[2].person_name" :link="'/team/' + data[2].person_name" 
+                :img-url="'/_nuxt/assets/img/team/' + data[2].person_name + '.jpeg'"/>
             </div>
             <div class="area-bubble">
-                <SmallCircleContainer :title="'Project Area: ' + data[1].area_name" :link="'/areas/' + data[1].area_name" :img-url="data[0].imgUrl"/>
+                <SmallCircleContainer :title="'Project Area: ' + data[1].area_name" :link="'/areas/' + data[1].area_name" 
+                :img-url="'/_nuxt/assets/img/' + data[1].area_name + '_area/' + data[1].area_name + '1.jpg'"/>
             </div>
           </div>
         </div>
@@ -49,6 +51,7 @@
             const data = []
             data[0] = await $fetch(useRuntimeConfig().baseURL + '/server/projects/' + route.params.id)
             data[1] = await $fetch(useRuntimeConfig().baseURL + '/server/projects/' + route.params.id + '/area')
+            data[2] = await $fetch(useRuntimeConfig().baseURL + '/server/projects/' + route.params.id + '/supervisor')
 
             return {
                 data

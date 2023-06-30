@@ -239,8 +239,8 @@ async function initServer() {
         }
     })
 
-    /*
-    app.get('/projects/:id/supervisor', async (req, res) => {       //Needed to display project supervisor
+    //Needed to display project supervisor
+    app.get('/projects/:id/supervisor', async (req, res) => {       
         const data = await models.Supervise.findOne({
             where: {
                 project_name: req.params.id
@@ -253,7 +253,7 @@ async function initServer() {
         else {
             res.sendStatus(404)
         }
-    })*/
+    })
 
     app.get('/projects/byarea/:id', async (req, res) => {
 

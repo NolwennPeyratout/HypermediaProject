@@ -9,6 +9,9 @@
             <NuxtLink to = "/team">Team</NuxtLink>
             <NuxtLink to = "/areas">Areas</NuxtLink>
             <NuxtLink to = "/projects">Projects</NuxtLink>
+            <NuxtLink to = "/projects/Food">Food Projects</NuxtLink>
+            <NuxtLink to = "/projects/IT">IT Projects</NuxtLink>
+            <NuxtLink to = "/projects/Health">Health Projects</NuxtLink>
             <NuxtLink to = "/dogs">DOGS</NuxtLink>
             <NuxtLink to = "/locations">LOCATIONS</NuxtLink>
             <NuxtLink to = "/about">ABOUT US</NuxtLink>
