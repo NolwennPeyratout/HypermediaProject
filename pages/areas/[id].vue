@@ -67,7 +67,7 @@ main {
 
 #carousel-container {
   position: relative;
-  top: -55px;
+  top: -50px;
   width: 100%;
   margin: 0;
   align-content: center;

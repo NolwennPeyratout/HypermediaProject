@@ -6,7 +6,7 @@ import CircleContainer from '~/components/CircleContainer.vue';
 <template>
     <main>
         <div id="areas-container">
-            <CircleContainer v-for = "area in areas" :title = "area.name" :link = "'/areas/' + area.name" 
+            <CircleContainer id="circle-container" v-for = "area in areas" :title = "area.name" :link = "'/areas/' + area.name" 
             :img-url="'/_nuxt/assets/img/' + area.name + '_area/' + area.name + '1.jpg'" />
         </div>
     </main>
@@ -33,7 +33,10 @@ import CircleContainer from '~/components/CircleContainer.vue';
         justify-content: center;
         align-content: center;
         gap: 20px;
+        background-color: #5b7470;
+        margin-bottom: 60px;
+        margin-top: 20px;
+        width: 95%;
     }
-
 
 </style>
