@@ -6,52 +6,28 @@ export default async (models) => {
         {
             name: "Mario Rossi",
             role: "CEO",
-            cv: loremIpsum({
-                count: 3,
-                units: "paragraph"
-            }),
-            introduction:loremIpsum({
-                count: 2,
-                units: "paragraph"
-            })
+            cv: "Mario Rossi is an accomplished and visionary CEO with expertise in the food and IT industries. He has a proven track record of successfully leading ventures and driving business growth. Mario excels in strategic thinking, innovation, and operational excellence. He has a passion for building high-performing teams and fostering collaborative environments. With a focus on delivering outstanding results and exceeding organizational goals, Mario brings a wealth of experience in business development, financial management, and customer-centricity. He is skilled in identifying investment opportunities and establishing strategic partnerships",
+            introduction: "Accomplished and visionary CEO with a proven track record in the food and IT industries. Demonstrated expertise in leading successful ventures and driving business growth. A strategic thinker with a passion for innovation, customer-centricity, and operational excellence. Excels in building high-performing teams and fostering collaborative environments. Committed to delivering outstanding results and exceeding organizational goals.",
             //images are generated with :https://facestudio.app/
 
         },
         {
             name: "Floria DeAngeli",
             role: "Manager",
-            cv: loremIpsum({
-                count: 3,
-                units: "paragraph"
-            }),
-            introduction:loremIpsum({
-                count: 2,
-                units: "paragraph"
-            })
+            cv:"Floria DeAngeli is a dedicated and detail-oriented project manager with a strong background in overseeing food, health, and IT projects. With a proven ability to coordinate diverse teams and manage budgets, Floria ensures the successful execution of projects while maintaining the highest standards of quality and compliance. She excels in multitasking and problem-solving, thriving in fast-paced environments. Floria's passion for innovation and commitment to delivering exceptional results make her a valuable asset in project management.",
+            introduction: "Dedicated and results-driven project manager with expertise in overseeing food, health, and IT projects. Highly skilled in coordinating diverse teams, managing budgets, and ensuring successful project execution. A detail-oriented professional with a passion for driving innovation and delivering exceptional results. Excels in multitasking and problem-solving in fast-paced environments. Committed to meeting project objectives while maintaining the highest standards of quality and compliance.",
         },
         {
             name: "Carolina Reaper",
             role: "Specialist",
-            cv: loremIpsum({
-                count: 3,
-                units: "paragraph"
-            }),
-            introduction:loremIpsum({
-                count: 2,
-                units: "paragraph"
-            })
+            cv: "Carolina Reaper is a highly skilled and experienced IT specialist with a strong passion for technology and a proven track record of delivering innovative solutions. With expertise in managing complex IT projects, optimizing system performance, and providing technical support, Carolina excels in problem-solving and collaborating with cross-functional teams. Stay updated with the latest industry trends, Carolina is dedicated to implementing IT solutions that drive business growth. With a Master in IT and a range of certifications, Carolina brings a comprehensive skill set in IT project management, system optimization, technical support, cybersecurity, and emerging technologies. Fluent in English and Italian, Carolina is an asset to any IT team.",
+            introduction:"Highly skilled and experienced IT specialist with a passion for technology and a proven track record of delivering innovative solutions. Adept at managing complex IT projects, optimizing system performance, and providing technical support. Strong problem-solving abilities combined with excellent communication skills to effectively collaborate with cross-functional teams. Committed to staying updated with the latest trends and advancements in the IT industry, Carolina is dedicated to delivering optimal IT solutions that drive business growth."
         },
         {
             name: "Andrea Pucci",
             role: "Specialist",
-            cv: loremIpsum({
-                count: 3,
-                units: "paragraph"
-            }),
-            introduction:loremIpsum({
-                count: 2,
-                units: "paragraph"
-            })
+            cv: "Andrea Pucci is a highly knowledgeable and dedicated health and food specialist with a strong background in the industry. With expertise in promoting healthy eating habits, nutrition education, and sustainable food practices, Andrea is passionate about improving overall wellness and advocating for sustainable food systems. He excels in program development, stakeholder engagement, and research and analysis to ensure the implementation of impactful initiatives. He is committed to delivering positive change and driving awareness in the health and food sectors.",
+            introduction:"Highly knowledgeable and dedicated health and food specialist with a strong background in the industry. Demonstrated expertise in promoting health-conscious practices and implementing sustainable food solutions. Skilled in developing and implementing strategies to improve nutritional value and overall wellness. A passionate advocate for healthy lifestyles and sustainable food systems. Committed to delivering impactful results and driving positive change."
         },
     ]
 
