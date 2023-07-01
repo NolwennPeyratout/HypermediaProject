@@ -2,7 +2,10 @@
     <footer>         
         <div class="links">
             <!-- HOME LINK TO BE MODIFIED WITH THE LOGO AND COMPANY NAME-->
-            <NuxtLink id="home-link" class="main-link" to="/"> Home Page </NuxtLink>
+            <NuxtLink id="home-link" class="main-link" to="/"> 
+                <img id="logo" src="/_nuxt/assets/img/Website_logo.png" alt="Logo of the website">
+                <div id="web-name"> WEBSITE NAME </div>
+            </NuxtLink>
             <div class="vertical-line"></div>
             <div class="sub-links">
                 <NuxtLink class="main-link" to="/team">Team</NuxtLink>
@@ -44,6 +47,11 @@
         padding: 20px;
         color: #fff;
     }
+    #logo{
+        width:100px;
+        height: 100px;
+        margin-right: 30px;
+    }
     .vertical-line{
         border-left: 1px solid #fff;
         margin-right: 50px;
@@ -55,6 +63,9 @@
         margin: 20px 0px 20px 0px;
     }
     #home-link{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         flex: 3;
         margin-left: 30px;
     }
@@ -76,5 +87,9 @@
         max-width: 120px;
         word-break: normal;
     }
+    .cls-1{fill:#6a878d;}
+    .cls-2{fill:#b0c1c4;}
+    .cls-3{fill:#222d28;}
+    .cls-4{fill:#44574d;}
     
 </style>

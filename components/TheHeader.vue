@@ -1,8 +1,11 @@
 <template>
     <header>
-        <h1>The Dog Shelter</h1>
+        <NuxtLink id="homepage-link" to="/" class="menu-link">
+                <img id="web-logo" src="/_nuxt/assets/img/Website_logo.png" alt="Logo of the website">
+                <!-- WEBSITE NAME TO BE MODIFIED -->
+                <div id="website-name"> WEBSITE NAME </div>
+        </NuxtLink>
         <nav>
-            <NuxtLink to="/" class="menu-link">HOME</NuxtLink>
             <NuxtLink to="/team" class="menu-link">Team</NuxtLink>
             <div class="dropdown">
                 <NuxtLink to="/areas" class="menu-link">Areas</NuxtLink>
@@ -36,6 +39,19 @@
         justify-content: space-between;
         align-items: center;
         font-size: 22px;
+    }
+
+    #homepage-link{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    #web-logo{
+        width: 90px;
+        height: 90px;
+        margin: 0px 20px 0px 20px;
     }
 
     h1 {
