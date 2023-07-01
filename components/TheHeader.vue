@@ -74,12 +74,14 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #252525;
+    /*background-color: #8da0a4;*/
     padding: 10px;
     width: 200px;
     border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     z-index: 999;
+    background-color: rgba(141, 160, 164, 0.9);
+    backdrop-filter: blur(2px);
 }
 
 .dropdown-content a {
@@ -99,16 +101,14 @@
     display: block;
 }
 
-.dropdown-content > a:first-child {
-    font-weight: bold;
-}
-
 .menu-link {
-    color: #FF7F00;
+    color: white;
+    text-decoration: none;
 }
 
 .sub-menu-link {
-    color: #FFBB33;
+    color: white;
+    font-weight: bold;
 }
 
 </style>
