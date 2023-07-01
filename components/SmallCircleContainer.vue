@@ -17,14 +17,14 @@
 <style>
 .small-circle-container {
   text-align: center;
-  margin: 40px;
+  margin: 20px;
 }
 
 .small-circle {
   position: relative;
   display: inline-block;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   overflow: hidden;
   transition: transform 0.3s;

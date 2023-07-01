@@ -79,7 +79,8 @@
 }
 
 .bubbles-container{
-    flex: 1;  
+    flex: 1; 
+    margin:0% 2%; 
 }
 
 #project-name{
