@@ -51,7 +51,7 @@ export default defineNuxtComponent({
         min-height: 100vh;
         display: flex;
         flex-direction: column;
-        background-color: lightgoldenrodyellow;
+        background-color: white;
         margin: 0;
     }
     ol {

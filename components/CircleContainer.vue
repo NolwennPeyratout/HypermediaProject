@@ -55,6 +55,8 @@
 }
 .title-center{
   text-align: center;
+  font-size: 22px;
+  color: white;
 }
 
 </style>  
