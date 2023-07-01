@@ -32,6 +32,7 @@
 
 .small-circle:hover {
   transform: scale(1.1);
+  box-shadow: 4px 4px 6px #3a4740;
 }
 
 .small-circle img {
@@ -47,8 +48,13 @@
 .circle-title{
   font-size: 18px;
   font-weight: bolder;
-  color: black;
+  color: white;
   text-align: center;
+}
+
+.circle-link:hover{
+  text-shadow: 4px 4px 6px #3a4740;
+  transform: scale(1.1);
 }
 
 .circle-link:active{  text-decoration: none;}

@@ -1,9 +1,5 @@
 <!--
     Page description for a single project.
-
-    TODO: 
-    - Project supervisor image (on the right)
-    - Project area image
 -->
 <template>
     <main>
@@ -65,7 +61,7 @@
 .project-presentation-page{
     display: flex;
     flex-direction: row;
-    background-color: rgba(245, 165, 39, 0.47);
+    background-color: #5B7470;
     border-radius: 2%;
 }
 
@@ -73,9 +69,11 @@
     flex: 4;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     margin-left: 30px;
     margin-right: 50px;
     font-size: 18px;
+    color: white;
 }
 
 .bubbles-container{
@@ -85,7 +83,9 @@
 
 #project-name{
     font-size: 3em;
-    margin-top: 30px;
+    color: white;
+    text-shadow: 3px 3px 5px #3a4740;
+    margin-top: 15px;
     margin-bottom: 10px;
 }
 

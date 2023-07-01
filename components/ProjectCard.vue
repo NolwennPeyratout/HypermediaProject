@@ -16,8 +16,13 @@
 </script>
 
 <style>
+    .project-card{
+        border-radius: 20px;
+    }
+    
     .project-card:hover{
         transform: scale(1.1);
+        box-shadow: 4px 4px 6px #3a4740;
         transition-duration: 100ms;
     }
     .img-container{
@@ -42,7 +47,8 @@
         display: flex;
         flex-flow: column;
         align-content: center;
-        border: 1px solid lightsalmon;
+        box-shadow: 2px 2px 4px #3a4740;
+        background-color: #b0bfc2;
         padding: 5px;
         border-radius: 20px;
         width: fit-content;

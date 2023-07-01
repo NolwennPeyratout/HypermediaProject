@@ -5,7 +5,7 @@
 <template>
     <main>
         <div id="pageTop">
-            <h1>Projects</h1>
+            <h1 id="page-title"> Projects </h1>
         </div>
         <div id="projects-container">
             <ProjectCard v-for = "project in projects" :title = "project.name" :link = "'/projects/' + project.name" :img-url="'/_nuxt/assets/img/projects/'+ project.name +'.jpg'"/>
@@ -24,6 +24,15 @@
 
 
 <style>
+    #page-title
+    {
+        font-weight: bolder;
+        color: #202622;
+        text-align: start;
+        font-size: 2.5em;
+        margin: 10px 0px 10px 0px;
+    }
+
    #projects-container
     {
         display: flex;
@@ -32,7 +41,10 @@
         justify-content: center;
         align-content: center;
         gap: 20px;
-        margin-bottom: 5px;
+        margin-bottom: 25px;
+        background-color: #8da0a4;
+        border-radius: 20px;
+        padding: 25px 10px 25px 10px;
     }
 
 </style>
