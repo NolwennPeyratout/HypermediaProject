@@ -15,7 +15,14 @@
     </div>
     
     <div id="project-container">
-      <CircleContainer v-for="project of data[1]" :link="'/projects/' + project.name" :title="project.name" :img-url="'/_nuxt/assets/img/projects/'+ project.name +'.jpg'" />
+      <ProjectCardExtended v-for="project of data[1]" 
+          :link="'/projects/' + project.name" 
+          :title="project.name" 
+          :img-url="'/_nuxt/assets/img/projects/'+ project.name +'.jpg'" 
+          :product="project.product_service"
+          :date="project.date"
+          :location="project.location" />
+          
     </div>
   </main>
 </template>
@@ -29,10 +36,10 @@
     export default defineNuxtComponent({
       name: 'Autoplay',
       components: {
-        Carousel,
-        Slide,
-        Pagination,
-      },
+    Carousel,
+    Slide,
+    Pagination,
+},
       async asyncData() {
         const route = useRoute()
         const data = []
@@ -86,11 +93,13 @@ main {
 #project-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: left;
+  width: 100%;
   gap: 40px;
   margin-top: 20px; 
+  margin-left: 25%;
 }
 
 .footer {
@@ -125,7 +134,7 @@ main {
 }
 
 .responsive-image {
-  max-width: 100%;
+  max-width: 120%;
   height: 400px;
   object-fit:contain;
   background-color: white;
