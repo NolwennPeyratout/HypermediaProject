@@ -23,10 +23,8 @@
                     <NuxtLink to="/projects/Health" class="sub-menu-link">Health Projects</NuxtLink>
                 </div>
             </div>
-            <NuxtLink to="/dogs" class="menu-link">DOGS</NuxtLink>
-            <NuxtLink to="/locations" class="menu-link">LOCATIONS</NuxtLink>
-            <NuxtLink to="/about" class="menu-link">ABOUT US</NuxtLink>
-            <NuxtLink to="/contact" class="menu-link">CONTACT US</NuxtLink>
+            <NuxtLink to="/about" class="menu-link">About us</NuxtLink>
+            <NuxtLink to="/contact" class="menu-link">Contact us</NuxtLink>
         </nav>
     </header>
 </template>
