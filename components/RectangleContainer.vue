@@ -58,10 +58,12 @@
   font-weight: bold;
   margin-block-start:0.2em;
   text-align: left;
+  color: #202622;
 }
 .title{
   margin-block-end: 0.1em;
   text-align: left;
+  color: #202622;
 }
 
 .link-rectangle{

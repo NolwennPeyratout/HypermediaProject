@@ -142,16 +142,18 @@
 
   #person-name span{
     font-weight: bolder;
-    font-size: 20pt;
+    font-size: 40px;
   }
 
   #person-name{
     margin-bottom: 0%;
+    color: #5B7074;
   }
 
   #person-role{
     margin-top: 0%;
     margin-bottom: 0%;
+    font-size: 25px;
   }
 
   #person-role span{

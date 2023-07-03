@@ -44,5 +44,10 @@ import CircleContainer from '~/components/CircleContainer.vue';
         width: 100%;
         margin-bottom: 5%;
     }
+    #top-team > h1{
+        color: #202622;
+        font-size: 40px;
+        margin-bottom: 1%;
+    }
 
 </style>
