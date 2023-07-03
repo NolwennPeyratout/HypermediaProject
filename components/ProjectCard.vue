@@ -1,11 +1,11 @@
 <template>
-    <div class="project-card">
-      <NuxtLink :to="link" class="link-box">
-        <div class="proj-card">
-            <div class="img-container">
+    <div class="project-card-1">
+      <NuxtLink :to="link" class="link-box-1">
+        <div class="proj-card-1">
+            <div class="img-container-1">
                 <img :src="imgUrl" alt="Immagine del progetto"/>
             </div>
-            <p class="card-title">{{ title }}</p>
+            <p class="card-title-1">{{ title }}</p>
         </div>
       </NuxtLink>
     </div>
@@ -16,16 +16,16 @@
 </script>
 
 <style>
-    .project-card{
+    .project-card-1{
         border-radius: 20%;
     }
     
-    .project-card:hover{
+    .project-card-1:hover{
         transform: scale(1.1);
         box-shadow: 4px 4px 6px #3a4740;
         transition-duration: 100ms;
     }
-    .img-container{
+    .img-container-1{
         display: flex;
         justify-content: center;
         padding: 2px;
@@ -33,14 +33,14 @@
         height: 200px;
     }
 
-    .img-container img{
+    .img-container-1 img{
         width: 100%;
         height: 100%;
         object-fit: cover;
         border-radius: 5%;
     }
 
-    .proj-card{
+    .proj-card-1{
         display: flex;
         flex-direction: column;
         align-content: center;
@@ -52,7 +52,7 @@
         height: fit-content;
     }
 
-    .card-title{
+    .card-title-1{
         font-size: 1.7em;
         margin: 0.5em 0em 0.5em 0em;
         font-weight: bolder;
@@ -60,7 +60,7 @@
         color: #3a4740;
     }
 
-    .link-box{
+    .link-box-1{
         text-decoration: none;
     }
     
