@@ -22,7 +22,7 @@
                 <NuxtLink class="link" to="/projects/IT">IT Projects</NuxtLink>
                 <NuxtLink class="link" to="/projects/Health">Health Projects</NuxtLink>
                 <!-- TO BE MODIFIED WHEN PAGE IS READY-->
-                <NuxtLink class="link" to="/projects/Health">Most Relevant Projects</NuxtLink>
+                <NuxtLink class="link" to="/projects/MostRelevant">Most Relevant Projects</NuxtLink>
             </div>
             <div class="sub-links">
                 <NuxtLink class="main-link" to="/about">About us</NuxtLink>

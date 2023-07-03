@@ -3,7 +3,7 @@
       <NuxtLink :to="link" class="link-box">
         <div class="proj-card">
             <div class="img-container">
-                <img class="img" :src="imgUrl" alt="Immagine del progetto"/>
+                <img :src="imgUrl" alt="Immagine del progetto"/>
             </div>
             <p class="card-title">{{ title }}</p>
         </div>
@@ -17,7 +17,7 @@
 
 <style>
     .project-card{
-        border-radius: 20px;
+        border-radius: 20%;
     }
     
     .project-card:hover{
@@ -28,24 +28,21 @@
     .img-container{
         display: flex;
         justify-content: center;
-        border-radius: 10px;
         padding: 2px;
         width: 250px;
         height: 200px;
     }
 
-    .img{
-        vertical-align: middle;
-        max-width: 100%;
-        max-height: 100%;
-        height: auto;
-        width: auto;
-        margin: auto;
+    .img-container img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5%;
     }
 
     .proj-card{
         display: flex;
-        flex-flow: column;
+        flex-direction: column;
         align-content: center;
         box-shadow: 2px 2px 4px #3a4740;
         background-color: #b0bfc2;
@@ -57,9 +54,10 @@
 
     .card-title{
         font-size: 1.7em;
+        margin: 0.5em 0em 0.5em 0em;
         font-weight: bolder;
         text-align: center;
-        color: black;
+        color: #3a4740;
     }
 
     .link-box{

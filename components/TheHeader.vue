@@ -21,6 +21,7 @@
                     <NuxtLink to="/projects/Food" class="sub-menu-link">Food Projects</NuxtLink>
                     <NuxtLink to="/projects/IT" class="sub-menu-link">IT Projects</NuxtLink>
                     <NuxtLink to="/projects/Health" class="sub-menu-link">Health Projects</NuxtLink>
+                    <NuxtLink to="/projects/MostRelevant" class="sub-menu-link">Most Relevant Projects</NuxtLink>
                 </div>
             </div>
             <NuxtLink to="/about" class="menu-link">About us</NuxtLink>
@@ -61,6 +62,7 @@
     nav {
         display: flex;
         gap: 20px;
+        margin-right: 2%;
     }
 
     .dropdown {
