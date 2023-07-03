@@ -8,7 +8,7 @@
             <h1 id="health-page-title">Health Projects</h1>
         </div>
         <div id="health-projects-container">
-            <ProjectCard v-for = "project in projects" :title = "project.name" :link = "'/projects/' + project.name" :img-url="'/_nuxt/assets/img/projects/'+ project.name +'.jpg'"/>
+            <ProjectCard v-for = "project in projects" :title = "project.name" :link = "'/projects/' + project.name" :img-url="'/_nuxt/assets/img/projects/'+ project.name +'1.jpg'"/>
         </div>
     </main>
 </template>

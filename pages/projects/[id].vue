@@ -26,10 +26,10 @@
         </div>
         
         <div class = "project-images">
-            <img class = "image" :src = "'/_nuxt/assets/img/projects/'+ data[0].name +'.jpg'"  />
-            <img class = "image" :src = "'/_nuxt/assets/img/projects/'+ data[0].name +'.jpg'"   />
-            <img class = "image" :src = "'/_nuxt/assets/img/projects/'+ data[0].name +'.jpg'"   />
-            <img class = "image" :src = "'/_nuxt/assets/img/projects/'+ data[0].name +'.jpg'"   />
+            <img class = "image" :src = "'/_nuxt/assets/img/projects/'+ data[0].name +'1.jpg'"  />
+            <img class = "image" :src = "'/_nuxt/assets/img/projects/'+ data[0].name +'2.jpg'"   />
+            <img class = "image" :src = "'/_nuxt/assets/img/projects/'+ data[0].name +'3.jpg'"   />
+            <img class = "image" :src = "'/_nuxt/assets/img/projects/'+ data[0].name +'4.jpg'"   />
         </div>
     </main>
 </template>
@@ -117,17 +117,20 @@
 
 .project-images{
     margin-top: 30px;
+    justify-content: center;
     display:flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
 }
 
 .image{
-    max-width: 500px;
-    max-height: 500px;
+    aspect-ratio: 16 / 9;
+    max-width: 600px;
+    max-height: 600px;
     width: auto;
     height: auto;
     margin: 10px;
+    box-shadow: 3px 3px 8px #3a4740;
 }
 
 .data-category{

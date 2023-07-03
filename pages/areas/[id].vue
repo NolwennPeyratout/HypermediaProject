@@ -18,11 +18,10 @@
       <ProjectCardExtended v-for="project of data[1]" 
           :link="'/projects/' + project.name" 
           :title="project.name" 
-          :img-url="'/_nuxt/assets/img/projects/'+ project.name +'.jpg'" 
+          :img-url="'/_nuxt/assets/img/projects/'+ project.name +'1.jpg'" 
           :product="project.product_service"
           :date="project.date"
           :location="project.location" />
-          
     </div>
   </main>
 </template>
