@@ -19,7 +19,7 @@
           <Carousel id="carousel-person" :autoplay="4000" :wrap-around="true" :items-to-show="1.5">
             <Slide v-for="project in data[1]" :key="project">
               <NuxtLink :to="'/projects/' + project.project_name" class="link-box">
-                <img :src="'/_nuxt/assets/img/projects/'+ project.project_name +'.jpg'" class="carousel__item_person" :class="{ 'responsive-image': true }"/>
+                <img :src="'/_nuxt/assets/img/projects/'+ project.project_name +'1.jpg'" class="carousel__item_person" :class="{ 'responsive-image': true }"/>
               </NuxtLink>
               </Slide>
             <template #addons>

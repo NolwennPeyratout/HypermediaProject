@@ -126,7 +126,7 @@ export default async (models) => {
             relevant:"true"
         },
         {
-            name: "The Next Hambuger",            //6th project (food)
+            name: "The Next Hamburger",            //6th project (food)
             presentation: "Redefining Meat with 3D Printing! This innovative project, based in Brussels, is pushing the boundaries of food technology by creating 3D-printed meat. FoodEvolution's cutting-edge approach combines sustainability, taste, and nutrition, revolutionizing the way we consume meat. With advanced 3D printing techniques, we are crafting delicious, plant-based alternatives that replicate the texture and flavor of traditional meat products. Join us on this exciting journey as we reshape the future of food, providing sustainable and mouthwatering options with The Next Hamburger by FoodEvolution. ",
             location: "Bruxelles, Belgium",
             date: "13/01/2017",
