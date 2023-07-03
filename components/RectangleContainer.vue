@@ -64,6 +64,8 @@
   margin-block-end: 0.1em;
   text-align: left;
   color: #202622;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .link-rectangle{

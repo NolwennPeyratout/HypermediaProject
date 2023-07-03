@@ -29,12 +29,55 @@ export default async (models) => {
             cv: "Andrea Pucci is a highly knowledgeable and dedicated health and food specialist with a strong background in the industry. With expertise in promoting healthy eating habits, nutrition education, and sustainable food practices, Andrea is passionate about improving overall wellness and advocating for sustainable food systems. He excels in program development, stakeholder engagement, and research and analysis to ensure the implementation of impactful initiatives. He is committed to delivering positive change and driving awareness in the health and food sectors.",
             introduction:"Highly knowledgeable and dedicated health and food specialist with a strong background in the industry. Demonstrated expertise in promoting health-conscious practices and implementing sustainable food solutions. Skilled in developing and implementing strategies to improve nutritional value and overall wellness. A passionate advocate for healthy lifestyles and sustainable food systems. Committed to delivering impactful results and driving positive change."
         },
+        {
+            name: "Sofia Rossi",
+            role: "Manager",
+            cv: "Sofia Rossi is an experienced manager specializing in food and health projects. With a strong background in strategic planning and team coordination, she has successfully led cross-functional teams to deliver innovative solutions in dynamic environments. Sofia's expertise includes project management, market analysis, product development, and budget management. She holds an MBA degree and a Bachelor's degree in Nutrition. Sofia is fluent in English and a native Italian speaker. Her track record of driving results and her passion for promoting well-being and sustainability make her a valuable asset to any organization in the food and health sectors.",
+            introduction: "Experienced manager specializing in leading projects in the food and health sectors. Demonstrated expertise in strategic planning, team coordination, and driving successful outcomes. Passionate about creating innovative solutions that promote well-being and sustainability. Proven track record of managing cross-functional teams and delivering results in dynamic environments.",
+
+        },
+        {
+            name: "Matteo Bianchi",
+            role: "Manager",
+            cv:"Matteo Bianchi is an experienced manager specializing in food projects. With a focus on strategic planning, cross-functional collaboration, and innovation, Matteo has a proven track record of delivering successful outcomes in the food industry. He excels in project management, product development, and market research, ensuring alignment with consumer preferences and market trends. Matteo's expertise also includes supply chain management, quality control, and team leadership. With a Bachelor's degree in Food Science and Technology, he brings a strong foundation of knowledge to his work. Fluent in English and a native Italian speaker, Matteo is well-equipped to drive results and foster collaborative relationships in the food sector.",
+            introduction: "Experienced manager with a strong focus on food projects. Demonstrated expertise in leading cross-functional teams, driving innovation, and delivering successful outcomes in the food industry. Passionate about creating culinary experiences that delight consumers and meet market demands. Proven track record of strategic planning, project management, and fostering collaborative relationships with stakeholders.",
+        },
+        {
+            name: "Isabella Moretti",
+            role: "Specialist",
+            cv: "Isabella Moretti is a highly skilled and dedicated health specialist with a passion for improving patient outcomes and promoting well-being. With extensive experience in the healthcare industry, Isabella excels in areas such as health promotion, disease prevention, and patient education. She is adept at developing and implementing effective strategies to address complex health issues. Isabella's background includes work as a health consultant, collaborating with organizations to design and deliver comprehensive health promotion programs. Additionally, her experience as a clinical research associate has provided her with valuable insights into data analysis and the development of new treatment options. With a Master's degree in Public Health and a Bachelor's degree in Nursing, Isabella is well-equipped to make a positive impact in the field of healthcare. Fluent in English and a native Italian speaker, she possesses excellent communication skills and is committed to providing compassionate care.",
+            introduction:"Highly skilled and dedicated health specialist with expertise in delivering exceptional healthcare solutions. Passionate about improving patient outcomes and promoting well-being. Extensive experience in the healthcare industry, specializing in areas such as disease prevention, health promotion, and patient education. Proven ability to develop and implement effective strategies that address complex health issues. Committed to providing compassionate care and fostering positive relationships with patients and healthcare professionals."
+        },
+        {
+            name: "Luca Russo",
+            role: "Specialist",
+            cv: "Luca Russo is a results-driven IT specialist with a strong focus on leveraging technology for innovation and business growth. With a proven track record in designing, implementing, and managing IT systems, Luca excels in problem-solving and collaboration. He has a keen eye for detail and is committed to staying updated with the latest industry trends and technologies. Luca\'s experience as an IT consultant includes providing tailored solutions to optimize client efficiency, implementing network infrastructure, and delivering technical support. As a systems administrator, he has successfully managed enterprise-level IT systems, ensuring smooth operations and data security. With a Bachelor\'s degree in Information Technology and certifications in networking, security, and Microsoft solutions, Luca brings a comprehensive skill set to drive continuous improvement. Fluent in English and a native Italian speaker, he possesses strong communication and collaboration abilities.",
+            introduction:"Results-driven IT specialist with a passion for leveraging technology to drive innovation and business growth. Proven expertise in designing, implementing, and managing IT systems and infrastructure. Strong problem-solving skills and a keen eye for detail. Exceptional ability to collaborate with cross-functional teams and deliver high-quality solutions. Committed to staying updated with the latest industry trends and technologies to drive continuous improvement."
+        },
+        {
+            name: "Valentina Romano",
+            role: "Specialist",
+            cv: "Valentina Romano is a passionate and dedicated food specialist with expertise in culinary arts and the food industry. With a proven track record in developing and executing innovative food concepts, Valentina brings creativity and a keen understanding of flavor profiles to her work. She excels in menu planning, ingredient sourcing, and kitchen management, ensuring exceptional culinary experiences for her clients. Valentina's experience as a chef and food product developer showcases her ability to combine global flavors with local ingredients while considering nutritional value and market feasibility. With a Bachelor's degree in Culinary Arts, she possesses a strong foundation in culinary techniques and a deep appreciation for quality ingredients. Fluent in English and a native Italian speaker, Valentina's excellent communication and organizational skills make her a valuable asset in the food industry.",
+            introduction:"Passionate and dedicated food specialist with expertise in culinary arts and food industry trends. Proven track record in developing and executing innovative food concepts and recipes. Strong knowledge of flavor profiles, nutrition, and food safety regulations. Skilled in menu planning, ingredient sourcing, and kitchen management. Committed to creating exceptional culinary experiences and promoting healthy eating habits."
+        },
+        {
+            name: "Giovanni Luca",
+            role: "Specialist",
+            cv: "Giovanni Luca is a dedicated and knowledgeable health specialist with a focus on improving individual and community well-being. With extensive experience in health promotion, disease prevention, and patient education, Giovanni excels in developing and implementing effective health programs and interventions. He is skilled in conducting individual assessments, delivering personalized recommendations, and advocating for patients' rights. Giovanni's strong interpersonal and communication skills enable him to build positive relationships with patients and healthcare professionals. With a Master's degree in Public Health and a Bachelor's degree in Health Science, he brings a comprehensive understanding of health principles and practices. Fluent in English and a native Italian speaker, Giovanni's commitment to staying updated with the latest research and best practices makes him a valuable asset in the field of health.",
+            introduction:"Dedicated and knowledgeable health specialist with a passion for improving individual and community well-being. Extensive experience in the healthcare field, specializing in health promotion, disease prevention, and patient education. Skilled in developing and implementing effective health programs and interventions. Excellent interpersonal and communication skills, fostering positive relationships with patients and healthcare professionals. Committed to staying updated with the latest research and best practices in the field of health."
+        },
     ]
 
     const person0 = await models.Person.create(personModel[0])
     const person1 = await models.Person.create(personModel[1])
     const person2 = await models.Person.create(personModel[2])
     const person3 = await models.Person.create(personModel[3])
+    const person4 = await models.Person.create(personModel[4])
+    const person5 = await models.Person.create(personModel[5])
+    const person6 = await models.Person.create(personModel[6])
+    const person7 = await models.Person.create(personModel[7])
+    const person8 = await models.Person.create(personModel[8])
+    const person9 = await models.Person.create(personModel[9])
 
     const projectModel = [
         {
@@ -233,31 +276,31 @@ export default async (models) => {
             project_name: project2.name
         },
         {
-            person_name: person1.name,
+            person_name: person3.name,
             project_name: project3.name
         },
         {
-            person_name: person2.name,
+            person_name: person1.name,
             project_name: project4.name
         },
         {
-            person_name: person0.name,
+            person_name: person5.name,
             project_name: project5.name
         },
         {
-            person_name: person3.name,
+            person_name: person1.name,
             project_name: project6.name
         },
         {
-            person_name: person1.name,
+            person_name: person9.name,
             project_name: project7.name
         },
         {
-            person_name: person1.name,
+            person_name: person7.name,
             project_name: project8.name
         },
         {
-            person_name: person0.name,
+            person_name: person8.name,
             project_name: project9.name
         },
         {
@@ -265,11 +308,11 @@ export default async (models) => {
             project_name: project10.name
         },
         {
-            person_name: person1.name,
+            person_name: person6.name,
             project_name: project11.name
         },
         {
-            person_name: person3.name,
+            person_name: person4.name,
             project_name: project12.name
         },
         {
@@ -277,7 +320,7 @@ export default async (models) => {
             project_name: project13.name
         },
         {
-            person_name: person3.name,
+            person_name: person4.name,
             project_name: project14.name
         }
     ]
