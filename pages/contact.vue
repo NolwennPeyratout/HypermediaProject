@@ -30,29 +30,35 @@
         <div class="contact-info">
           <h2 class="info-title">Contact Information</h2>
           <ul>
-            <li>E-mail: mail@shelter.it</li>
-            <li>Tel: 053684864351</li>
+            <li>Piazza Leonardo da Vinci, 22</li>
+            <li>E-mail: hyper@media.it</li>
+            <li>Tel: +39 347 256609</li>
+            <li>We are open from Monday - Friday </li>
+            <li>9:00 AM - 6:00 PM</li>
           </ul>
         </div>
       </div>
     </main>
+
+    
   </template>
   
   <style>
-
     .contact-container {
       display: flex;
       justify-content: space-between;
-      width: 800px;
+      width: 80%;
       padding: 20px;
       background-color: transparent;
+      margin-left: 0px;
     }
   
     .form-wrapper {
-      flex: 2;
+      flex: 1.5;
       border: 2px solid #333;
-      border-radius: 5px;
+      border-radius: 20px;
       background-color: #5b7470;
+      margin-right: 50px;
     }
   
     form {
@@ -105,6 +111,8 @@
       font-size: 16px;
       border-radius: 5px;
       cursor: pointer;
+      margin-left: 30px;
+      margin-bottom: 30px;
     }
   
     .contact-info {
@@ -123,9 +131,13 @@
       margin: 0;
     }
   
-    li {
+    .contact-info li {
+      display: list-item;
       margin-bottom: 10px;
     }
 
-    
+    .contact-info li:after{
+        content: none;
+    }
+
   </style>
