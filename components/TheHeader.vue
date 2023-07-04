@@ -2,8 +2,8 @@
     <header>
         <NuxtLink id="homepage-link" to="/" class="menu-link">
                 <img id="web-logo" src="/_nuxt/assets/img/Website_logo.png" alt="Logo of the website">
-                <!-- WEBSITE NAME TO BE MODIFIED -->
-                <div id="website-name"> WEBSITE NAME </div>
+                
+                <div id="website-name"> TechWell Ventures</div>
         </NuxtLink>
         <nav>
             <NuxtLink to="/team" class="menu-link">Team</NuxtLink>

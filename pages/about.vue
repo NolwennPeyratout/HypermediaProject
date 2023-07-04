@@ -13,27 +13,27 @@
                     <div id="story-title"><h1>STORY</h1></div>
                     <div id="story-text">
                         <p>
-                            Gaia Investments, led by CEO Mario Rossi, is a Milan-based venture capital firm renowned for its focus on innovation
-                             and sustainability. Since its establishment in 2012, Gaia Investments has expanded its reach worldwide, with satellite
+                            TechWell Ventures, led by CEO Mario Rossi, is a Milan-based venture capital firm renowned for its focus on innovation
+                             and sustainability. Since its establishment in 2012, TechWell Ventures has expanded its reach worldwide, with satellite
                               offices in prominent cities like New York, London, and Singapore.
                         </p>
                         <p>
-                            With a diversified investment strategy, Gaia Investments actively invests in projects within the health, food, and IT sectors.
+                            With a diversified investment strategy, TechWell Ventures actively invests in projects within the health, food, and IT sectors.
                              In the health sector, the firm supports biotech startups, medical device innovations, and digital health platforms,
                               aiming to enhance patient outcomes and promote accessible healthcare through data analytics and artificial intelligence.
                         </p>
                         <p>
-                            In the food industry, Gaia Investments seeks out companies championing sustainable farming practices, plant-based alternatives,
+                            In the food industry, TechWell Ventures seeks out companies championing sustainable farming practices, plant-based alternatives,
                              and innovative food technologies. By investing in startups that reduce food waste and create healthier, eco-friendly food
-                              options, Gaia Investments plays a vital role in shaping the future of sustainable food production.
+                              options, TechWell Ventures plays a vital role in shaping the future of sustainable food production.
                         </p>
                         <p>
-                            Gaia Investments also allocates resources to the IT sector, investing in startups at the forefront of disruptive technologies.
+                            TechWell Ventures also allocates resources to the IT sector, investing in startups at the forefront of disruptive technologies.
                              By supporting projects in artificial intelligence, machine learning, blockchain, and other cutting-edge innovations, Gaia
                               Investments contributes to reshaping industries, improving lives, and driving technological progress on a global scale.
                         </p>
                         <p>
-                            Beyond financial backing, Gaia Investments fosters long-term partnerships by offering mentorship and guidance to its portfolio
+                            Beyond financial backing, TechWell Ventures fosters long-term partnerships by offering mentorship and guidance to its portfolio
                              companies. This comprehensive support ensures the success and enduring impact of the projects they invest in.
                         </p>
                     </div>
