@@ -63,6 +63,7 @@
     flex-direction: row;
     background-color: #5B7470;
     border-radius: 2%;
+    margin-top: 60px;
 }
 
 .project-info-container{

@@ -35,7 +35,7 @@ import CircleContainer from '~/components/CircleContainer.vue';
         gap: 20px;
         background-color: #5b7470;
         margin-bottom: 60px;
-        margin-top: 20px;
+        margin-top: 60px;
         width: 95%;
     }
 

@@ -65,10 +65,7 @@ main {
 }
 
 
-.breadcrumb{
-  position: relative;
-  z-index: 3;
-}
+
 
 
 #carousel-container {

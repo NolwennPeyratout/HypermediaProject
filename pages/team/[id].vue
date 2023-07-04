@@ -113,6 +113,7 @@
     gap: 15px;
     margin-bottom: 6%;
     background-color: #B0BFC2;
+    margin-top: 60px;
   }
 
   .data-person {
