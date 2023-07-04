@@ -61,17 +61,15 @@ main {
   flex-direction: column;
   align-items: center;
   margin: 0;
-  overflow-x: visible;
+  overflow-x: hidden;
 }
-
-
-
-
 
 #carousel-container {
   position: relative;
-  top: -50px;
-  width: 100%;
+  top: -200px;
+  left: -15px;
+  width: 120%;
+  height: 100%;
   margin: 0;
   align-content: center;
   z-index: 2;
@@ -81,8 +79,8 @@ main {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  width: 120%;
-  margin: 0;
+  width: 100%;
+  margin-bottom: 0px;
   align-content: center;
 }
 
@@ -94,7 +92,7 @@ main {
   align-content: left;
   width: 100%;
   gap: 40px;
-  margin-top: 20px; 
+  margin-top: -70px; 
   margin-left: 25%;
   margin-bottom: 30px;
 }
@@ -107,7 +105,7 @@ main {
 }
 
 .carousel__item {
-  min-height: 150px; 
+  height: 550px; 
   width: 100%;  
   background-color: var(--vc-clr-primary);
   color: var(--vc-clr-white);
@@ -131,8 +129,8 @@ main {
 }
 
 .responsive-image {
-  max-width: 120%;
-  height: 400px;
+  width: 100%;
+  max-height: 100%;
   object-fit:contain;
   background-color: white;
 }
