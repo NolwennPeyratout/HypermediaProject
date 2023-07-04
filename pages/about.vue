@@ -7,13 +7,34 @@
         This also allows to have a much cleaner and easy to read 'code'
     -->
     <main>
-        <TextImage description = "This is a description for the Dog's Shelter. The best place where dogs can rest. " />
-        <TextImage description = "This is the second description for the Dog's Shelter. The best place where dogs can rest." :isReverse = true /> 
+        <div id="main-content-about">
+            <div id="about-left">
+
+            </div> 
+            <div id="about-right">
+            </div>
+    </div>
     </main>
 </template>
 
 <style>
     main {
         width: 100%;
+    }
+    #main-content-about{
+        display:flex;
+        width:100%;
+    }
+    #about-right{
+        background-image: url('../assets/img/company.png');
+        background-size: cover;
+        background-position: center;
+        width:70%;
+        height: 1000px;
+    }
+    #about-left{
+        background-color: #3A4740;
+        width:30%;
+        height: 1000px;
     }
 </style>
