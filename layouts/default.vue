@@ -5,7 +5,6 @@
 <template>
     <div class = 'page'>
         <TheHeader />
-        <div id="content-page">
         <ol class="breadcrumb">
           <li class="item">
             <nuxt-link :to="'/'" class="breadcrumb-item">
@@ -19,7 +18,6 @@
           </li>
         </ol>
         <slot />
-      </div>
         <TheFooter />
     </div>
 </template>
@@ -57,6 +55,10 @@ export default defineNuxtComponent({
     ol {
       list-style: none;
       padding-left: 0%;
+      z-index: 15;
+      position: absolute;
+      top: 130px;
+      left: 2.5%;
     }
     li {
       display: inline;
@@ -80,9 +82,5 @@ export default defineNuxtComponent({
     .breadcrumb-item:hover{
       text-decoration: underline;
     }
-    #content-page{
-      width:92%;
-      margin-left: auto;
-      margin-right: auto;
-    }
+
 </style>

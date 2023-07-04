@@ -127,6 +127,7 @@
         display: flex;
         flex-direction: row;
         gap: 5%;
+        margin-top: 60px;
     }
 
     #left-intro{

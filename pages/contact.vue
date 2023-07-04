@@ -51,6 +51,7 @@
       padding: 20px;
       background-color: transparent;
       margin-left: 0px;
+      margin-top: 60px;
     }
   
     .form-wrapper {
