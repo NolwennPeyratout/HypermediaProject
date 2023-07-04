@@ -4,7 +4,7 @@
             <!-- HOME LINK TO BE MODIFIED WITH THE LOGO AND COMPANY NAME-->
             <NuxtLink id="home-link" class="main-link" to="/"> 
                 <img id="logo" src="/_nuxt/assets/img/Website_logo.png" alt="Logo of the website">
-                <div id="web-name"> WEBSITE NAME </div>
+                <div id="web-name"> TechWell Ventures </div>
             </NuxtLink>
             <div class="vertical-line"></div>
             <div class="sub-links">
@@ -27,8 +27,8 @@
             <div class="sub-links">
                 <NuxtLink class="main-link" to="/about">About us</NuxtLink>
                 <!-- NEXT THREE TO BE MODIFIED WHEN ABOUT PAGE IS READY-->
-                <NuxtLink class="link" to="/about">Team page</NuxtLink>
-                <NuxtLink class="link" to="/about">Areas page</NuxtLink>
+                <NuxtLink class="link" to="/team">Team page</NuxtLink>
+                <NuxtLink class="link" to="/areas">Areas page</NuxtLink>
                 <NuxtLink class="link" to="/about">Relevant projects</NuxtLink>
             </div>
             <div class="sub-links">

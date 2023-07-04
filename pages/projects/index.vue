@@ -44,7 +44,8 @@
         margin-bottom: 25px;
         background-color: #8da0a4;
         border-radius: 20px;
-        padding: 25px 10px 25px 10px;
+        padding: 2% 0% 2% 0%;
+        margin: 0% 2% 2% 2%;
     }
     #pageTop{
         margin-top: 60px;
