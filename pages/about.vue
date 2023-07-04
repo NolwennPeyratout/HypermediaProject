@@ -12,7 +12,30 @@
                 <div id="story">
                     <div id="story-title"><h1>STORY</h1></div>
                     <div id="story-text">
-                        hfds dfjnkjg kfjdgjf jgj dnjk gnkjsn jkg  skjg dngjkf nds kjg fnkgnd  lgnkj dngk jsn gjkl
+                        <p>
+                            Gaia Investments, led by CEO Mario Rossi, is a Milan-based venture capital firm renowned for its focus on innovation
+                             and sustainability. Since its establishment in 2012, Gaia Investments has expanded its reach worldwide, with satellite
+                              offices in prominent cities like New York, London, and Singapore.
+                        </p>
+                        <p>
+                            With a diversified investment strategy, Gaia Investments actively invests in projects within the health, food, and IT sectors.
+                             In the health sector, the firm supports biotech startups, medical device innovations, and digital health platforms,
+                              aiming to enhance patient outcomes and promote accessible healthcare through data analytics and artificial intelligence.
+                        </p>
+                        <p>
+                            In the food industry, Gaia Investments seeks out companies championing sustainable farming practices, plant-based alternatives,
+                             and innovative food technologies. By investing in startups that reduce food waste and create healthier, eco-friendly food
+                              options, Gaia Investments plays a vital role in shaping the future of sustainable food production.
+                        </p>
+                        <p>
+                            Gaia Investments also allocates resources to the IT sector, investing in startups at the forefront of disruptive technologies.
+                             By supporting projects in artificial intelligence, machine learning, blockchain, and other cutting-edge innovations, Gaia
+                              Investments contributes to reshaping industries, improving lives, and driving technological progress on a global scale.
+                        </p>
+                        <p>
+                            Beyond financial backing, Gaia Investments fosters long-term partnerships by offering mentorship and guidance to its portfolio
+                             companies. This comprehensive support ensures the success and enduring impact of the projects they invest in.
+                        </p>
                     </div>
                 </div>
                 <div id="follow">
@@ -42,34 +65,34 @@
         background-image: url('../assets/img/company.png');
         background-size: cover;
         background-position: center;
-        width:70%;
-        height: 1060px;
+        width:65%;
+        min-height: 1060px;
     }
     #about-left{
         background-color: #3A4740;
-        width:30%;
-        height: 1000px;
+        width:35%;
+        min-height: 1000px;
         padding-top: 60px;
     }
     #story{
         display: flex;
         width: 80%;
-        margin: 20% 10%;
+        margin: 15% 7%;
         gap:8%;
     }
     #story-title{
-        width: 40%;
+        width: 35%;
     }
     #story-text{
-        width:60%;
+        width:65%;
         color:white;
     }
     #follow{
         width: 90%;
-        margin-left: 10%;
+        margin-left: 7%;
         display:flex;
         gap:8%;
-        margin-top: 400px;
+        margin-top: 20%;
     }
     #icones{
         display: flex;
@@ -80,5 +103,10 @@
         width:50px;
         height: 50px;
 
+    }
+    #story-text p {
+        margin-top: 0%;
+        margin-bottom: 9%;
+        text-align: justify;
     }
 </style>
