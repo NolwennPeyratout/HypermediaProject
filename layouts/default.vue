@@ -52,7 +52,7 @@ export default defineNuxtComponent({
         background-color: white;
         margin: 0;
     }
-    ol {
+    .breadcrumb {
       list-style: none;
       padding-left: 0%;
       z-index: 15;

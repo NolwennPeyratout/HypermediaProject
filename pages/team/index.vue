@@ -44,6 +44,7 @@ import CircleContainer from '~/components/CircleContainer.vue';
         width: 100%;
         margin-bottom: 5%;
         margin-top: 60px;
+        margin-left: 5%;
     }
     #top-team > h1{
         color: #202622;
