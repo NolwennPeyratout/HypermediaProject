@@ -81,7 +81,7 @@ export default defineNuxtComponent({
       text-decoration: underline;
     }
     #content-page{
-      width:95%;
+      width:92%;
       margin-left: auto;
       margin-right: auto;
     }
