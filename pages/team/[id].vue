@@ -14,12 +14,28 @@
             <p id="cv">{{ data[0].cv }}</p>
           </div>
         </div>
-        
-        <div id="carousel-container-person">
-          <Carousel id="carousel-person" :autoplay="4000" :wrap-around="true" :items-to-show="1.5">
-            <Slide v-for="project in data[1]" :key="project">
+
+        <div v-if="data[1].length == 1" id="container-project">
+          <NuxtLink :to="'/projects/' + data[1][0].project_name" class="link-box">
+                <div id="textImage-project">
+                  <p>Project: {{ data[1][0].project_name }}</p>
+                </div>
+                <div id="image-project">
+                  <img :src="'/_nuxt/assets/img/projects/'+ data[1][0].project_name +'1.jpg'" />
+                </div>
+              </NuxtLink>
+        </div>
+ 
+        <div v-else id="carousel-container-person">
+          <Carousel id="carousel-person" :autoplay="4000" :wrap-around="true" :items-to-show="1.8">
+            <Slide v-for="project in data[1]" :key="project" id="slide-carousel">
               <NuxtLink :to="'/projects/' + project.project_name" class="link-box">
-                <img :src="'/_nuxt/assets/img/projects/'+ project.project_name +'1.jpg'" class="carousel__item_person" :class="{ 'responsive-image': true }"/>
+                <div id="textImage-project">
+                  <p>Project: {{project.project_name }}</p>
+                </div>
+                <div id="image-project">
+                  <img :src="'/_nuxt/assets/img/projects/'+ project.project_name +'1.jpg'" class="carousel__item_person" :class="{ 'responsive-image': true }"/>
+                </div>
               </NuxtLink>
               </Slide>
             <template #addons>
@@ -29,7 +45,7 @@
         </div>
 
         <div id="container-area-person">
-            <CircleContainer v-for = "area in data[2]" :title = "area.area_name" :link = "'/areas/' + area.area_name" :img-url="'/_nuxt/assets/img/' + area.area_name + '_area/' + area.area_name + '1.jpg'" />
+            <CircleContainer id="CircleContainer-person-area" v-for = "area in data[2]" :title = "area.area_name" :link = "'/areas/' + area.area_name" :img-url="'/_nuxt/assets/img/' + area.area_name + '_area/' + area.area_name + '1.jpg'" />
         </div>
     </main>
 </template>
@@ -89,13 +105,14 @@
     }
 
   #info-group {
-    width: 100%;
+    width: 65%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 15px;
     margin-bottom: 6%;
+    background-color: #B0BFC2;
   }
 
   .data-person {
@@ -114,25 +131,27 @@
   }
 
   .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
   }
 
   #img-person{
-  max-width: 300px;
-  margin-left: auto;
-  margin-right: auto;
+   width: 100%;
   }
 
   #container-img-person{
     margin-left: auto;
     margin-right: auto;
+    display:inherit;
+    width: inherit;
   }
 
   #presentation-person{
-    width:49%;
+    color:white;
+    padding: 3%;
+    width: 70%;
   }
 
   #person-cv{
@@ -147,7 +166,6 @@
 
   #person-name{
     margin-bottom: 0%;
-    color: #5B7074;
   }
 
   #person-role{
@@ -163,7 +181,7 @@
   #cv{
     text-align: justify;
     margin-top: 0%;
-    width: 50%;
+    margin-bottom: 0%;
   }
 
   #carousel-container-person {
@@ -172,6 +190,7 @@
   align-content: center;
   z-index: 2;
   margin-bottom: 6%;
+  height: 400px;
 }
 
 #carousel-person {
@@ -181,6 +200,7 @@
   width: 100%;
   margin: 0;
   align-content: center;
+  height:400px;
 }
 
 #project-container {
@@ -233,5 +253,70 @@
   gap: 20px;
 }
 
+#container-area-person > .circle-container .title-center{
+  color: black;
+}
+
+#container-project img{
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 300px
+}
+
+#container-project:hover{
+        transform: scale(1.1);
+        box-shadow: 4px 4px 6px #3a4740;
+        transition-duration: 100ms;
+}
+
+#container-project{
+  position: relative;
+  height: 300px;
+  width: 50%;
+}
+
+#textImage-project, #image-project{
+  position:absolute;
+  left:0;
+  z-index: 11;
+}
+
+#image-project{
+  top:0;
+  z-index:10;
+  width: 100%;
+}
+
+#textImage-project{
+  width: 100%;
+  bottom: 0%
+}
+
+#textImage-project p{
+  text-align: center;
+  background-color:rgba(91,116,112,0.5);
+  color: white;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2% 0%;
+  margin:0%;
+  width:100%;
+  font-size: large;
+}
+
+.carousel__viewport{
+  height:400px;
+}
+
+.carousel__slide{
+  height: 400px;
+}
+
+#textImage-project p:hover{
+  background-color:rgba(91,116,112,0.8);
+}
 
 </style>

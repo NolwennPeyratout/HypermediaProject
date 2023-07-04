@@ -39,7 +39,7 @@ import CircleContainer from '~/components/CircleContainer.vue';
         width: 95%;
     }
 
-     .circle-container .title-center {
+    .circle-container .title-center {
         color: white;
         font-size: 26px;
         font-weight: bold;
