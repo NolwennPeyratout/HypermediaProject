@@ -99,6 +99,7 @@ main {
   gap: 40px;
   margin-top: 20px; 
   margin-left: 25%;
+  margin-bottom: 30px;
 }
 
 .footer {

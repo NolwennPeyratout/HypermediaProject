@@ -86,10 +86,5 @@
         color: #fff;
         max-width: 120px;
         word-break: normal;
-    }
-    .cls-1{fill:#6a878d;}
-    .cls-2{fill:#b0c1c4;}
-    .cls-3{fill:#222d28;}
-    .cls-4{fill:#44574d;}
-    
+    }    
 </style>
