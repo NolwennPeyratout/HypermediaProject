@@ -8,7 +8,8 @@
             <h1 id="health-page-title">Health Projects</h1>
         </div>
         <div id="health-projects-container">
-            <ProjectCard v-for = "project in projects" :title = "project.name" :link = "'/projects/' + project.name" :img-url="'/_nuxt/assets/img/projects/'+ project.name +'1.jpg'"/>
+            <ProjectCard v-for = "project in projects" :title = "project.name" :link = "'/projects/' + project.name" 
+            :img-url="'/_nuxt/assets/img/projects/'+ project.name +'1.jpg'" class="card-element"/>
         </div>
     </main>
 </template>
@@ -29,8 +30,8 @@
         font-weight: bolder;
         color: #202622;
         text-align: start;
-        font-size: 2.5em;
-        margin: 10px 0px 10px 0px;
+        font-size: 3vw;
+        margin: 1% 0% 2% 0%;
     }
 
     #health-projects-container
@@ -40,14 +41,15 @@
         flex-direction: row;
         justify-content: center;
         align-content: center;
-        gap: 20px;
-        margin-bottom: 25px;
+        gap: 1.5%;
         background-color: #8da0a4;
-        border-radius: 20px;
-        padding: 25px 20px 25px 20px;
+        border-radius: 1.5vw;
+        padding: 2% 0% 0.5% 0%;
+        margin-bottom: 2%;
+        width: 95%;
     }
     .health-pageTop{
-        margin-top: 60px;
+        margin-top: 4%;
     }
 
 </style>

@@ -138,7 +138,6 @@
         async asyncData() {
             const data = []
             data[0] = await $fetch(useRuntimeConfig().baseURL + '/server/team')
-            data[1] = await $fetch(useRuntimeConfig().baseURL + '/server/projects')
         return { data }
         },
     })
