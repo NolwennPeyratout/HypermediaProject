@@ -8,8 +8,12 @@ import CircleContainer from '~/components/CircleContainer.vue';
 <template>
     <main>
         <div id="top-team">
-            <h1>Our team members</h1>
-            <b>Team introduction: </b> our team is made up of {{persons.length }} people.
+            <h1 id="team-title">Our team members</h1>
+            <p id="team-page-description"> On this page we take pride in our exceptional team of professionals. 
+                With a team of highly skilled and dedicated individuals, we bring a wealth of knowledge and expertise 
+                to the table. Our diverse team of ten professionals is equipped with the experience and preparation 
+                needed to navigate the dynamic world of venture capital. Join us as we introduce the talented individuals
+                 who drive our firm's success and support innovative entrepreneurs on their journey to greatness.</p>
         </div>
         
         <div id="rectangle-container">
@@ -43,6 +47,14 @@ import CircleContainer from '~/components/CircleContainer.vue';
     #top-team{
         width: 100%;
         margin: 4% 0% 1% 5%;
+    }
+    #team-page-description
+    {
+        color: #202622;
+        text-align: justify;
+        margin-top: 1%;
+        margin-block-end: 0%;
+        margin-inline-end: 5%;
     }
     #top-team > h1{
         color: #202622;

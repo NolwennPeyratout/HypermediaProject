@@ -102,7 +102,7 @@ export default async (models) => {
             name: "Lidar Scanner",                //3rd project (health)
             presentation: "Advancing Hospital Imaging! This state-of-the-art scanner, developed by the innovative startup Ecolab, is set to revolutionize hospital imaging technology. The Lidar Scanner combines cutting-edge lidar technology with precision and accuracy to deliver detailed and real-time imaging results. Designed with the needs of healthcare professionals in mind, this advanced scanner promises enhanced diagnostics and improved patient care. Join us on this transformative journey as Ecolab redefines hospital imaging with the Lidar Scanner. Stay tuned for a new era of medical imaging excellence! ",
             location: "Bologna, Italy",
-            date: "03/12/2007",
+            date: "03/12/2017",
             start_up: "Ecolab s.r.l.",
             product_service: "Hospital scanners",
             relevant:"true"
@@ -165,7 +165,7 @@ export default async (models) => {
             name: "Nutella",            //10th project (food)
             presentation: "This delicious food project aims to produce the iconic hazelnut cream loved by millions worldwide. With a passion for quality and flavor, Ferrero S.p.a combines the finest ingredients to create the perfect blend of creamy chocolate and rich hazelnuts. Join us on this delectable journey as we spread happiness and indulge in the irresistible taste of Nutella. Stay tuned for a world of sweetness and delight with the Nutella Project by Ferrero S.p.a!",
             location: "Alba, Italy",
-            date: "02/02/2011",
+            date: "02/02/2013",
             start_up: "Ferrero S.p.a.",
             product_service: "hazelnut cream",
             relevant:"true"
@@ -192,7 +192,7 @@ export default async (models) => {
             name: "Doriano Crackers",            //13th project (food)
             presentation:"This exciting food project aims to produce delectable and crispy crackers for your snacking pleasure. With a focus on quality ingredients and exceptional taste, Doriano Crackers will elevate your snack time experience. Join us on this flavorful journey as we combine tradition with innovation to create the perfect balance of crunch and flavor. Stay tuned for a delightful assortment of Doriano Crackers that will tantalize your taste buds and leave you craving for more.",
             location: "Treviso, Italy",
-            date: "21/03/2013",
+            date: "21/03/2014",
             start_up: "Doria",
             product_service: "Crackers",
             relevant:"true"
@@ -210,7 +210,7 @@ export default async (models) => {
             name: "Paracetamolo",            //15th project (health)
             presentation:"This vital health project aims to produce an analgesic syrup that provides effective relief from pain and fever. With a commitment to quality and patient well-being, Paracetamolo is designed to deliver fast and reliable relief for individuals of all ages. Join us on this journey to promote better health and well-being as we strive to improve the lives of those in need. Stay tuned for the launch of Paracetamolo, the trusted analgesic syrup by Angelini Industries.",
             location: "Rome, Italy",
-            date: "17/05/2014",
+            date: "17/05/2016",
             start_up: "Angelini Industries",
             product_service: "Analgesic syrup",
             relevant:"true"

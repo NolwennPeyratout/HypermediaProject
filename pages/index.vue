@@ -8,25 +8,27 @@
             <main>
                 <div id="home-intro-container">
                     <div id="left-intro">
-                        <!-- CONTENT TO BE CHANGED-->
                         <h1 class="big-text">Find the best funds for your career</h1>
-                        <p class="little-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Fuga dicta exercitationem sint aut minima voluptatibus vero fugit quaerat, expedita, 
-                            veniam id iusto ab magni itaque quos molestias deserunt harum! Laborum.</p>
+                        <p class="little-text">Welcome to our venture capital firm, where innovation meets opportunity. 
+                            We are dedicated to fueling the growth of groundbreaking ventures across diverse industries. 
+                            With a proven track record of success, our firm empowers visionary entrepreneurs with the 
+                            resources and expertise they need to bring their ideas to fruition. Explore our portfolio 
+                            of transformative projects, meet our talented team, and discover how we can collaborate to d
+                            rive your venture to new heights. Join us on this exciting journey of innovation and investment, 
+                            where possibilities become realities and dreams turn into extraordinary achievements.</p>
                         <NuxtLink to="/about" id="intro-link">
                             <div id="home-about-link">ABOUT US</div></NuxtLink>
                     </div>
                     <div class="right-intro">
-                        <!-- IMAGE TO BE CHANGED-->
-                        <img src="/_nuxt/assets/img/home-image.jpg" alt="home page image">
+                        <img src="/_nuxt/assets/img/home1.jpg" alt="home page image">
                     </div>
                 </div>
                 <div id="home-areas-container">
                     <h1 class="big-text" id="areas-head">Our areas</h1>
-                    <!-- CONTENT TO BE CHANGED-->
-                    <p class="little-text" id="areas-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Fuga dicta exercitationem sint aut minima voluptatibus vero fugit quaerat, expedita, 
-                            veniam id iusto ab magni itaque quos molestias deserunt harum! Laborum.</p>
+                    <p class="little-text" id="areas-text">Our working areas are meticulously chosen to support, nurture, 
+                    and propel groundbreaking ideas and ambitious entrepreneurs forward. We understand that innovation knows no bounds, and we are committed to providing a diverse 
+                    range of resources and expertise to fuel the success of ventures across industries. Whether you're an entrepreneur seeking funding or a startup enthusiast looking 
+                    to explore the frontiers of innovation, our working areas offer a wealth of opportunities.</p>
                     <div id="areas-circles-container">
                         <HomeCircleComponent class="areas-circles" :title = "'Food'" :link = "'/areas/Food'" :img-url="'/_nuxt/assets/img/Food_area/Food1.jpg'" />
                         <HomeCircleComponent class="areas-circles" :title = "'IT'" :link = "'/areas/IT'" :img-url="'/_nuxt/assets/img/IT_area/IT1.jpg'" />
@@ -36,31 +38,31 @@
                 <div id="absolute-container">
                     <div id="home-awards-container">
                         <div class="left-awards">
-                        <!-- IMAGE TO BE CHANGED-->
-                        <img src="/_nuxt/assets/img/home-image.jpg" alt="home page image">
+                        <img src="/_nuxt/assets/img/home2.jpg" alt="home page image">
                         </div>
                         <div id="right-awards">
-                            <!-- CONTENT TO BE CHANGED-->
                             <h1 class="big-text" id="awards-big-text">Awarded as 2023 Best Venture Capital Firm</h1>
-                            <p class="little-text" id="awards-little-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Fuga dicta exercitationem sint aut minima voluptatibus vero fugit quaerat, expedita, 
-                                veniam id iusto ab magni itaque quos molestias deserunt harum! Laborum.</p>
+                            <p class="little-text" id="awards-little-text">Founded in 2000 with a vision to fuel innovation, our company 
+                            embarked on a remarkable journey. Through years of unwavering dedication, hard work, and a commitment to 
+                            excellence, our team forged a path of success. Together, we navigated the ever-evolving landscape, 
+                            identifying groundbreaking startups and providing them with the resources they needed to thrive. It 
+                            is with immense pride that in 2023, we stand as the recipient of the Best Venture Capital Firm award—a 
+                            testament to the power of teamwork and the relentless pursuit of greatness.</p>
                         </div>
-                        <!-- CONTENT TO BE CHANGED-->
                         <div id="awards-square">
                             <div class="square-el">
-                                <h1 id="square-head">2022</h1>
-                                <p id="square-body">Best firm</p>
+                                <h1 id="square-head">2021</h1>
+                                <p id="square-body">Best Health project award winner</p>
                             </div>
                             <div class="vert-line"></div>
                             <div class="square-el">
                                 <h1 id="square-head">#1</h1>
-                                <p id="square-body">Best firm</p>
+                                <p id="square-body">IT Venture Capital in the world</p>
                             </div>
                             <div class="vert-line"></div>
                             <div class="square-el">
-                                <h1 id="square-head">World</h1>
-                                <p id="square-body">Best firm</p>
+                                <h1 id="square-head">Italy</h1>
+                                <p id="square-body">#2 Venture capital specialized in food</p>
                             </div>
 
                         </div>
@@ -69,10 +71,9 @@
                 <div id="home-team-container">
                     <div id="left-team">
                         <h1 id="team-head">Our Team</h1>
-                        <!-- CONTENT TO BE CHANGED-->
-                        <p id="team-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            Repellat quia esse ipsum perferendis recusandae porro, modi eveniet, eligendi voluptate tenetur 
-                            dolores minus a veritatis architecto ea qui quo aliquam non!</p>
+                        <p id="team-body">With a team of highly skilled and dedicated individuals, we bring a wealth of knowledge and expertise 
+                        to the table. Our diverse team of ten professionals is equipped with the experience and preparation 
+                        needed to navigate the dynamic world of venture capital.</p>
                         <NuxtLink to="/team" id="team-button">
                             <div id="team-link">SEE MORE</div></NuxtLink>
                     </div>
@@ -91,9 +92,10 @@
                 </div>
                 <div id="home-projects-container">
                     <h1 id="projects-head">Our Projects</h1>
-                    <!-- CONTENT TO BE CHANGED-->
-                    <p id="projects-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero dolor architecto eum saepe aut accusantium 
-                    praesentium exercitationem, eos, nesciunt maiores adipisci a unde recusandae dolores iste laboriosam sunt, alias assumenda?</p>
+                    <p id="projects-body"> We proudly work at extraordinary projects that have captured the world's attention 
+                    and redefined their respective industries. From revolutionary advancements in food technology to 
+                    groundbreaking healthcare solutions and cutting-edge IT innovations, these projects exemplify our
+                    commitment to nurturing visionary entrepreneurs and driving transformative change on a global scale.</p>
                     <div id="home-projects-grid">
                         <ProjectCard class="home-card" :title = "'Apple Visor'" :link = "'/projects/Apple Visor'" :img-url="'/_nuxt/assets/img/projects/Apple Visor1.jpg'"/>
                         <ProjectCard class="home-card" :title = "'Nutella'" :link = "'/projects/Nutella'" :img-url="'/_nuxt/assets/img/projects/Nutella1.jpg'"/>
@@ -113,9 +115,10 @@
                         <img class="social-icon" src="/_nuxt/assets/img/facebook-logo.png" alt="Facebook logo">
                         <img class="social-icon" src="/_nuxt/assets/img/linkedin-logo.png" alt="LinkedIn logo">
                     </div>
-                    <!-- CONTENT TO BE CHANGED-->
-                    <p id="prefooter-body2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla perferendis eaque expedita veritatis enim labore consequatur.
-                     Velit error earum debitis, neque, commodi harum eius similique maiores praesentium, saepe eligendi repellendus!</p>
+                    <p id="prefooter-body2">The confidentiality of our website's content is of utmost importance to us,
+                    and we strictly uphold the privacy of all information shared. Additionally, all rights for 
+                    project and company names displayed on our website are reserved, ensuring their protection and 
+                    preventing unauthorized use.</p>
                 </div>
             </main>
         </div>
@@ -165,7 +168,7 @@
         display: flex;
         flex-direction: column;
         margin-left: 5%;
-        gap: 5%;
+        gap: 2%;
         align-items: center;
     }
 
@@ -187,6 +190,7 @@
         height: 8%;
         align-items: center;
         justify-content: center;
+        margin-top: 3.5%;
     }
     #home-about-link{
         text-decoration: none;
@@ -268,7 +272,7 @@
         flex: 1;
         display: flex;
         flex-direction: column;
-        gap: 5%;
+        gap: 2%;
         margin: 5% 5% 5% 5%;
         align-items: center;
     }
@@ -285,7 +289,7 @@
         position: absolute;
         display: flex;
         flex-direction: row;
-        background-color: rgba(176, 191, 194, 0.5);
+        background-color: rgba(176, 191, 194, 0.8);
         width: 55%;
         height: 30%;
         top: 65%;
@@ -303,13 +307,15 @@
     
     #square-head{
         color: #252525;
-        font-size: 4em;
+        font-size: 4vw;
     }
     #square-body{
         color: #252525;
         margin-block-start: 0px;
         margin-block-end: 0px;
-        font-size: 2em;
+        margin-inline-start: 0.6vw;
+        margin-inline-end: 0.6vw;
+        font-size: 2vw;
     }
 
     .vert-line{
@@ -477,7 +483,11 @@
         color: white;
         margin: 0px 0px 0px 0px;
         text-align: center;
-        max-width: 50%;
+        max-width: 60%;
+    }
+
+    #prefooter-body2{
+        font-size: 0.8vw;
     }
 
     #social-icons{
