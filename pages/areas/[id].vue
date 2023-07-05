@@ -15,13 +15,26 @@
     </div>
     
     <div id="project-container">
-      <ProjectCardExtended v-for="project of data[1]" 
-          :link="'/projects/' + project.name" 
-          :title="project.name" 
-          :img-url="'/_nuxt/assets/img/projects/'+ project.name +'1.jpg'" 
+      <template v-for="(project, index) in data[1]">
+        <ProjectCardExtended v-if="index % 2 === 0"
+          :link="'/projects/' + project.name"
+          :title="project.name"
+          :img-url="'/_nuxt/assets/img/projects/' + project.name + '1.jpg'"
           :product="project.product_service"
           :date="project.date"
-          :location="project.location" />
+          :location="project.location"
+          style="margin-left: -100px;"
+        />
+        <ProjectCardExtendedCustom v-else
+          :link="'/projects/' + project.name"
+          :title="project.name"
+          :img-url="'/_nuxt/assets/img/projects/' + project.name + '1.jpg'"
+          :product="project.product_service"
+          :date="project.date"
+          :location="project.location"
+          style="margin-left: 400px;"
+        />
+      </template>
     </div>
   </main>
 </template>
@@ -66,7 +79,7 @@ main {
 
 #carousel-container {
   position: relative;
-  top: -65px;
+  top: -6px;
   left: -15px;
   width: 120%;
   height: 100%;
@@ -92,7 +105,7 @@ main {
   align-content: left;
   width: 100%;
   gap: 40px;
-  margin-top: -70px; 
+  margin-top: 30px; 
   margin-left: 25%;
   margin-bottom: 30px;
 }
