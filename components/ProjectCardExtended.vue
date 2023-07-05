@@ -8,10 +8,12 @@
           </div>
           <div class="text-container">
             <div class="project-details">
-              <p class="card-title">{{ title }}</p>
-              <p class="card-product">Product / Service: {{ product }}</p>
-              <p class="card-date">Date: {{ date }}</p>
-              <p class="card-location">Location: {{ location }}</p>
+              <div class="contact-info">
+                <p class="card-title">{{ title }}</p>
+                <p class="card-product">Product / Service: {{ product }}</p>
+                <p class="card-date">Date: {{ date }}</p>
+                <p class="card-location">Location: {{ location }}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -25,38 +27,39 @@
 </script>
 
 <style>
+
   .proj-card {
     display: flex;
     align-items: center;
-    background-color: #f7f7f7;
+    background-color: #c0cdd0;
     padding: 10px;
-    border-radius: 8px;
-    width: 75%;
+    width: fit-content;
     height: fit-content;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 2% 2% 50% 2%;
   }
 
   .grid-container {
     display: grid;
     grid-template-columns: auto 250px;
     grid-column-gap: 20px;
+    background-color: transparent;
   }
 
   .text-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    background-color: transparent;
   }
 
   .project-card {
+    display: fit-content;
     border-radius: 20px;
     width: 100%;
   }
 
   .project-card:hover {
     transform: scale(1.02);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   .img-container {
@@ -82,6 +85,7 @@
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 20px;
+    background-color: transparent;
   }
 
   .card-title {
@@ -90,11 +94,27 @@
     margin: 0;
     font-weight: bold;
     color: #3a4740;
+    background-color: transparent;
+  }
+
+  .contact-info {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: transparent;
+  }
+
+  .card-product,
+  .card-date,
+  .card-location {
+    margin: 0;
+    color: #3a4740;
   }
 
   .link-box {
     text-decoration: none;
   }
 </style>
+
 
 

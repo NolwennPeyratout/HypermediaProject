@@ -1,7 +1,7 @@
 <template>
     <div class="project-card">
       <NuxtLink :to="link" class="link-box">
-        <div class="proj-card">
+        <div class="proj-card_custom">
           <div class="grid-container">
             <div class="text-container">
               <div class="project-details">
@@ -26,29 +26,30 @@
 </script>
 
 <style>
-  .proj-card {
+  .proj-card_custom {
     display: flex;
     align-items: center;
-    background-color: #f7f7f7;
+    background-color: #c0cdd0;
     padding: 10px;
-    border-radius: 8px;
-    width: 75%;
+    width: fit-content;
     height: fit-content;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 20% 2% 2% 20%;
   }
 
   .grid-container {
     display: grid;
     grid-template-columns: auto 250px;
     grid-column-gap: 20px;
+    background-color: transparent;
   }
 
   .text-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    background-color: transparent;
   }
+  
 
   .project-card {
     border-radius: 20px;
@@ -57,7 +58,6 @@
 
   .project-card:hover {
     transform: scale(1.02);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   .img-container {
@@ -83,6 +83,7 @@
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 20px;
+    background-color: transparent;
   }
 
   .card-title {
@@ -91,6 +92,7 @@
     margin: 0;
     font-weight: bold;
     color: #3a4740;
+    background-color: transparent;
   }
 
   .link-box {

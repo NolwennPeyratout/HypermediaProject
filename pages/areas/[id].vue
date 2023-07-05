@@ -2,11 +2,11 @@
     Page description for a single area.
 -->
 <template>
-  <main> 
-    <div id="carousel-container">
-      <Carousel id="carousel" :autoplay="2000" :wrap-around="true" :items-to-show="1.1">
+  <main class="custom-background_area"> 
+    <div id="carousel-container_area">
+      <Carousel id="carousel_area" :autoplay="2000" :wrap-around="true" :items-to-show="1.1">
         <Slide v-for="slide in 3" :key="slide">
-          <img :src="'/_nuxt/assets/img/' + data[0].name + '_area/' + data[0].name + slide + '.jpg'" class="carousel__item" :class="{ 'responsive-image': true }"/>
+          <img :src="'/_nuxt/assets/img/' + data[0].name + '_area/' + data[0].name + slide + '.jpg'" class="carousel__item_area" :class="{ 'responsive-image': true }"/>
         </Slide>
         <template #addons>
           <Pagination />
@@ -14,7 +14,7 @@
       </Carousel>
     </div>
     
-    <div id="project-container">
+    <div id="project-container_area">
       <template v-for="(project, index) in data[1]">
         <ProjectCardExtended v-if="index % 2 === 0"
           :link="'/projects/' + project.name"
@@ -62,10 +62,18 @@
           data
         }
       },
+      beforeDestroy() {
+        const mainElement = document.querySelector('main');
+        mainElement.classList.remove('custom-background_area');
+  },
   })
 </script>
 
 <style>
+
+.custom-background_area {
+  background-color: #8da0a4;
+} 
 
 main {
   width: 100%;
@@ -77,10 +85,10 @@ main {
   overflow-x: hidden;
 }
 
-#carousel-container {
+#carousel-container_area {
   position: relative;
-  top: -6px;
-  left: -15px;
+  /*top: -6px;
+  left: -15px;*/
   width: 120%;
   height: 100%;
   margin: 0;
@@ -88,7 +96,7 @@ main {
   z-index: 2;
 }
 
-#carousel {
+#carousel_area {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -97,7 +105,7 @@ main {
   align-content: center;
 }
 
-#project-container {
+#project-container_area {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -117,8 +125,8 @@ main {
   width: 100%;
 }
 
-.carousel__item {
-  height: 550px; 
+.carousel__item_area {
+  height: 430px; 
   width: 100%;  
   background-color: var(--vc-clr-primary);
   color: var(--vc-clr-white);
@@ -128,10 +136,6 @@ main {
   justify-content: center;
   align-items: center;
   pointer-events: none;
-}
-
-.carousel__slide {
-  padding: 0px;
 }
 
 .carousel__prev,
