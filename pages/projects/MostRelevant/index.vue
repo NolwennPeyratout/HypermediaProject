@@ -5,7 +5,8 @@
 <template>
     <main>
         <div class="mrp-pageTop">
-            <h1 id="mrp-page-title">Most Relevant Projects</h1>
+            <h1 id="mrp-page-title">Our most relevant projects</h1>
+            <p id="mrp-page-description">On this page we proudly display the most relevant projects addressed by our company in the past years</p>
         </div>
         <div id="mr-projects-container">
             <ProjectCard class="card-element" :title = "'Apple Visor'" :link = "'/projects/Apple Visor'" :img-url="'/_nuxt/assets/img/projects/Apple Visor1.jpg'"/>
@@ -24,7 +25,6 @@
         color: #202622;
         text-align: start;
         font-size: 3vw;
-        margin: 1% 0% 2% 0%;
     }
 
     #mr-projects-container
@@ -42,7 +42,17 @@
         width: 95%;
     }
     .mrp-pageTop{
-        margin-top: 4%;
+        width: 100%;
+        margin: 4% 0% 1% 5%;
+    }
+
+    #mrp-page-description
+    {
+        color: #202622;
+        text-align: justify;
+        margin-top: 1%;
+        margin-block-end: 0%;
+        margin-inline-end: 5%;
     }
 
 </style>

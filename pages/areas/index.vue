@@ -5,6 +5,13 @@ import CircleContainer from '~/components/CircleContainer.vue';
 -->
 <template>
     <main>
+        <div id="AreaTop">
+            <h1 id="area-page-title"> Our working areas</h1>
+            <p id="areas-page-description">On this page, you will find a comprehensive overview of our various working areas, each meticulously designed to support, nurture, 
+                and propel groundbreaking ideas and ambitious entrepreneurs forward. We understand that innovation knows no bounds, and we are committed to providing a diverse 
+                range of resources and expertise to fuel the success of ventures across industries. Whether you're an entrepreneur seeking funding or a startup enthusiast looking 
+                to explore the frontiers of innovation, our working areas offer a wealth of opportunities.</p>
+        </div>
         <div id="areas-container">
             <CircleContainer id="circle-container" v-for = "area in areas" :title = "area.name" :link = "'/areas/' + area.name" 
             :img-url="'/_nuxt/assets/img/' + area.name + '_area/' + area.name + '1.jpg'" />
@@ -25,7 +32,26 @@ import CircleContainer from '~/components/CircleContainer.vue';
 </script>
 
 <style>
-   #areas-container
+    #AreaTop
+    {
+        width: 100%;
+        margin: 4% 0% 1% 5%;
+    }
+    #area-page-title{
+        font-weight: bolder;
+        color: #202622;
+        text-align: start;
+        font-size: 3vw;
+    }
+    #areas-page-description
+    {
+        color: #202622;
+        text-align: justify;
+        margin-top: 1%;
+        margin-block-end: 0%;
+        margin-inline-end: 5%;
+    }
+    #areas-container
     {
         display: flex;
         flex-wrap: wrap;
@@ -34,8 +60,7 @@ import CircleContainer from '~/components/CircleContainer.vue';
         align-content: center;
         gap: 20px;
         background-color: #5b7470;
-        margin-bottom: 60px;
-        margin-top: 60px;
+        margin-bottom: 2%;
         width: 95%;
     }
 

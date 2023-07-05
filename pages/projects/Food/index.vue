@@ -6,6 +6,11 @@
     <main>
         <div class="food-pageTop">
             <h1 id="food-page-title">Food Projects</h1>
+            <p id="foodproj-page-description">On this page we present our portfolio of impactful food sector projects. 
+                Discover the importance of these ventures as they cater to diverse palates and lifestyles. From 
+                nutritious snacks for both kids and adults to innovative vegan products and revolutionary advancements 
+                in alternative meat, these projects embody our commitment to reshaping the way we eat. Join us in exploring 
+                these transformative initiatives that contribute to a sustainable and inclusive food future.</p>
         </div>
         <div id="food-projects-container">
             <ProjectCard v-for = "project in projects" :title = "project.name" :link = "'/projects/' + project.name" 
@@ -31,7 +36,15 @@
         color: #202622;
         text-align: start;
         font-size: 3vw;
-        margin: 1% 0% 2% 0%;
+    }
+
+    #foodproj-page-description
+    {
+        color: #202622;
+        text-align: justify;
+        margin-top: 1%;
+        margin-block-end: 0%;
+        margin-inline-end: 5%;
     }
 
     #food-projects-container
@@ -49,7 +62,8 @@
         width: 95%;
     }
     .food-pageTop{
-        margin-top: 4%;
+        width: 100%;
+        margin: 4% 0% 1% 5%;
     }
 
 </style>

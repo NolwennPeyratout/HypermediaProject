@@ -6,6 +6,11 @@
     <main>
         <div class="health-pageTop">
             <h1 id="health-page-title">Health Projects</h1>
+            <p id="healthproj-page-description">On this page we showcase our impactful projects in the Health sector. 
+                Explore the significance of these ventures as they make a profound difference in society's well-being. 
+                From breakthrough cancer treatments to innovative glucose detectors and life-saving 3D-printed heart 
+                valves, these projects embody our commitment to advancing healthcare. Join us in discovering these 
+                transformative initiatives that are revolutionizing medical technology and improving lives around the world.</p>
         </div>
         <div id="health-projects-container">
             <ProjectCard v-for = "project in projects" :title = "project.name" :link = "'/projects/' + project.name" 
@@ -31,7 +36,15 @@
         color: #202622;
         text-align: start;
         font-size: 3vw;
-        margin: 1% 0% 2% 0%;
+    }
+
+    #healthproj-page-description
+    {
+        color: #202622;
+        text-align: justify;
+        margin-top: 1%;
+        margin-block-end: 0%;
+        margin-inline-end: 5%;
     }
 
     #health-projects-container
@@ -49,7 +62,8 @@
         width: 95%;
     }
     .health-pageTop{
-        margin-top: 4%;
+        width: 100%;
+        margin: 4% 0% 1% 5%;
     }
 
 </style>

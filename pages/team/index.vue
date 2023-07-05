@@ -8,8 +8,8 @@ import CircleContainer from '~/components/CircleContainer.vue';
 <template>
     <main>
         <div id="top-team">
-            <h1>Our team</h1>
-            <b>Team introduction: </b> our team is made up of {{persons.length }}.
+            <h1>Our team members</h1>
+            <b>Team introduction: </b> our team is made up of {{persons.length }} people.
         </div>
         
         <div id="rectangle-container">
@@ -42,9 +42,7 @@ import CircleContainer from '~/components/CircleContainer.vue';
     }
     #top-team{
         width: 100%;
-        margin-bottom: 5%;
-        margin-top: 60px;
-        margin-left: 5%;
+        margin: 4% 0% 1% 5%;
     }
     #top-team > h1{
         color: #202622;

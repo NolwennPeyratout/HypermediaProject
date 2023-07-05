@@ -62,8 +62,9 @@
     display: flex;
     flex-direction: row;
     background-color: #5B7470;
-    border-radius: 2%;
-    margin-top: 60px;
+    border-radius: 1.5vw;
+    margin-top: 4%;
+    width: 95%;
 }
 
 .project-info-container{
@@ -122,6 +123,7 @@
     display:flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    width: 95%;
 }
 
 .image{
