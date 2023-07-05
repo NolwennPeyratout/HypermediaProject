@@ -4,6 +4,7 @@ import CircleContainer from '~/components/CircleContainer.vue';
     All Area Pages
 -->
 <template>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <main>
         <div id="AreaTop">
             <h1 id="area-page-title"> Our working areas</h1>

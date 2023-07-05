@@ -2,6 +2,8 @@
     Page description for a single area.
 -->
 <template>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <main class="custom-background_area"> 
     <div id="carousel-container_area">
       <Carousel id="carousel_area" :autoplay="2000" :wrap-around="true" :items-to-show="1.1">
