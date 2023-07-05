@@ -18,6 +18,8 @@
             <ProjectCard v-for = "project in projects" :title = "project.name" :link = "'/projects/' + project.name" 
             :img-url="'/_nuxt/assets/img/projects/'+ project.name +'1.jpg'" class="card-element"/>
         </div>
+        <NuxtLink to="/projects/MostRelevant" id="mostRelevant-button">
+            <div id="mostRelevant-link">MOST RELEVANT PROJECTS</div></NuxtLink>
     </main>
 </template>
 
@@ -61,16 +63,36 @@
         background-color: #8da0a4;
         border-radius: 1.5vw;
         padding: 2% 0% 0.5% 0%;
-        margin-bottom: 2%;
         width: 95%;
     }
 
     .card-element{
         margin-bottom: 1.5%;
     }
+
     #pageTop{
         width: 100%;
         margin: 4% 0% 1% 5%;
+    }
+
+    #mostRelevant-button{
+        display: flex;
+        background-color: #3A4740;
+        text-decoration: none;
+        border-radius: 0.5vw;
+        justify-content: center;
+        align-items: center;
+        width: 25vw;
+        height: 2vw;
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
+
+    #mostRelevant-link{
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-size: 1.5vw;
     }
 
 </style>

@@ -1,11 +1,15 @@
 <template>
     <footer>         
         <div class="links">
-            <!-- HOME LINK TO BE MODIFIED WITH THE LOGO AND COMPANY NAME-->
-            <NuxtLink id="home-link" class="main-link" to="/"> 
-                <img id="logo" src="/_nuxt/assets/img/Website_logo.png" alt="Logo of the website">
-                <div id="web-name"> TechWell Ventures </div>
-            </NuxtLink>
+            <div id="left-footer">
+                <NuxtLink id="home-link" class="main-link" to="/"> 
+                    <img id="logo" src="/_nuxt/assets/img/CompanyLogoFooter.png" alt="Logo of the website">
+                </NuxtLink>
+                <p class="footer-info">Office address: Piazza Leonardo da Vinci, 22</p>
+                <p class="footer-info">E-mail: hyper@media.it</p>
+                <p class="footer-info">Tel: +39 347 256609</p>
+                <p class="footer-info" id="copyright">Copyright © 2023 Hypermedia. All Rights Reserved</p>
+            </div>
             <div class="vertical-line"></div>
             <div class="sub-links">
                 <NuxtLink class="main-link" to="/team">Team</NuxtLink>
@@ -21,12 +25,10 @@
                 <NuxtLink class="link" to="/projects/Food">Food Projects</NuxtLink>
                 <NuxtLink class="link" to="/projects/IT">IT Projects</NuxtLink>
                 <NuxtLink class="link" to="/projects/Health">Health Projects</NuxtLink>
-                <!-- TO BE MODIFIED WHEN PAGE IS READY-->
                 <NuxtLink class="link" to="/projects/MostRelevant">Most Relevant Projects</NuxtLink>
             </div>
             <div class="sub-links">
                 <NuxtLink class="main-link" to="/about">About us</NuxtLink>
-                <!-- NEXT THREE TO BE MODIFIED WHEN ABOUT PAGE IS READY-->
                 <NuxtLink class="link" to="/team">Team page</NuxtLink>
                 <NuxtLink class="link" to="/areas">Areas page</NuxtLink>
                 <NuxtLink class="link" to="/about">Relevant projects</NuxtLink>
@@ -43,48 +45,58 @@
         background-color: #202622;
         text-align: start;
         margin-top: auto;
-        border-top: 15px solid #3A4740;
-        padding: 20px;
+        border-top: 1vw solid #3A4740;
+        padding: 1.5vw;
         color: #fff;
     }
     #logo{
-        width:100px;
-        height: 100px;
-        margin-right: 30px;
+        height: 5vw;
     }
     .vertical-line{
-        border-left: 1px solid #fff;
-        margin-right: 50px;
+        border-left: 0.1vw solid #fff;
+        margin-right: 3.2vw;
+        margin-top: 1.3%;
     }
     .links{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin: 20px 0px 20px 0px;
+        margin: 0% 0% 1.3% 0%;
+    }
+    #left-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1vw;
+        flex: 3;
+    }
+    .footer-info{
+        margin: 0% 0% 0% 2.5vw;
+        font-size: 1vw;
+    }
+    #copyright{
+        font-size: 0.6vw;
     }
     #home-link{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex: 3;
-        margin-left: 30px;
+        margin-left: 2%;
     }
     .sub-links{
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 1vw;
+        margin-top: 1.3%;
         flex: 1
     }
     .main-link{
         text-decoration: none;
         color: #fff;
         font-weight: bolder;
-        font-size: 20px;
+        font-size: 1.3vw;
     }
     .link{
         text-decoration: none;
         color: #fff;
-        max-width: 120px;
+        max-width: 9vw;
         word-break: normal;
     }    
 </style>
