@@ -1,9 +1,7 @@
 <template>
     <header>
         <NuxtLink id="homepage-link" to="/" class="menu-link">
-                <img id="web-logo" src="/_nuxt/assets/img/Website_logo.png" alt="Logo of the website">
-                
-                <div id="website-name"> TechWell Ventures</div>
+                <img id="web-logo" src="/_nuxt/assets/img/CompanyLogoHeader.png" alt="Logo of the website">
         </NuxtLink>
         <nav>
             <NuxtLink to="/team" class="menu-link">Team</NuxtLink>
@@ -33,11 +31,11 @@
 <style>
     header {
         background-color: #252525;
-        padding: 20px;
+        padding: 1.3vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 22px;
+        font-size: 1.5vw;
     }
 
     #homepage-link{
@@ -48,20 +46,19 @@
     }
 
     #web-logo{
-        width: 90px;
-        height: 90px;
-        margin: 0px 20px 0px 20px;
+        height: 6vw;
+        margin: 0vw 1.3vw 0vw 1.3vw;
     }
 
     h1 {
-        font-size: 28px;
+        font-size: 2vw;
         color: #fff;
         margin: 0;
     }
 
     nav {
         display: flex;
-        gap: 20px;
+        gap: 1.3vw;
         margin-right: 2%;
     }
 
@@ -75,20 +72,20 @@
     top: 100%;
     left: 0;
     /*background-color: #8da0a4;*/
-    padding: 10px;
-    width: 200px;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 0.6vw;
+    width: 13vw;
+    border-radius: 0.2vw;
+    box-shadow: 0 0.13vw 0.3vw rgba(0, 0, 0, 0.3);
     z-index: 999;
     background-color: rgba(141, 160, 164, 0.9);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(0.13vw);
 }
 
 .dropdown-content a {
     display: block;
     color: #fff;
-    font-size: 20px;
-    padding: 5px 10px;
+    font-size: 1.3vw;
+    padding: 0.3vw 0.65vw;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
