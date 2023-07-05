@@ -1,5 +1,8 @@
 <template>
     <main>
+      <div id="contacts-pageTop">
+            <h1 id="contacts-page-title"> Contact us </h1>
+        </div>
       <div class="contact-container">
         <div class="form-wrapper">
           <form>
@@ -44,14 +47,26 @@
   </template>
   
   <style>
+    #contacts-pageTop{
+        width: 100%;
+        margin: 4% 0% 1% 5%;
+    }
+
+    #contacts-page-title
+    {
+        font-weight: bolder;
+        color: #202622;
+        text-align: start;
+        font-size: 3vw;
+    }
+
     .contact-container {
       display: flex;
       justify-content: space-between;
       width: 80%;
-      padding: 20px;
+      margin-bottom: 2%;
       background-color: transparent;
-      margin-left: 0px;
-      margin-top: 60px;
+      margin-left: 10%;
     }
   
     .form-wrapper {
