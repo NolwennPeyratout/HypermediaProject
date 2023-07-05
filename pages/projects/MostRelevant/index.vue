@@ -3,7 +3,9 @@
     All Project Page
 -->
 <template>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <main>
+
         <div class="mrp-pageTop">
             <h1 id="mrp-page-title">Our most relevant projects</h1>
             <p id="mrp-page-description">On this page we proudly display the most relevant projects addressed by our company in the past years</p>

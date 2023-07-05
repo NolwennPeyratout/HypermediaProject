@@ -3,7 +3,9 @@
     All Project Page
 -->
 <template>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <main>
+
         <div class="food-pageTop">
             <h1 id="food-page-title">Food Projects</h1>
             <p id="foodproj-page-description">On this page we present our portfolio of impactful food sector projects. 

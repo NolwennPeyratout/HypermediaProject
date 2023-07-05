@@ -3,7 +3,9 @@
     All Project Page
 -->
 <template>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <main>
+
         <div class="health-pageTop">
             <h1 id="health-page-title">Health Projects</h1>
             <p id="healthproj-page-description">On this page we showcase our impactful projects in the Health sector. 

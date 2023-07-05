@@ -2,6 +2,8 @@
     Page description for a single person.
 -->
 <template>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <main>
         <div id = "info-group">
           <div id="container-img-person">

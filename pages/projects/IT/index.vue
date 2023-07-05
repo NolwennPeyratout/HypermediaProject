@@ -3,7 +3,9 @@
     All Project Page
 -->
 <template>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <main>
+
         <div class="IT-pageTop">
             <h1 id="IT-page-title">IT Projects</h1>
             <p id="ITproj-page-description">On this page we proudly present our portfolio of impactful IT sector projects. 

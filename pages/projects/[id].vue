@@ -2,6 +2,8 @@
     Page description for a single project.
 -->
 <template>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <main>
         <div class = "project-presentation-page">
           <div class = "project-info-container">
