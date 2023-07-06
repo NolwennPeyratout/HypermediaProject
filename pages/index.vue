@@ -152,10 +152,13 @@
 </script>
 
 <style>
+    .page{
+        font-family: 'Inter', sans-serif;
+    }
     #home-content-page{
       width:100%;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin-left: 0;
+      margin-right: 0;
     }
     #home-intro-container{
         background-color: #252525;
@@ -176,18 +179,19 @@
 
     .big-text{
         color: white;
-        font-size: 4.5em;
+        font-size: 4.5vw;
         font-weight: bold;
     }
     .little-text{
         color: white;
-        font-size: 1em;
+        text-align: justify;
+        font-size: 1vw;
     }
     #intro-link{
         display: flex;
         background-color: #3A4740;
         text-decoration: none;
-        border-radius: 10px;
+        border-radius: 0.7vw;
         width: 30%;
         height: 8%;
         align-items: center;
@@ -197,7 +201,7 @@
     #home-about-link{
         text-decoration: none;
         color: white;
-        font-size: 1.5em;
+        font-size: 1.5vw;
     }
     .right-intro{
         flex: 1;
@@ -296,7 +300,7 @@
         height: 30%;
         top: 65%;
         right: 5%;
-        box-shadow: 2px 2px 4px #252525;
+        box-shadow: 0.13vw 0.13vw 0.26vw #252525;
     }
      .square-el{
         display: flex;
@@ -313,15 +317,15 @@
     }
     #square-body{
         color: #252525;
-        margin-block-start: 0px;
-        margin-block-end: 0px;
+        margin-block-start: 1vw;
+        margin-block-end: 0;
         margin-inline-start: 0.6vw;
         margin-inline-end: 0.6vw;
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
 
     .vert-line{
-        border-left: 2px solid #252525;
+        border-left: 0.13vw solid #252525;
         margin: 5% 0% 5% 0%;
     }
     
@@ -344,13 +348,13 @@
 
     #team-head{
         color: white;
-        font-size: 4.5em;
+        font-size: 4.5vw;
         font-weight: bold;
     }
 
     #team-body{
         color: white;
-        font-size: 1em;
+        font-size: 1vw;
         text-align: justify;
     }
 
@@ -358,11 +362,11 @@
         display: flex;
         background-color: #3A4740;
         text-decoration: none;
-        border-radius: 10px;
+        border-radius: 0.7vw;
         justify-content: center;
         align-items: center;
         width: 50%;
-        height: 2em;
+        height: 2.5vw;
         margin-top: 15%;
     }
 
@@ -370,7 +374,7 @@
         text-decoration: none;
         color: #B0BFC2;
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1.5vw;
     }
 
     #right-team{
@@ -383,23 +387,23 @@
     }
 
     .team-carousel-item{
-        height: 400px; 
-        width: 400px;
+        height: 28vw; 
+        width: 28vw;
 
     }
     .carousel__slide {
-      padding: 0px;
+      padding: 0;
     }
 
     .carousel__track{
-        margin-right: 0px;
+        margin-right: 0;
     }
 
     .carousel__prev,
     .carousel__next {
         box-sizing: content-box;
         width: 100%;
-        border: 5px solid white;
+        border: 0.3vw solid white;
     }
 
     #home-projects-container{
@@ -413,15 +417,15 @@
 
     #projects-head{
         color: #252525;
-        font-size: 4.5em;
+        font-size: 4.5vw;
         font-weight: bold;
     }
 
     #projects-body{
         color: #252525;
-        font-size: 1em;
+        font-size: 1vw;
         width: 50%;
-        text-align: justify;
+        text-align: center;
         margin-bottom: 2%;
     }
 
@@ -443,7 +447,7 @@
         display: flex;
         background-color: #3A4740;
         text-decoration: none;
-        border-radius: 10px;
+        border-radius: 0.7vw;
         justify-content: center;
         align-items: center;
         width: 20%;
@@ -468,7 +472,7 @@
         text-decoration: none;
         color: white;
         text-align: center;
-        font-size: 1.5vw;
+        font-size: 1.2vw;
     }
 
     #home-prefooter-container{
@@ -483,7 +487,7 @@
 
     #prefooter-body1, #prefooter-body2{
         color: white;
-        margin: 0px 0px 0px 0px;
+        margin: 0 0 0 0;
         text-align: center;
         max-width: 60%;
     }

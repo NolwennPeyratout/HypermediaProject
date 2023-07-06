@@ -51,6 +51,7 @@ export default defineNuxtComponent({
         flex-direction: column;
         background-color: white;
         margin: 0;
+        font-family: 'Inter', sans-serif;
     }
     .breadcrumb {
       list-style: none;

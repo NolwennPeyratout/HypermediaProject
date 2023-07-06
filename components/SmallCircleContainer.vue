@@ -30,14 +30,14 @@ PROPS:
 <style>
 .small-circle-container {
   text-align: center;
-  margin: 20px;
+  margin: 1.3vw;
 }
 
 .small-circle {
   position: relative;
   display: inline-block;
-  width: 150px;
-  height: 150px;
+  width: 11vw;
+  height: 11vw;
   border-radius: 50%;
   overflow: hidden;
   transition: transform 0.3s;
@@ -45,7 +45,7 @@ PROPS:
 
 .small-circle:hover {
   transform: scale(1.1);
-  box-shadow: 4px 4px 6px #3a4740;
+  box-shadow: 0.26vw 0.26vw 0.4vw #3a4740;
 }
 
 .small-circle img {
@@ -55,11 +55,11 @@ PROPS:
 }
 
 .topic-name {
-  margin-top: 2px;
+  margin-top: 0.13vw;
 }
 
 .circle-title{
-  font-size: 18px;
+  font-size: 1.1vw;
   font-weight: bolder;
   color: white;
   text-align: center;
@@ -67,7 +67,7 @@ PROPS:
 
 /* Animation of the component when hovering on it with the mouse*/
 .circle-link:hover{
-  text-shadow: 4px 4px 6px #3a4740;
+  text-shadow: 0.26vw 0.26vw 0.4vw #3a4740;
   transform: scale(1.1);
 }
 
@@ -79,14 +79,12 @@ PROPS:
 
 .topic-link {
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 3.2vw;
+  height: 3.2vw;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 999;
 }
-
-
 
 </style>  

@@ -72,7 +72,6 @@
 </script>
 
 <style>
-
 .custom-background_area {
   background-color: #8da0a4;
 } 
@@ -89,8 +88,8 @@ main {
 
 #carousel-container_area {
   position: relative;
-  /*top: -6px;
-  left: -15px;*/
+  top: -25px;
+  left: -15px;
   width: 120%;
   height: 100%;
   margin: 0;
