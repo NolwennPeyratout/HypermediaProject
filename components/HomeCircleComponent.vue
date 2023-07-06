@@ -28,15 +28,17 @@ PROPS:
 <style>
 .home-circle-container {
   text-align: center;
-  margin: 40px;
+  margin: 2%;
+  width: 15%;
 }
 
 .home-circle {
   position: relative;
   display: inline-block;
   box-shadow: 0.13vw 0.13vw 0.26vw #252525;
-  width: 17vw;
-  height: 17vw;
+  width: 100%;
+  aspect-ratio: 1/1;
+  height: auto;
   border-radius: 50%;
   overflow: hidden;
   transition: transform 0.3s;
