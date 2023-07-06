@@ -43,11 +43,10 @@ PROPS:
   .proj-card {
     display: flex;
     align-items: center;
-    background-color: #c0cdd0;
+    background-color: transparent;
     padding: 10px;
     width: fit-content;
     height: fit-content;
-    border-radius: 2% 2% 50% 2%;
   }
 
   .grid-container {
@@ -61,7 +60,8 @@ PROPS:
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: transparent;
+    background-color: #c0cdd0;
+    border-radius: 2% 2% 50% 2%;
   }
 
   .project-card {
