@@ -41,9 +41,6 @@
             </div>
             <div class="sub-links">
                 <NuxtLink class="main-link" to="/about">About us</NuxtLink>
-                <NuxtLink class="link" to="/team">Team page</NuxtLink>
-                <NuxtLink class="link" to="/areas">Areas page</NuxtLink>
-                <NuxtLink class="link" to="/about">Relevant projects</NuxtLink>
             </div>
             <div class="sub-links">
                 <NuxtLink class="main-link" to="/contact">Contact us</NuxtLink>
