@@ -322,4 +322,73 @@
   background-color:rgba(91,116,112,0.8);
 }
 
+@media only screen and (max-width: 800px) {
+  #container-area-person > .circle-container .circle {
+    width: 150px;
+    height: 150px;
+  }
+  #container-area-person{
+    margin-top: 5%;
+    width:100%;
+  }
+
+  #container-area-person .circle-container{
+    margin:10px;
+    width:40%;
+  }
+
+
+  #info-group{
+    width:85%;
+  }
+
+  #container-project{
+    width: 85%;
+  }
+  #img-person{
+    max-width: 300px;
+    max-height: 300px;
+  }
+  #container-img-person{
+    width: fit-content;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  #container-area-person .circle-container{
+    margin:10px;
+    width:40%;
+  }
+
+  #container-area-person > .circle-container .circle {
+    width: 100px;
+    height: 100px;
+  }
+  #container-area-person{
+    margin-top: 5%;
+    width:100%;
+  }
+
+  #info-group{
+    display: block;
+    width: 80%;
+  }
+
+  #presentation-person{
+    width: auto;
+  }
+
+  #container-project{
+    width: 80%;
+    height: 200px;
+  }
+
+  #container-project img {
+    height: 200px;
+  }
+
+
+}
+
 </style>
