@@ -152,6 +152,9 @@
 </script>
 
 <style>
+    .page{
+        font-family: 'Inter', sans-serif;
+    }
     #home-content-page{
       width:100%;
       margin-left: 0px;
