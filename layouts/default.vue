@@ -86,21 +86,4 @@ export default defineNuxtComponent({
       text-decoration: underline;
     }
 
-    @media (max-width: 600px) {
-    .breadcrumb {
-      position: static;
-      margin-top: 0;
-      padding: 0.5rem;
-    }
-
-    .item {
-      display: block;
-      margin-bottom: 0.5rem;
-    }
-
-    .item:after {
-      content: '';
-    }
-  }
-
 </style>
