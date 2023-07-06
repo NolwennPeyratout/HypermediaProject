@@ -47,8 +47,8 @@ import CircleContainer from '~/components/CircleContainer.vue';
         gap: 5%;
     }
     #top-team{
-        width: 100%;
-        margin: 4% 0% 1% 5%;
+        width: 95%;
+        margin: 4% 2.5% ;
     }
     #team-page-description
     {
@@ -56,12 +56,34 @@ import CircleContainer from '~/components/CircleContainer.vue';
         text-align: justify;
         margin-top: 1%;
         margin-block-end: 0%;
-        margin-inline-end: 5%;
     }
     #top-team > h1{
         color: #202622;
         font-size: 40px;
         margin-bottom: 1%;
+    }
+
+    @media only screen and (max-width: 700px) {
+        .rectangleTitle-container {
+            width: 40%;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .rectangleTitle-container {
+            width: 95%;
+        }
+        #title{
+            width: 64%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .rectangleTitle img {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
     }
 
 </style>
