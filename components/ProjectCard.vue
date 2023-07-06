@@ -1,3 +1,14 @@
+<!-- Component used in the home page and in all the project-related pages
+  It is a rectangular container for an image and a text underneath
+  which are used to display the name of a project and its name.
+
+As the name suggests, it is used as a card link for the projects addressed by the company
+
+PROPS:
+    - title: project name to be displayed below the image
+    - link: link to the corresponding project page 
+    - imgUrl: path to the displayed image  -->
+
 <template>
     <div class="project-card-1">
       <NuxtLink :to="link" class="link-box-1">
@@ -20,6 +31,7 @@
         border-radius: 20%;
     }
     
+    /* Animation of the whole component when hovering on it with the mouse*/
     .project-card-1:hover{
         transform: scale(1.1);
         box-shadow: 4px 4px 6px #3a4740;

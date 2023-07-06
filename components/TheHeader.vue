@@ -1,20 +1,37 @@
+<!--
+    Header of the website to be displayed in all the pages (it can be considered a landmark)
+    It is divided into two "zones": in the first on the left are displayed the company name and logo,
+    while in the second on the right are displayed the links to all the pages of the website.
+    
+    Two of the five page links have a dropdown menu that opens when hovering on them and that
+    displays the subpages links. 
+
+    This component does not have props
+-->
+
 <template>
     <header>
+        <!-- LEFT PART OF THE HEADER CONTAINING COMPANY LOGO/NAME-->
         <NuxtLink id="homepage-link" to="/" class="menu-link">
                 <img id="web-logo" src="/_nuxt/assets/img/CompanyLogoHeader.png" alt="Logo of the website">
         </NuxtLink>
+        <!-- RIGHT PART OF THE HEADER CONTAINING WEBSITE PAGES LINKS-->
         <nav>
             <NuxtLink to="/team" class="menu-link">Team</NuxtLink>
+            <!-- AREAS LINK OPENS A DROPDOWN MENU WHEN HOVERING ON IT-->
             <div class="dropdown">
                 <NuxtLink to="/areas" class="menu-link">Areas</NuxtLink>
+                <!-- SUBPAGES LINKS CONTAINED ON AREAS DROPDOWN MENU-->
                 <div class="dropdown-content">
                     <NuxtLink to="/areas/Food" class="sub-menu-link">Food</NuxtLink>
                     <NuxtLink to="/areas/IT" class="sub-menu-link">IT</NuxtLink>
                     <NuxtLink to="/areas/Health" class="sub-menu-link">Health</NuxtLink>
                 </div>
             </div>
+            <!-- PROJECTS LINK OPENS A DROPDOWN MENU WHEN HOVERING ON IT-->
             <div class="dropdown">
                 <NuxtLink to="/projects" class="menu-link">Projects</NuxtLink>
+                <!-- SUBPAGES LINKS CONTAINED ON PROJECTS DROPDOWN MENU-->
                 <div class="dropdown-content">
                     <NuxtLink to="/projects/Food" class="sub-menu-link">Food Projects</NuxtLink>
                     <NuxtLink to="/projects/IT" class="sub-menu-link">IT Projects</NuxtLink>
@@ -66,6 +83,7 @@
     position: relative;
 }
 
+/* DROPDOWN CONTENT DISPLAY MODE IS SET TO "NONE" WHEN THE MAIN LINK IS NOT HOVERED*/
 .dropdown-content {
     display: none;
     position: absolute;
@@ -94,6 +112,7 @@
     background-color: #555;
 }
 
+/* DROPDOWN CONTENT IS SHOWED WHEN THE MOUSE HOVERS THE MAIN LINK*/
 .dropdown:hover .dropdown-content {
     display: block;
 }

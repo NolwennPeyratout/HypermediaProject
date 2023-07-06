@@ -1,3 +1,16 @@
+<!-- Component used in single projects page and used to display both the project 
+  concerning area and its supervisor.
+  It is composed of a circular container for an image with a text underneath used 
+to display the title of the object
+
+Its appeareance is based on the CircleContainer.vue component, with smaller dimensions
+to fit better in the project page
+
+PROPS:
+    - title: main information to display below the circle
+    - link: link to the corresponding page 
+    - imgUrl: path to the displayed image -->
+
 <template>
     <div class="small-circle-container">
       <NuxtLink :to="link" class="circle-link">
@@ -52,6 +65,7 @@
   text-align: center;
 }
 
+/* Animation of the component when hovering on it with the mouse*/
 .circle-link:hover{
   text-shadow: 4px 4px 6px #3a4740;
   transform: scale(1.1);

@@ -1,3 +1,13 @@
+<!-- Component used in the team page
+  It is a rectangular container for an image and few information,
+  which are used to display the image of a team member, his/her name and a short CV.
+
+PROPS:
+    - title: person name to be displayed below the image
+    - link: link to the corresponding person page 
+    - imgUrl: path to the displayed person image  
+    - subtitle: person short CV to be displayed under the name -->
+
 <template>
     <div class="rectangleTitle-container">
       <NuxtLink :to="link" class="link-rectangleTitle">
@@ -28,6 +38,7 @@
   display: inline-grid;
 }
 
+/* Animation of the rectangle component when hovering on it with the mouse*/
 .rectangleTitle:hover {
   transform: scale(1.1);
 }

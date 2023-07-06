@@ -1,6 +1,16 @@
+<!--
+    Footer of the website to be displayed in all the pages (it can be considered a landmark)
+    It is divided into two "zones": in the first on the left are displayed the company name and logo 
+    with few contact information. In the second on the right are displayed the links to all the pages
+    and subpages of the website.
+
+    It does not have props
+-->
+
 <template>
     <footer>         
         <div class="links">
+            <!-- LEFT PART OF THE FOOTER CONTAINING COMPANY LOGO/NAME AND CONTACT INFO-->
             <div id="left-footer">
                 <NuxtLink id="home-link" class="main-link" to="/"> 
                     <img id="logo" src="/_nuxt/assets/img/CompanyLogoFooter.png" alt="Logo of the website">
@@ -10,7 +20,9 @@
                 <p class="footer-info">Tel: +39 347 256609</p>
                 <p class="footer-info" id="copyright">Copyright © 2023 Hypermedia. All Rights Reserved</p>
             </div>
+            <!-- VERTICAL LINE DIVIDING LEFT AND RIGHT PART OF THE FOOTER-->
             <div class="vertical-line"></div>
+            <!-- RIGHT PART OF THE FOOTER CONTAINING LINKS TO WEBSITE PAGES AND SUBBPAGES-->
             <div class="sub-links">
                 <NuxtLink class="main-link" to="/team">Team</NuxtLink>
             </div>
