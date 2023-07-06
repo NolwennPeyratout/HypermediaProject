@@ -65,7 +65,7 @@
     flex-direction: row;
     background-color: #5B7470;
     border-radius: 1.5vw;
-    margin-top: 4%;
+    margin-top: 3%;
     width: 95%;
 }
 
@@ -132,7 +132,7 @@
     aspect-ratio: 16 / 9;
     width: 45%;
     height: auto;
-    margin: 0;
+    margin: 1%;
     box-shadow: 0.2vw 0.2vw 0.6vw #3a4740;
 }
 
@@ -154,6 +154,9 @@
         #project-name{
             font-size: 5vw;
         }
+        .project-presentation-page{
+            margin-top: 6%;
+        }
     }
 
     @media only screen and (max-width: 500px) {
@@ -171,6 +174,9 @@
         }
         .project-info-container{
             margin-right: 0.5vw;
+        }
+        .project-presentation-page{
+            margin-top: 9%;
         }
     }
 
