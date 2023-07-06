@@ -60,11 +60,18 @@ In this page we have all the members of the company with some informations like 
         font-size: 40px;
         margin-bottom: 1%;
     }
+    #top-team{
+            margin-top: 6vw;
+        }
 
     @media only screen and (max-width: 700px) {
         .rectangleTitle-container {
             width: 40%;
         }
+        #top-team{
+            margin-top: 10vw;
+        }
+       
     }
 
     @media only screen and (max-width: 500px) {
@@ -97,5 +104,6 @@ In this page we have all the members of the company with some informations like 
         }
         
     }
+
 
 </style>

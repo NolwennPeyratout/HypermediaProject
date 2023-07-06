@@ -31,13 +31,14 @@ PROPS:
 .small-circle-container {
   text-align: center;
   margin: 1.3vw;
+  width: 70%;
 }
 
 .small-circle {
   position: relative;
   display: inline-block;
-  width: 11vw;
-  height: 11vw;
+  aspect-ratio: 1/1;
+  width: 95%;
   border-radius: 50%;
   overflow: hidden;
   transition: transform 0.3s;

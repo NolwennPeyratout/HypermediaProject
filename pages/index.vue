@@ -242,6 +242,7 @@
     #areas-circles-container{
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
     #absolute-container{
         position: relative;
@@ -520,5 +521,115 @@
     .social-icon{
         width: 2%;
         height: 2%;
+    }
+
+    /* RESPONSIVENESS FOR DEVICES WITH SCREEN WIDTH BETWEEN 500PX AND 700PX*/
+    @media only screen and (max-width: 700px) {
+        .big-text{
+            font-size: 3.0vw;
+        }
+        .little-text{
+            font-size: 1.6vw;
+        }
+        #areas-text{
+            width: 80%;
+        }
+        .home-title-center{
+            font-size: 2vw;
+        }
+        .home-circle-container {
+            margin: 2%;
+            width: 20%;
+        }
+        #right-awards{
+            gap: 0%;
+        }
+
+        #awards-square{
+            width: 50%;
+            height: 25%;
+            top: 70%;
+            right: 5%;
+        }        
+        #square-body{
+            font-size: 1.8vw;
+        }
+
+        .vert-line{
+            border-left: 0.13vw solid #252525;
+            margin: 2.8% 0.3% 2.8% 0%;
+        }
+        /*RESPONSIVENESS DONE TILL AWARDS PART*/
+    }
+
+    /* RESPONSIVENESS FOR DEVICES WITH SCREEN WIDTH UP TO 500PX*/
+    @media only screen and (max-width: 500px) {
+        #home-intro-container{
+            flex-direction: column;
+            align-items: center;
+            gap: 5%;
+        }
+        .big-text{
+            font-size: 5.5vw;
+            text-align: center;
+        }
+        .little-text{
+            font-size: 2.5vw;
+        }
+        #left-intro{
+            margin-left: 0%;
+        }
+
+        #intro-link{
+            margin-top: 0%;
+            margin-bottom: 3%;
+        }
+        #home-about-link{
+            font-size: 3vw;
+        }
+        .right-intro{
+            width: 70%;
+            margin-right: 0;
+        }
+        .home-title-center{
+            font-size: 2.5vw;
+        }
+        .home-circle-container {
+            margin: 2%;
+            width: 23%;
+        }
+
+        #absolute-container{
+        margin-bottom: 12%;
+        }
+        #home-awards-container{
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        .left-awards{
+            width: 70%;
+            margin: 0% 0% 0% 0%;
+        }
+        
+        #right-awards{
+            gap: 2%;
+            margin: 0% 5% 2.5% 5%;
+        }
+        #awards-square{
+            width: 60%;
+            height: 15%;
+            top: 90%;
+            right: 20%;
+        }      
+        #square-head{
+            font-size: 6vw;
+        }
+        #square-body{
+            font-size: 2vw;
+        }
+        .vert-line{
+            margin: 3% 0% 3% 0%;
+        }
+        /*RESPONSIVENESS DONE TILL AWARDS PART*/
     }
 </style>

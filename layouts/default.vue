@@ -60,7 +60,7 @@ export default defineNuxtComponent({
       padding-left: 0%;
       z-index: 15;
       position: absolute;
-      top: 130px;
+      top: 8.3vw;
       left: 2.5%;
     }
     li {
@@ -85,5 +85,24 @@ export default defineNuxtComponent({
     .breadcrumb-item:hover{
       text-decoration: underline;
     }
+
+    @media only screen and (max-width: 700px) {
+
+      .breadcrumb-item{
+        font-size: small;
+      }
+
+    }
+
+    @media only screen and (max-width: 400px) {
+
+    .breadcrumb-item{
+      font-size: x-small;
+    }
+    .breadcrumb{
+      margin-top: 1.7%;
+    }
+
+}
 
 </style>

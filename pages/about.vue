@@ -11,8 +11,9 @@
     <main>
         <div id="main-content-about">
             <div id="about-left">
+                <div id="aboutus-title"><h1>About us</h1></div>
                 <div id="story">
-                    <div id="story-title"><h1>STORY</h1></div>
+                    <div id="story-title"><h2>STORY</h2></div>
                     <div id="story-text">
                         <p>
                             TechWell Ventures, led by CEO Mario Rossi, is a Milan-based venture capital firm renowned for its focus on innovation
@@ -41,7 +42,7 @@
                     </div>
                 </div>
                 <div id="follow">
-                    <h1>Follow us</h1>
+                    <h1>Follow us on </h1>
                     <div id="icones">
                         <img id=icone-follow src="../assets/img/icone/fb.png" alt="Icone of Facebook">
                         <img id=icone-follow src="../assets/img/icone/twitter.png" alt="Icone of Twitter">
@@ -85,6 +86,11 @@
     #story-title{
         width: 35%;
     }
+
+    #story-title h2{
+        margin-top: 0%;
+    }
+
     #story-text{
         width:65%;
         color:white;
@@ -110,5 +116,80 @@
         margin-top: 0%;
         margin-bottom: 9%;
         text-align: justify;
+    }
+    #aboutus-title h1{
+        font-size: 2em;
+    }
+
+    #aboutus-title{
+        margin-left: 7%;
+        width: 93%;
+    }
+
+    @media only screen and (max-width: 700px) {
+        #main-content-about{
+            display: block;
+        }
+        #about-left {
+            width: 100%;
+            min-height: auto;
+        }
+        #about-right{
+            width:100%;
+            min-height: 360px;
+        }
+        #story{
+            width: 94%;
+            margin:5% 3% 15% 3%;
+            display: block;
+        }
+        #story-text{
+            width: 100%;
+        }
+        #story-title h2{
+            font-size: 1.3em;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+        #story-text p{
+            margin-bottom: 3%;
+            font-size: small;
+        }
+        #follow{
+            padding-bottom: 5%;
+            margin-top: 5%;
+        }
+        #follow h1{
+            font-size: 1.5em;
+        }
+        #aboutus-title h1{
+            font-size: 1.5em;
+        }
+        
+    }
+    @media only screen and (max-width: 900px) {
+        #story{
+            width: 95%;
+            margin:5% 3%;
+            display: block;
+        }
+        #story-text{
+            width: 100%;
+        }
+        #aboutus-title{
+            margin-left: 3%;
+        }
+        #follow{
+            margin-left: 3%;
+            
+        }
+    }
+
+    @media only screen and (max-width: 400px) {
+        #about-left{
+            padding-top: 10vw;
+        }
     }
 </style>
