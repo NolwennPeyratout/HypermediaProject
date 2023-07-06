@@ -81,7 +81,7 @@
                     </div>
                     <div id="right-team">
                         <!-- TEAM MEMBERS CAROUSEL TO BE FIXED -->
-                        <Carousel id="team-carousel" :autoplay="0" :wrap-around="true" :items-to-show="1" :items-to-scroll="2" :pause-autoplay-on-hover="true">
+                        <Carousel id="team-carousel" v-bind="settings" :breakpoints="breakpoints">
                             <Slide v-for="person in data[0]" :key="person">
                                 <HomeRectangleComponent class="team-carousel-item" :title="person.name" 
                                 :subtitle="'Role: '+person.role" :link="'/team/'+person.name" :img-url="'/_nuxt/assets/img/team/'+person.name+'.jpeg'"/>
@@ -134,12 +134,33 @@
     import 'vue3-carousel/dist/carousel.css'
     
     export default defineNuxtComponent({
-        name: 'Autoplay',
+        name: 'Breakpoints',
         components: {
-            Carousel,
-            Slide,
-            Pagination,
+          Carousel,
+          Slide,
+          Navigation,
         },
+        data: () => ({
+          // carousel settings
+          settings: {
+            itemsToShow: 1,
+            snapAlign: 'center',
+          },
+          // breakpoints are mobile first
+          // any settings not specified will fallback to the carousel settings
+          breakpoints: {
+            // 700px and up
+            700: {
+              itemsToShow: 3.5,
+              snapAlign: 'center',
+            },
+            // 1024 and up
+            1024: {
+              itemsToShow: 5,
+              snapAlign: 'start',
+            },
+          },
+        }),
         async asyncData() {
             const data = []
             data[0] = await $fetch(useRuntimeConfig().baseURL + '/server/team')
@@ -396,7 +417,8 @@
     }
 
     .carousel__track{
-        margin-right: 0;
+        width: 50%;
+        margin-right: 0px;
     }
 
     .carousel__prev,

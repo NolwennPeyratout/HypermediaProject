@@ -32,11 +32,11 @@ PROPS:
 
 .homeRect{
     display: flex;
-    padding: 0.5%;
     flex-direction: column;
     justify-content: center;
     width: 70%;
     background-color: white;
+    padding: 0px;
 }
 
 .homeRect img {
