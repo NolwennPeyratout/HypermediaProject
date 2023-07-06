@@ -34,9 +34,9 @@ PROPS:
 .home-circle {
   position: relative;
   display: inline-block;
-  box-shadow: 2px 2px 4px #252525;
-  width: 250px;
-  height: 250px;
+  box-shadow: 0.13vw 0.13vw 0.26vw #252525;
+  width: 17vw;
+  height: 17vw;
   border-radius: 50%;
   overflow: hidden;
   transition: transform 0.3s;
@@ -45,7 +45,7 @@ PROPS:
 /* Animation of the image when hovering on it with the mouse*/
 .home-circle:hover {
   transform: scale(1.1);
-  box-shadow: 4px 4px 8px #252525;
+  box-shadow: 0.26vw 0.26vw 0.52vw #252525;
 }
 
 .home-circle img {
@@ -55,13 +55,13 @@ PROPS:
 }
 
 .topic-name {
-  margin-top: 10px;
+  margin-top: 0.65vw;
 }
 
 .topic-link {
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 6.5vw;
+  height: 6.5vw;
   position: absolute;
   top: 0;
   left: 0;
@@ -70,7 +70,7 @@ PROPS:
 .home-title-center{
   text-align: center;
   color: #252525;
-  font-size: 22px;
+  font-size: 1.4vw;
 }
 
 </style>  

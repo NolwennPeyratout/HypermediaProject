@@ -48,7 +48,7 @@ PROPS:
 #homeRect-title{
   text-align: start;
   color: #252525;
-  font-size: 1.7em;
+  font-size: 1.8vw;
   font-weight: bold;
   background-color: white;
   margin: 5% 0% 3% 3%;
@@ -61,7 +61,7 @@ PROPS:
 }
 .homeRect-subtitle{
   text-align: start;
-  font-size: 1.1em;
+  font-size: 1.4vw;
   text-decoration: none;
   background-color: white;
   margin: 0% 0% 3% 3%;
