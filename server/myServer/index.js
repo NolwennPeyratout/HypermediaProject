@@ -26,7 +26,8 @@ async function initDB() {
     const models = {}
 
     await db.authenticate()
-
+    //To define a project we will need to define its name with a string, a presentation with a text, a location with a string, a date with a Date, the name of the start-up with a string
+    //the product delivered with a String, and the fact that is relevant with a boolean
     models.Project = db.define('project', {
         name: {
             type: DataTypes.STRING,
@@ -57,7 +58,8 @@ async function initDB() {
             allowNull: true
         }
     });
-
+    //To define a person we need to define the name of him/her with a string, the role of him/her with a string, a text related to the CV of him or her
+    // and a short introduction of the person with the text
     models.Person = db.define('person', {
         id: {
             type: DataTypes.INTEGER,
@@ -83,6 +85,7 @@ async function initDB() {
 
     });
     
+    //To define an area we need to define the name of it with a string and a description for it with a text.
     models.Area = db.define('area', {
         name: {
             type: DataTypes.STRING,
@@ -94,6 +97,7 @@ async function initDB() {
         }
     });
 
+    //We define the fact that a project is supervised by one person. And to build a table we will use the person_name and the project_name
     models.Supervise = db.define('supervise', {
         person_name: {
             type: DataTypes.INTEGER,
@@ -110,7 +114,7 @@ async function initDB() {
             }
         }
     });
-
+    //we define the fact that a project has an area. And to build a table with this idea we use the project_name and the area_name
     models.Concern = db.define('concern', {
         project_name: {
             type: DataTypes.STRING,
@@ -142,14 +146,14 @@ async function initDB() {
 
 async function initServer() {
     const models = await initDB()
-
+    //we get all the area of the database
     app.get('/areas', async (req, res) => {
         const data = await models.Area.findAll();
 
         res.status(200).json(data)
     })
 
-    
+    //We get the area defined by this id
     app.get('/areas/:id', async (req, res) => {
         const data = await models.Area.findOne({
             where: {
@@ -164,13 +168,13 @@ async function initServer() {
             res.sendStatus(404)
         }
     })
-    
+    //We get all the projects of the database
     app.get('/projects', async (req, res) => {
         const data = await models.Project.findAll();
 
         res.status(200).json(data)
     })
-
+    //We get the project defined by this id
     app.get('/projects/:id', async (req, res) => {
         const data = await models.Project.findOne({
             where: {
@@ -217,7 +221,7 @@ async function initServer() {
             res.sendStatus(404)
         }
     })
-
+    //Get project for a specific area 
     app.get('/projects/byarea/:id', async (req, res) => {
 
         try {
@@ -235,13 +239,13 @@ async function initServer() {
             res.status(500).json({ error: 'Internal server error' });
           }
     })
-
+    //get all the person in the team
     app.get('/team', async (req, res) => {
         const data = await models.Person.findAll();
 
         res.status(200).json(data)
     })
-
+    //Get a precise person with his / her id
     app.get('/team/:id', async (req, res) => {
         const data = await models.Person.findOne({
             where: {
@@ -256,7 +260,7 @@ async function initServer() {
             res.sendStatus(404)
         }
     })
-
+    //Get projects done by a specific person
     app.get('/team/:id/project', async (req, res) => {
         const data = await models.Supervise.findAll({
             where: {
@@ -271,7 +275,7 @@ async function initServer() {
             res.sendStatus(404)
         }
     })
-
+    //Get areas for person-specific projects
     app.get('/team/:id/project/area', async (req, res) => {
         try {
             const data = await db.query(

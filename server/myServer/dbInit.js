@@ -1,7 +1,7 @@
 import { loremIpsum } from "lorem-ipsum"
 
 export default async (models) => {
-
+    //This is the detail of all our person in the company, with their role, name, cv and introduction ( summary of the CV)
     const personModel = [
         {
             name: "Mario Rossi",
@@ -9,6 +9,7 @@ export default async (models) => {
             cv: "Mario Rossi is an accomplished and visionary CEO with expertise in the food and IT industries. He has a proven track record of successfully leading ventures and driving business growth. Mario excels in strategic thinking, innovation, and operational excellence. He has a passion for building high-performing teams and fostering collaborative environments. With a focus on delivering outstanding results and exceeding organizational goals, Mario brings a wealth of experience in business development, financial management, and customer-centricity. He is skilled in identifying investment opportunities and establishing strategic partnerships",
             introduction: "Accomplished and visionary CEO with a proven track record in the food and IT industries. Demonstrated expertise in leading successful ventures and driving business growth. A strategic thinker with a passion for innovation, customer-centricity, and operational excellence. Excels in building high-performing teams and fostering collaborative environments. Committed to delivering outstanding results and exceeding organizational goals.",
             //images are generated with :https://facestudio.app/
+            //cv and introduction are generated with https://chat.openai.com/
 
         },
         {
@@ -79,6 +80,7 @@ export default async (models) => {
     const person8 = await models.Person.create(personModel[8])
     const person9 = await models.Person.create(personModel[9])
 
+    // this is the list of all our project made in the company, we define them with name, a presentation text, the location, date, name of the start-up, the product made and a boolean relevant to define if it's relevant
     const projectModel = [
         {
             name: "Ringo",                  //1st project (food)
@@ -234,6 +236,7 @@ export default async (models) => {
     const project13 = await models.Project.create(projectModel[13])
     const project14 = await models.Project.create(projectModel[14])
 
+    //This is the list of all our area, it's define by the name of the area and a description of it
     const areaModel = [
         {
             name: "Food",
@@ -262,6 +265,7 @@ export default async (models) => {
     const area1 = await models.Area.create(areaModel[1])
     const area2 = await models.Area.create(areaModel[2])
 
+    //we define that a project is supervised by one person, so we assign for each project a supervisor
     const superviseModel = [
         {
             person_name: person0.name,
@@ -342,6 +346,7 @@ export default async (models) => {
     await models.Supervise.create(superviseModel[13])
     await models.Supervise.create(superviseModel[14])
 
+    //Each project is concerned by one area, so we combine for each project a unique area
     const concernModel = [                      //NB: area0 = food, area1 = health, area2 = it
         {
             project_name: project0.name,
