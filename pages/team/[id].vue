@@ -337,7 +337,6 @@
     width:40%;
   }
 
-
   #info-group{
     width:85%;
   }
@@ -351,6 +350,10 @@
   }
   #container-img-person{
     width: fit-content;
+  }
+
+  .carousel__slide, .carousel__viewport, #carousel-container-person, #carousel-person, .responsive-image{
+    height: 300px;
   }
 
 }
@@ -388,6 +391,13 @@
     height: 200px;
   }
 
+  .carousel__slide, .carousel__viewport, #carousel-container-person, #carousel-person, .responsive-image{
+    height: 200px;
+  }
+
+  #textImage-project {
+    bottom: 5%;
+  }
 
 }
 
