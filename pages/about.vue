@@ -140,14 +140,14 @@
         }
         #story{
             width: 94%;
-            margin:15% 3%;
+            margin:5% 3% 15% 3%;
             display: block;
         }
         #story-text{
             width: 100%;
         }
         #story-title h2{
-            font-size: 2em;
+            font-size: 1.3em;
             margin-block-start: 0.67em;
             margin-block-end: 0.67em;
             margin-inline-start: 0px;
@@ -159,19 +159,20 @@
         }
         #follow{
             padding-bottom: 5%;
+            margin-top: 5%;
         }
         #follow h1{
-            font-size: 2em;
+            font-size: 1.5em;
         }
         #aboutus-title h1{
-            font-size: 2em;
+            font-size: 1.5em;
         }
         
     }
     @media only screen and (max-width: 900px) {
         #story{
             width: 95%;
-            margin:15% 3%;
+            margin:5% 3%;
             display: block;
         }
         #story-text{
@@ -182,6 +183,7 @@
         }
         #follow{
             margin-left: 3%;
+            
         }
     }
 </style>
