@@ -18,8 +18,8 @@ PROPS:
       <NuxtLink :to="link" class="link-box">
         <div class="proj-card_custom">
           <div class="grid-container">
-            <div class="text-container">
-              <div class="project-details">
+            <div class="text-container_custom">
+              <div class="project-details_custom">
                 <p class="card-title">{{ title }}</p>
                 <p class="card-product">Product / Service: {{ product }}</p>
                 <p class="card-date">Date: {{ date }}</p>
@@ -44,11 +44,10 @@ PROPS:
   .proj-card_custom {
     display: flex;
     align-items: center;
-    background-color: #c0cdd0;
+    background-color: transparent;
     padding: 10px;
     width: fit-content;
     height: fit-content;
-    border-radius: 20% 2% 2% 20%;
   }
 
   .grid-container {
@@ -58,11 +57,13 @@ PROPS:
     background-color: transparent;
   }
 
-  .text-container {
+  .text-container_custom {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: transparent;
+    background-color: #c0cdd0;
+    border-radius: 2% 2% 2% 50%;
+    padding: 20px;
   }
   
 
@@ -94,12 +95,13 @@ PROPS:
     border: 2px solid rgba(141, 160, 164, 0.9);
   }
 
-  .text-container .project-details {
+  .text-container .project-details_custom {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 20px;
     background-color: transparent;
+    margin-left: 70px;
   }
 
   .card-title {
