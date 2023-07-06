@@ -82,59 +82,57 @@
 
 .bubbles-container{
     flex: 1; 
-    margin:0% 2%; 
+    margin: 1% 2%; 
 }
 
 #project-name{
-    font-size: 3em;
+    font-size: 3.5vw;
     color: white;
     text-shadow: 0.2vw 0.2vw 0.3vw #3a4740;
-    margin-top: 1vw;
-    margin-bottom: 0.7vw;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 #project-location{
-    margin-top: 0.3vw;
-    margin-bottom: 0.7vw;
+    margin-top: 0.8%;
+    margin-bottom: 0.8%;
 }
 
 #project-startup{
-    margin-top: 0.3vw;
-    margin-bottom: 0.7vw;
+    margin-top: 0.8%;
+    margin-bottom: 0.8%;
 }
 
 #project-presentation{
-    margin-top: 0.3vw;
-    margin-bottom: 0.7vw;
+    margin-top: 0.8%;
+    margin-bottom: 0.8%;
     text-align: justify;
 }
 
 #project-date{
-    margin-top: 0.3vw;
-    margin-bottom: 0.7vw;
+    margin-top: 0.8%;
+    margin-bottom: 0.8%;
 }
 
 #project-product{
-    margin-top: 0.3vw;
-    margin-bottom: 0.7vw;
+    margin-top: 0.8%;
+    margin-bottom: 0.8%;
 }
 
 .project-images{
-    margin-top: 2vw;
+    margin-top: 2%;
     justify-content: center;
     display:flex;
     flex-wrap: wrap;
-    margin-bottom: 2vw;
+    margin-bottom: 2%;
     width: 95%;
 }
 
 .image{
     aspect-ratio: 16 / 9;
-    max-width: 40vw;
-    max-height: 40vw;
-    width: auto;
+    width: 45%;
     height: auto;
-    margin: 0.7vw;
+    margin: 0;
     box-shadow: 0.2vw 0.2vw 0.6vw #3a4740;
 }
 
@@ -143,4 +141,43 @@
     font-weight: bold;
 }
 
+@media only screen and (max-width: 700px) {
+        .circle-title{
+            font-size: 1.55vw;
+        }
+        .small-circle-container {
+            width: 85%;
+        }
+        .data-presentation, .data-timestamp, .data-startup, .data-location, .data-product{
+            font-size: 1.8vw;
+        }
+        #project-name{
+            font-size: 5vw;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .circle-title{
+            font-size: 1.55vw;
+        }
+        .small-circle-container {
+            width: 95%;
+        }
+        .data-presentation, .data-timestamp, .data-startup, .data-location, .data-product{
+            font-size: 2.1vw;
+        }
+        #project-name{
+            font-size: 6.5vw;
+        }
+        .project-info-container{
+            margin-right: 0.5vw;
+        }
+    }
+
+    /* Responsiveness for images*/
+@media only screen and (max-width: 600px) {
+    .image{
+        width: 75%;
+    }
+}
 </style>
