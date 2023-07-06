@@ -33,10 +33,12 @@ PROPS:
 .homeRect{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 70%;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
     background-color: white;
     padding: 0px;
+    height: 100%;
 }
 
 .homeRect img {
