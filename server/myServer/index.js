@@ -279,6 +279,7 @@ async function initServer() {
     app.get('/team/:id/project/area', async (req, res) => {
         try {
             const data = await db.query(
+                //We need to make a left join to join 2 differents table to finally have the area_name with a person_name
                 'SELECT DISTINCT concerns.area_name ' + 
                     'FROM concerns ' + 
                     'LEFT JOIN supervises '+

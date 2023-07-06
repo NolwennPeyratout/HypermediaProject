@@ -74,9 +74,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-left: 30px;
-    margin-right: 50px;
-    font-size: 18px;
+    margin-left: 1.9vw;
+    margin-right: 3.2vw;
+    font-size: 1.2vw;
     color: white;
 }
 
@@ -88,59 +88,59 @@
 #project-name{
     font-size: 3em;
     color: white;
-    text-shadow: 3px 3px 5px #3a4740;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    text-shadow: 0.2vw 0.2vw 0.3vw #3a4740;
+    margin-top: 1vw;
+    margin-bottom: 0.7vw;
 }
 
 #project-location{
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 0.3vw;
+    margin-bottom: 0.7vw;
 }
 
 #project-startup{
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 0.3vw;
+    margin-bottom: 0.7vw;
 }
 
 #project-presentation{
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 0.3vw;
+    margin-bottom: 0.7vw;
     text-align: justify;
 }
 
 #project-date{
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 0.3vw;
+    margin-bottom: 0.7vw;
 }
 
 #project-product{
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 0.3vw;
+    margin-bottom: 0.7vw;
 }
 
 .project-images{
-    margin-top: 30px;
+    margin-top: 2vw;
     justify-content: center;
     display:flex;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: 2vw;
     width: 95%;
 }
 
 .image{
     aspect-ratio: 16 / 9;
-    max-width: 600px;
-    max-height: 600px;
+    max-width: 40vw;
+    max-height: 40vw;
     width: auto;
     height: auto;
-    margin: 10px;
-    box-shadow: 3px 3px 8px #3a4740;
+    margin: 0.7vw;
+    box-shadow: 0.2vw 0.2vw 0.6vw #3a4740;
 }
 
 .data-category{
     text-decoration: underline;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 </style>

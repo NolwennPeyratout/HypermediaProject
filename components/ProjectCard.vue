@@ -34,15 +34,16 @@ PROPS:
     /* Animation of the whole component when hovering on it with the mouse*/
     .project-card-1:hover{
         transform: scale(1.1);
-        box-shadow: 4px 4px 6px #3a4740;
+        box-shadow: 0.2vw 0.2vw 0.4vw #3a4740;
         transition-duration: 100ms;
     }
     .img-container-1{
         display: flex;
         justify-content: center;
-        padding: 2px;
-        width: 250px;
-        height: 200px;
+        padding: 0.13vw;
+        aspect-ratio: 5/4;
+        width: auto;
+        height: 14vw;
     }
 
     .img-container-1 img{
@@ -55,18 +56,18 @@ PROPS:
     .proj-card-1{
         display: flex;
         flex-direction: column;
-        align-content: center;
-        box-shadow: 2px 2px 4px #3a4740;
+        align-items: center;
+        box-shadow: 0.13vw 0.13vw 0.26vw #3a4740;
         background-color: #b0bfc2;
-        padding: 5px;
+        padding: 0.3vw;
         border-radius: 20px;
         width: fit-content;
         height: fit-content;
     }
 
     .card-title-1{
-        font-size: 1.7em;
-        margin: 0.5em 0em 0.5em 0em;
+        font-size: 1.5vw;
+        margin: 0.5vw 0 0.5vw 0;
         font-weight: bolder;
         text-align: center;
         color: #3a4740;

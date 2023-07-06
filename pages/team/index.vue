@@ -1,9 +1,7 @@
 <!--
+This is the vue file that define the team page. 
+In this page we have all the members of the company with some informations like name, picture, role and a short introduction about them.
 
-import RectangleTitle from '~/components/RectangleTitle.vue';
-
-import CircleContainer from '~/components/CircleContainer.vue';
-    All Area Pages
 -->
 <template>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +15,7 @@ import CircleContainer from '~/components/CircleContainer.vue';
                 needed to navigate the dynamic world of venture capital. Join us as we introduce the talented individuals
                  who drive our firm's success and support innovative entrepreneurs on their journey to greatness.</p>
         </div>
-        
+        <!--We show in a rectangle container all the person of the DB-->
         <div id="rectangle-container">
             <RectangleTitle v-for = "person in persons" :title = "person.name" :link = "'/team/' + person.name" :img-url="'/_nuxt/assets/img/team/'+person.name+'.jpeg'" :subtitle="person.introduction" />
         </div>
@@ -27,7 +25,7 @@ import CircleContainer from '~/components/CircleContainer.vue';
 <script>
     export default defineNuxtComponent({
     async asyncData() {
-        // useRuntimeConfig provide us with environment variables set up in the nuxtconfig file
+        // We call the database to get all the members of the company
         const persons = await $fetch(useRuntimeConfig().baseURL + "/server/team");
         return { persons };
     }
