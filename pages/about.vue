@@ -186,4 +186,10 @@
             
         }
     }
+
+    @media only screen and (max-width: 400px) {
+        #about-left{
+            padding-top: 10vw;
+        }
+    }
 </style>
