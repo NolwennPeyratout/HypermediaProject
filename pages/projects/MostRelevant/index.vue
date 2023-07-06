@@ -57,4 +57,22 @@
         margin-inline-end: 5%;
     }
 
+    @media only screen and (max-width: 800px) {
+        #mrp-page-title{
+            font-size: 5vw;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        #mrp-page-title{
+            font-size: 7vw;
+        }
+
+    }
+
+    @media only screen and (max-width: 400px) {
+        #mrp-page-title{
+            font-size: 9vw;
+        }
+    }
 </style>

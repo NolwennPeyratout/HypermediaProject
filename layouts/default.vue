@@ -67,7 +67,7 @@ export default defineNuxtComponent({
     li:after {
       content: ' » ';
       display: inline;
-      font-size: 0.9em;
+      font-size: 0.9vw;
       color: #aaa;
       padding: 0 0.0725em 0 0.15em;
     }

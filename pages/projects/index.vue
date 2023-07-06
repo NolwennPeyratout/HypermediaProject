@@ -36,7 +36,6 @@
 
 
 <style>
-
     #page-title
     {
         font-weight: bolder;
@@ -84,8 +83,8 @@
         border-radius: 0.5vw;
         justify-content: center;
         align-items: center;
-        width: 25vw;
-        height: 2vw;
+        width: 25%;
+        height: fit-content;
         margin-top: 1%;
         margin-bottom: 2%;
     }
@@ -95,6 +94,63 @@
         color: white;
         text-align: center;
         font-size: 1.5vw;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .project-card-1{
+            width: 23%;
+        }
+        .card-title-1{
+            font-size: 2.0vw;
+        }
+        #page-title{
+            font-size: 5vw;
+        }
+        #mostRelevant-button{
+            width: 35%;
+        }
+
+        #mostRelevant-link{
+            font-size: 2vw;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .project-card-1{
+            width: 30%;
+        }
+        .card-title-1{
+            font-size: 2.6vw;
+        }
+        #page-title{
+            font-size: 7vw;
+        }
+        #mostRelevant-button{
+            width: 42%;
+        }
+
+        #mostRelevant-link{
+            font-size: 2.6vw;
+        }
+    }
+
+    @media only screen and (max-width: 400px) {
+        .project-card-1{
+            width: 48%;
+        }
+        .card-title-1{
+            font-size: 3.5vw;
+        }
+        #page-title{
+            font-size: 9vw;
+        }
+        #mostRelevant-button{
+            width: 55%;
+        }
+
+        #mostRelevant-link{
+            font-size: 3.5vw;
+        }
     }
 
 </style>
