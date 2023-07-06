@@ -3,7 +3,7 @@
 import CircleContainer from '~/components/CircleContainer.vue';
     All Area Pages
 -->
-<template>
+<template>  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <main>
         <div id="AreaTop">
@@ -70,6 +70,25 @@ import CircleContainer from '~/components/CircleContainer.vue';
         color: white;
         font-size: 26px;
         font-weight: bold;
+    }
+
+    @media only screen and (max-width: 600px) {
+        #area-page-title {
+            position: relative;
+            font-size: 6vw;
+        }
+
+        #areas-page-description {
+            font-size: 14px;
+            margin-inline-end: 5%;
+        }
+
+        #areas-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 2%;
+        }
     }
 
 </style>
