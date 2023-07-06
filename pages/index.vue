@@ -185,15 +185,15 @@
     .little-text{
         color: white;
         text-align: justify;
-        font-size: 1vw;
+        font-size: 1.2vw;
     }
     #intro-link{
         display: flex;
         background-color: #3A4740;
         text-decoration: none;
         border-radius: 0.7vw;
-        width: 30%;
-        height: 8%;
+        width: 40%;
+        height: 2.7vw;
         align-items: center;
         justify-content: center;
         margin-top: 3.5%;
@@ -201,7 +201,7 @@
     #home-about-link{
         text-decoration: none;
         color: white;
-        font-size: 1.5vw;
+        font-size: 1.6vw;
     }
     .right-intro{
         flex: 1;
@@ -248,6 +248,7 @@
         position: relative;
         width: 100%;
         padding-bottom: 5%;
+        margin-bottom: 2%;
         background-color: white;
     }
     
@@ -299,7 +300,7 @@
         background-color: rgba(176, 191, 194, 0.8);
         width: 55%;
         height: 30%;
-        top: 65%;
+        top: 67.5%;
         right: 5%;
         box-shadow: 0.13vw 0.13vw 0.26vw #252525;
     }
@@ -314,7 +315,7 @@
     
     #square-head{
         color: #252525;
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
     #square-body{
         color: #252525;
@@ -322,7 +323,7 @@
         margin-block-end: 0;
         margin-inline-start: 0.6vw;
         margin-inline-end: 0.6vw;
-        font-size: 1.5vw;
+        font-size: 1.6vw;
     }
 
     .vert-line{
@@ -335,7 +336,7 @@
         flex-direction: row;
         gap: 5%;
         background-color: #B0BFC2;
-        padding: 5% 5% 5% 5%;
+        padding: 0% 5% 5% 5%;
         width: 100%;
     }
 
@@ -343,6 +344,7 @@
         display: flex;
         flex-direction: column;
         margin-left: 5%;
+        margin-top: 5%;
         gap: 5%;
         flex: 1;
         align-items: center;
@@ -357,7 +359,7 @@
 
     #team-body{
         color: white;
-        font-size: 1vw;
+        font-size: 1.2vw;
         text-align: justify;
     }
 
@@ -368,16 +370,16 @@
         border-radius: 0.7vw;
         justify-content: center;
         align-items: center;
-        width: 50%;
-        height: 2.5vw;
-        margin-top: 15%;
+        width: 40%;
+        height: 2.7vw;
+        margin-top: 10%;
     }
 
     #team-link{
         text-decoration: none;
         color: #B0BFC2;
         text-align: center;
-        font-size: 1.5vw;
+        font-size: 1.6vw;
     }
 
     #right-team{
@@ -437,8 +439,8 @@
 
     #projects-body{
         color: #252525;
-        font-size: 1vw;
-        width: 50%;
+        font-size: 1.2vw;
+        width: 60%;
         text-align: center;
         margin-bottom: 2%;
     }
@@ -465,28 +467,32 @@
         justify-content: center;
         align-items: center;
         width: 20%;
-        height: 3vw;
+        height: 2.7vw;
         margin-top: 5%;
+    }
+
+    #home-contacts-button{
+        background-color: #b0bfc2;
     }
 
     #home-projects-button{
         margin-top: 0%;
-        width: 10%;
-        height: 2vw;
+        width: 20%;
+        height: 2.7vw;
     }
 
     #home-contacts-link{
         text-decoration: none;
         color: white;
         text-align: center;
-        font-size: 2vw;
+        font-size: 1.6vw;
     }
 
     #home-projects-link{
         text-decoration: none;
         color: white;
         text-align: center;
-        font-size: 1.2vw;
+        font-size: 1.6vw;
     }
 
     #home-prefooter-container{
@@ -503,7 +509,11 @@
         color: white;
         margin: 0 0 0 0;
         text-align: center;
-        max-width: 60%;
+        width: 60%;
+    }
+
+    #prefooter-body1{
+        font-size: 1.2vw;
     }
 
     #prefooter-body2{
@@ -544,7 +554,6 @@
         #right-awards{
             gap: 0%;
         }
-
         #awards-square{
             width: 50%;
             height: 25%;
@@ -552,14 +561,67 @@
             right: 5%;
         }        
         #square-body{
-            font-size: 1.8vw;
+            font-size: 1.6vw;
         }
-
         .vert-line{
             border-left: 0.13vw solid #252525;
             margin: 2.8% 0.3% 2.8% 0%;
         }
-        /*RESPONSIVENESS DONE TILL AWARDS PART*/
+        #left-team{
+            margin-top: 5%;
+        }
+        #team-head{
+            font-size: 3.0vw;
+        }
+        #team-body{
+            font-size: 1.6vw;
+        }
+        #intro-link{
+            width: 50%;
+            height: 3.2vw;
+        }
+        #home-about-link{
+            font-size: 2vw;
+        }
+        #team-button{
+            width: 50%;
+            height: 3.2vw;
+            margin-top: 15%;
+        }
+        #team-link{
+            font-size: 2vw;
+        }
+
+        #home-contacts-button, #home-projects-button{
+            width: 25%;
+            height: 3.2vw;
+        }
+
+        #home-contacts-link, #home-projects-link{
+            font-size: 2vw;
+        }
+
+        #projects-head{
+            font-size: 3.0vw;
+        }
+        #projects-body{
+            font-size: 1.6vw;
+            width: 80%;
+        }
+        #prefooter-body1, #prefooter-body2{
+            max-width: 80%;
+        }
+        #prefooter-body1{
+            font-size: 1.6vw;
+        }
+        #prefooter-body2{
+            font-size: 1.2vw;
+        }
+        .social-icon{
+            width: 3%;
+            height: 3%;
+        }
+     
     }
 
     /* RESPONSIVENESS FOR DEVICES WITH SCREEN WIDTH UP TO 500PX*/
@@ -579,17 +641,38 @@
         #left-intro{
             margin-left: 0%;
         }
-
         #intro-link{
+            width: 30%;
+            height: 3.7vw;
             margin-top: 0%;
             margin-bottom: 3%;
         }
         #home-about-link{
-            font-size: 3vw;
+            font-size: 2.5vw;
+        }
+        #team-button{
+            width: 50%;
+            height: 3.7vw;
+            margin-top: 15%;
+        }
+        #team-link{
+            font-size: 2.5vw;
+        }
+
+        #home-contacts-button, #home-projects-button{
+            width: 30%;
+            height: 3.7vw;
+        }
+
+        #home-contacts-link, #home-projects-link{
+            font-size: 2.5vw;
         }
         .right-intro{
             width: 70%;
             margin-right: 0;
+        }
+        #areas-text{
+            width: 85%;
         }
         .home-title-center{
             font-size: 2.5vw;
@@ -613,7 +696,8 @@
         
         #right-awards{
             gap: 2%;
-            margin: 0% 5% 2.5% 5%;
+            margin: 0% 0% 2.5% 0%;
+            width: 85%;
         }
         #awards-square{
             width: 60%;
@@ -630,6 +714,54 @@
         .vert-line{
             margin: 3% 0% 3% 0%;
         }
-        /*RESPONSIVENESS DONE TILL AWARDS PART*/
+
+        #left-team{
+            display: flex;
+            flex-direction: column;
+            margin-left: 5%;
+            gap: 5%;
+            flex: 1;
+            align-items: center;
+            width: 50%;
+        }
+
+        #team-head{
+            color: white;
+            font-size: 5.5vw;
+            font-weight: bold;
+        }
+
+        #team-body{
+            color: white;
+            font-size: 2.5vw;
+            text-align: justify;
+        }
+
+        #projects-head{
+            font-size: 5.5vw;
+        }
+
+        #projects-body{
+            font-size: 2.5vw;
+            width: 85%;
+        }
+
+        #prefooter-body1, #prefooter-body2{
+            width: 85%;
+        }
+
+        #prefooter-body1{
+            font-size: 2.5vw;
+        }
+
+        #prefooter-body2{
+            font-size: 1.5vw;
+        }
+
+        .social-icon{
+            width: 4%;
+            height: 4%;
+        }
+
     }
 </style>
