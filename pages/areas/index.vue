@@ -71,24 +71,70 @@ import CircleContainer from '~/components/CircleContainer.vue';
         font-size: 26px;
         font-weight: bold;
     }
+    @media only screen and (max-width: 750px) {
+
+        #AreaTop{
+            margin-top: 7%;
+        }
+        #areas-page-description{
+            font-size: 13px;
+        }
+        #areas-container #circle-container .circle{
+            width: 150px;
+            height: 150px;
+
+        }
+        #areas-container #circle-container {
+            margin:20px 10px ;
+        }
+        #areas-container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin-bottom: 2%;
+            padding-top: 10px;
+        }
+    }
 
     @media only screen and (max-width: 600px) {
         #area-page-title {
             position: relative;
-            font-size: 6vw;
+            font-size: 3vw;
+        }
+
+        .circle-container .title-center{
+            font-size: 3vw;
         }
 
         #areas-page-description {
-            font-size: 14px;
+            font-size: 10px;
             margin-inline-end: 5%;
         }
+        #AreaTop{
+            margin-top: 8%;
+        }
+        
+    }
 
-        #areas-container {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
+    @media only screen and (max-width: 400px) {
+        #areas-container #circle-container .circle{
+            width: 100px;
+            height: 100px;
+
+        }
+        #AreaTop{
+            margin-top: 9%;
             margin-bottom: 2%;
         }
+
+        #area-page-title{
+            font-size: initial;
+        }
+        #AreaTop{
+            margin-top: 10%;
+        }
     }
+    
+
 
 </style>
