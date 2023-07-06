@@ -3,6 +3,8 @@
 -->
 <!--Source breadCrumbs : https://gist.github.com/nilocoelhojunior/522c6695c46a851671edf88d8551a79a-->
 <template>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <div class = 'page'>
         <TheHeader />
         <ol class="breadcrumb">
@@ -67,7 +69,7 @@ export default defineNuxtComponent({
     li:after {
       content: ' » ';
       display: inline;
-      font-size: 0.9em;
+      font-size: 0.9vw;
       color: #aaa;
       padding: 0 0.0725em 0 0.15em;
     }
@@ -83,5 +85,22 @@ export default defineNuxtComponent({
     .breadcrumb-item:hover{
       text-decoration: underline;
     }
+
+    @media (max-width: 600px) {
+    .breadcrumb {
+      position: static;
+      margin-top: 0;
+      padding: 0.5rem;
+    }
+
+    .item {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .item:after {
+      content: '';
+    }
+  }
 
 </style>

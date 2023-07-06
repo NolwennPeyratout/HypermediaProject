@@ -68,4 +68,23 @@
         margin: 4% 0% 1% 5%;
     }
 
+    @media only screen and (max-width: 800px) {
+        #IT-page-title{
+            font-size: 5vw;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        #IT-page-title{
+            font-size: 7vw;
+        }
+
+    }
+
+    @media only screen and (max-width: 400px) {
+        #IT-page-title{
+            font-size: 9vw;
+        }
+    }
+
 </style>

@@ -28,7 +28,8 @@ PROPS:
 
 <style>
     .project-card-1{
-        border-radius: 20%;
+        border-radius: 1.3vw;
+        width: 18%;
     }
     
     /* Animation of the whole component when hovering on it with the mouse*/
@@ -42,15 +43,15 @@ PROPS:
         justify-content: center;
         padding: 0.13vw;
         aspect-ratio: 5/4;
-        width: auto;
-        height: 14vw;
+        width: 97%;
+        height: auto;
     }
 
     .img-container-1 img{
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 5%;
+        border-radius: 1.3vw;
     }
 
     .proj-card-1{
@@ -59,8 +60,8 @@ PROPS:
         align-items: center;
         box-shadow: 0.13vw 0.13vw 0.26vw #3a4740;
         background-color: #b0bfc2;
-        padding: 0.3vw;
-        border-radius: 20px;
+        padding: 1.5%;
+        border-radius: 1.3vw;
         width: fit-content;
         height: fit-content;
     }
@@ -76,5 +77,5 @@ PROPS:
     .link-box-1{
         text-decoration: none;
     }
-    
+
 </style>
