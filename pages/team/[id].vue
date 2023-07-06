@@ -401,6 +401,22 @@
   #textImage-project {
     bottom: 5%;
   }
+  #person-name span{
+    font-size: 30px;
+  }
+  #person-role span, #person-role{
+    font-size: 18px;
+  }
+  .data-person{
+    font-size: 12pt;
+  }
+  #cv{
+    font-size: small;
+  }
+
+  #container-area-person > .circle-container .title-center{
+    font-size: 20px;
+  }
 
 }
 
