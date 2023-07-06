@@ -72,14 +72,28 @@ In this page we have all the members of the company with some informations like 
             width: 95%;
         }
         #title{
-            width: 64%;
+            width: 44%;
             margin-left: auto;
             margin-right: auto;
         }
         .rectangleTitle img {
-            width: 70%;
+            width: 50%;
             margin-left: auto;
             margin-right: auto;
+        }
+        .rectangleTitle-container .subtitle {
+            font-size: small;
+        }
+        #title{
+            font-size: 1.2em;
+        }
+        #team-page-description{
+            font-size: small;
+        }
+
+        #top-team > h1{
+            font-size: 30px;
+            margin-bottom: 4%;
         }
         
     }
