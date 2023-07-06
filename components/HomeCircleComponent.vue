@@ -1,3 +1,14 @@
+<!-- Component used only in the home page
+  It based on the CircleContainer component and it is composed of a circular 
+  container for an image with a text underneath used to display the title of the object
+
+It is used to display the areas of the company 
+
+PROPS:
+    - title: area name to be displayed below the circle
+    - link: link to the corresponding area page 
+    - imgUrl: path to the displayed image -->
+
 <template>
     <div class="home-circle-container">
       <NuxtLink :to="link">
@@ -31,6 +42,7 @@
   transition: transform 0.3s;
 }
 
+/* Animation of the image when hovering on it with the mouse*/
 .home-circle:hover {
   transform: scale(1.1);
   box-shadow: 4px 4px 8px #252525;

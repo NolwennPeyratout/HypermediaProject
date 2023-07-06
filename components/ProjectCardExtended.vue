@@ -1,3 +1,15 @@
+<!-- Component used in the single area pages
+  It is a rectangular container for an image and few information,
+  which are used to display the image of a project regarding a certain area and its information.
+
+PROPS:
+    - title: project name to be displayed below the image
+    - link: link to the corresponding project page 
+    - imgUrl: path to the displayed image  
+    - product: product offered by the displayed project  
+    - date: date of the displayed project
+    - location: location of the displayed project  -->
+
 <template>
   <div class="project-card">
     <NuxtLink :to="link" class="link-box">
@@ -58,6 +70,7 @@
     width: 100%;
   }
 
+  /* Animation of the whole component when hovering on it with the mouse*/
   .project-card:hover {
     transform: scale(1.02);
   }

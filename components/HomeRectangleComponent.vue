@@ -1,4 +1,15 @@
-<!-- TO BE FINISHED -->
+<!-- Component used only in the home page
+  It is composed of a rectangular container for an image with a text and a subtext underneath
+  which are used to display the name of a team person and his/her role in the company.
+
+It is used in the team carousel in the home page to diusplay all the company members
+
+PROPS:
+    - title: person name to be displayed below the rectangle
+    - link: link to the corresponding person page 
+    - imgUrl: path to the displayed image 
+    - subtitle: person role to be displayed under the person name -->
+
 <template>
   <div class="homeRect-container">
     <NuxtLink :to="link" class="homeRect-link">

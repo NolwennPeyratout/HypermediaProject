@@ -1,3 +1,14 @@
+<!-- Component used in all areas page, team pagte, and single person page
+  It is composed of a circular container for an image with a text underneath used 
+to display the title of the object
+
+It is mainly used to display the areas of the company 
+
+PROPS:
+    - title: main information to display below the circle
+    - link: link to the corresponding page 
+    - imgUrl: path to the displayed image -->
+
 <template>
     <div class="circle-container">
       <NuxtLink :to="link">
@@ -30,6 +41,7 @@
   transition: transform 0.3s;
 }
 
+/* Animation of the image when hovering on it with the mouse*/
 .circle:hover {
   transform: scale(1.1);
 }
