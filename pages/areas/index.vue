@@ -32,7 +32,8 @@ import CircleContainer from '~/components/CircleContainer.vue';
     
 </script>
 
-<style>
+<style>    
+
     #AreaTop
     {
         width: 100%;

@@ -72,7 +72,6 @@
 </script>
 
 <style>
-
 .custom-background_area {
   background-color: #8da0a4;
 } 
