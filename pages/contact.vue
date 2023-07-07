@@ -1,6 +1,6 @@
 <!--
   Page containing all the contact information of the company and a form in which the user can ask 
-  questions or send ideas for new projects
+  questions or send ideas for new projects  
 -->
 
 <template>
