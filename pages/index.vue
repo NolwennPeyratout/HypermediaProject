@@ -1,5 +1,6 @@
 <!--
-    Home page
+    Home page of the website in which is contained all the relevant information that should be 
+    immediately available to the user when he/she opens it.
 -->
 <template>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
         <TheHeader />
         <div id="home-content-page">
             <main>
+                <!-- First "area" of the home page, in which is displayed a little introduction about the company -->
                 <div id="home-intro-container">
                     <div id="left-intro">
                         <h1 class="big-text">Find the best funds for your career</h1>
@@ -18,13 +20,16 @@
                             of transformative projects, meet our talented team, and discover how we can collaborate to d
                             rive your venture to new heights. Join us on this exciting journey of innovation and investment, 
                             where possibilities become realities and dreams turn into extraordinary achievements.</p>
-                        <NuxtLink to="/about" id="intro-link">
+                        
+                            <!-- link to the about us page-->
+                            <NuxtLink to="/about" id="intro-link">
                             <div id="home-about-link">ABOUT US</div></NuxtLink>
                     </div>
                     <div class="right-intro">
                         <img src="/_nuxt/assets/img/home1.jpg" alt="home page image">
                     </div>
                 </div>
+                <!-- Second part of the home page, in which are displayed the company working areas through a circular component-->
                 <div id="home-areas-container">
                     <h1 class="big-text" id="areas-head">Our areas</h1>
                     <p class="little-text" id="areas-text">Our working areas are meticulously chosen to support, nurture, 
@@ -32,11 +37,13 @@
                     range of resources and expertise to fuel the success of ventures across industries. Whether you're an entrepreneur seeking funding or a startup enthusiast looking 
                     to explore the frontiers of innovation, our working areas offer a wealth of opportunities.</p>
                     <div id="areas-circles-container">
+                        <!-- A circular component is displayed for each working area (Food, Health and IT) -->
                         <HomeCircleComponent class="areas-circles" :title = "'Food'" :link = "'/areas/Food'" :img-url="'/_nuxt/assets/img/Food_area/Food1.jpg'" />
                         <HomeCircleComponent class="areas-circles" :title = "'IT'" :link = "'/areas/IT'" :img-url="'/_nuxt/assets/img/IT_area/IT1.jpg'" />
                         <HomeCircleComponent class="areas-circles" :title = "'Health'" :link = "'/areas/Health'" :img-url="'/_nuxt/assets/img/Health_area/Health1.jpg'" />
                     </div>
                 </div>
+                <!-- Third section of the home page in which the user is informed about the stats and awards received by the company -->
                 <div id="absolute-container">
                     <div id="home-awards-container">
                         <div class="left-awards">
@@ -51,6 +58,7 @@
                             is with immense pride that in 2023, we stand as the recipient of the Best Venture Capital Firm award—a 
                             testament to the power of teamwork and the relentless pursuit of greatness.</p>
                         </div>
+                        <!-- Little section in which the stats of the company are displayed-->
                         <div id="awards-square">
                             <div class="square-el">
                                 <h1 id="square-head">2021</h1>
@@ -70,6 +78,7 @@
                         </div>
                     </div>    
                 </div> 
+                <!-- Fourth section of the page in which the team is presented to the user through a self-reproducing carousel -->
                 <div id="home-team-container">
                     <div id="left-team">
                         <h1 id="team-head">Our Team</h1>
@@ -80,6 +89,7 @@
                             <div id="team-link">SEE MORE</div></NuxtLink>
                     </div>
                     <div id="right-team">
+                        <!-- Carousel displaying the people working for the company-->
                         <Carousel id="team-carousel" :autoplay="2000" :wrap-around="true" :items-to-show="3" :transition="500" :mouse-drag="false">
                             <Slide v-for="person in data[0]" :key="person">
                                 <HomeRectangleComponent class="team-carousel-item" :title="person.name" 
@@ -91,6 +101,8 @@
                         </Carousel>
                     </div>
                 </div>
+                <!-- Fifth part of the home page displaying the most relevant project of the company. The user can also access the page containing all the other
+                projects through an apposite button -->
                 <div id="home-projects-container">
                     <h1 id="projects-head">Our Projects</h1>
                     <p id="projects-body"> We proudly work at extraordinary projects that have captured the world's attention 
@@ -104,8 +116,10 @@
                         <ProjectCard class="home-card" :title = "'Starlink'" :link = "'/projects/Starlink'" :img-url="'/_nuxt/assets/img/projects/Starlink1.jpg'"/>
                         <ProjectCard class="home-card" :title = "'BioVegan Smoothies'" :link = "'/projects/BioVegan Smoothies'" :img-url="'/_nuxt/assets/img/projects/BioVegan Smoothies1.jpg'"/>
                     </div>
+                    <!-- Button that leads the user to the page containing all the company projects-->
                     <NuxtLink to="/projects" id="home-projects-button">
                             <div id="home-projects-link">SEE MORE</div></NuxtLink>
+                    <!-- Button that leads the user to the page containing the company contact information-->
                     <NuxtLink to="/contact" id="home-contacts-button">
                             <div id="home-contacts-link">CONTACT US</div></NuxtLink>
                 </div>
@@ -532,7 +546,7 @@
         height: 2%;
     }
 
-    /* RESPONSIVENESS FOR DEVICES WITH SCREEN WIDTH BETWEEN 500PX AND 700PX*/
+    /* Page layout made responsive. In this block the settings are set for screens up to 700px wide */
     @media only screen and (max-width: 700px) {
         .big-text{
             font-size: 5.0vw;
@@ -640,7 +654,7 @@
      
     }
 
-    /* RESPONSIVENESS FOR DEVICES WITH SCREEN WIDTH UP TO 500PX*/
+    /* Page layout made responsive. In this block the settings are set for screens up to 500px wide */
     @media only screen and (max-width: 500px) {
         #home-intro-container{
             flex-direction: column;

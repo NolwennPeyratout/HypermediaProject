@@ -1,6 +1,7 @@
 <!--
     import { ProjectCard } from '~/.nuxt/components';
-    All Project Page
+    
+    Page containing all the projects of the company concerning the Health area, displayed through a card-like component
 -->
 <template>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
                 transformative initiatives that are revolutionizing medical technology and improving lives around the world.</p>
         </div>
         <div id="health-projects-container">
+            <!-- Card component repeated as many times as the number of health-concerning projects -->
             <ProjectCard v-for = "project in projects" :title = "project.name" :link = "'/projects/' + project.name" 
             :img-url="'/_nuxt/assets/img/projects/'+ project.name +'1.jpg'" class="card-element"/>
         </div>
@@ -22,6 +24,7 @@
 </template>
 
 <script>
+    /* Data to be displayeed are retrieved here*/
     export default defineNuxtComponent({
     async asyncData() {
         const projects = await $fetch(useRuntimeConfig().baseURL + "/server/projects/byarea/Health");
@@ -69,6 +72,7 @@
         margin: 4% 0% 1% 5%;
     }
 
+    /* Page layout made responsive. In this block the settings are set for screens up to 700px wide */ 
     @media only screen and (max-width: 700px) {
         #health-page-title
         {
@@ -84,6 +88,7 @@
         }
     }
 
+    /* Page layout made responsive. In this block the settings are set for screens up to 500px wide */
     @media only screen and (max-width: 500px) {
         #health-page-title
         {

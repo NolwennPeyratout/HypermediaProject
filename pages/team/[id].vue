@@ -326,6 +326,7 @@
   background-color:rgba(91,116,112,0.8);
 }
 
+/* Page layout made responsive. In this block the settings are set for screens up to 800px wide */
 @media only screen and (max-width: 800px) {
   #container-area-person > .circle-container .circle {
     width: 150px;
@@ -370,6 +371,7 @@
 
 }
 
+/* Page layout made responsive. In this block the settings are set for screens up to 600px wide */
 @media only screen and (max-width: 600px) {
   #container-area-person .circle-container{
     margin:10px;

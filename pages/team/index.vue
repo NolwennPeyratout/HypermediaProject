@@ -67,7 +67,7 @@ In this page we have all the members of the company with some informations like 
         gap: 5%;
     }
 
-
+/* Page layout made responsive. In this block the settings are set for screens up to 700px wide */
     @media only screen and (max-width: 700px) {
         .rectangleTitle-container {
             width: 40%;
@@ -87,6 +87,7 @@ In this page we have all the members of the company with some informations like 
        
     }
 
+    /* Page layout made responsive. In this block the settings are set for screens up to 500px wide */
     @media only screen and (max-width: 500px) {
         .rectangleTitle-container {
             width: 95%;

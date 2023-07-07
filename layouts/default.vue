@@ -9,7 +9,7 @@
         <TheHeader />
         <ol class="breadcrumb">
           <li v-for="(item, i) in crumbs" :key="i" class="item">
-            <nuxt-link :to="item.to" class="breadcrumb-item">
+            <nuxt-link :to="item.to" class="breadcrumb-item"/>
             <nuxt-link  :to="item.to" class="breadcrumb-item">
               {{ item.title }}
             </nuxt-link>
@@ -87,18 +87,94 @@ export default defineNuxtComponent({
       .breadcrumb-item{
         font-size: small;
       }
+      .footer-info{
+          font-size: 1.5vw;
+      }
+      #copyright{
+          font-size: 0.9vw;
+      }
+      .sub-links{
+          gap: 1.2vw;
+      }
+      .main-link{
+          font-size: 1.6vw;
+      }
+      .link{
+          font-size: 1.4vw;
+      } 
 
+      /*HEADER RESPONSIVENESS SETTINGS*/
+
+      header {
+          font-size: 2vw;
+      }
+
+      #web-logo{
+          height: 8vw;
+      }
+
+      nav {
+          gap: 1.6vw;
+      }
+       .dropdown-content {
+          padding: 0.8vw;
+          width: 17vw;
+      }
+
+      .dropdown-content a {
+          font-size: 1.9vw;
+          padding: 0.4vw 0.8vw;
+      }
     }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 500px){
+      .footer-info{  
+        margin: 0% 0% 0% 1.8vw;
+        font-size: 1.8vw;
+      }
+      #copyright{
+          font-size: 1.2vw;
+      }
+      .sub-links{
+          gap: 1.2vw;
+      }
+      .main-link{
+          font-size: 2vw;
+      }
+      .link{
+          font-size: 1.8vw;
+          max-width: 12vw;
+      } 
 
-    .breadcrumb-item{
-      font-size: x-small;
-    }
-    .breadcrumb{
-      margin-top: 1.7%;
-    }
+      /*HEADER RESPONSIVENESS SETTINGS*/
 
-}
+      header {
+          font-size: 2.7vw;
+      }
+
+      #web-logo{
+          height: 10vw;
+      }
+
+      nav {
+          gap: 1.9vw;
+      }
+       .dropdown-content {
+          padding: 1vw;
+          width: 21vw;
+      }
+
+      .dropdown-content a {
+          font-size: 2.5vw;
+          padding: 0.5vw 0.9vw;
+      }
+
+      .breadcrumb-item{
+        font-size: x-small;
+      }
+      .breadcrumb{
+        margin-top: 5%;
+      }
+    }
 
 </style>

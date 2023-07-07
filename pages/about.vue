@@ -1,5 +1,5 @@
 <!--
-    About us page
+    About us page containing a description of how the company was born and its evolution in time
 -->
 <template>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -132,6 +132,7 @@
         width: 93%;
     }
 
+    /* Page layout made responsive. In this block the settings are set for screens up to 700px wide */
     @media only screen and (max-width: 700px) {
         #main-content-about{
             display: block;
@@ -176,6 +177,8 @@
         }
         
     }
+
+    /* Page layout made responsive. In this block the settings are set for screens up to 500px wide */
     @media only screen and (max-width: 500px) {
         #aboutus-title h1{
             font-size: 5.5vw;
@@ -188,6 +191,7 @@
         }
     }
 
+    /* Page layout made responsive. In this block the settings are set for screens up to 900px wide */
     @media only screen and (max-width: 900px) {
         #story{
             width: 95%;

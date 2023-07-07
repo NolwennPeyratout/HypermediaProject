@@ -1,3 +1,8 @@
+<!--
+  Page containing all the contact information of the company and a form in which the user can ask 
+  questions or send ideas for new projects
+-->
+
 <template>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -6,6 +11,7 @@
             <h1 id="contacts-page-title"> Contact us </h1>
         </div>
       <div class="contact-container">
+        <!-- The form is contained in this part of the screen -->
         <div class="form-wrapper">
           <form>
             <h2 class="form-title">Tell us your idea!</h2>
@@ -32,6 +38,8 @@
             <button class="submit-button">Send Message</button>
           </form>
         </div>
+        <!-- The information about the company (email, address, telephone number and opening hours)
+        are contained in this part of the screen-->
         <div class="contact-info">
           <h2 class="info-title">Contact Information</h2>
           <ul>
@@ -160,7 +168,7 @@
         content: none;
     }
 
-
+/* Page layout made responsive. In this block the settings are set for screens up to 700px wide */
     @media only screen and (max-width: 700px) {
       #contacts-page-title
       {
@@ -190,6 +198,7 @@
       }
     }
 
+    /* Page layout made responsive. In this block the settings are set for screens up to 500px wide */
     @media only screen and (max-width: 500px) {
 
       .contact-container {

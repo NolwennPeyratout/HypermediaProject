@@ -1,11 +1,14 @@
 <!--
-    Page description for a single project.
+    Page description for a single project, containing all its information, its supervisor and concerning area. 
+    On the bottom part of the page are displayed 4 relevant images for the project
 -->
 <template>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <main>
         <div class = "project-presentation-page">
+            
+            <!-- Part of the page containing all the info regarding the displayed project -->
           <div class = "project-info-container">
             <h1 id="project-name" class = "data-name"> <span>{{ data[0].name }}</span></h1>
             <p id="project-presentation" class = "data-presentation"> <span class="data-category"> Project presentation:</span> {{ data[0].presentation }}</p>
@@ -15,6 +18,7 @@
             <p id="project-product" class = "data-product"> <span class="data-category">Product offered:</span> {{ data[0].product_service }}</p>
             <p id="cv">{{ data[0].cv }}</p>
           </div>
+          <!-- Right part of the page in which the supervisor and concering area information is displayed through circular components -->
           <div class="bubbles-container">
             <div class="supervisor-bubble">
                 <SmallCircleContainer :title="'Supervisor: ' + data[2].person_name" :link="'/team/' + data[2].person_name" 
@@ -27,6 +31,7 @@
           </div>
         </div>
         
+        <!-- Part of the screen in which are displayed the 4 relevant images for the project -->
         <div class = "project-images">
             <img class = "image" :src = "'/_nuxt/assets/img/projects/'+ data[0].name +'1.jpg'"  />
             <img class = "image" :src = "'/_nuxt/assets/img/projects/'+ data[0].name +'2.jpg'"   />
@@ -37,14 +42,9 @@
 </template>
 
 <script>
-   /*
-        The defineNuxtComponent gets us access to the asyncData property.
-        This is the first function that is called by nuxt when the page is called.
-        We can use this to pre-load the data to make it available to the user.
-    */
     export default defineNuxtComponent({
         async asyncData() {
-            // Despite using the options API, this.$route is not available in asyncData.
+            /* Data to be displayeed are retrieved here*/
             const route = useRoute()
             const data = []
             data[0] = await $fetch(useRuntimeConfig().baseURL + '/server/projects/' + route.params.id)
@@ -126,6 +126,7 @@
     font-weight: bold;
 }
 
+/* Page layout made responsive. In this block the settings are set for screens up to 700px wide */
 @media only screen and (max-width: 700px) {
         .circle-title{
             font-size: 1.55vw;
@@ -150,7 +151,7 @@
             margin-top: 7%;
         }
     }
-
+/* Page layout made responsive. In this block the settings are set for screens up to 500px wide */
     @media only screen and (max-width: 500px) {
         .circle-title{
             font-size: 1.55vw;
@@ -173,7 +174,7 @@
         }
     }
 
-    /* Responsiveness for images*/
+/* Responsiveness for images*/
 @media only screen and (max-width: 600px) {
     .image{
         width: 75%;

@@ -1,6 +1,6 @@
 <!--
     import { ProjectCard } from '~/.nuxt/components';
-    All Project Page
+    Page conaining all the projects of the company, displayed through card-like elements
 -->
 <template>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,15 +17,18 @@
                  future of innovation in these vital sectors.</p>
         </div>
         <div id="projects-container">
+            <!-- Card component repeated as many times as the number of projects -->
             <ProjectCard v-for = "project in projects" :title = "project.name" :link = "'/projects/' + project.name" 
             :img-url="'/_nuxt/assets/img/projects/'+ project.name +'1.jpg'" class="card-element"/>
         </div>
+        <!-- Button-like link that leads the user to the most relevant projects of the company-->
         <NuxtLink to="/projects/MostRelevant" id="mostRelevant-button">
             <div id="mostRelevant-link">MOST RELEVANT PROJECTS</div></NuxtLink>
     </main>
 </template>
 
 <script>
+    //Data to be displayeed are retrieved here
     export default defineNuxtComponent({
     async asyncData() {
         const projects = await $fetch(useRuntimeConfig().baseURL + "/server/projects");
@@ -97,6 +100,7 @@
         font-size: 1.6vw;
     }
 
+    /* Page layout made responsive. In this block the settings are set for screens up to 800px wide */
     @media only screen and (max-width: 800px) {
         .project-card-1{
             width: 23%;
@@ -106,6 +110,7 @@
         }
     }
 
+    /* Page layout made responsive. In this block the settings are set for screens up to 700px wide */
     @media only screen and (max-width: 700px) {
         #page-title
         {
@@ -130,6 +135,7 @@
         }
     }
 
+    /* Page layout made responsive. In this block the settings are set for screens up to 600px wide */
     @media only screen and (max-width: 600px) {
         .project-card-1{
             width: 30%;
@@ -139,6 +145,7 @@
         }
     }
 
+    /* Page layout made responsive. In this block the settings are set for screens up to 500px wide */
     @media only screen and (max-width: 500px) {
         #page-title
         {
@@ -161,6 +168,7 @@
         }
     }
 
+    /* Page layout made responsive. In this block the settings are set for screens up to 400px wide */
     @media only screen and (max-width: 400px) {
         .project-card-1{
             width: 48%;

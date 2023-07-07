@@ -106,6 +106,7 @@
         text-decoration: none;
         color: #fff;
         max-width: 9vw;
+        font-size: 1.1vw;
         word-break: normal;
     }    
 </style>

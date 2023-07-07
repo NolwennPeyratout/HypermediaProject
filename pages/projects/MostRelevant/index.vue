@@ -1,6 +1,7 @@
 <!--
     import { ProjectCard } from '~/.nuxt/components';
-    All Project Page
+    
+    Page containing the five most relevant projects of the company, displayed through a card-like component
 -->
 <template>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
             <p id="mrp-page-description">On this page we proudly display the most relevant projects addressed by our company in the past years</p>
         </div>
         <div id="mr-projects-container">
+            <!-- Cards containing data of each relevant project-->
             <ProjectCard class="card-element" :title = "'Apple Visor'" :link = "'/projects/Apple Visor'" :img-url="'/_nuxt/assets/img/projects/Apple Visor1.jpg'"/>
             <ProjectCard class="card-element" :title = "'Nutella'" :link = "'/projects/Nutella'" :img-url="'/_nuxt/assets/img/projects/Nutella1.jpg'"/>
             <ProjectCard class="card-element" :title = "'Glucometer'" :link = "'/projects/Glucometer'" :img-url="'/_nuxt/assets/img/projects/Glucometer1.jpg'"/>
@@ -58,6 +60,7 @@
         margin-inline-end: 5%;
     }
 
+    /* Page layout made responsive. In this block the settings are set for screens up to 700px wide */   
     @media only screen and (max-width: 700px) {
         #mrp-page-title
         {
@@ -72,7 +75,8 @@
             margin-top: 7%;
         }
     }
-
+    
+    /* Page layout made responsive. In this block the settings are set for screens up to 500px wide */   
     @media only screen and (max-width: 500px) {
         #mrp-page-title
         {

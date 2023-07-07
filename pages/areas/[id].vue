@@ -4,6 +4,9 @@
 <template>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Carousel displaying three relevant images regarding the single area
+    It displays one picture at a time and moves automatically between them
+  -->
   <main class="custom-background_area"> 
     <div id="carousel-container_area">
       <Carousel id="carousel_area" :autoplay="2000" :wrap-around="true" :items-to-show="1.1">
@@ -16,6 +19,12 @@
       </Carousel>
     </div>
     
+    <!--
+      Part of the page displaying all the projects concerning the area. 
+      The projects are displayed in two ways: the odd ones are displayed on the
+      left part of the page, the even ones are displayed on the right, with two 
+      symmetric layouts
+    -->
     <div id="project-container_area">
       <template v-for="(project, index) in data[1]">
         <ProjectCardExtended v-if="index % 2 === 0"
@@ -52,6 +61,7 @@
     Slide,
     Pagination,
 },
+      /* Data to be displayeed are retrieved here*/
       async asyncData() {
         const route = useRoute()
         const data = []
@@ -147,6 +157,7 @@ main {
   background-color: white;
 }
 
+/* Page layout made responsive. In this block the settings are set for screens up to 700px wide */
 @media only screen and (max-width: 700px) {
   #card-title, #card-title_custom {
     font-size: 4vw;
@@ -171,6 +182,7 @@ main {
   }
 }
 
+/* Page layout made responsive. In this block the settings are set for screens up to 500px wide */
 @media only screen and (max-width: 500px) {
   #card-title, #card-title_custom {
     font-size: 5.5vw;

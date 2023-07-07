@@ -1,7 +1,8 @@
 <!--
 
 import CircleContainer from '~/components/CircleContainer.vue';
-    All Area Pages
+
+Page conaining all the working areas of the company, displayed through a circular element
 -->
 <template>  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,9 +23,9 @@ import CircleContainer from '~/components/CircleContainer.vue';
 
 <script>
 
+    /* Data to be displayeed are retrieved here*/
     export default defineNuxtComponent({
     async asyncData() {
-        // useRuntimeConfig provide us with environment variables set up in the nuxtconfig file
         const areas = await $fetch(useRuntimeConfig().baseURL + "/server/areas");
         return { areas };
     },
@@ -72,6 +73,8 @@ import CircleContainer from '~/components/CircleContainer.vue';
         font-size: 26px;
         font-weight: bold;
     }
+
+    /* Page layout made responsive. In this block the settings are set for screens up to 700px wide */
     @media only screen and (max-width: 700px) {
 
         #AreaTop{
@@ -100,6 +103,7 @@ import CircleContainer from '~/components/CircleContainer.vue';
         }
     }
 
+    /* Page layout made responsive. In this block the settings are set for screens up to 500px wide */
     @media only screen and (max-width: 500px) {
         #area-page-title {
             position: relative;
@@ -120,6 +124,7 @@ import CircleContainer from '~/components/CircleContainer.vue';
         
     }
 
+    /* Page layout made responsive. In this block the settings are set for screens up to 400px wide */
     @media only screen and (max-width: 400px) {
         #areas-container #circle-container .circle{
             width: 100px;
