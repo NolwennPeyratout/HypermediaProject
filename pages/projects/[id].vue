@@ -86,37 +86,22 @@
 }
 
 #project-name{
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     color: white;
     text-shadow: 0.2vw 0.2vw 0.3vw #3a4740;
     margin-top: 1%;
     margin-bottom: 1%;
 }
 
-#project-location{
+#project-location, #project-startup, 
+#project-presentation, #project-date, #project-product{
     margin-top: 0.8%;
     margin-bottom: 0.8%;
-}
-
-#project-startup{
-    margin-top: 0.8%;
-    margin-bottom: 0.8%;
+    font-size: 1.2vw;
 }
 
 #project-presentation{
-    margin-top: 0.8%;
-    margin-bottom: 0.8%;
     text-align: justify;
-}
-
-#project-date{
-    margin-top: 0.8%;
-    margin-bottom: 0.8%;
-}
-
-#project-product{
-    margin-top: 0.8%;
-    margin-bottom: 0.8%;
 }
 
 .project-images{
@@ -148,11 +133,18 @@
         .small-circle-container {
             width: 85%;
         }
-        .data-presentation, .data-timestamp, .data-startup, .data-location, .data-product{
-            font-size: 1.8vw;
+        #project-location, #project-startup, 
+        #project-presentation, #project-date, #project-product{
+            margin-top: 1.5%;
+            margin-bottom: 1.5%;
+            font-size: 1.6vw;
+        }
+        #project-product{
+            margin-bottom: 5%;
         }
         #project-name{
             font-size: 5vw;
+            margin-top: 5%;
         }
         .project-presentation-page{
             margin-top: 6%;
@@ -166,11 +158,12 @@
         .small-circle-container {
             width: 95%;
         }
-        .data-presentation, .data-timestamp, .data-startup, .data-location, .data-product{
-            font-size: 2.1vw;
+        #project-location, #project-startup, 
+        #project-presentation, #project-date, #project-product{
+            font-size: 2.5vw;
         }
         #project-name{
-            font-size: 6.5vw;
+            font-size: 5.5vw;
         }
         .project-info-container{
             margin-right: 0.5vw;

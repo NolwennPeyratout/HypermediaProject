@@ -35,11 +35,27 @@ In this page we have all the members of the company with some informations like 
 </script>
 
 <style>
-    #team-title{
+    #team-title
+    {
+        font-weight: bolder;
+        color: #202622;
+        text-align: start;
         font-size: 4.5vw;
     }
-    #team-page-description{
+
+    #team-page-description
+    {
+        color: #202622;
+        text-align: justify;
         font-size: 1.2vw;
+        margin-top: 1%;
+        margin-block-end: 0%;
+        margin-inline-end: 5%;
+    }
+
+    #top-team{
+            width: 100%;
+            margin: 4% 0% 1% 5%;
     }
    #rectangle-container
     {
@@ -50,25 +66,7 @@ In this page we have all the members of the company with some informations like 
         align-content: center;
         gap: 5%;
     }
-    #top-team{
-        width: 95%;
-        margin: 4% 2.5% ;
-    }
-    #team-page-description
-    {
-        color: #202622;
-        text-align: justify;
-        margin-top: 1%;
-        margin-block-end: 0%;
-    }
-    #top-team > h1{
-        color: #202622;
-        font-size: 40px;
-        margin-bottom: 1%;
-    }
-    #top-team{
-            margin-top: 6vw;
-        }
+
 
     @media only screen and (max-width: 700px) {
         .rectangleTitle-container {
@@ -78,7 +76,7 @@ In this page we have all the members of the company with some informations like 
             margin-top: 10vw;
         }
         #team-title{
-        font-size: 5vw;
+            font-size: 5vw;
         }
         #team-page-description{
             font-size: 1.6vw;
@@ -110,8 +108,8 @@ In this page we have all the members of the company with some informations like 
             font-size: 1.2em;
         }
         #team-title{
-        font-size: 5.5vw;
-        margin-bottom: 4%;
+            font-size: 5.5vw;
+            margin-bottom: 4%;
         }
         #team-page-description{
             font-size: 2.5vw;

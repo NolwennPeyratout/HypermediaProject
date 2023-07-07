@@ -42,11 +42,11 @@
                     </div>
                 </div>
                 <div id="follow">
-                    <h1>Follow us on </h1>
+                    <h1>Follow us on:</h1>
                     <div id="icones">
-                        <img id=icone-follow src="../assets/img/icone/fb.png" alt="Icone of Facebook">
-                        <img id=icone-follow src="../assets/img/icone/twitter.png" alt="Icone of Twitter">
-                        <img id=icone-follow src="../assets/img/icone/linkedIn.png" alt="Icone of LinkedIn">
+                        <img id=icone-follow src="../assets/img/facebook-logo.png" alt="Icone of Facebook">
+                        <img id=icone-follow src="../assets/img/twitter-logo.png" alt="Icone of Twitter">
+                        <img id=icone-follow src="../assets/img/linkedin-logo.png" alt="Icone of LinkedIn">
                     </div>
                 </div>
             </div> 
@@ -88,7 +88,9 @@
     }
 
     #story-title h2{
+        color: white;
         margin-top: 0%;
+        font-size: 2.5vw;
     }
 
     #story-text{
@@ -102,23 +104,27 @@
         gap:8%;
         margin-top: 20%;
     }
+    #follow h1{
+        font-size: 2vw;
+
+    }
     #icones{
         display: flex;
         gap:10px;
     }
 
     #icone-follow{
-        width:50px;
-        height: 50px;
-
+        width: 4vw;
+        height: 4vw;
     }
     #story-text p {
         margin-top: 0%;
         margin-bottom: 9%;
         text-align: justify;
+        font-size: 1.2vw;
     }
     #aboutus-title h1{
-        font-size: 2em;
+        font-size: 4.5vw;
     }
 
     #aboutus-title{
@@ -155,7 +161,7 @@
         }
         #story-text p{
             margin-bottom: 3%;
-            font-size: small;
+            font-size: 1.6vw;
         }
         #follow{
             padding-bottom: 5%;
@@ -165,10 +171,19 @@
             font-size: 1.5em;
         }
         #aboutus-title h1{
-            font-size: 1.5em;
+            font-size: 5vw;
         }
         
     }
+    @media only screen and (max-width: 500px) {
+        #aboutus-title h1{
+            font-size: 5.5vw;
+        }
+        #story-text p{
+            font-size: 2.5vw;
+        }
+    }
+
     @media only screen and (max-width: 900px) {
         #story{
             width: 95%;

@@ -26,7 +26,7 @@
         font-weight: bolder;
         color: #202622;
         text-align: start;
-        font-size: 3vw;
+        font-size: 4.5vw;
     }
 
     #mr-projects-container
@@ -52,27 +52,33 @@
     {
         color: #202622;
         text-align: justify;
+        font-size: 1.2vw;
         margin-top: 1%;
         margin-block-end: 0%;
         margin-inline-end: 5%;
     }
 
-    @media only screen and (max-width: 800px) {
-        #mrp-page-title{
+    @media only screen and (max-width: 700px) {
+        #mrp-page-title
+        {
             font-size: 5vw;
         }
+
+        #mrp-page-description
+        {
+            font-size: 1.6vw;
+        }
     }
 
-    @media only screen and (max-width: 600px) {
-        #mrp-page-title{
-            font-size: 7vw;
+    @media only screen and (max-width: 500px) {
+        #mrp-page-title
+        {
+            font-size: 5.5vw;
         }
 
-    }
-
-    @media only screen and (max-width: 400px) {
-        #mrp-page-title{
-            font-size: 9vw;
+        #mrp-page-description
+        {
+            font-size: 2.5vw;
         }
     }
 </style>

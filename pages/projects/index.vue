@@ -41,19 +41,25 @@
         font-weight: bolder;
         color: #202622;
         text-align: start;
-        font-size: 3vw;
+        font-size: 4.5vw;
     }
 
     #projects-page-description
     {
         color: #202622;
         text-align: justify;
+        font-size: 1.2vw;
         margin-top: 1%;
         margin-block-end: 0%;
         margin-inline-end: 5%;
     }
 
-   #projects-container
+    #pageTop{
+            width: 100%;
+            margin: 4% 0% 1% 5%;
+    }
+   
+    #projects-container
     {
         display: flex;
         flex-wrap: wrap;
@@ -71,10 +77,7 @@
         margin-bottom: 1.5%;
     }
 
-    #pageTop{
-        width: 100%;
-        margin: 4% 0% 1% 5%;
-    }
+    
 
     #mostRelevant-button{
         display: flex;
@@ -103,15 +106,24 @@
         .card-title-1{
             font-size: 2.0vw;
         }
-        #page-title{
-            font-size: 5vw;
-        }
         #mostRelevant-button{
             width: 35%;
         }
 
         #mostRelevant-link{
             font-size: 2vw;
+        }
+    }
+
+    @media only screen and (max-width: 700px) {
+        #page-title
+        {
+            font-size: 5vw;
+        }
+
+        #projects-page-description
+        {
+            font-size: 1.6vw;
         }
     }
 
@@ -122,15 +134,23 @@
         .card-title-1{
             font-size: 2.6vw;
         }
-        #page-title{
-            font-size: 7vw;
-        }
         #mostRelevant-button{
             width: 42%;
         }
-
         #mostRelevant-link{
             font-size: 2.6vw;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        #page-title
+        {
+            font-size: 5.5vw;
+        }
+
+        #projects-page-description
+        {
+            font-size: 2.5vw;
         }
     }
 
@@ -141,13 +161,9 @@
         .card-title-1{
             font-size: 3.5vw;
         }
-        #page-title{
-            font-size: 9vw;
-        }
         #mostRelevant-button{
             width: 55%;
         }
-
         #mostRelevant-link{
             font-size: 3.5vw;
         }

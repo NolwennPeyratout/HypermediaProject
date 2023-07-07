@@ -37,7 +37,7 @@
         font-weight: bolder;
         color: #202622;
         text-align: start;
-        font-size: 3vw;
+        font-size: 4.5vw;
     }
 
     #healthproj-page-description
@@ -45,6 +45,7 @@
         color: #202622;
         text-align: justify;
         margin-top: 1%;
+        font-size: 1.2vw;
         margin-block-end: 0%;
         margin-inline-end: 5%;
     }
@@ -68,22 +69,27 @@
         margin: 4% 0% 1% 5%;
     }
 
-    @media only screen and (max-width: 800px) {
-        #health-page-title{
+    @media only screen and (max-width: 700px) {
+        #health-page-title
+        {
             font-size: 5vw;
         }
+
+        #healthproj-page-description
+        {
+            font-size: 1.6vw;
+        }
     }
 
-    @media only screen and (max-width: 600px) {
-        #health-page-title{
-            font-size: 7vw;
+    @media only screen and (max-width: 500px) {
+        #health-page-title
+        {
+            font-size: 5.5vw;
         }
 
-    }
-
-    @media only screen and (max-width: 400px) {
-        #health-page-title{
-            font-size: 9vw;
+        #healthproj-page-description
+        {
+            font-size: 2.5vw;
         }
     }
 

@@ -59,24 +59,25 @@
         font-weight: bolder;
         color: #202622;
         text-align: start;
-        font-size: 3vw;
+        font-size: 4.5vw;
     }
 
     .contact-container {
       display: flex;
-      justify-content: space-between;
-      width: 80%;
+      flex-direction: row;
+      justify-content: center;
+      width: 90%;
       margin-bottom: 2%;
       background-color: transparent;
-      margin-left: 10%;
+      margin-left: 0%;
     }
   
     .form-wrapper {
-      flex: 1.5;
+      flex: 2;
       border: 2px solid #333;
       border-radius: 20px;
       background-color: #5b7470;
-      margin-right: 50px;
+      margin-right: 0;
     }
   
     form {
@@ -84,7 +85,7 @@
     }
   
     .form-title {
-      font-size: 24px;
+      font-size: 2.5vw;
       margin-bottom: 20px;
       margin-left: 30px;
       color: #b0bfc2;
@@ -98,7 +99,7 @@
   
     label {
       display: block;
-      font-size: 16px;
+      font-size: 1.6vw;
       font-weight: bold;
       color: #b0bfc2;
       margin-bottom: 5px;
@@ -108,7 +109,7 @@
     textarea {
       width: 100%;
       padding: 10px;
-      font-size: 16px;
+      font-size: 1.6vw;
       border-radius: 5px;
       border: 1px solid #ccc;
       border: none;
@@ -126,7 +127,7 @@
       color: #fff;
       border: none;
       padding: 10px 20px;
-      font-size: 16px;
+      font-size: 1.6vw;
       border-radius: 5px;
       cursor: pointer;
       margin-left: 30px;
@@ -139,7 +140,7 @@
     }
   
     .info-title {
-      font-size: 24px;
+      font-size: 2.5vw;
       margin-bottom: 20px;
     }
   
@@ -151,11 +152,73 @@
   
     .contact-info li {
       display: list-item;
-      margin-bottom: 10px;
+      margin-bottom: 1vw;
+      font-size: 1.2vw;
     }
 
     .contact-info li:after{
         content: none;
     }
 
+
+    @media only screen and (max-width: 700px) {
+      #contacts-page-title
+      {
+        font-size: 5vw;
+      }
+      .form-title, .info-title {
+        font-size: 3.5vw;
+      }
+      .contact-info li {
+        margin-bottom: 1.6vw;
+        font-size: 1.6vw;
+      }
+      label {
+        font-size: 2.5vw;
+      }
+    
+      input,
+      textarea {
+        font-size: 2.5vw;
+      }
+    
+      .submit-button {
+        font-size: 2.5vw;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+
+      .contact-container {
+        flex-direction: column-reverse;
+      }
+      .contact-info {
+        flex: 1;
+        padding-left: 0px;
+        margin-bottom: 2%;
+      }
+      #contacts-page-title
+      {
+        font-size: 5.5vw;
+      }
+      .form-title, .info-title {
+        font-size: 4vw;
+      }
+      .contact-info li {
+        margin-bottom: 2.5vw;
+        font-size: 2.5vw;
+      }
+      label {
+        font-size: 3.2vw;
+      }
+    
+      input,
+      textarea {
+        font-size: 3.2vw;
+      }
+    
+      .submit-button {
+        font-size: 3.2vw;
+      }
+    }
   </style>

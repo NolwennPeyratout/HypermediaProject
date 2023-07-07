@@ -37,7 +37,7 @@
         font-weight: bolder;
         color: #202622;
         text-align: start;
-        font-size: 3vw;
+        font-size: 4.5vw;
     }
 
     #foodproj-page-description
@@ -47,6 +47,7 @@
         margin-top: 1%;
         margin-block-end: 0%;
         margin-inline-end: 5%;
+        font-size: 1.2vw;
     }
 
     #food-projects-container
@@ -68,22 +69,27 @@
         margin: 4% 0% 1% 5%;
     }
     
-    @media only screen and (max-width: 800px) {
-        #food-page-title{
+    @media only screen and (max-width: 700px) {
+        #food-page-title
+        {
             font-size: 5vw;
         }
+
+        #foodproj-page-description
+        {
+            font-size: 1.6vw;
+        }
     }
 
-    @media only screen and (max-width: 600px) {
-        #food-page-title{
-            font-size: 7vw;
+    @media only screen and (max-width: 500px) {
+        #food-page-title
+        {
+            font-size: 5.5vw;
         }
 
-    }
-
-    @media only screen and (max-width: 400px) {
-        #food-page-title{
-            font-size: 9vw;
+        #foodproj-page-description
+        {
+            font-size: 2.5vw;
         }
     }
 
