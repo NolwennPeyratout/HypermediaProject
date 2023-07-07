@@ -70,10 +70,11 @@ PROPS:
     width: 100%;
   }
 
-  /* Animation of the whole component when hovering on it with the mouse*/
-  .project-card:hover {
-    transform: scale(1.02);
+  
+  .project-card:hover .card-title{
+    text-decoration: underline;
   }
+  
 
   .img-container {
     display: flex;
