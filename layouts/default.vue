@@ -10,7 +10,6 @@
         <ol class="breadcrumb">
           <li v-for="(item, i) in crumbs" :key="i" class="item">
             <nuxt-link :to="item.to" class="breadcrumb-item">
-            <nuxt-link  :to="item.to" class="breadcrumb-item">
               {{ item.title }}
             </nuxt-link>
           </li>
