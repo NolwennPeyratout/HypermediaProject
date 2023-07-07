@@ -16,5 +16,7 @@ export default defineNuxtConfig({
         public:{
             baseURL: "http://localhost:3000"
         }
-    }
+    },
+
+    modules: ['@nuxtjs/supabase']
 })
