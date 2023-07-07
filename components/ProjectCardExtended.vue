@@ -19,13 +19,11 @@ PROPS:
             <img :src="imgUrl" alt="Immagine del progetto" />
           </div>
           <div class="text-container">
-            <div class="project-details">
-              <div class="contact-info">
-                <p class="card-title">{{ title }}</p>
-                <p class="card-product">Product / Service: {{ product }}</p>
-                <p class="card-date">Date: {{ date }}</p>
-                <p class="card-location">Location: {{ location }}</p>
-              </div>
+            <div class="info-cont">
+              <p id="card-title">{{ title }}</p>
+              <p id="card-product">Product / Service: {{ product }}</p>
+              <p id="card-date">Date: {{ date }}</p>
+              <p id="card-location">Location: {{ location }}</p>
             </div>
           </div>
         </div>
@@ -44,66 +42,64 @@ PROPS:
     display: flex;
     align-items: center;
     background-color: transparent;
-    padding: 10px;
+    padding: 1vw;
     width: fit-content;
     height: fit-content;
   }
 
   .grid-container {
     display: grid;
-    grid-template-columns: auto 250px;
-    grid-column-gap: 20px;
+    grid-template-columns: auto 30vw;
+    grid-column-gap: 2vw;
     background-color: transparent;
   }
 
   .text-container {
+    background-color: #c0cdd0;
+    border-radius: 0.5vw 0.5vw 10vw 0.5vw;
+  }
+  .info-cont{
+    margin-left: 2vw;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    background-color: #c0cdd0;
-    border-radius: 2% 2% 50% 2%;
+    justify-content: center;
+    gap: 10%;
   }
 
   .project-card {
-    display: fit-content;
-    border-radius: 20px;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 5%;
   }
-
   
-  .project-card:hover .card-title{
+  .project-card:hover #card-title{
     text-decoration: underline;
   }
-  
 
   .img-container {
     display: flex;
     justify-content: center;
-    padding: 10px;
-    width: 350px;
-    height: 200px;
+    padding: 0px;
+    aspect-ratio: 16/9;
+    width: 30vw;
+    height: auto;
     margin-left: 0;
-    margin-right: 100px;
+    margin-right: 0;
+    border-radius: 0.5vw;
   }
 
   .img-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 0.5vw;
     border: 2px solid rgba(141, 160, 164, 0.9);
   }
 
-  .text-container .project-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-left: 20px;
-    background-color: transparent;
-  }
-
-  .card-title {
-    font-size: 1.7em;
+  #card-title {
+    font-size: 3vw;
     text-align: left;
     margin: 0;
     font-weight: bold;
@@ -111,18 +107,13 @@ PROPS:
     background-color: transparent;
   }
 
-  .contact-info {
-    background-color: #f7f7f7;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: transparent;
-  }
-
-  .card-product,
-  .card-date,
-  .card-location {
-    margin: 0;
+  #card-product,
+  #card-date,
+  #card-location {
+    margin: 0 0 0 0;
     color: #3a4740;
+    font-size: 1.2vw;
+    text-align: left;
   }
 
   .link-box {

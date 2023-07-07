@@ -78,6 +78,7 @@ PROPS:
 }
 .subtitle{
     text-align: justify;
+    font-size: 1.2vw;
 }
 
 </style>  

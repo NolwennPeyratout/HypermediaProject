@@ -35,6 +35,12 @@ In this page we have all the members of the company with some informations like 
 </script>
 
 <style>
+    #team-title{
+        font-size: 4.5vw;
+    }
+    #team-page-description{
+        font-size: 1.2vw;
+    }
    #rectangle-container
     {
         display: flex;
@@ -71,6 +77,15 @@ In this page we have all the members of the company with some informations like 
         #top-team{
             margin-top: 10vw;
         }
+        #team-title{
+        font-size: 5vw;
+        }
+        #team-page-description{
+            font-size: 1.6vw;
+        }
+        .rectangleTitle-container .subtitle{
+            font-size: 1.6vw;
+        }
        
     }
 
@@ -94,13 +109,15 @@ In this page we have all the members of the company with some informations like 
         #title{
             font-size: 1.2em;
         }
-        #team-page-description{
-            font-size: small;
+        #team-title{
+        font-size: 5.5vw;
+        margin-bottom: 4%;
         }
-
-        #top-team > h1{
-            font-size: 30px;
-            margin-bottom: 4%;
+        #team-page-description{
+            font-size: 2.5vw;
+        }
+        .rectangleTitle-container .subtitle{
+            font-size: 2.5vw;
         }
         
     }

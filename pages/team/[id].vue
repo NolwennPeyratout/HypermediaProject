@@ -167,7 +167,7 @@
 
   #person-name span{
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 4.5vw;
   }
 
   #person-name{
@@ -188,6 +188,7 @@
     text-align: justify;
     margin-top: 0%;
     margin-bottom: 0%;
+    font-size: 1.2vw;
   }
 
   #carousel-container-person {
@@ -355,6 +356,14 @@
     width: fit-content;
   }
 
+  #person-name{
+    font-size: 5vw;
+  }
+
+  #cv{
+    font-size: 1.6vw;
+  }
+
   .carousel__slide, .carousel__viewport, #carousel-container-person, #carousel-person, .responsive-image{
     height: 300px;
   }
@@ -402,16 +411,16 @@
     bottom: 5%;
   }
   #person-name span{
-    font-size: 30px;
+    font-size: 5.5vw;
   }
   #person-role span, #person-role{
-    font-size: 18px;
+    font-size: 3.5vw;
   }
   .data-person{
     font-size: 12pt;
   }
   #cv{
-    font-size: small;
+    font-size: 2.5vw;
   }
 
   #container-area-person > .circle-container .title-center{

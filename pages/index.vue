@@ -234,7 +234,7 @@
     }
     #areas-text{
         color: #252525;
-        text-align: center;
+        text-align: justify;
         width: 60%;
     }
 
@@ -440,7 +440,7 @@
         color: #252525;
         font-size: 1.2vw;
         width: 60%;
-        text-align: center;
+        text-align: justify;
         margin-bottom: 2%;
     }
 
@@ -535,10 +535,15 @@
     /* RESPONSIVENESS FOR DEVICES WITH SCREEN WIDTH BETWEEN 500PX AND 700PX*/
     @media only screen and (max-width: 700px) {
         .big-text{
-            font-size: 3.0vw;
+            font-size: 5.0vw;
         }
         .little-text{
             font-size: 1.6vw;
+        }
+        .right-intro{
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-right: 5%;
         }
         #areas-text{
             width: 80%;
@@ -550,14 +555,26 @@
             margin: 2%;
             width: 20%;
         }
+        #absolute-container{
+            margin-bottom: 7%;
+        }
+        
+        #home-awards-container{
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+        }
+        .left-awards{
+            margin: 5% 0% 5% 5%;
+        }
         #right-awards{
             gap: 0%;
         }
         #awards-square{
             width: 50%;
             height: 25%;
-            top: 70%;
-            right: 5%;
+            top: 84%;
+            right: 25%;
         }        
         #square-body{
             font-size: 1.6vw;
@@ -570,7 +587,7 @@
             margin-top: 5%;
         }
         #team-head{
-            font-size: 3.0vw;
+            font-size: 5.0vw;
         }
         #team-body{
             font-size: 1.6vw;
@@ -601,7 +618,7 @@
         }
 
         #projects-head{
-            font-size: 3.0vw;
+            font-size: 5.0vw;
         }
         #projects-body{
             font-size: 1.6vw;

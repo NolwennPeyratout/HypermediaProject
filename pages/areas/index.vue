@@ -43,7 +43,7 @@ import CircleContainer from '~/components/CircleContainer.vue';
         font-weight: bolder;
         color: #202622;
         text-align: start;
-        font-size: 3vw;
+        font-size: 4.5vw;
     }
     #areas-page-description
     {
@@ -52,6 +52,7 @@ import CircleContainer from '~/components/CircleContainer.vue';
         margin-top: 1%;
         margin-block-end: 0%;
         margin-inline-end: 5%;
+        font-size: 1.2vw;
     }
     #areas-container
     {
@@ -71,13 +72,16 @@ import CircleContainer from '~/components/CircleContainer.vue';
         font-size: 26px;
         font-weight: bold;
     }
-    @media only screen and (max-width: 750px) {
+    @media only screen and (max-width: 700px) {
 
         #AreaTop{
             margin-top: 7%;
         }
         #areas-page-description{
-            font-size: 13px;
+            font-size: 1.6vw;
+        }
+        #area-page-title{
+            font-size: 5vw;
         }
         #areas-container #circle-container .circle{
             width: 150px;
@@ -96,10 +100,10 @@ import CircleContainer from '~/components/CircleContainer.vue';
         }
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 500px) {
         #area-page-title {
             position: relative;
-            font-size: 3vw;
+            font-size: 5.5vw;
         }
 
         .circle-container .title-center{
@@ -107,7 +111,7 @@ import CircleContainer from '~/components/CircleContainer.vue';
         }
 
         #areas-page-description {
-            font-size: 10px;
+            font-size: 2.5vw;
             margin-inline-end: 5%;
         }
         #AreaTop{

@@ -25,7 +25,6 @@
           :product="project.product_service"
           :date="project.date"
           :location="project.location"
-          style="margin-left: -100px;"
         />
         <ProjectCardExtendedCustom v-else
           :link="'/projects/' + project.name"
@@ -34,7 +33,6 @@
           :product="project.product_service"
           :date="project.date"
           :location="project.location"
-          style="margin-left: 400px;"
         />
       </template>
     </div>
@@ -108,14 +106,10 @@ main {
 
 #project-container_area {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: flex-start;
-  align-content: left;
   width: 100%;
   gap: 40px;
   margin-top: 30px; 
-  margin-left: 25%;
   margin-bottom: 30px;
 }
 
@@ -151,6 +145,84 @@ main {
   max-height: 100%;
   object-fit:contain;
   background-color: white;
+}
+
+@media only screen and (max-width: 700px) {
+  #card-title, #card-title_custom {
+    font-size: 4vw;
+  }
+
+  #card-product, #card-date, #card-location, 
+  #card-product_custom, #card-date_custom, #card-location_custom {
+    font-size: 1.6vw;
+  }
+
+  .img-container, .img-container_custom {
+    width: 40vw;
+    border-radius: 1vw;
+  }
+
+  .grid-container_custom {
+    grid-template-columns: 40vw auto ;
+  }
+
+  .grid-container {
+    grid-template-columns: auto 40vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #card-title, #card-title_custom {
+    font-size: 5.5vw;
+  }
+
+  #card-product, #card-date, #card-location, 
+  #card-product_custom, #card-date_custom, #card-location_custom {
+    font-size: 2.5vw;
+  }
+
+  .img-container, .img-container_custom {
+    width: 80vw;
+    border-radius: 1vw;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 80vw;
+    grid-template-rows: auto 25vw;
+    row-gap: 2vw;
+    grid-column-gap: 0;
+  }
+
+  .grid-container_custom {
+    display: grid;
+    grid-template-columns: 80vw;
+    grid-template-rows: auto 25vw;
+    row-gap: 2vw;
+    grid-column-gap: 0;
+  }
+
+  .text-container_custom{
+    grid-row: 2;
+  }
+
+  .img-container_custom{
+    grid-row: 1;
+  }
+
+  .project-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 0%;
+  }
+
+  .project-card_custom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 0%;
+  }
 }
 
 </style>
