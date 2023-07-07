@@ -30,7 +30,7 @@
         </div>
         <!--This carousel is shown only if the person is the supervisor of more than one project-->
         <div v-else id="carousel-container-person">
-          <Carousel id="carousel-person" :autoplay="4000" :wrap-around="true" :items-to-show="1.8">
+          <Carousel id="carousel-person" :autoplay="4000" :wrap-around="true" :items-to-show="1.8" :mouse-drag="false">
             <Slide v-for="project in data[1]" :key="project" id="slide-carousel">
               <NuxtLink :to="'/projects/' + project.project_name" class="link-box">
                 <div id="textImage-project">

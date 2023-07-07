@@ -80,8 +80,7 @@
                             <div id="team-link">SEE MORE</div></NuxtLink>
                     </div>
                     <div id="right-team">
-                        <!-- TEAM MEMBERS CAROUSEL TO BE FIXED -->
-                        <Carousel id="team-carousel" :autoplay="2000" :wrap-around="true" :items-to-show="3" :transition="500">
+                        <Carousel id="team-carousel" :autoplay="2000" :wrap-around="true" :items-to-show="3" :transition="500" :mouse-drag="false">
                             <Slide v-for="person in data[0]" :key="person">
                                 <HomeRectangleComponent class="team-carousel-item" :title="person.name" 
                                 :subtitle="'Role: '+person.role" :link="'/team/'+person.name" :img-url="'/_nuxt/assets/img/team/'+person.name+'.jpeg'"/>
