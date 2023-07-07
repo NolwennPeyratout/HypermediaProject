@@ -55,8 +55,8 @@
     }
 
     #pageTop{
-            width: 100%;
-            margin: 4% 0% 1% 5%;
+        width: 100%;
+        margin: 4% 0% 1% 5%;
     }
    
     #projects-container
@@ -77,18 +77,16 @@
         margin-bottom: 1.5%;
     }
 
-    
-
     #mostRelevant-button{
         display: flex;
         background-color: #3A4740;
         text-decoration: none;
-        border-radius: 0.5vw;
+        border-radius: 0.7vw;
         justify-content: center;
         align-items: center;
-        width: 25%;
-        height: fit-content;
-        margin-top: 1%;
+        width: 30%;
+        height: 2.7vw;
+        margin-top: 2%;
         margin-bottom: 2%;
     }
 
@@ -96,7 +94,7 @@
         text-decoration: none;
         color: white;
         text-align: center;
-        font-size: 1.5vw;
+        font-size: 1.6vw;
     }
 
     @media only screen and (max-width: 800px) {
@@ -106,13 +104,6 @@
         .card-title-1{
             font-size: 2.0vw;
         }
-        #mostRelevant-button{
-            width: 35%;
-        }
-
-        #mostRelevant-link{
-            font-size: 2vw;
-        }
     }
 
     @media only screen and (max-width: 700px) {
@@ -121,9 +112,21 @@
             font-size: 5vw;
         }
 
+        #pageTop{
+            margin-top: 7%;
+        }
+
         #projects-page-description
         {
             font-size: 1.6vw;
+        }
+        #mostRelevant-button{
+            width: 35%;
+            height: 3.2vw;
+        }
+
+        #mostRelevant-link{
+            font-size: 2vw;
         }
     }
 
@@ -132,12 +135,6 @@
             width: 30%;
         }
         .card-title-1{
-            font-size: 2.6vw;
-        }
-        #mostRelevant-button{
-            width: 42%;
-        }
-        #mostRelevant-link{
             font-size: 2.6vw;
         }
     }
@@ -151,6 +148,16 @@
         #projects-page-description
         {
             font-size: 2.5vw;
+        }
+        #mostRelevant-button{
+            width: 40%;
+            height: 3.7vw;
+        }
+        #mostRelevant-link{
+            font-size: 2.5vw;
+        }
+        #pageTop{
+            margin-top: 8%;
         }
     }
 

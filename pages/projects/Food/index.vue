@@ -79,6 +79,9 @@
         {
             font-size: 1.6vw;
         }
+        .food-pageTop{
+            margin-top: 7%;
+        }
     }
 
     @media only screen and (max-width: 500px) {
@@ -90,6 +93,9 @@
         #foodproj-page-description
         {
             font-size: 2.5vw;
+        }
+        .food-pageTop{
+            margin-top: 8%;
         }
     }
 

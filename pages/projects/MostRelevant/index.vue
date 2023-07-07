@@ -68,6 +68,9 @@
         {
             font-size: 1.6vw;
         }
+        .mrp-pageTop{
+            margin-top: 7%;
+        }
     }
 
     @media only screen and (max-width: 500px) {
@@ -79,6 +82,9 @@
         #mrp-page-description
         {
             font-size: 2.5vw;
+        }
+        .mrp-pageTop{
+            margin-top: 8%;
         }
     }
 </style>

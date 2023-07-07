@@ -54,8 +54,8 @@ In this page we have all the members of the company with some informations like 
     }
 
     #top-team{
-            width: 100%;
-            margin: 4% 0% 1% 5%;
+        width: 100%;
+        margin: 4% 0% 1% 5%;
     }
    #rectangle-container
     {
@@ -73,7 +73,7 @@ In this page we have all the members of the company with some informations like 
             width: 40%;
         }
         #top-team{
-            margin-top: 10vw;
+            margin-top: 7%;
         }
         #team-title{
             font-size: 5vw;
@@ -90,6 +90,9 @@ In this page we have all the members of the company with some informations like 
     @media only screen and (max-width: 500px) {
         .rectangleTitle-container {
             width: 95%;
+        }
+        #top-team{
+            margin-top: 8%;
         }
         #title{
             width: 44%;

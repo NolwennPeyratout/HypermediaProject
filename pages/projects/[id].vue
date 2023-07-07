@@ -65,7 +65,7 @@
     flex-direction: row;
     background-color: #5B7470;
     border-radius: 1.5vw;
-    margin-top: 3%;
+    margin-top: 4%;
     width: 95%;
 }
 
@@ -147,7 +147,7 @@
             margin-top: 5%;
         }
         .project-presentation-page{
-            margin-top: 6%;
+            margin-top: 7%;
         }
     }
 
@@ -169,7 +169,7 @@
             margin-right: 0.5vw;
         }
         .project-presentation-page{
-            margin-top: 9%;
+            margin-top: 8%;
         }
     }
 

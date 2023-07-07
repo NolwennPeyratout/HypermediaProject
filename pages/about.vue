@@ -51,7 +51,7 @@
                 </div>
             </div> 
             <div id="about-right">
-            </div>
+        </div>
     </div>
     </main>
 </template>
@@ -75,7 +75,7 @@
         background-color: #3A4740;
         width:35%;
         min-height: 1000px;
-        padding-top: 60px;
+        padding-top: 4%;
     }
     #story{
         display: flex;
@@ -139,6 +139,7 @@
         #about-left {
             width: 100%;
             min-height: auto;
+            padding-top: 7%;
         }
         #about-right{
             width:100%;
@@ -182,6 +183,9 @@
         #story-text p{
             font-size: 2.5vw;
         }
+        #about-left {
+            padding-top: 8%;
+        }
     }
 
     @media only screen and (max-width: 900px) {
@@ -202,9 +206,4 @@
         }
     }
 
-    @media only screen and (max-width: 400px) {
-        #about-left{
-            padding-top: 10vw;
-        }
-    }
 </style>

@@ -185,6 +185,9 @@
       .submit-button {
         font-size: 2.5vw;
       }
+      #contacts-pageTop{
+        margin-top: 7%;
+      }
     }
 
     @media only screen and (max-width: 500px) {
@@ -219,6 +222,9 @@
     
       .submit-button {
         font-size: 3.2vw;
+      }
+      #contacts-pageTop{
+        margin-top: 8%;
       }
     }
   </style>

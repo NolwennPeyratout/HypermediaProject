@@ -79,6 +79,9 @@
         {
             font-size: 1.6vw;
         }
+        .health-pageTop{
+            margin-top: 7%;
+        }
     }
 
     @media only screen and (max-width: 500px) {
@@ -90,6 +93,9 @@
         #healthproj-page-description
         {
             font-size: 2.5vw;
+        }
+        .health-pageTop{
+            margin-top: 8%;
         }
     }
 
