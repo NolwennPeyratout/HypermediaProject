@@ -26,6 +26,10 @@
       symmetric layouts
     -->
     <div id="project-container_area">
+      <div id="top-single-area">
+            <h1 id="singlearea-title">{{data[0].name}}</h1>
+            <p id="singlearea-page-description"> {{data[0].description}}</p>
+        </div>
       <template v-for="(project, index) in data[1]">
         <ProjectCardExtended v-if="index % 2 === 0"
           :link="'/projects/' + project.name"
@@ -83,6 +87,29 @@
 .custom-background_area {
   background-color: #8da0a4;
 } 
+
+#singlearea-title
+{
+    font-weight: bolder;
+    color: #202622;
+    text-align: start;
+    font-size: 4.5vw;
+}
+
+#singlearea-page-description
+{
+    color: #202622;
+    text-align: justify;
+    font-size: 1.2vw;
+    margin-top: 1%;
+    margin-block-end: 0%;
+    margin-inline-end: 5%;
+}
+
+#top-single-area{
+    width: 95%;
+    margin: 0% 5% 1% 5%;
+}
 
 main {
   width: 100%;
@@ -180,6 +207,15 @@ main {
   .grid-container {
     grid-template-columns: auto 40vw;
   }
+  #singlearea-title
+  {
+      font-size: 5vw;
+  }
+
+  #singlearea-page-description
+  {
+      font-size: 1.6vw;
+  }
 }
 
 /* Page layout made responsive. In this block the settings are set for screens up to 500px wide */
@@ -234,6 +270,16 @@ main {
     flex-direction: row;
     justify-content: center;
     margin-right: 0%;
+  }
+
+  #singlearea-title
+  {
+      font-size: 5.5vw;
+  }
+
+  #singlearea-page-description
+  {
+      font-size: 2.5vw;
   }
 }
 
