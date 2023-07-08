@@ -1,0 +1,1 @@
+export default {data:{"options:asyncdata:/projects":null},prerenderedAt:1688833379490}
