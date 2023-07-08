@@ -13,7 +13,7 @@
             <!-- LEFT PART OF THE FOOTER CONTAINING COMPANY LOGO/NAME AND CONTACT INFO-->
             <div id="left-footer">
                 <NuxtLink id="home-link" class="main-link" to="/"> 
-                    <img id="logo" src="~/assets/img/CompanyLogoFooter.png" alt="Logo of the website">
+                    <img id="logo" src="/_nuxt/assets/img/CompanyLogoFooter.png" alt="Logo of the website">
                 </NuxtLink>
                 <p class="footer-info">Office address: Piazza Leonardo da Vinci, 22</p>
                 <p class="footer-info">E-mail: hyper@media.it</p>

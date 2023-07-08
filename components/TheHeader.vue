@@ -13,7 +13,7 @@
     <header>
         <!-- LEFT PART OF THE HEADER CONTAINING COMPANY LOGO/NAME-->
         <NuxtLink id="homepage-link" to="/" class="menu-link">
-                <img id="web-logo" src="~/assets/img/CompanyLogoHeader.png" alt="Logo of the website">
+                <img id="web-logo" src="/_nuxt/assets/img/CompanyLogoHeader.png" alt="Logo of the website">
         </NuxtLink>
         <!-- RIGHT PART OF THE HEADER CONTAINING WEBSITE PAGES LINKS-->
         <nav>
