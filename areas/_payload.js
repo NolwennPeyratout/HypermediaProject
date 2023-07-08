@@ -1,1 +1,1 @@
-export default {data:{"options:asyncdata:/areas":null},prerenderedAt:1688833379296}
+export default {data:{"options:asyncdata:/areas":null},prerenderedAt:1688834426730}

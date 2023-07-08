@@ -1,1 +1,1 @@
-export default {data:{"options:asyncdata:/projects":null},prerenderedAt:1688833379490}
+export default {data:{"options:asyncdata:/projects":null},prerenderedAt:1688834426943}
