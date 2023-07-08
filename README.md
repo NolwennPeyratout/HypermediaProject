@@ -5,9 +5,9 @@ This is our implementation of the Hypermedia project
 ## Group
 
 Riccardo Gianni, 10868744
-Peyratout Nolwenn, 10953084
-Alfonsi Alessio, 10688058
-Wang Yiyue, 10885616
+Nolwenn Peyratout, 10953084
+Alessio Alfonsi, 10688058
+Yiyue Wang, 10885616
 
 ## How to use the project
 - moving inside the folder with the terminal (or opening the project with VSCode) and then using:
@@ -26,21 +26,31 @@ Wang Yiyue, 10885616
 
 ## Content
 The project contains:
-- 5 components
-  - Card
-  - SmallCard
-  - TextImage
+- 11 components
+  - CircleContainer
+  - HomeCircleComponent
+  - HomeRectangleComponent
+  - ProjectCard
+  - ProjectCardExtended
+  - ProjectCardExtendedCustom
+  - RectangleContainer
+  - RectangleTitle
+  - SmallCircleContainer
   - TheFooter
   - TheHeader
-- 1 layout: default
-- 7 pages reachable at:
-  - /
+- 1 layout: default.vue
+- 11 pages, reachable at:
+  - / (home page)
+  - /areas
+  - /areas/:id
+  - /projects
+  - /projects/:id
+  - /projects/Food
+  - /projects/IT
+  - /projects/Health
+  - /projects/MostRelevant
   - /contact
   - /about
-  - /dogs
-  - /dogs/:id
-  - /locations
-  - /locations/:id
-- The server (also available in a previous repository)
+- The server with the database
 
 Most of the content is commented to explain how things works.

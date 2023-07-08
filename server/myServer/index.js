@@ -1,6 +1,6 @@
 import express from "express"
 import { DataTypes, Sequelize } from "sequelize"
-import { loremIpsum } from "lorem-ipsum"
+
 
 import { fileURLToPath } from "url"
 import path from "path"

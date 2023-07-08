@@ -1,5 +1,3 @@
-import { loremIpsum } from "lorem-ipsum"
-
 export default async (models) => {
     //This is the detail of all our person in the company, with their role, name, cv and introduction ( summary of the CV)
     const personModel = [
@@ -240,24 +238,15 @@ export default async (models) => {
     const areaModel = [
         {
             name: "Food",
-            description: loremIpsum({
-                count: 4,
-                units: "paragraph"
-            })
+            description: "Welcome to our Food Area, where we specialize in bio and vegan products and innovative procedures in food production. Our team is dedicated to creating sustainable and ethically conscious food options. We invest in the development of bio and vegan products, ensuring that our offerings align with environmental and ethical values. Additionally, we explore groundbreaking procedures in food production to drive innovation in the industry. Join us in shaping a future of sustainable and cutting-edge food solutions."
         },
         {
             name: "Health",
-            description: loremIpsum({
-                count: 4,
-                units: "paragraph"
-            })
+            description: "Welcome to our Health Division, in which our team is dedicated to developing innovative healthcare projects that improve patient outcomes and quality of life. We invest in life-saving solutions in pharmaceutical sector, ensuring access to effective treatments. Additionally, we explore cutting-edge technologies like 3D printing for the creation of customized body parts. Our commitment to advancing modern hospital instrumentations enhances medical practices and patient care. Join us in revolutionizing healthcare and making a positive impact on people's lives."
         },
         {
             name: "IT",
-            description: loremIpsum({
-                count: 4,
-                units: "paragraph"
-            })
+            description: "Welcome to our IT Division, where our team is dedicated to developing cutting-edge technology solutions that ensure data security and privacy. We invest in innovative products, such as satellite-based routers and VR visors, to enhance connectivity and immersive experiences. Additionally, we explore biometric recognition systems to provide secure and convenient access controls. Join us in shaping the future of technology, where cybersecurity, innovation, and biometrics converge to empower businesses and individuals alike."
         }
     ]
 
