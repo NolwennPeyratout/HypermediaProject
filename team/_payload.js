@@ -1,1 +1,1 @@
-export default {data:{"options:asyncdata:/team":null},prerenderedAt:1688834426693}
+export default {data:{"options:asyncdata:/team":null},prerenderedAt:1688837688004}
