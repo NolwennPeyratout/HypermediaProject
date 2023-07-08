@@ -11,7 +11,7 @@
     <div id="carousel-container_area">
       <Carousel id="carousel_area" :autoplay="2000" :wrap-around="true" :items-to-show="1.1">
         <Slide v-for="slide in 3" :key="slide">
-          <img :src="'/_nuxt/assets/img/' + data[0].name + '_area/' + data[0].name + slide + '.jpg'" class="carousel__item_area" :class="{ 'responsive-image': true }"/>
+          <img :src="'~/assets/img/' + data[0].name + '_area/' + data[0].name + slide + '.jpg'" class="carousel__item_area" :class="{ 'responsive-image': true }"/>
         </Slide>
         <template #addons>
           <Pagination />
@@ -34,7 +34,7 @@
         <ProjectCardExtended v-if="index % 2 === 0"
           :link="'/projects/' + project.name"
           :title="project.name"
-          :img-url="'/_nuxt/assets/img/projects/' + project.name + '1.jpg'"
+          :img-url="'~/assets/img/projects/' + project.name + '1.jpg'"
           :product="project.product_service"
           :date="project.date"
           :location="project.location"
@@ -42,7 +42,7 @@
         <ProjectCardExtendedCustom v-else
           :link="'/projects/' + project.name"
           :title="project.name"
-          :img-url="'/_nuxt/assets/img/projects/' + project.name + '1.jpg'"
+          :img-url="'~/assets/img/projects/' + project.name + '1.jpg'"
           :product="project.product_service"
           :date="project.date"
           :location="project.location"

@@ -18,7 +18,7 @@
         <div id="health-projects-container">
             <!-- Card component repeated as many times as the number of health-concerning projects -->
             <ProjectCard v-for = "project in projects" :title = "project.name" :link = "'/projects/' + project.name" 
-            :img-url="'/_nuxt/assets/img/projects/'+ project.name +'1.jpg'" class="card-element"/>
+            :img-url="'~/assets/img/projects/'+ project.name +'1.jpg'" class="card-element"/>
         </div>
     </main>
 </template>
