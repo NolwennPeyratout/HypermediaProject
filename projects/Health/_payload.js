@@ -1,1 +1,0 @@
-export default {data:{"options:asyncdata:/projects/Health":null},prerenderedAt:1688837688334}
