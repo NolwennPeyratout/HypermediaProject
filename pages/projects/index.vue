@@ -26,14 +26,11 @@
     </main>
 </template>
 
-<script>
-    //Data to be displayeed are retrieved here
-    export default defineNuxtComponent({
-    async asyncData() {
-        const projects = await $fetch(useRuntimeConfig().baseURL + "/api/projects");
-        return { projects };
-    }
-})
+<script setup>
+ const route = useRoute()
+
+const { data: projects } = await useFetch('/api/projects' )
+
 </script>
 
 

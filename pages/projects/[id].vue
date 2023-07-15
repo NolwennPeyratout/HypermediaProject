@@ -47,9 +47,7 @@
             /* Data to be displayeed are retrieved here*/
             const route = useRoute()
             const data = []
-            data[0] = await $fetch(useRuntimeConfig().baseURL + '/api/projects/' + route.params.id)
-            data[1] = await $fetch(useRuntimeConfig().baseURL + '/api/projects/' + route.params.id + '/area')
-            data[2] = await $fetch(useRuntimeConfig().baseURL + '/api/projects/' + route.params.id + '/supervisor')
+            data = await $fetch( '/api/projects/' + route.params.id)
 
             return {
                 data
