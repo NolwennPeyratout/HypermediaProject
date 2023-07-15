@@ -4,19 +4,5 @@ export default defineNuxtConfig({
         '~/assets/css/general.css'
     ],
 
-    serverHandlers: [
-        {
-            route: '/server',
-            handler: '~/server/myServer/index.js',
-            middleware: true
-        }
-    ],
-    ssr: true,
-    runtimeConfig: {
-        public:{
-            baseURL: "http://localhost:3000"
-        }
-    },
-
-    modules: ['@nuxtjs/supabase']
+    modules: ['@nuxtjs/supabase'],
 })
