@@ -13,7 +13,7 @@ PROPS:
     <div class="home-circle-container">
       <NuxtLink :to="link">
         <div class="home-circle">
-          <img :src="imgUrl" alt="Immagine del topic">
+          <img :src="'~/assets/img/'+imgUrl" alt="Immagine del topic">
         </div>
       </NuxtLink>
       <p class="home-title-center">{{ title }}</p>
