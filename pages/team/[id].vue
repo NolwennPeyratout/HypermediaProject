@@ -73,17 +73,17 @@
             const route = useRoute()
             const data = []
             const id = route.params.id
-            //First call to the DB to get all the information about a precise member of the company
-            data[0] = await $fetch(useRuntimeConfig().baseURL + '/api/team/' + id)
-            //Second call to the DB to get all the project of a specific member of the company
-            data[1] = await $fetch(useRuntimeConfig().baseURL + '/api/team/' + id + '/project')
-            //Thrid call to the DB to get all the area where this specific member work on ( it's related to his / her project)
-            data[2] = await $fetch(useRuntimeConfig().baseURL + '/api/team/' + id + '/project/area')
+            data= await $fetch( '/api/team/' + id)  
+            //data[0] = to get all the information about a precise member of the company            
+            //data[1] to get all the project of a specific member of the company
+            //data[2] to get all the area where this specific member work on ( it's related to his / her project)
+
             return {
                 data
             }
         }
     })       
+ 
     
 </script>
 

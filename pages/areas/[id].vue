@@ -71,9 +71,7 @@
       async asyncData() {
         const route = useRoute()
         const data = []
-        data[0] = await $fetch(useRuntimeConfig().baseURL + '/api/areas/' + route.params.id)
-        data[1] = await $fetch(useRuntimeConfig().baseURL + '/api/projects/byarea/' + route.params.id)
-      
+        data= await $fetch( '/api/areas/' + route.params.id)
         return {
           data
         }

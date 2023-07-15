@@ -22,16 +22,12 @@ In this page we have all the members of the company with some informations like 
     </main>
 </template>
 
-<script>
-    export default defineNuxtComponent({
-    async asyncData() {
-        // We call the database to get all the members of the company
-        const persons = await $fetch(useRuntimeConfig().baseURL + "/api/team");
-        return { persons };
-    }
-    
-})
-    
+<script setup>
+ const route = useRoute()
+    // useRuntimeConfig provide us with environment variables set up in the nuxtconfig file
+    // We call the database to get all the members of the company
+    const { data: persons } = await useFetch('/api/team' )
+
 </script>
 
 <style>
