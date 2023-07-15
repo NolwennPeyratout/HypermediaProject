@@ -17,7 +17,7 @@ In this page we have all the members of the company with some informations like 
         </div>
         <!--We show in a rectangle container all the person of the DB-->
         <div id="rectangle-container">
-            <RectangleTitle v-for = "person in persons" :title = "person.name" :link = "'/team/' + person.name" :img-url="'~/assets/img/team/'+person.name+'.jpeg'" :subtitle="person.introduction" />
+            <RectangleTitle v-for = "person in persons" :key="person.name" :title = "person.name" :link = "'/team/' + person.name" :img-url="'~/assets/img/team/'+person.name+'.jpeg'" :subtitle="person.introduction" />
         </div>
     </main>
 </template>

@@ -18,7 +18,7 @@
         </div>
         <div id="projects-container">
             <!-- Card component repeated as many times as the number of projects -->
-            <ProjectCard v-for = "project in projects" :title = "project.name" :link = "'/projects/' + project.name" :img-url="'~/assets/img/projects/'+ project.name +'1.jpg'" class="card-element"/>
+            <ProjectCard v-for = "project in projects" :key="project.name" :title = "project.name" :link = "'/projects/' + project.name" :img-url="'~/assets/img/projects/'+ project.name +'1.jpg'" class="card-element"/>
         </div>
         <!-- Button-like link that leads the user to the most relevant projects of the company-->
         <NuxtLink to="/projects/MostRelevant" id="mostRelevant-button">

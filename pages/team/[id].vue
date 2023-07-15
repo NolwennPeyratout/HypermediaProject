@@ -48,7 +48,7 @@
         </div>
          <!--This part define circle Container where we place specifics area of a person-->
         <div id="container-area-person">
-            <CircleContainer id="CircleContainer-person-area" v-for = "area in data[2]" :title = "area.area_name" :link = "'/areas/' + area.area_name" :img-url="'/~/assets/img/' + area.area_name + '_area/' + area.area_name + '1.jpg'" />
+            <CircleContainer id="CircleContainer-person-area" v-for = "area in data[2]" :key="area.area_name" :title = "area.area_name" :link = "'/areas/' + area.area_name" :img-url="'/~/assets/img/' + area.area_name + '_area/' + area.area_name + '1.jpg'" />
         </div>
     </main>
 </template>

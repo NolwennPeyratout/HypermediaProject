@@ -32,6 +32,7 @@
         </div>
       <template v-for="(project, index) in data[1]">
         <ProjectCardExtended v-if="index % 2 === 0"
+          :key="project"
           :link="'/projects/' + project.name"
           :title="project.name"
           :img-url="'/_nuxt/assets/img/projects/' + project.name + '1.jpg'"
@@ -40,6 +41,7 @@
           :location="project.location"
         />
         <ProjectCardExtendedCustom v-else
+          :key="project.name"
           :link="'/projects/' + project.name"
           :title="project.name"
           :img-url="'/_nuxt/assets/img/projects/' + project.name + '1.jpg'"
