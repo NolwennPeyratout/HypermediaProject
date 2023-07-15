@@ -26,7 +26,7 @@ Page conaining all the working areas of the company, displayed through a circula
     /* Data to be displayeed are retrieved here*/
     export default defineNuxtComponent({
     async asyncData() {
-        const areas = await $fetch(useRuntimeConfig().baseURL + "/server/areas");
+        const areas = await $fetch(useRuntimeConfig().baseURL + "api/areas");
         return { areas };
     },
 })

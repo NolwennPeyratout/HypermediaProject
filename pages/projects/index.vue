@@ -30,7 +30,7 @@
     //Data to be displayeed are retrieved here
     export default defineNuxtComponent({
     async asyncData() {
-        const projects = await $fetch(useRuntimeConfig().baseURL + "/server/projects");
+        const projects = await $fetch(useRuntimeConfig().baseURL + "api/projects");
         return { projects };
     }
 })
