@@ -27,7 +27,7 @@
     /* Data to be displayeed are retrieved here*/
     export default defineNuxtComponent({
     async asyncData() {
-        const projects = await $fetch(useRuntimeConfig().baseURL + "api/projects/byarea/IT");
+        const projects = await $fetch(useRuntimeConfig().baseURL + "/api/projects/byarea/IT");
         return { projects };
     }
 })

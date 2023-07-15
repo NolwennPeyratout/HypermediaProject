@@ -26,7 +26,7 @@ In this page we have all the members of the company with some informations like 
     export default defineNuxtComponent({
     async asyncData() {
         // We call the database to get all the members of the company
-        const persons = await $fetch(useRuntimeConfig().baseURL + "api/team");
+        const persons = await $fetch(useRuntimeConfig().baseURL + "/api/team");
         return { persons };
     }
     
