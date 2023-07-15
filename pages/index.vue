@@ -26,7 +26,7 @@
                             <div id="home-about-link">ABOUT US</div></NuxtLink>
                     </div>
                     <div class="right-intro">
-                        <img src="/_nuxt/assets/img/home1.jpg" alt="home page image">
+                        <img src="~/assets/img/home1.jpg" alt="home page image">
                     </div>
                 </div>
                 <!-- Second part of the home page, in which are displayed the company working areas through a circular component-->
@@ -38,16 +38,16 @@
                     to explore the frontiers of innovation, our working areas offer a wealth of opportunities.</p>
                     <div id="areas-circles-container">
                         <!-- A circular component is displayed for each working area (Food, Health and IT) -->
-                        <HomeCircleComponent class="areas-circles" :title = "'Food'" :link = "'/areas/Food'" :img-url="'/_nuxt/assets/img/Food_area/Food1.jpg'" />
-                        <HomeCircleComponent class="areas-circles" :title = "'IT'" :link = "'/areas/IT'" :img-url="'/_nuxt/assets/img/IT_area/IT1.jpg'" />
-                        <HomeCircleComponent class="areas-circles" :title = "'Health'" :link = "'/areas/Health'" :img-url="'/_nuxt/assets/img/Health_area/Health1.jpg'" />
+                        <HomeCircleComponent class="areas-circles" :title = "'Food'" :link = "'/areas/Food'" :img-url="'~/assets/img/Food_area/Food1.jpg'" />
+                        <HomeCircleComponent class="areas-circles" :title = "'IT'" :link = "'/areas/IT'" :img-url="'~/assets/img/IT_area/IT1.jpg'" />
+                        <HomeCircleComponent class="areas-circles" :title = "'Health'" :link = "'/areas/Health'" :img-url="'~/assets/img/Health_area/Health1.jpg'" />
                     </div>
                 </div>
                 <!-- Third section of the home page in which the user is informed about the stats and awards received by the company -->
                 <div id="absolute-container">
                     <div id="home-awards-container">
                         <div class="left-awards">
-                        <img src="/_nuxt/assets/img/home2.jpg" alt="home page image">
+                        <img src="~/assets/img/home2.jpg" alt="home page image">
                         </div>
                         <div id="right-awards">
                             <h1 class="big-text" id="awards-big-text">Awarded as 2023 Best Venture Capital Firm</h1>
@@ -93,7 +93,7 @@
                         <Carousel id="team-carousel" :autoplay="2000" :wrap-around="true" :items-to-show="3" :transition="500" :mouse-drag="false">
                             <Slide v-for="person in data[0]" :key="person">
                                 <HomeRectangleComponent class="team-carousel-item" :title="person.name" 
-                                :subtitle="'Role: '+person.role" :link="'/team/'+person.name" :img-url="'/_nuxt/assets/img/team/'+person.name+'.jpeg'"/>
+                                :subtitle="'Role: '+person.role" :link="'/team/'+person.name" :img-url="'~/assets/img/team/'+person.name+'.jpeg'"/>
                             </Slide>
                             <template #addons>
                             <Pagination />
@@ -110,11 +110,11 @@
                     groundbreaking healthcare solutions and cutting-edge IT innovations, these projects exemplify our
                     commitment to nurturing visionary entrepreneurs and driving transformative change on a global scale.</p>
                     <div id="home-projects-grid">
-                        <ProjectCard class="home-card" :title = "'Apple Visor'" :link = "'/projects/Apple Visor'" :img-url="'/_nuxt/assets/img/projects/Apple Visor1.jpg'"/>
-                        <ProjectCard class="home-card" :title = "'Nutella'" :link = "'/projects/Nutella'" :img-url="'/_nuxt/assets/img/projects/Nutella1.jpg'"/>
-                        <ProjectCard class="home-card" :title = "'Glucometer'" :link = "'/projects/Glucometer'" :img-url="'/_nuxt/assets/img/projects/Glucometer1.jpg'"/>
-                        <ProjectCard class="home-card" :title = "'Starlink'" :link = "'/projects/Starlink'" :img-url="'/_nuxt/assets/img/projects/Starlink1.jpg'"/>
-                        <ProjectCard class="home-card" :title = "'BioVegan Smoothies'" :link = "'/projects/BioVegan Smoothies'" :img-url="'/_nuxt/assets/img/projects/BioVegan Smoothies1.jpg'"/>
+                        <ProjectCard class="home-card" :title = "'Apple Visor'" :link = "'/projects/Apple Visor'" :img-url="'~/assets/img/projects/Apple Visor1.jpg'"/>
+                        <ProjectCard class="home-card" :title = "'Nutella'" :link = "'/projects/Nutella'" :img-url="'~/assets/img/projects/Nutella1.jpg'"/>
+                        <ProjectCard class="home-card" :title = "'Glucometer'" :link = "'/projects/Glucometer'" :img-url="'~/assets/img/projects/Glucometer1.jpg'"/>
+                        <ProjectCard class="home-card" :title = "'Starlink'" :link = "'/projects/Starlink'" :img-url="'~/assets/img/projects/Starlink1.jpg'"/>
+                        <ProjectCard class="home-card" :title = "'BioVegan Smoothies'" :link = "'/projects/BioVegan Smoothies'" :img-url="'~/assets/img/projects/BioVegan Smoothies1.jpg'"/>
                     </div>
                     <!-- Button that leads the user to the page containing all the company projects-->
                     <NuxtLink to="/projects" id="home-projects-button">
@@ -126,9 +126,9 @@
                 <div id="home-prefooter-container">
                     <p id="prefooter-body1">Follow us on:</p>
                     <div id="social-icons">
-                        <img class="social-icon" src="/_nuxt/assets/img/twitter-logo.png" alt="Twitter logo">
-                        <img class="social-icon" src="/_nuxt/assets/img/facebook-logo.png" alt="Facebook logo">
-                        <img class="social-icon" src="/_nuxt/assets/img/linkedin-logo.png" alt="LinkedIn logo">
+                        <img class="social-icon" src="~/assets/img/twitter-logo.png" alt="Twitter logo">
+                        <img class="social-icon" src="~/assets/img/facebook-logo.png" alt="Facebook logo">
+                        <img class="social-icon" src="~/assets/img/linkedin-logo.png" alt="LinkedIn logo">
                     </div>
                     <p id="prefooter-body2">The confidentiality of our website's content is of utmost importance to us,
                     and we strictly uphold the privacy of all information shared. Additionally, all rights for 

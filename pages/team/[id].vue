@@ -8,7 +8,7 @@
       <!--There are all the personal information of one person, with its role, img, name and cv-->
         <div id = "info-group">
           <div id="container-img-person">
-            <img id = "img-person" :src = "'/_nuxt/assets/img/team/'+data[0].name+'.jpeg'"  />
+            <img id = "img-person" :src = "'~/assets/img/team/'+data[0].name+'.jpeg'"  />
           </div>
           <div id="presentation-person">
             <h1 id="person-name" class = "data"> <span>{{ data[0].name }}</span></h1>
@@ -24,7 +24,7 @@
                   <p>Project: {{ data[1][0].project_name }}</p>
                 </div>
                 <div id="image-project">
-                  <img :src="'/_nuxt/assets/img/projects/'+ data[1][0].project_name +'1.jpg'" />
+                  <img :src="'~/assets/img/projects/'+ data[1][0].project_name +'1.jpg'" />
                 </div>
               </NuxtLink>
         </div>
@@ -37,7 +37,7 @@
                   <p>Project: {{project.project_name }}</p>
                 </div>
                 <div id="image-project">
-                  <img :src="'/_nuxt/assets/img/projects/'+ project.project_name +'1.jpg'" class="carousel__item_person" :class="{ 'responsive-image': true }"/>
+                  <img :src="'~/assets/img/projects/'+ project.project_name +'1.jpg'" class="carousel__item_person" :class="{ 'responsive-image': true }"/>
                 </div>
               </NuxtLink>
               </Slide>
@@ -48,7 +48,7 @@
         </div>
          <!--This part define circle Container where we place specifics area of a person-->
         <div id="container-area-person">
-            <CircleContainer id="CircleContainer-person-area" v-for = "area in data[2]" :title = "area.area_name" :link = "'/areas/' + area.area_name" :img-url="'/_nuxt/assets/img/' + area.area_name + '_area/' + area.area_name + '1.jpg'" />
+            <CircleContainer id="CircleContainer-person-area" v-for = "area in data[2]" :title = "area.area_name" :link = "'/areas/' + area.area_name" :img-url="'~/assets/img/' + area.area_name + '_area/' + area.area_name + '1.jpg'" />
         </div>
     </main>
 </template>
