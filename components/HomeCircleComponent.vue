@@ -13,7 +13,7 @@ PROPS:
     <div class="home-circle-container">
       <NuxtLink :to="link">
         <div class="home-circle">
-          <img :src="img" alt="Immagine del topic">
+          <img :src="imgUrl" alt="Immagine del topic">
         </div>
       </NuxtLink>
       <p class="home-title-center">{{ title }}</p>
@@ -22,7 +22,7 @@ PROPS:
   
 
 <script setup>
-    const props = defineProps(['title', 'link','img'])
+    const props = defineProps(['title', 'link','imgUrl'])
 </script>
 
 <style>

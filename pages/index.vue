@@ -38,9 +38,9 @@
                     to explore the frontiers of innovation, our working areas offer a wealth of opportunities.</p>
                     <div id="areas-circles-container">
                         <!-- A circular component is displayed for each working area (Food, Health and IT) -->
-                        <HomeCircleComponent class="areas-circles" :title = "'Food'" :link = "'/areas/Food'" src="~/assets/img/Food_area/Food1.jpg" />
-                        <HomeCircleComponent class="areas-circles" :title = "'IT'" :link = "'/areas/IT'" src="~/assets/img/IT_area/IT1.jpg" />
-                        <HomeCircleComponent class="areas-circles" :title = "'Health'" :link = "'/areas/Health'" src="~/assets/img/Health_area/Health1.jpg" />
+                        <HomeCircleComponent class="areas-circles" :title = "'Food'" :link = "'/areas/Food'" imgUrl="~/assets/img/Food_area/Food1.jpg" />
+                        <HomeCircleComponent class="areas-circles" :title = "'IT'" :link = "'/areas/IT'" imgUrl="~/assets/img/IT_area/IT1.jpg" />
+                        <HomeCircleComponent class="areas-circles" :title = "'Health'" :link = "'/areas/Health'" imgUrl="~/assets/img/Health_area/Health1.jpg" />
                     </div>
                 </div>
                 <!-- Third section of the home page in which the user is informed about the stats and awards received by the company -->
