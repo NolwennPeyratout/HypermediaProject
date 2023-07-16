@@ -70,7 +70,6 @@
       /* Data to be displayeed are retrieved here*/
       async asyncData() {
         const route = useRoute()
-        const data = []
         data= await $fetch( '/api/areas/' + route.params.id)
         return {
           data
