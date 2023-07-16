@@ -38,7 +38,6 @@
             <img class = "image" :src = "'~/assets/img/projects/'+ data[0][0].name +'3.jpg'"   />
             <img class = "image" :src = "'~/assets/img/projects/'+ data[0][0].name +'4.jpg'"   />
         </div>
-        {{ data }}
     </main>
 </template>
 
