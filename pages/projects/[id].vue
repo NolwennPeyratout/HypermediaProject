@@ -21,12 +21,12 @@
           <!-- Right part of the page in which the supervisor and concering area information is displayed through circular components -->
           <div class="bubbles-container">
             <div class="supervisor-bubble">
-                <SmallCircleContainer :title="'Supervisor: ' + data[0][2].person_name" :link="'/team/' + data[0][2].person_name" 
-                :img-url="'~/assets/img/team/' + data[0][2].person_name + '.jpeg'"/>
+                <SmallCircleContainer :title="'Supervisor: ' + data[2][0].person_name" :link="'/team/' + data[2][0].person_name" 
+                :img-url="'~/assets/img/team/' + data[2][0].person_name + '.jpeg'"/>
             </div>
             <div class="area-bubble">
-                <SmallCircleContainer :title="'Project Area: ' + data[0][1].area_name" :link="'/areas/' + data[0][1].area_name" 
-                :img-url="'~/assets/img/' + data[0][1].area_name + '_area/' + data[0][1].area_name + '1.jpg'"/>
+                <SmallCircleContainer :title="'Project Area: ' + data[1][0].area_name" :link="'/areas/' + data[1][0].area_name" 
+                :img-url="'~/assets/img/' + data[1][0].area_name + '_area/' + data[1][0].area_name + '1.jpg'"/>
             </div>
           </div>
         </div>
