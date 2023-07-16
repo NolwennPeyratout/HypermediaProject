@@ -17,7 +17,7 @@
             <p id="cv">{{ data[0].cv }}</p>
           </div>
         </div>
-        <!--This part is shown only if the person is the supervisor of one project, and we show it to avoid the carousel-->
+        <!--This part is shown only if the person is the supervisor of one project, and we show it to avoid the carousel
         <div v-if="data[1].length == 1" id="container-project">
           <NuxtLink :to="'/projects/' + data[1][0].project_name" class="link-box">
                 <div id="textImage-project">
@@ -28,7 +28,7 @@
                 </div>
               </NuxtLink>
         </div>
-        <!--This carousel is shown only if the person is the supervisor of more than one project-->
+        This carousel is shown only if the person is the supervisor of more than one project
         <div v-else id="carousel-container-person">
           <Carousel id="carousel-person" :autoplay="4000" :wrap-around="true" :items-to-show="1.8" :mouse-drag="false">
             <Slide v-for="project in data[1]" :key="project" id="slide-carousel">
@@ -46,10 +46,11 @@
             </template>
           </Carousel>
         </div>
-         <!--This part define circle Container where we place specifics area of a person-->
+        This part define circle Container where we place specifics area of a person
         <div id="container-area-person">
             <CircleContainer id="CircleContainer-person-area" v-for = "area in data[2]" :key="area.area_name" :title = "area.area_name" :link = "'/areas/' + area.area_name" :img-url="'/~/assets/img/' + area.area_name + '_area/' + area.area_name + '1.jpg'" />
         </div>
+      -->
     </main>
 </template>
 
