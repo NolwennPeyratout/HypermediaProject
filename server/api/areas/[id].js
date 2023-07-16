@@ -7,11 +7,7 @@ export default defineEventHandler(async (event) => {
     //const data=[];
     //const { data :ret1, error }= await client.from('area').select("name,description").eq('name',name).limit(1).single()
     const { data , error }= await client
-        .from('concern')
-        .select('area_name')
-        .distinct()
-        .leftOuterJoin('supervise', 'concern.project_name', 'supervise.project_name')
-        .filter('supervise.person_name', 'eq', name);
+        .rpc('get_distinct_area_names', { personName: name });
     //data.push(ret1);
     //data.push(ret2);
     if(error  ) {
