@@ -11,11 +11,14 @@
             <img id = "img-person" :src = "'/~/assets/img/team/'+data[0].name+'.jpeg'"  />
           </div>
           <div id="presentation-person">
+            <!--
             <h1 id="person-name" class = "data"> <span>{{ data[0].name }}</span></h1>
             <h3 id="person-role" class = "data"><span>{{ data[0].role }}</span></h3>
             <p id="person-cv" class = "data-person">CV</p>
             <p id="cv">{{ data[0].cv }}</p>
+            -->
           </div>
+          {{ console.log(data) }}
         </div>
         <!--This part is shown only if the person is the supervisor of one project, and we show it to avoid the carousel
         <div v-if="data[1].length == 1" id="container-project">
