@@ -38,6 +38,7 @@
             <img class = "image" :src = "'~/assets/img/projects/'+ data[0].name +'3.jpg'"   />
             <img class = "image" :src = "'~/assets/img/projects/'+ data[0].name +'4.jpg'"   />
         </div>
+        {{ data }}
     </main>
 </template>
 
@@ -47,8 +48,9 @@
             /* Data to be displayeed are retrieved here*/
             const route = useRoute()
             const data = []
-            data = await $fetch( '/api/projects/' + route.params.id)
-
+            data[0] = await $fetch( '/api/projects/' + route.params.id)
+            data[1] = await $fetch( '/api/projects/concern/' + route.params.id)
+            data[2] = await $fetch( '/api/projects/supervise/' + route.params.id)
             return {
                 data
             }
