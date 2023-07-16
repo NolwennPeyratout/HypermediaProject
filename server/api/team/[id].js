@@ -8,7 +8,7 @@ export default defineEventHandler(async (event) => {
     const client = serverSupabaseClient(event)
     //ilike is use to perform a case-intensive comparison, so an exact match between name and name.
     //const { data, error }= await client.from('person').select("*").filter('name','ilike', name);
-    const { data, error }= await client.from('person').select("*").eq(fullname,'name')
+    const { data, error }= await client.from('person').select("name,role,cv,introduction").eq(fullname,'name')
     
 
     if(error ) {
