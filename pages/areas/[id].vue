@@ -8,11 +8,11 @@
     It displays one picture at a time and moves automatically between them
   -->
   <main class="custom-background_area"> 
-    <!--
+    
     <div id="carousel-container_area">
       <Carousel id="carousel_area" :autoplay="2000" :wrap-around="true" :items-to-show="1.1">
         <Slide v-for="slide in 3" :key="slide">
-          <img :src="'~/assets/img/' + data[0].name + '_area/' + data[0].name + slide + '.jpg'" class="carousel__item_area" :class="{ 'responsive-image': true }"/>
+          <img :src="'~/assets/img/' + data.name + '_area/' + data.name + slide + '.jpg'" class="carousel__item_area" :class="{ 'responsive-image': true }"/>
         </Slide>
         <template #addons>
           <Pagination />
@@ -20,17 +20,18 @@
       </Carousel>
     </div>
     
-    
+    <!--
       Part of the page displaying all the projects concerning the area. 
       The projects are displayed in two ways: the odd ones are displayed on the
       left part of the page, the even ones are displayed on the right, with two 
-      symmetric layouts
+      symmetric layouts-->
    
     <div id="project-container_area">
       <div id="top-single-area">
-            <h1 id="singlearea-title">{{data[0].name}}</h1>
-            <p id="singlearea-page-description"> {{data[0].description}}</p>
+            <h1 id="singlearea-title">{{data.name}}</h1>
+            <p id="singlearea-page-description"> {{data.description}}</p>
         </div>
+        <!--
       <template v-for="(project, index) in data[1]">
         <ProjectCardExtended v-if="index % 2 === 0"
           :key="project"
@@ -50,9 +51,9 @@
           :date="project.date"
           :location="project.location"
         />
-      </template>
-    </div> -->
-    {{ data }}
+      
+      </template>-->
+    </div> 
   </main>
 </template>
 
