@@ -12,7 +12,7 @@ export default defineEventHandler(async (event) => {
     //data.push(ret1);
     //data.push(ret2);
     //data.push(ret3);
-    if(error | error1 | error2) {
+    if(error ) {
         throw createError({statusCode: 400, statusMessage: error.message})
     }
 
