@@ -4,10 +4,14 @@ export default defineEventHandler(async (event) => {
     const name = event.context.params.id
     
     const client = serverSupabaseClient(event)
-    const { data, error }= await client.from('project').select('name, presentation, location, date, start_up, product_service, relevant')
-    .filterExists(
-      client.from('concern').select('*').filter('concern.area_name', 'eq', name).filter('concern.project_name', 'eq', 'project.name')
-    );
+    const { data, error }= await client.from('projects')
+    .select('*')
+    .in(
+      'name',
+      client
+        .from('concerns')
+        .select('project_name')
+        .filter('area_name', 'eq', areaId));
     
 
     if(error) {
