@@ -4,12 +4,12 @@ export default defineEventHandler(async (event) => {
     const name = event.context.params.id
     
     const client = serverSupabaseClient(event)
-    const { data, error }= await client.from('projects')
+    const { data, error }= await client.from('project')
     .select('*')
     .in(
       'name',
       client
-        .from('concerns')
+        .from('concern')
         .select('project_name')
         .filter('area_name', 'eq', name));
     
