@@ -8,7 +8,7 @@
       <!--There are all the personal information of one person, with its role, img, name and cv-->
         <div id = "info-group">
           <div id="container-img-person">
-            <img id = "img-person" :src = "'/~/assets/img/team/'+data[0].name+'.jpeg'"  />
+           <!-- <img id = "img-person" :src = "'/~/assets/img/team/'+data[0].name+'.jpeg'"  />-->
           </div>
           <div id="presentation-person">
             <!--
