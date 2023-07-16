@@ -11,7 +11,7 @@ export default defineEventHandler(async (event) => {
       client
         .from('concerns')
         .select('project_name')
-        .filter('area_name', 'eq', areaId));
+        .filter('area_name', 'eq', name));
     
 
     if(error) {
