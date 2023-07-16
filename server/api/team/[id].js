@@ -5,7 +5,7 @@ export default defineEventHandler(async (event) => {
     
     const client = serverSupabaseClient(event)
     //const data=[];
-    const { data, error }= await client.from('person').select("name,role,cv,introduction").eq('name', name).limit(1).single()
+    const { data, error }= await client.from('person').select("*").eq('name', name)
     //const { ret2, error1 }= await client.from('supervise').select("person_name,project_name")
     //supabase do the left join query automatically
     //const { ret3, error2 }= await client.from('concerns').select("area_name").eq('person_name',name)
