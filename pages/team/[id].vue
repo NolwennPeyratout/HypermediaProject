@@ -78,7 +78,7 @@
             //data[0] = to get all the information about a precise member of the company            
             //data[1] to get all the project of a specific member of the company
             //data[2] to get all the area where this specific member work on ( it's related to his / her project)
-            console.log(data)
+            //console.log(data)
             return {
                 data
             }
