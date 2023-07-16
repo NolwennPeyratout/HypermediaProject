@@ -8,6 +8,7 @@
     It displays one picture at a time and moves automatically between them
   -->
   <main class="custom-background_area"> 
+    <!--
     <div id="carousel-container_area">
       <Carousel id="carousel_area" :autoplay="2000" :wrap-around="true" :items-to-show="1.1">
         <Slide v-for="slide in 3" :key="slide">
@@ -19,12 +20,12 @@
       </Carousel>
     </div>
     
-    <!--
+    
       Part of the page displaying all the projects concerning the area. 
       The projects are displayed in two ways: the odd ones are displayed on the
       left part of the page, the even ones are displayed on the right, with two 
       symmetric layouts
-    -->
+   
     <div id="project-container_area">
       <div id="top-single-area">
             <h1 id="singlearea-title">{{data[0].name}}</h1>
@@ -50,7 +51,8 @@
           :location="project.location"
         />
       </template>
-    </div>
+    </div> -->
+    {{ data }}
   </main>
 </template>
 
@@ -70,7 +72,7 @@
       /* Data to be displayeed are retrieved here*/
       async asyncData() {
         const route = useRoute()
-        data= await $fetch( '/api/areas/' + route.params.id)
+        const data= await $fetch( '/api/areas/' + route.params.id)
         return {
           data
         }
