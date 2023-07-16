@@ -6,7 +6,7 @@ export default defineEventHandler(async (event) => {
     const client = serverSupabaseClient(event)
     const { data, error }= await client.from('project').select('name, presentation, location, date, start_up, product_service, relevant')
     .filterExists(
-      supabase.from('concern').select('*').filter('concern.area_name', 'eq', name).filter('concern.project_name', 'eq', 'project.name')
+      client.from('concern').select('*').filter('concern.area_name', 'eq', name).filter('concern.project_name', 'eq', 'project.name')
     );
     
 
