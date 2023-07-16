@@ -75,7 +75,6 @@
       },
         async asyncData() {
             const route = useRoute()
-            const data = []
             const id = route.params.id
             data= await $fetch( '/api/team/' + id)  
             //data[0] = to get all the information about a precise member of the company            
