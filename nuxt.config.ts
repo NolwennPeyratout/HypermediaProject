@@ -6,11 +6,4 @@ export default defineNuxtConfig({
 
     modules: ['@nuxtjs/supabase'],
     ssr:true,
-    serverHandlers: [
-        {
-            route: '/server',
-            handler: '~/server/api/index.js',
-            middleware: true
-        }
-    ],
 })
