@@ -76,7 +76,10 @@
         async asyncData() {
             const route = useRoute()
             const id = route.params.id
-            const data = await $fetch( '/api/team/' + id)  
+            const data=[]
+            data[0] = await $fetch( '/api/team/' + id)  
+            data[1] = await $fetch( '/api/team/project' + id)  
+            data[2] = await $fetch( '/api/team/area' + id)  
             //data[0] = to get all the information about a precise member of the company            
             //data[1] to get all the project of a specific member of the company
             //data[2] to get all the area where this specific member work on ( it's related to his / her project)
