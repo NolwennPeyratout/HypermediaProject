@@ -10,33 +10,33 @@
             
             <!-- Part of the page containing all the info regarding the displayed project -->
           <div class = "project-info-container">
-            <h1 id="project-name" class = "data-name"> <span>{{ data[0].name }}</span></h1>
-            <p id="project-presentation" class = "data-presentation"> <span class="data-category"> Project presentation:</span> {{ data[0].presentation }}</p>
-            <p id="project-location" class = "data-location"> <span class="data-category">Project location:</span> {{ data[0].location }}</p>
-            <p id="project-date" class = "data-timestamp"> <span class="data-category">Project date:</span> {{ data[0].date }}</p>
-            <p id="project-startup" class = "data-startup"> <span class="data-category">Startup managing the project:</span> {{ data[0].start_up }}</p>
-            <p id="project-product" class = "data-product"> <span class="data-category">Product offered:</span> {{ data[0].product_service }}</p>
-            <p id="cv">{{ data[0].cv }}</p>
+            <h1 id="project-name" class = "data-name"> <span>{{ data[0][0].name }}</span></h1>
+            <p id="project-presentation" class = "data-presentation"> <span class="data-category"> Project presentation:</span> {{ data[0][0].presentation }}</p>
+            <p id="project-location" class = "data-location"> <span class="data-category">Project location:</span> {{ data[0][0].location }}</p>
+            <p id="project-date" class = "data-timestamp"> <span class="data-category">Project date:</span> {{ data[0][0].date }}</p>
+            <p id="project-startup" class = "data-startup"> <span class="data-category">Startup managing the project:</span> {{ data[0][0].start_up }}</p>
+            <p id="project-product" class = "data-product"> <span class="data-category">Product offered:</span> {{ data[0][0].product_service }}</p>
+            <p id="cv">{{ data[0][0].cv }}</p>
           </div>
           <!-- Right part of the page in which the supervisor and concering area information is displayed through circular components -->
           <div class="bubbles-container">
             <div class="supervisor-bubble">
-                <SmallCircleContainer :title="'Supervisor: ' + data[2].person_name" :link="'/team/' + data[2].person_name" 
-                :img-url="'~/assets/img/team/' + data[2].person_name + '.jpeg'"/>
+                <SmallCircleContainer :title="'Supervisor: ' + data[0][2].person_name" :link="'/team/' + data[0][2].person_name" 
+                :img-url="'~/assets/img/team/' + data[0][2].person_name + '.jpeg'"/>
             </div>
             <div class="area-bubble">
-                <SmallCircleContainer :title="'Project Area: ' + data[1].area_name" :link="'/areas/' + data[1].area_name" 
-                :img-url="'~/assets/img/' + data[1].area_name + '_area/' + data[1].area_name + '1.jpg'"/>
+                <SmallCircleContainer :title="'Project Area: ' + data[0][1].area_name" :link="'/areas/' + data[0][1].area_name" 
+                :img-url="'~/assets/img/' + data[0][1].area_name + '_area/' + data[0][1].area_name + '1.jpg'"/>
             </div>
           </div>
         </div>
         
         <!-- Part of the screen in which are displayed the 4 relevant images for the project -->
         <div class = "project-images">
-            <img class = "image" :src = "'~/assets/img/projects/'+ data[0].name +'1.jpg'"  />
-            <img class = "image" :src = "'~/assets/img/projects/'+ data[0].name +'2.jpg'"   />
-            <img class = "image" :src = "'~/assets/img/projects/'+ data[0].name +'3.jpg'"   />
-            <img class = "image" :src = "'~/assets/img/projects/'+ data[0].name +'4.jpg'"   />
+            <img class = "image" :src = "'~/assets/img/projects/'+ data[0][0].name +'1.jpg'"  />
+            <img class = "image" :src = "'~/assets/img/projects/'+ data[0][0].name +'2.jpg'"   />
+            <img class = "image" :src = "'~/assets/img/projects/'+ data[0][0].name +'3.jpg'"   />
+            <img class = "image" :src = "'~/assets/img/projects/'+ data[0][0].name +'4.jpg'"   />
         </div>
         {{ data }}
     </main>
