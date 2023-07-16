@@ -68,21 +68,11 @@
         Carousel,
         Slide,
         Pagination,
-      },
-        async asyncData() {
-            const route = useRoute()
-            const data = []
-            const id = route.params.id
-            data= await $fetch( '/api/team/' + id)  
-            //data[0] = to get all the information about a precise member of the company            
-            //data[1] to get all the project of a specific member of the company
-            //data[2] to get all the area where this specific member work on ( it's related to his / her project)
-            console.log(data)
-            return {
-                data
-            }
-        }
-    })       
+      }
+    }) 
+    const route = useRoute()
+    const id = route.params.id
+    const { data: data } = await useFetch('/api/team'+id )
  
     
 </script>
