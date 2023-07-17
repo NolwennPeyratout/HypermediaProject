@@ -29,7 +29,7 @@ PROPS:
     fetch().then();
 
     async function fetch() {
-      const response = await import(`@assets/img/${props.imgUrl}`);
+      const response = await import(`~/assets/img/${props.imgUrl}`);
       imgUrl = response.default;
     }
 </script>
