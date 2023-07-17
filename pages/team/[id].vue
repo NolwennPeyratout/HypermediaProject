@@ -87,7 +87,13 @@
             return {
                 data
             }
-        }
+        },
+        computed: {
+              formattedName() {
+                return this.data[0][0].name.replace(/\+/g, " ");
+            }
+          }
+  
     })       
  
     

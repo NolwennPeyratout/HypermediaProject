@@ -16,7 +16,7 @@ PROPS:
             <div class="img-container-1">
                 <img :src="imgUrl" alt="Immagine del progetto"/>
             </div>
-            <p class="card-title-1">{{ title }}</p>
+            <p class="card-title-1">{{ modifiedTitle }}</p>
         </div>
       </NuxtLink>
     </div>
@@ -24,6 +24,7 @@ PROPS:
 
 <script setup>
     const props = defineProps(['title', 'imgUrl', 'link'])
+    const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));
 </script>
 
 <style>

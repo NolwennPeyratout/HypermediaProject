@@ -20,7 +20,7 @@ PROPS:
           </div>
           <div class="text-container">
             <div class="info-cont">
-              <p id="card-title">{{ title }}</p>
+              <p id="card-title">{{ modifiedTitle }}</p>
               <p id="card-product">Product / Service: {{ product }}</p>
               <p id="card-date">Date: {{ date }}</p>
               <p id="card-location">Location: {{ location }}</p>
@@ -34,6 +34,7 @@ PROPS:
 
 <script setup>
   const props = defineProps(['title', 'imgUrl', 'link', 'product', 'date', 'location'])
+  const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));
 </script>
 
 <style>

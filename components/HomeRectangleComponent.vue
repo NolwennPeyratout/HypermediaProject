@@ -26,6 +26,7 @@ PROPS:
 
 <script setup>
   const props = defineProps(['title', 'link','imgUrl','subtitle'])
+  const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));
 </script>
 
 <style>
