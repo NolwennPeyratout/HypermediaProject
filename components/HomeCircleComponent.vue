@@ -22,16 +22,22 @@ PROPS:
   
 
 <script setup>
-    const props = defineProps(['title', 'link','imgUrl']);
-    let imgUrl = null;
+import { defineProps, ref } from 'vue';
 
-    // Load the image dynamically
-    fetch().then();
+const props = defineProps(['title', 'link', 'imgUrl']);
+const imgUrl = ref(null);
 
-    async function fetch() {
-      const response = await import(`~/assets/img/${props.imgUrl}`);
-      imgUrl = response.default;
-    }
+// Load the image dynamically
+fetchImage();
+
+async function fetchImage() {
+  try {
+    const response = await import(`~/assets/img/${props.imgUrl}`);
+    imgUrl.value = response.default;
+  } catch (error) {
+    console.error(error);
+  }
+}
 </script>
 
 
