@@ -32,7 +32,7 @@ fetchImage();
 
 async function fetchImage() {
   try {
-    const response = await import(`../assets/img/${props.imgUrl}`);
+    const response = await import(`${props.imgUrl}`);
     imgUrl.value = response.default;
   } catch (error) {
     console.error(error);
