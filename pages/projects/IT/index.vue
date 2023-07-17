@@ -36,6 +36,7 @@
         },
         computed: {
             formattedName(dataUnformated) {
+                console.log(dataUnformated)
                 return dataUnformated.replace(/\+/g, " ");
             }
         }
