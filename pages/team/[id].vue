@@ -18,7 +18,6 @@
             <p id="cv">{{ data[0][0].cv }}</p>
             
           </div>
-          {{ data }}
         </div>
         <!--This part is shown only if the person is the supervisor of one project, and we show it to avoid the carousel -->
         <div v-if="data[1].length == 1" id="container-project">
