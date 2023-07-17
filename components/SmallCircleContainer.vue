@@ -17,7 +17,7 @@ PROPS:
         <div class="small-circle">
           <img :src="imgUrl" alt="Immagine del topic">
         </div>
-        <p class="circle-title">{{ title }}</p>
+        <p class="circle-title">{{ modifiedTitle }}</p>
       </NuxtLink>
     </div>
   </template>
@@ -25,6 +25,7 @@ PROPS:
 
 <script setup>
     const props = defineProps(['title','link','imgUrl'])
+    const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));
 </script>
 
 <style>

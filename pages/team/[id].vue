@@ -12,7 +12,7 @@
           </div>
           <div id="presentation-person">
             
-            <h1 id="person-name" class = "data"> <span>{{ data[0][0].name }}</span></h1>
+            <h1 id="person-name" class = "data"> <span>{{ formattedName }}</span></h1>
             <h3 id="person-role" class = "data"><span>{{ data[0][0].role }}</span></h3>
             <p id="person-cv" class = "data-person">CV</p>
             <p id="cv">{{ data[0][0].cv }}</p>

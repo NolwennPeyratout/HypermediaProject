@@ -16,13 +16,14 @@ PROPS:
           <img :src="imgUrl" alt="Immagine del topic">
         </div>
       </NuxtLink>
-      <p class="title-center">{{ title }}</p>
+      <p class="title-center">{{ modifiedTitle }}</p>
     </div>
   </template>
   
 
 <script setup>
     const props = defineProps(['title', 'link','imgUrl'])
+    const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));
 </script>
 
 <style>
