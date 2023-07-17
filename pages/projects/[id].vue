@@ -10,7 +10,7 @@
             
             <!-- Part of the page containing all the info regarding the displayed project -->
           <div class = "project-info-container">
-            <h1 id="project-name" class = "data-name"> <span>{{ data[0][0].name }}</span></h1>
+            <h1 id="project-name" class = "data-name"> <span>{{ formattedName }}</span></h1>
             <p id="project-presentation" class = "data-presentation"> <span class="data-category"> Project presentation:</span> {{ data[0][0].presentation }}</p>
             <p id="project-location" class = "data-location"> <span class="data-category">Project location:</span> {{ data[0][0].location }}</p>
             <p id="project-date" class = "data-timestamp"> <span class="data-category">Project date:</span> {{ data[0][0].date }}</p>
@@ -53,6 +53,11 @@
             data[2] = await $fetch( '/api/projects/supervise/' + route.params.id)
             return {
                 data
+            }
+        },
+        computed: {
+            formattedName() {
+                return this.data[0][0].name.replace(/\+/g, " ");
             }
         }
     })       
