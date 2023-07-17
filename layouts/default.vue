@@ -10,7 +10,7 @@
         <ol class="breadcrumb">
           <li v-for="(item, i) in crumbs" :key="i" class="item">
             <nuxt-link  :to="item.to" class="breadcrumb-item">
-              {{ formattedName }}
+              {{ formattedName(item.title) }}
             </nuxt-link>
           </li>
         </ol>
@@ -37,8 +37,8 @@ export default defineNuxtComponent({
       }, [])
       return breadcrumbs
     },
-    formattedName() {
-                return item.title.replace(/\+/g, " ");
+    formattedName(item) {
+                return item.replace(/\+/g, " ");
             }
     }
   })
