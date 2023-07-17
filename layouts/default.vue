@@ -21,6 +21,11 @@
 
 <script>
 export default defineNuxtComponent({
+  methods: {
+    formattedName(item) {
+      return item.replace(/\+/g, " ");
+    }
+  },
     computed:{
     crumbs () {
       const pathArray = this.$route.path.split('/')
@@ -36,10 +41,7 @@ export default defineNuxtComponent({
         return breadcrumbArray
       }, [])
       return breadcrumbs
-    },
-    formattedName(item) {
-                return item.replace(/\+/g, " ");
-            }
+    }
     }
   })
 
