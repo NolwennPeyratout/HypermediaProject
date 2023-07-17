@@ -13,12 +13,16 @@
     "nuxt": "^3.3.3"
   },
   "dependencies": {
+    "@nuxt/bridge": "^0.10.1",
+    "@nuxt/content": "^2.7.0",
+    "@nuxt/types": "^2.17.1",
     "bootstrap-vue": "^2.23.1",
     "express": "^4.18.2",
     "lorem-ipsum": "^2.0.8",
     "nvm": "^0.0.4",
     "sequelize": "^6.30.0",
     "sqlite3": "^5.1.6",
+    "vue-router": "^4.2.4",
     "vue3-carousel": "^0.3.1"
   }
 }

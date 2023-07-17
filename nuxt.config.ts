@@ -4,6 +4,9 @@ export default defineNuxtConfig({
         '~/assets/css/general.css'
     ],
 
-    modules: ['@nuxtjs/supabase'],
+    modules: ['@nuxtjs/supabase','@nuxt/content'],
     ssr:true,
+    plugins: [
+        '~/plugins/setDefaultPage.ts',
+      ],
 })
