@@ -74,18 +74,9 @@
       /* Data to be displayeed are retrieved here*/
       async asyncData() {
         const route = useRoute()
-        const firstData = await Promise.all([
-          $fetch('/api/areas/' + route.params.id),
-          $fetch('/api/areas/concern/' + route.params.id),
-        ]);
-        const data = firstData.map((arr) => {
-          return arr.map((item) => {
-            if (item.name) {
-              item.name = item.name.replace(/\+/g, ' ');
-            }
-            return item;
-          });
-        });
+        const firstdata=[]
+        firstdata[0]= await $fetch( '/api/areas/' + route.params.id)
+        firstdata[1]= await $fetch( '/api/areas/concern/' + route.params.id);
         return {
           data
         }
