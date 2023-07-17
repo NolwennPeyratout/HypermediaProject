@@ -12,7 +12,7 @@
     <div id="carousel-container_area">
       <Carousel id="carousel_area" :autoplay="2000" :wrap-around="true" :items-to-show="1.1">
         <Slide v-for="slide in 3" :key="slide">
-          <img :src="'~/assets/img/' + data[0].name + '_area/' + data[0].name + slide + '.jpg'" class="carousel__item_area" :class="{ 'responsive-image': true }"/>
+          <img :src="'~/assets/img/' + data[0][0].name + '_area/' + data[0][0].name + slide + '.jpg'" class="carousel__item_area" :class="{ 'responsive-image': true }"/>
         </Slide>
         <template #addons>
           <Pagination />
@@ -28,10 +28,10 @@
    
     <div id="project-container_area">
       <div id="top-single-area">
-            <h1 id="singlearea-title">{{data[0].name}}</h1>
-            <p id="singlearea-page-description"> {{data[0].description}}</p>
+            <h1 id="singlearea-title">{{data[0][0].name}}</h1>
+            <p id="singlearea-page-description"> {{data[0][0].description}}</p>
         </div>
-      <template v-for="(project, index) in data[1]">
+      <template v-for="(project, index) in data[0][1]">
         <ProjectCardExtended v-if="index % 2 === 0"
           :key="project"
           :link="'/projects/' + project.name"
