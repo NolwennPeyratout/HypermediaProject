@@ -31,7 +31,7 @@
             <h1 id="singlearea-title">{{data[0][0].name}}</h1>
             <p id="singlearea-page-description"> {{data[0][0].description}}</p>
         </div>
-      <template v-for="(project, index) in data[1][0]">
+      <template v-for="(project, index) in data[1].data">
         <ProjectCardExtended v-if="index % 2 === 0"
           :key="project"
           :link="'/projects/' + project.name"
@@ -54,6 +54,7 @@
       </template>
     </div>
     {{ data }}
+    
   </main>
 </template>
 
