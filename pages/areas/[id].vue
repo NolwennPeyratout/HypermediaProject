@@ -28,14 +28,14 @@
    
     <div id="project-container_area">
       <div id="top-single-area">
-            <h1 id="singlearea-title">{{data[0][0].name}}</h1>
+            <h1 id="singlearea-title">{{formattedName(data[0][0].name)}}</h1>
             <p id="singlearea-page-description"> {{data[0][0].description}}</p>
         </div>
       <template v-for="(project, index) in data[1].data">
         <ProjectCardExtended v-if="index % 2 === 0"
           :key="project"
           :link="'/projects/' + project.name"
-          :title="project.name"
+          :title=formattedName(project.name)
           :img-url="'~/assets/img/projects/' + project.name + '1.jpg'"
           :product="project.product_service"
           :date="project.date"
@@ -44,7 +44,7 @@
         <ProjectCardExtendedCustom v-else
           :key="project.name"
           :link="'/projects/' + project.name"
-          :title="project.name"
+          :title=formattedName(project.name)
           :img-url="'~/assets/img/projects/' + project.name + '1.jpg'"
           :product="project.product_service"
           :date="project.date"
@@ -85,6 +85,11 @@
         const mainElement = document.querySelector('main');
         mainElement.classList.remove('custom-background_area');
   },
+        computed: {
+            formattedName(dataUnformated) {
+                return dataUnformated.replace(/\+/g, " ");
+            }
+        }
   })
 </script>
 

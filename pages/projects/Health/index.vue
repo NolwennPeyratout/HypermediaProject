@@ -17,16 +17,29 @@
         </div>
         <div id="health-projects-container">
             <!-- Card component repeated as many times as the number of health-concerning projects -->
-            <ProjectCard v-for = "project in projects" :key="project.name" :title = "project.name" :link = "'/projects/' + project.name" 
+            <ProjectCard v-for = "project in projects" :key="project.name" :title = "formattedName(project.name)" :link = "'/projects/' + project.name" 
             :img-url="'~/assets/img/projects/'+ project.name +'1.jpg'" class="card-element"/>
         </div>
     </main>
 </template>
 
-<script setup>
-
-const route = useRoute()
-    const { data: projects } = await useFetch('/api/projects/byarea/Health' )
+<script>
+    export default defineNuxtComponent({
+        async asyncData() {
+            /* Data to be displayeed are retrieved here*/
+            const route = useRoute()
+            const data = await $fetch( '/api/projects/byarea/Health')
+            return {
+                data
+            }
+        },
+        computed: {
+            formattedName(dataUnformated) {
+                return dataUnformated.replace(/\+/g, " ");
+            }
+        }
+    })       
+    
 </script>
 
 
