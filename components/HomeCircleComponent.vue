@@ -23,7 +23,15 @@ PROPS:
 
 <script setup>
     const props = defineProps(['title', 'link','imgUrl']);
-    
+    let imgUrl = null;
+
+    // Load the image dynamically
+    fetch().then();
+
+    async function fetch() {
+      const response = await import(`@assets/img/${props.imgUrl}`);
+      imgUrl = response.default;
+    }
 </script>
 
 
