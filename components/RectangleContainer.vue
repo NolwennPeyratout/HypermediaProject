@@ -3,7 +3,7 @@
       <NuxtLink :to="link" class="link-rectangle">
         <div class="rectangle">
             <img class="img-rectangle" :src="imgUrl" alt="Immagine del topic">
-            <p class="title">{{ title }}</p>
+            <p class="title">{{ modifiedTitle }}</p>
             <p class="role">{{ role }}</p>
         </div>
       </NuxtLink>
@@ -15,6 +15,7 @@
 
 <script setup>
     const props = defineProps(['title', 'link','imgUrl','subtitle','role'])
+    const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));
 </script>
 
 <style>

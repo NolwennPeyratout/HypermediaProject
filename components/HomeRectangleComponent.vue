@@ -15,7 +15,7 @@ PROPS:
     <NuxtLink :to="link" class="homeRect-link">
       <div class="homeRect">
           <img class="homeRect-img" :src="imgUrl" :alt="title">
-          <p id="homeRect-title">{{ title }}</p>
+          <p id="homeRect-title">{{ modifiedTitle }}</p>
           <p class="homeRect-subtitle">{{ subtitle }}</p>
         </div>
     </NuxtLink>

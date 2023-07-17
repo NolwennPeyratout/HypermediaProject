@@ -13,7 +13,7 @@ PROPS:
       <NuxtLink :to="link" class="link-rectangleTitle">
         <div class="rectangleTitle">
             <img class="img-rectangleTitle" :src="imgUrl" :alt="title">
-            <p id="title">{{ title }}</p>
+            <p id="title">{{ modifiedTitle }}</p>
         </div>
       </NuxtLink>
       

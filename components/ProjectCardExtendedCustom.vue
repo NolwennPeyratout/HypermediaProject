@@ -20,7 +20,7 @@ PROPS:
           <div class="grid-container_custom">
             <div class="text-container_custom">
               <div class="info-cont_custom">
-                <p id="card-title_custom">{{ title }}</p>
+                <p id="card-title_custom">{{ modifiedTitle }}</p>
                 <p id="card-product_custom">Product / Service: {{ product }}</p>
                 <p id="card-date_custom">Date: {{ date }}</p>
                 <p id="card-location_custom">Location: {{ location }}</p>
