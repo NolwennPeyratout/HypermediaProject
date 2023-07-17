@@ -8,7 +8,7 @@ export default defineEventHandler(async (event) => {
   try {
     
     const { data, error } = await supabase
-      .rpc('get_projects_with_concerns', { areaid: areaId });
+      .rpc('get_projects_with_concerns', { areaid: id });
     if (error) {
       throw new Error(error.message);
     }
