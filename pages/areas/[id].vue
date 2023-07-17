@@ -74,8 +74,8 @@
       async asyncData() {
         const route = useRoute()
         const data=[]
-        //data[0]= await $fetch( '/api/areas/' + route.params.id)
-        data[0]= await $fetch( '/api/areas/concern' + route.params.id)
+        data[0]= await $fetch( '/api/areas/' + route.params.id)
+        data[1]= await $fetch( '/api/areas/concern/' + route.params.id)
         return {
           data
         }
