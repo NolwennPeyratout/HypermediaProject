@@ -23,17 +23,9 @@
     </main>
 </template>
 
-<script>
-    export default defineNuxtComponent({
-        async asyncData() {
-            /* Data to be displayeed are retrieved here*/
-            const route = useRoute()
-            const data = await $fetch( '/api/projects/byarea/Health')
-            return {
-                data
-            }
-        }
-    })       
+<script setup>
+    const route = useRoute()
+    const { data: projects } = await useFetch('/api/projects/byarea/Health' )     
     
 </script>
 
