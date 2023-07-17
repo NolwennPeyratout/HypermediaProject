@@ -8,15 +8,15 @@
       <!--There are all the personal information of one person, with its role, img, name and cv-->
         <div id = "info-group">
           <div id="container-img-person">
-           <!-- <img id = "img-person" :src = "'/~/assets/img/team/'+data[0].name+'.jpeg'"  />-->
+           <img id = "img-person" :src = "'/~/assets/img/team/'+data[0][0].name+'.jpeg'"  />
           </div>
           <div id="presentation-person">
-            <!--
-            <h1 id="person-name" class = "data"> <span>{{ data[0].name }}</span></h1>
-            <h3 id="person-role" class = "data"><span>{{ data[0].role }}</span></h3>
+            
+            <h1 id="person-name" class = "data"> <span>{{ data[0][0].name }}</span></h1>
+            <h3 id="person-role" class = "data"><span>{{ data[0][0].role }}</span></h3>
             <p id="person-cv" class = "data-person">CV</p>
-            <p id="cv">{{ data[0].cv }}</p>
-            -->
+            <p id="cv">{{ data[0][0].cv }}</p>
+            
           </div>
           {{ data }}
         </div>
