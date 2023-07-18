@@ -16,7 +16,7 @@ PROPS:
           <div class="proj-card">
             <div class="grid-container">
               <div class="img-container">
-                <img v-img-src="importedImage" alt="Immagine del progetto" />
+                <img :src="imageUrl" alt="Immagine del progetto" />
               </div>
               <div class="text-container">
                 <div class="info-cont">
@@ -37,7 +37,7 @@ PROPS:
     
     const props = defineProps(['title', 'imgUrl', 'link', 'product', 'date', 'location']);
     const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));
-    const importedImage = import.meta.globEager(`~/assets/img/projects/Apple+Visor1.jpg`).default;
+    const imageUrl = new URL('~/assets/img/projects/Apple+Visor1.jpg', import.meta.url);
     </script>
     
 
