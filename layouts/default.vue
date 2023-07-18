@@ -42,10 +42,7 @@ export default defineNuxtComponent({
       }, [])
       return breadcrumbs
     }
-    },
-    mounted() {
-      this.$router.replace('/')
-  }
+    }
   })
 
 </script>
