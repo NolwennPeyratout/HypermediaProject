@@ -33,7 +33,8 @@ Page conaining all the working areas of the company, displayed through a circula
     /* Data to be displayeed are retrieved here*/
     const route = useRoute()
     const { data: areas } = await useFetch('/api/areas' )
-    const { data: image_urls} = [img1, img2, img3]
+    const urls = [img1, img2, img3]
+    const { data: image_urls} = urls
 </script>
 
 <style>    
