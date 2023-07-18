@@ -27,6 +27,23 @@
 </template>
 
 <script setup>
+
+    import '~/assets/img/projects/Apple+Visor1.jpg';
+    import '~/assets/img/projects/BioVegan+Smoothies1.jpg';
+    import '~/assets/img/projects/Cancer+Destroyer1.jpg';
+    import '~/assets/img/projects/DetectionSystem1.jpg';
+    import '~/assets/img/projects/Doriano+Crackers1.jpg';
+    import '~/assets/img/projects/Glucometer1.jpg';
+    import '~/assets/img/projects/Heartless1.jpg';
+    import '~/assets/img/projects/Knox1.jpg';
+    import '~/assets/img/projects/Lidar+Scanner1.jpg';
+    import '~/assets/img/projects/Nutella1.jpg';
+    import '~/assets/img/projects/Paracetamolo1.jpg';
+    import '~/assets/img/projects/Ringo1.jpg';
+    import '~/assets/img/projects/Starlink1.jpg';
+    import '~/assets/img/projects/The+Next+Hamburger1.jpg';
+    import '~/assets/img/projects/VotaMi1.jpg';
+
  const route = useRoute()
 
 const { data: projects } = await useFetch('/api/projects' )
