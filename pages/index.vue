@@ -110,11 +110,11 @@
                     groundbreaking healthcare solutions and cutting-edge IT innovations, these projects exemplify our
                     commitment to nurturing visionary entrepreneurs and driving transformative change on a global scale.</p>
                     <div id="home-projects-grid">
-                        <ProjectCard class="home-card" :title = "'Apple Visor'" :link = "'/projects/Apple Visor'" :img-url="'~/assets/img/projects/Apple Visor1.jpg'"/>
-                        <ProjectCard class="home-card" :title = "'Nutella'" :link = "'/projects/Nutella'" :img-url="'~/assets/img/projects/Nutella1.jpg'"/>
-                        <ProjectCard class="home-card" :title = "'Glucometer'" :link = "'/projects/Glucometer'" :img-url="'~/assets/img/projects/Glucometer1.jpg'"/>
-                        <ProjectCard class="home-card" :title = "'Starlink'" :link = "'/projects/Starlink'" :img-url="'~/assets/img/projects/Starlink1.jpg'"/>
-                        <ProjectCard class="home-card" :title = "'BioVegan Smoothies'" :link = "'/projects/BioVegan Smoothies'" :img-url="'~/assets/img/projects/BioVegan Smoothies1.jpg'"/>
+                        <ProjectCard class="home-card" :title = "'Apple Visor'" :link = "'/projects/Apple Visor'" :imgUrl="'~/assets/img/projects/Apple Visor1.jpg'"/>
+                        <ProjectCard class="home-card" :title = "'Nutella'" :link = "'/projects/Nutella'" :imgUrl="'~/assets/img/projects/Nutella1.jpg'"/>
+                        <ProjectCard class="home-card" :title = "'Glucometer'" :link = "'/projects/Glucometer'" :imgUrl="'~/assets/img/projects/Glucometer1.jpg'"/>
+                        <ProjectCard class="home-card" :title = "'Starlink'" :link = "'/projects/Starlink'" :imgUrl="'~/assets/img/projects/Starlink1.jpg'"/>
+                        <ProjectCard class="home-card" :title = "'BioVegan Smoothies'" :link = "'/projects/BioVegan Smoothies'" :imgUrl="'~/assets/img/projects/BioVegan Smoothies1.jpg'"/>
                     </div>
                     <!-- Button that leads the user to the page containing all the company projects-->
                     <NuxtLink to="/projects" id="home-projects-button">
