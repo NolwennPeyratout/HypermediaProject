@@ -13,11 +13,11 @@ Page conaining all the working areas of the company, displayed through a circula
       </div>
       <div id="areas-container">
         <CircleContainer
-          v-for="(area, index) in areas"
+          v-for="area in areas"
           :key="area.name"
           :title="area.name"
           :link="'/areas/' + area.name"
-          :img-url="image_urls[index]"
+          :img-url="image_urls[area.index]"
         />
       </div>
     </main>
