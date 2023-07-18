@@ -33,7 +33,7 @@ It displays one picture at a time and moves automatically between them
       :key="project"
       :link="'/projects/' + project.name"
       :title="project.name"
-      :img-url="'~/assets/img/projects/' + project.name + '1.jpg'"
+      :img-url="project.name"
       :product="project.product_service"
       :date="project.date"
       :location="project.location"
