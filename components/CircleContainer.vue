@@ -7,13 +7,13 @@ It is mainly used to display the areas of the company
 PROPS:
     - title: main information to display below the circle
     - link: link to the corresponding page 
-    - imgUrl: path to the displayed image  -->
+    - imgUrl: path to the displayed image -->
 
 <template>
     <div class="circle-container">
       <NuxtLink :to="link">
         <div class="circle">
-          <img :src="fetchImage(imgUrl)" alt="Immagine del topic">
+          <img :src="imgUrl" alt="Immagine del topic">
         </div>
       </NuxtLink>
       <p class="title-center">{{ modifiedTitle }}</p>
@@ -21,21 +21,13 @@ PROPS:
   </template>
   
 
-<script>
-    //import prova from '~/assets/img/Food1.jpg';
+<script setup>
     const props = defineProps(['title', 'link','imgUrl'])
     const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));
 
-    //fetchImage(imgUrl);
-
-    async function fetchImage(image) {
-      try {
-        return new URL(`${image}`, import.meta.url).href
-      } catch (error) {
-        console.error(error);
-      }
-}
-
+    imgUrl.value = new URL(`${imgUrl}`, import.meta.url).href;
+    
+    
 </script>
 
 <style>
