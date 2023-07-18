@@ -15,8 +15,8 @@ Page conaining all the working areas of the company, displayed through a circula
                 to explore the frontiers of innovation, our working areas offer a wealth of opportunities.</p>
         </div>
         <div id="areas-container">
-            <CircleContainer id="circle-container" v-for = "area in areas" :key="area.name" :title = "area.name" :link = "'/areas/' + area.name" 
-            :img-url="prova" />
+            <CircleContainer id="circle-container" v-for = "(area, index) in areas" :key="area.name" :title = "area.name" :link = "'/areas/' + area.name" 
+            :img-url="image_ulrs[index]" />
             <!--
             <CircleContainer id="circle-container" v-for = "area in areas" :key="area.name" :title = "area.name" :link = "'/areas/' + area.name" 
             :img-url="'~/assets/img/' + area.name + '1.jpg'" />
@@ -26,11 +26,14 @@ Page conaining all the working areas of the company, displayed through a circula
 </template>
 
 <script setup>
-    import prova from '~/assets/img/Food1.jpg';  
+    import img1 from '~/assets/img/Food1.jpg';
+    import img2 from '~/assets/img/Food2.jpg';
+    import img3 from '~/assets/img/Food3.jpg';  
 
     /* Data to be displayeed are retrieved here*/
     const route = useRoute()
     const { data: areas } = await useFetch('/api/areas' )
+    const { data: image_urls} = [img1, img2, img3]
 </script>
 
 <style>    
