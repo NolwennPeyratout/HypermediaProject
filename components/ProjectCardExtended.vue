@@ -37,7 +37,8 @@ PROPS:
     
     const props = defineProps(['title', 'imgUrl', 'link', 'product', 'date', 'location']);
     const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));
-    const imageUrl = new URL('~/assets/img/projects/Apple+Visor1.jpg', import.meta.url);
+    const imageUrl = new URL(props.imgUrl, import.meta.url);
+      
     </script>
     
 
