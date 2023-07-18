@@ -38,7 +38,7 @@ PROPS:
     const props = defineProps(['title', 'imgUrl', 'link', 'product', 'date', 'location']);
     const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));
     const u = "" + props.imgUrl;
-    const imageUrl = new URL(u, import.meta.url);
+    const imageUrl = new URL('~/assets/img/projects/BioVegan+Smoothies1.jpg', import.meta.url);
       
     </script>
     
