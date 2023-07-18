@@ -4,7 +4,7 @@ import CircleContainer from '~/components/CircleContainer.vue';
 
 Page conaining all the working areas of the company, displayed through a circular element
 -->
-<template>  
+<template>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <main>
       <div id="AreaTop">
@@ -13,27 +13,42 @@ Page conaining all the working areas of the company, displayed through a circula
       </div>
       <div id="areas-container">
         <CircleContainer
-          v-for="area in areas"
-          :key="area.name"
-          :title="area.name"
-          :link="'/areas/' + area.name"
-          :img-url="image_urls[area.index]"
+          :key="areas[0].name"
+          :title="areas[0].name"
+          :link="'/areas/' + areas[0].name"
+          :img-url="image_urls[0]"
+        />
+        <CircleContainer
+          :key="areas[1].name"
+          :title="areas[1].name"
+          :link="'/areas/' + areas[1].name"
+          :img-url="image_urls[1]"
+        />
+        <CircleContainer
+          :key="areas[2].name"
+          :title="areas[2].name"
+          :link="'/areas/' + areas[2].name"
+          :img-url="image_urls[2]"
         />
       </div>
     </main>
   </template>
   
   <script setup>
-  
   import img1 from '~/assets/img/Food1.jpg';
   import img2 from '~/assets/img/Food2.jpg';
-  import img3 from '~/assets/img/Food3.jpg';  
+  import img3 from '~/assets/img/Food3.jpg';
   
   /* Data to be displayed is retrieved here */
   const route = useRoute();
-  const { data: areas } = await useFetch('/api/areas');
+  const areas = [
+    { name: 'Area 1' },
+    { name: 'Area 2' },
+    { name: 'Area 3' }
+  ];
   const image_urls = [img1, img2, img3];
   </script>
+  
   
 
 <style>    
