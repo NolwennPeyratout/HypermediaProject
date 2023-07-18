@@ -37,7 +37,7 @@ PROPS:
     
     const props = defineProps(['title', 'imgUrl', 'link', 'product', 'date', 'location']);
     const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));
-    const importedImage = import.meta.globEager(`${props.imgUrl}`).default;
+    const importedImage = import.meta.globEager(`~/assets/img/projects/Apple+Visor1.jpg`).default;
     </script>
     
 
