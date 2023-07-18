@@ -12,7 +12,7 @@
     <div id="carousel-container_area">
       <Carousel id="carousel_area" :autoplay="2000" :wrap-around="true" :items-to-show="1.1">
         <Slide v-for="slide in 3" :key="slide">
-          <img :src="'~/assets/img/' + data[0][0].name + '_area/' + data[0][0].name + slide + '.jpg'" class="carousel__item_area" :class="{ 'responsive-image': true }"/>
+          <img :src="image_urls_area[slide-1]" class="carousel__item_area" :class="{ 'responsive-image': true }"/>
         </Slide>
         <template #addons>
           <Pagination />
@@ -36,7 +36,7 @@
           :key="data[1][index-1]"
           :link="'/projects/' + data[1][index-1].name"
           :title=data[1][index-1].name
-          :img-url="image_urls[index-1]"
+          :img-url="image_urls_proj_area[index-1]"
           :product="data[1][index-1].product_service"
           :date="data[1][index-1].date"
           :location="data[1][index-1].location"
@@ -45,7 +45,7 @@
           :key="data[1][index-1].name"
           :link="'/projects/' + data[1][index-1].name"
           :title=data[1][index-1].name
-          :img-url="image_urls[index-1]"
+          :img-url="image_urls_proj_area[index-1]"
           :product="data[1][index-1].product_service"
           :date="data[1][index-1].date"
           :location="data[1][index-1].location"
@@ -73,9 +73,29 @@
     import img8 from '~/assets/img/IT2.jpg';
     import img9 from '~/assets/img/IT3.jpg';
 
+    import img_proj_1 from '~/assets/img/projects/Apple+Visor1.jpg';
+    import img_proj_2 from '~/assets/img/projects/BioVegan+Smoothies1.jpg';
+    import img_proj_3 from '~/assets/img/projects/Cancer+Destroyer1.jpg';
+    import img_proj_4 from '~/assets/img/projects/DetectionSystem1.jpg';
+    import img_proj_5 from '~/assets/img/projects/Doriano+Crackers1.jpg';
+    import img_proj_6 from '~/assets/img/projects/Glucometer1.jpg';
+    import img_proj_7 from '~/assets/img/projects/Heartless1.jpg';
+    import img_proj_8 from '~/assets/img/projects/Knox1.jpg';
+    import img_proj_9 from '~/assets/img/projects/Lidar+Scanner1.jpg';
+    import img_proj_10 from '~/assets/img/projects/Nutella1.jpg';
+    import img_proj_11 from '~/assets/img/projects/Paracetamolo1.jpg';
+    import img_proj_12 from '~/assets/img/projects/Ringo1.jpg';
+    import img_proj_13 from '~/assets/img/projects/Starlink1.jpg';
+    import img_proj_14 from '~/assets/img/projects/The+Next+Hamburger1.jpg';
+    import img_proj_15 from '~/assets/img/projects/VotaMi1.jpg';
+
     const image_urls_food = [img1, img2, img3];
     const image_urls_health = [img4, img5, img6];
     const image_urls_it = [img7, img8, img9];
+
+    const image_urls_proj_food = [img_proj_2, img_proj_5, img_proj_10, img_proj_12, img_proj_14];
+    const image_urls_proj_health = [img_proj_1, img_proj_4, img_proj_8, img_proj_13, img_proj_15];
+    const image_urls_proj_it = [img_proj_3, img_proj_6, img_proj_7, img_proj_9, img_proj_11];
     
     export default defineNuxtComponent({
       name: 'Autoplay',
@@ -88,16 +108,20 @@
       async asyncData() {
         const route = useRoute()
         const data=[]
-        const image_urls=[]
+        const image_urls_area=[]
+        const image_urls_proj_area=[]
         data[0]= await $fetch( '/api/areas/' + route.params.id)
         data[1]= await $fetch( '/api/areas/concern/' + route.params.id);
 
         if(route.params.id === 'Food'){
-          image_urls = image_urls_food;
+          image_urls_area = image_urls_food;
+          image_urls_proj_area = image_urls_proj_food;
         } else if(route.params.id === 'Health'){
-          image_urls = image_urls_health;
+          image_urls_area = image_urls_health;
+          image_urls_proj_area = image_urls_proj_health;
         } else{
-          image_urls = image_urls_it;
+          image_urls_area = image_urls_it;
+          image_urls_proj_area = image_urls_proj_it;
         }
 
         return {
