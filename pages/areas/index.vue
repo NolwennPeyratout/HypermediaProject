@@ -15,8 +15,8 @@ Page conaining all the working areas of the company, displayed through a circula
                 to explore the frontiers of innovation, our working areas offer a wealth of opportunities.</p>
         </div>
         <div id="areas-container">
-            <CircleContainer id="circle-container" v-for = "(area, index) in areas" :key="area.name" :title = "area.name" :link = "'/areas/' + area.name" 
-            :img-url="image_urls[index]" />
+            <CircleContainer id="circle-container" v-for = "area in areas" :key="area.name" :title = "area.name" :link = "'/areas/' + area.name" 
+            :img-url="image_urls[area.index]" />
             <!--
             <CircleContainer id="circle-container" v-for = "area in areas" :key="area.name" :title = "area.name" :link = "'/areas/' + area.name" 
             :img-url="'~/assets/img/' + area.name + '1.jpg'" />
