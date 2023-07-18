@@ -16,12 +16,17 @@ Page conaining all the working areas of the company, displayed through a circula
         </div>
         <div id="areas-container">
             <CircleContainer id="circle-container" v-for = "area in areas" :key="area.name" :title = "area.name" :link = "'/areas/' + area.name" 
+            :img-url="prova" />
+            <!--
+            <CircleContainer id="circle-container" v-for = "area in areas" :key="area.name" :title = "area.name" :link = "'/areas/' + area.name" 
             :img-url="'~/assets/img/' + area.name + '1.jpg'" />
+            -->
         </div>
     </main>
 </template>
 
 <script setup>
+    import prova from '~/assets/img/Food1.jpg';  
 
     /* Data to be displayeed are retrieved here*/
     const route = useRoute()

@@ -23,10 +23,7 @@ PROPS:
 
 <script setup>
     const props = defineProps(['title', 'link','imgUrl'])
-    const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));
-
-    imgUrl.value = new URL(`${imgUrl}`, import.meta.url).href;
-    
+    const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));   
     
 </script>
 
