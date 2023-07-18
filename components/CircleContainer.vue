@@ -13,7 +13,7 @@ PROPS:
     <div class="circle-container">
       <NuxtLink :to="link">
         <div class="circle">
-          <img :src="imgUrl" alt="Immagine del topic">
+          <img :src="prova" alt="Immagine del topic">
         </div>
       </NuxtLink>
       <p class="title-center">{{ modifiedTitle }}</p>
@@ -22,6 +22,7 @@ PROPS:
   
 
 <script setup>
+    import prova from '~/assets/img/Food1.jpg';
     const props = defineProps(['title', 'link','imgUrl'])
     const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));
 </script>
