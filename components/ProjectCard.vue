@@ -14,7 +14,7 @@ PROPS:
       <NuxtLink :to="link" class="link-box-1">
         <div class="proj-card-1">
             <div class="img-container-1">
-                <img :src="'~/assets/img/projects/Apple Visor1.jpg'" alt="Immagine del progetto"/>
+                <img :src="imgUrl" alt="Immagine del progetto"/>
             </div>
             <p class="card-title-1">{{ modifiedTitle }}</p>
         </div>
