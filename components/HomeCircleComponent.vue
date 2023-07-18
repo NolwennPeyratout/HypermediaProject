@@ -32,7 +32,7 @@ fetchImage();
 
 async function fetchImage() {
   try {
-    const response = await import(`./module-${props.imgUrl}.jpg`);
+    const response = await import(`./HomeCircleComponent-${props.imgUrl}.jpg`);
     imgUrl.value = response.default;
   } catch (error) {
     console.error(error);
