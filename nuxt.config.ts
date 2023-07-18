@@ -9,4 +9,5 @@ export default defineNuxtConfig({
     plugins: [
         '~/plugins/setDefaultPage.ts',
       ],
+    router:{}
 })
