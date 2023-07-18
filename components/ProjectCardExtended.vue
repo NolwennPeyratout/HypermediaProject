@@ -10,32 +10,36 @@ PROPS:
     - date: date of the displayed project
     - location: location of the displayed project  -->
 
-<template>
-  <div class="project-card">
-    <NuxtLink :to="link" class="link-box">
-      <div class="proj-card">
-        <div class="grid-container">
-          <div class="img-container">
-            <img :src="imgUrl" alt="Immagine del progetto" />
-          </div>
-          <div class="text-container">
-            <div class="info-cont">
-              <p id="card-title">{{ modifiedTitle }}</p>
-              <p id="card-product">Product / Service: {{ product }}</p>
-              <p id="card-date">Date: {{ date }}</p>
-              <p id="card-location">Location: {{ location }}</p>
+    <template>
+      <div class="project-card">
+        <NuxtLink :to="link" class="link-box">
+          <div class="proj-card">
+            <div class="grid-container">
+              <div class="img-container">
+                <img v-img-src="importedImage" alt="Immagine del progetto" />
+              </div>
+              <div class="text-container">
+                <div class="info-cont">
+                  <p id="card-title">{{ modifiedTitle }}</p>
+                  <p id="card-product">Product / Service: {{ product }}</p>
+                  <p id="card-date">Date: {{ date }}</p>
+                  <p id="card-location">Location: {{ location }}</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </NuxtLink>
       </div>
-    </NuxtLink>
-  </div>
-</template>
-
-<script setup>
-  const props = defineProps(['title', 'imgUrl', 'link', 'product', 'date', 'location'])
-  const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));
-</script>
+    </template>
+    
+    <script setup>
+    import { defineProps, computed } from 'vue';
+    
+    const props = defineProps(['title', 'imgUrl', 'link', 'product', 'date', 'location']);
+    const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));
+    const importedImage = import.meta.globEager(`${props.imgUrl}`).default;
+    </script>
+    
 
 <style>
 

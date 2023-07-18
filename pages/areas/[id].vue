@@ -32,7 +32,7 @@ It displays one picture at a time and moves automatically between them
     <ProjectCardExtended v-if="index % 2 === 0"
       :key="project"
       :link="'/projects/' + project.name"
-      :title=project.name
+      :title="project.name"
       :img-url="'~/assets/img/projects/' + project.name + '1.jpg'"
       :product="project.product_service"
       :date="project.date"
@@ -41,7 +41,7 @@ It displays one picture at a time and moves automatically between them
     <ProjectCardExtendedCustom v-else
       :key="project.name"
       :link="'/projects/' + project.name"
-      :title=project.name
+      :title="project.name"
       :img-url="'~/assets/img/projects/' + project.name + '1.jpg'"
       :product="project.product_service"
       :date="project.date"
