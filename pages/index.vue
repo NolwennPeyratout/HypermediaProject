@@ -40,7 +40,7 @@
                         <!-- A circular component is displayed for each working area (Food, Health and IT) -->
                         <HomeCircleComponent class="areas-circles" :title = "'Food'" :link = "'/areas/Food'" imgUrl="/assets/img/Food_area/Food1" />
                         <HomeCircleComponent class="areas-circles" :title = "'IT'" :link = "'/areas/IT'" imgUrl="/assets/img/IT_area/IT1" />
-                        <HomeCircleComponent class="areas-circles" :title = "'Health'" :link = "'/areas/Health'" imgUrl="_nuxt/public/assets/img/Health_area/Health1" />
+                        <HomeCircleComponent class="areas-circles" :title = "'Health'" :link = "'/areas/Health'" imgUrl="/img/Health_area/Health1" />
                     </div>
                 </div>
                 <!-- Third section of the home page in which the user is informed about the stats and awards received by the company -->
@@ -138,6 +138,20 @@
             </main>
         </div>
         <TheFooter />
+    </div>
+    <div id="prova">
+        <img src="~/assets/img/Food_area/Food1.jpg" alt="image">
+        <img src="~/assets/img/Food_area/Food2.jpg" alt="image">
+        <img src="~/assets/img/Food_area/Food3.jpg" alt="image">
+        <img src="~/assets/img/Food1.jpg" alt="image">
+        <img src="~/assets/img/Food1.jpg" alt="image">
+        <img src="~/assets/img/Food1.jpg" alt="image">
+        <img src="~/assets/img/Health_area/Health1.jpg" alt="image">
+        <img src="~/assets/img/Health_area/Health2.jpg" alt="image">
+        <img src="~/assets/img/Health_area/Health3.jpg" alt="image">
+        <img src="~/assets/img/IT_area/IT1.jpg" alt="image">
+        <img src="~/assets/img/IT_area/IT2.jpg" alt="image">
+        <img src="~/assets/img/IT_area/IT3.jpg" alt="image">
     </div>
 </template>
 
