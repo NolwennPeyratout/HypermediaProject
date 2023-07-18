@@ -7,35 +7,34 @@ Page conaining all the working areas of the company, displayed through a circula
 <template>  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <main>
-        <div id="AreaTop">
-            <h1 id="area-page-title"> Our working areas</h1>
-            <p id="areas-page-description">On this page, you will find a comprehensive overview of our various working areas, each meticulously designed to support, nurture, 
-                and propel groundbreaking ideas and ambitious entrepreneurs forward. We understand that innovation knows no bounds, and we are committed to providing a diverse 
-                range of resources and expertise to fuel the success of ventures across industries. Whether you're an entrepreneur seeking funding or a startup enthusiast looking 
-                to explore the frontiers of innovation, our working areas offer a wealth of opportunities.</p>
-        </div>
-        <div id="areas-container">
-            <CircleContainer id="circle-container" v-for = "area in areas" :key="area.name" :title = "area.name" :link = "'/areas/' + area.name" 
-            :img-url="image_urls[area.index]" />
-            <!--
-            <CircleContainer id="circle-container" v-for = "area in areas" :key="area.name" :title = "area.name" :link = "'/areas/' + area.name" 
-            :img-url="'~/assets/img/' + area.name + '1.jpg'" />
-            -->
-        </div>
+      <div id="AreaTop">
+        <h1 id="area-page-title">Our working areas</h1>
+        <p id="areas-page-description">On this page, you will find a comprehensive overview of our various working areas, each meticulously designed to support, nurture, and propel groundbreaking ideas and ambitious entrepreneurs forward. We understand that innovation knows no bounds, and we are committed to providing a diverse range of resources and expertise to fuel the success of ventures across industries. Whether you're an entrepreneur seeking funding or a startup enthusiast looking to explore the frontiers of innovation, our working areas offer a wealth of opportunities.</p>
+      </div>
+      <div id="areas-container">
+        <CircleContainer
+          v-for="(area, index) in areas"
+          :key="area.name"
+          :title="area.name"
+          :link="'/areas/' + area.name"
+          :img-url="image_urls[index]"
+        />
+      </div>
     </main>
-</template>
-
-<script setup>
-    import img1 from '~/assets/img/Food1.jpg';
-    import img2 from '~/assets/img/Food2.jpg';
-    import img3 from '~/assets/img/Food3.jpg';  
-
-    /* Data to be displayeed are retrieved here*/
-    const route = useRoute()
-    const { data: areas } = await useFetch('/api/areas' )
-    const urls = [img1, img2, img3]
-    const { data: image_urls} = urls
-</script>
+  </template>
+  
+  <script setup>
+  
+  const img1 = require('~/assets/img/Food1.jpg');
+  const img2 = require('~/assets/img/Food2.jpg');
+  const img3 = require('~/assets/img/Food3.jpg');  
+  
+  /* Data to be displayed is retrieved here */
+  const route = useRoute();
+  const { data: areas } = await useFetch('/api/areas');
+  const image_urls = [img1, img2, img3];
+  </script>
+  
 
 <style>    
 
