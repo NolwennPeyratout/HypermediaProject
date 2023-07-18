@@ -25,9 +25,9 @@ Page conaining all the working areas of the company, displayed through a circula
   
   <script setup>
   
-  const img1 = require('~/assets/img/Food1.jpg');
-  const img2 = require('~/assets/img/Food2.jpg');
-  const img3 = require('~/assets/img/Food3.jpg');  
+  import img1 from '~/assets/img/Food1.jpg';
+  import img2 from '~/assets/img/Food2.jpg';
+  import img3 from '~/assets/img/Food3.jpg';  
   
   /* Data to be displayed is retrieved here */
   const route = useRoute();
