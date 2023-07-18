@@ -139,6 +139,7 @@
         </div>
         <TheFooter />
     </div>
+    <!--
     <div id="prova">
         <img src="~/assets/img/Food_area/Food1.jpg" alt="image">
         <img src="~/assets/img/Food_area/Food2.jpg" alt="image">
@@ -153,12 +154,15 @@
         <img src="~/assets/img/IT_area/IT2.jpg" alt="image">
         <img src="~/assets/img/IT_area/IT3.jpg" alt="image">
     </div>
+    -->
 </template>
 
 <script>
     import { Carousel, Pagination, Slide } from 'vue3-carousel'
     
     import 'vue3-carousel/dist/carousel.css'
+
+    window.food1 = "~/assets/img/Food_area/Food1.jpg";
     
     export default defineNuxtComponent({
         name: 'Autoplay',
