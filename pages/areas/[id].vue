@@ -35,7 +35,7 @@
         <ProjectCardExtended v-if="index % 2 === 0"
           :key="data[1][index-1]"
           :link="'/projects/' + data[1][index-1].name"
-          :title=data[1][index-1].name
+          :title="data[1][index-1].name"
           :img-url="image_urls_proj_area[index-1]"
           :product="data[1][index-1].product_service"
           :date="data[1][index-1].date"
@@ -44,7 +44,7 @@
         <ProjectCardExtendedCustom v-else
           :key="data[1][index-1].name"
           :link="'/projects/' + data[1][index-1].name"
-          :title=data[1][index-1].name
+          :title="data[1][index-1].name"
           :img-url="image_urls_proj_area[index-1]"
           :product="data[1][index-1].product_service"
           :date="data[1][index-1].date"
@@ -108,8 +108,8 @@
       async asyncData() {
         const route = useRoute()
         const data=[]
-        const image_urls_area=[]
-        const image_urls_proj_area=[]
+        let image_urls_area=[]
+        let image_urls_proj_area=[]
         data[0]= await $fetch( '/api/areas/' + route.params.id)
         data[1]= await $fetch( '/api/areas/concern/' + route.params.id);
 
