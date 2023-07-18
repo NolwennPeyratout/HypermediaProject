@@ -31,24 +31,24 @@
             <h1 id="singlearea-title">{{data[0][0].name}}</h1>
             <p id="singlearea-page-description"> {{data[0][0].description}}</p>
         </div>
-      <template v-for="(project, index) in data[1].data">
+      <template v-for="index in data[1].data.length">
         <ProjectCardExtended v-if="index % 2 === 0"
-          :key="project"
-          :link="'/projects/' + project.name"
-          :title=project.name
-          :img-url="'~/assets/img/projects/' + project.name + '1.jpg'"
-          :product="project.product_service"
-          :date="project.date"
-          :location="project.location"
+          :key="data[1][index-1]"
+          :link="'/projects/' + data[1][index-1].name"
+          :title=data[1][index-1].name
+          :img-url="image_urls[index-1]"
+          :product="data[1][index-1].product_service"
+          :date="data[1][index-1].date"
+          :location="data[1][index-1].location"
         />
         <ProjectCardExtendedCustom v-else
-          :key="project.name"
-          :link="'/projects/' + project.name"
-          :title=project.name
-          :img-url="'~/assets/img/projects/' + project.name + '1.jpg'"
-          :product="project.product_service"
-          :date="project.date"
-          :location="project.location"
+          :key="data[1][index-1].name"
+          :link="'/projects/' + data[1][index-1].name"
+          :title=data[1][index-1].name
+          :img-url="image_urls[index-1]"
+          :product="data[1][index-1].product_service"
+          :date="data[1][index-1].date"
+          :location="data[1][index-1].location"
         />
       
       </template>
@@ -62,6 +62,20 @@
     import { Carousel, Pagination, Slide } from 'vue3-carousel'
     
     import 'vue3-carousel/dist/carousel.css'
+
+    import img1 from '~/assets/img/Food1.jpg';
+    import img2 from '~/assets/img/Food2.jpg';
+    import img3 from '~/assets/img/Food3.jpg';
+    import img4 from '~/assets/img/Health1.jpg';
+    import img5 from '~/assets/img/Health2.jpg';
+    import img6 from '~/assets/img/Health3.jpg';
+    import img7 from '~/assets/img/IT1.jpg';
+    import img8 from '~/assets/img/IT2.jpg';
+    import img9 from '~/assets/img/IT3.jpg';
+
+    const image_urls_food = [img1, img2, img3];
+    const image_urls_health = [img4, img5, img6];
+    const image_urls_it = [img7, img8, img9];
     
     export default defineNuxtComponent({
       name: 'Autoplay',
@@ -74,8 +88,18 @@
       async asyncData() {
         const route = useRoute()
         const data=[]
+        const image_urls=[]
         data[0]= await $fetch( '/api/areas/' + route.params.id)
         data[1]= await $fetch( '/api/areas/concern/' + route.params.id);
+
+        if(route.params.id === 'Food'){
+          image_urls = image_urls_food;
+        } else if(route.params.id === 'Health'){
+          image_urls = image_urls_health;
+        } else{
+          image_urls = image_urls_it;
+        }
+
         return {
           data
         }
