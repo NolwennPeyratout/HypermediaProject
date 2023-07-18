@@ -13,11 +13,11 @@ Page conaining all the working areas of the company, displayed through a circula
       </div>
       <div id="areas-container">
         <!-- Use a for loop to generate CircleContainers -->
-        <template v-for="(area, index) in areas" :key="area.name">
+        <template v-for="area in areas" :key="area.name">
           <CircleContainer
             :title="area.name"
             :link="`/areas/${area.name}`"
-            :img-url="image_urls[index]"
+            :img-url="area.image"
           />
         </template>
       </div>
@@ -25,15 +25,20 @@ Page conaining all the working areas of the company, displayed through a circula
   </template>
   
   <script setup>
-  import CircleContainer from '~/components/CircleContainer.vue';
+
   import img1 from '~/assets/img/Food1.jpg';
   import img2 from '~/assets/img/Health1.jpg';
   import img3 from '~/assets/img/IT1.jpg';
   
   /* Data to be displayed is retrieved here */
   const route = useRoute();
-  const areas = await useFetch('/api/areas');
+  const { data: areas } = await useFetch('/api/areas');
   const image_urls = [img1, img2, img3];
+
+  for (let i = 0; i < image_urls.length; i++) {
+    areas[i].image = image_urls[i];
+  }
+
   </script>
   
   
