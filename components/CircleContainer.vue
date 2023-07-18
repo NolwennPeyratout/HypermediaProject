@@ -7,7 +7,7 @@ It is mainly used to display the areas of the company
 PROPS:
     - title: main information to display below the circle
     - link: link to the corresponding page 
-    - imgUrl: path to the displayed image -->
+    - imgUrl: path to the displayed image  -->
 
 <template>
     <div class="circle-container">
