@@ -27,12 +27,14 @@ PROPS:
 
     const parts = props.imgUrl.split('/');
     const imgName = parts[parts.length - 1];
-    const { data: img_src } = await supabase
+    const { data, error } = await supabase
       .from('storage')
       .select('url')
       .eq('name', imgName)
       .eq('images')
       .single();
+    
+    const img_src = data.url;
     
     
 </script>
