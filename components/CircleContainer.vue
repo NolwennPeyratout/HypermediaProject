@@ -29,11 +29,11 @@ PROPS:
     const parts = props.imgUrl.split('/');
     const imgName = parts[parts.length - 1];
     const { d } = supabase
-  .storage
-  .from('images')
-  .getPublicUrl('Food1.jpg')
+      .storage
+      .from('images')
+      .getPublicUrl('Food1.jpg');
     
-    const {data: img_src} = d;
+    const img_src = d;
     
     
 </script>
