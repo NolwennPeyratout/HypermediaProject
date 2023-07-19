@@ -25,13 +25,14 @@ PROPS:
     const props = defineProps(['title', 'link','imgUrl'])
     const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));   
 
+    const bucket = 'images';
     const parts = props.imgUrl.split('/');
     const imgName = parts[parts.length - 1];
     const { data, error } = await supabase
       .from('storage')
       .select('url')
       .eq('name', imgName)
-      .eq('images')
+      .eq('bucket', bucket)
       .single();
     
     const {data: img_src} = data.url;
