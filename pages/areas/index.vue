@@ -6,11 +6,11 @@
         <p id="areas-page-description">On this page, you will find a comprehensive overview of our various working areas, each meticulously designed to support, nurture, and propel groundbreaking ideas and ambitious entrepreneurs forward. We understand that innovation knows no bounds, and we are committed to providing a diverse range of resources and expertise to fuel the success of ventures across industries. Whether you're an entrepreneur seeking funding or a startup enthusiast looking to explore the frontiers of innovation, our working areas offer a wealth of opportunities.</p>
       </div>
       <div id="areas-container">
-        <template v-for="index in areas.length" :key="areas[index-1].name">
+        <template v-for="area in areas" :key="area.name">
             <CircleContainer
-              :title="areas[index-1].name"
-              :link="'/areas/' + areas[index-1].name"
-              :img-url="image_urls[index-1]"
+              :title="area.name"
+              :link="'/areas/' + area.name"
+              :img-url="'~/assets/img/' + area.name + '_area/'+ area.name + '1.jpg'"
             />
         </template>
       </div>
@@ -19,14 +19,10 @@
   </template>
   
   <script setup>
-  import img1 from '~/assets/img/Food1.jpg';
-  import img2 from '~/assets/img/Health1.jpg';
-  import img3 from '~/assets/img/IT1.jpg';
   
   /* Data to be displayed is retrieved here */
   const route = useRoute();
-  const areas = await fetchDataFromDatabase(); 
-  const image_urls = [img1, img2, img3];
+  const {data: areas} = await fetchDataFromDatabase(); 
   
   async function fetchDataFromDatabase() {
     const response = await fetch('/api/areas');

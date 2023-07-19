@@ -13,7 +13,7 @@ PROPS:
     <div class="circle-container">
       <NuxtLink :to="link">
         <div class="circle">
-          <img :src="imgUrl" alt="Immagine del topic">
+          <img :src="img_src" alt="Immagine del topic">
         </div>
       </NuxtLink>
       <p class="title-center">{{ modifiedTitle }}</p>
@@ -24,6 +24,16 @@ PROPS:
 <script setup>
     const props = defineProps(['title', 'link','imgUrl'])
     const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));   
+
+    const parts = props.imgUrl.split('/');
+    const imgName = parts[parts.length - 1];
+    const { data: img_src } = await supabase
+      .from('storage')
+      .select('url')
+      .eq('name', imgName)
+      .eq('images')
+      .single();
+    
     
 </script>
 
