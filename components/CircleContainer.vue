@@ -34,7 +34,7 @@ PROPS:
       .eq('images')
       .single();
     
-    const img_src = data.url;
+    const {data: img_src} = data.url;
     
     
 </script>
