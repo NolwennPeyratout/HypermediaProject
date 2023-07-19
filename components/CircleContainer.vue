@@ -33,7 +33,7 @@ PROPS:
       .from('images')
       .getPublicUrl('Food1.jpg');
     
-    const img_src = d;
+    const img_src = d.url;
     
     
 </script>
