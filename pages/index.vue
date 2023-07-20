@@ -110,11 +110,11 @@
                     groundbreaking healthcare solutions and cutting-edge IT innovations, these projects exemplify our
                     commitment to nurturing visionary entrepreneurs and driving transformative change on a global scale.</p>
                     <div id="home-projects-grid">
-                        <ProjectCard class="home-card" :title = "'Apple Visor'" :link = "'/projects/Apple Visor'" :imgUrl="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/Apple Visor1.jpg'"/>
+                        <ProjectCard class="home-card" :title = "'Apple Visor'" :link = "'/projects/Apple Visor'" :imgUrl="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/Apple+Visor1.jpg'"/>
                         <ProjectCard class="home-card" :title = "'Nutella'" :link = "'/projects/Nutella'" :imgUrl="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/Nutella1.jpg'"/>
                         <ProjectCard class="home-card" :title = "'Glucometer'" :link = "'/projects/Glucometer'" :imgUrl="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/Glucometer1.jpg'"/>
                         <ProjectCard class="home-card" :title = "'Starlink'" :link = "'/projects/Starlink'" :imgUrl="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/Starlink1.jpg'"/>
-                        <ProjectCard class="home-card" :title = "'BioVegan Smoothies'" :link = "'/projects/BioVegan Smoothies'" :imgUrl="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/BioVegan Smoothies1.jpg'"/>
+                        <ProjectCard class="home-card" :title = "'BioVegan Smoothies'" :link = "'/projects/BioVegan Smoothies'" :imgUrl="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/BioVegan+Smoothies1.jpg'"/>
                     </div>
                     <!-- Button that leads the user to the page containing all the company projects-->
                     <NuxtLink to="/projects" id="home-projects-button">

@@ -25,19 +25,6 @@ PROPS:
 import { defineProps, ref } from 'vue';
 
 const props = defineProps(['title', 'link', 'imgUrl']);
-const imgUrl = ref(null);
-
-// Load the image dynamically
-fetchImage();
-
-async function fetchImage() {
-  try {
-    const response = await import(`../${props.imgUrl}.jpg`);
-    imgUrl.value = response.default;
-  } catch (error) {
-    console.error(error);
-  }
-}
 </script>
 
 

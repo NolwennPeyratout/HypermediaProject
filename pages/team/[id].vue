@@ -39,7 +39,7 @@
                   <p>Project: {{project.project_name }}</p>
                 </div>
                 <div id="image-project">
-                  <img :src="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/'+ project.project_name +'1.jpg'" class="carousel__item_person" :class="{ 'responsive-image': true }"/>
+                  <img :src="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/Nutella1.jpg'" class="carousel__item_person" :class="{ 'responsive-image': true }"/>
                 </div>
               </NuxtLink>
               </Slide>
