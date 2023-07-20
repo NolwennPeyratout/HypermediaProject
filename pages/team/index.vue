@@ -32,11 +32,6 @@ In this page we have all the members of the company with some informations like 
     // useRuntimeConfig provide us with environment variables set up in the nuxtconfig file
     // We call the database to get all the members of the company
     const { data: persons } = await useFetch('/api/team' )
-    /*
-    https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/Andrea+Pucci.jpeg?t=2023-07-20T13%3A55%3A56.920Z
-    https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/IT2.jpg?t=2023-07-20T14%3A51%3A24.816Z
-    https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/Ringo4.jpg?t=2023-07-20T14%3A52%3A27.770Z
-    */
 
 </script>
 
