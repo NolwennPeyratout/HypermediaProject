@@ -38,9 +38,9 @@
                     to explore the frontiers of innovation, our working areas offer a wealth of opportunities.</p>
                     <div id="areas-circles-container">
                         <!-- A circular component is displayed for each working area (Food, Health and IT) -->
-                        <HomeCircleComponent class="areas-circles" :title = "'Food'" :link = "'/areas/Food'" imgUrl="/assets/img/Food_area/Food1" />
-                        <HomeCircleComponent class="areas-circles" :title = "'IT'" :link = "'/areas/IT'" imgUrl="/assets/img/IT_area/IT1" />
-                        <HomeCircleComponent class="areas-circles" :title = "'Health'" :link = "'/areas/Health'" imgUrl="/img/Health_area/Health1" />
+                        <HomeCircleComponent class="areas-circles" :title = "'Food'" :link = "'/areas/Food'" imgUrl="https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/Food1.jpg" />
+                        <HomeCircleComponent class="areas-circles" :title = "'IT'" :link = "'/areas/IT'" imgUrl="https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/IT1.jpg" />
+                        <HomeCircleComponent class="areas-circles" :title = "'Health'" :link = "'/areas/Health'" imgUrl="https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/Health1.jpg" />
                     </div>
                 </div>
                 <!-- Third section of the home page in which the user is informed about the stats and awards received by the company -->
@@ -93,7 +93,7 @@
                         <Carousel id="team-carousel" :autoplay="2000" :wrap-around="true" :items-to-show="3" :transition="500" :mouse-drag="false">
                             <Slide v-for="person in data[0]" :key="person">
                                 <HomeRectangleComponent class="team-carousel-item" :title="person.name" 
-                                :subtitle="'Role: '+person.role" :link="'/team/'+person.name" :img-url="'~/assets/img/team/'+person.name+'.jpeg'"/>
+                                :subtitle="'Role: '+person.role" :link="'/team/'+person.name" :img-url="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/'+person.name+'.jpeg'"/>
                             </Slide>
                             <template #addons>
                             <Pagination />
@@ -110,11 +110,11 @@
                     groundbreaking healthcare solutions and cutting-edge IT innovations, these projects exemplify our
                     commitment to nurturing visionary entrepreneurs and driving transformative change on a global scale.</p>
                     <div id="home-projects-grid">
-                        <ProjectCard class="home-card" :title = "'Apple Visor'" :link = "'/projects/Apple Visor'" :imgUrl="'~/assets/img/projects/Apple Visor1.jpg'"/>
-                        <ProjectCard class="home-card" :title = "'Nutella'" :link = "'/projects/Nutella'" :imgUrl="'~/assets/img/projects/Nutella1.jpg'"/>
-                        <ProjectCard class="home-card" :title = "'Glucometer'" :link = "'/projects/Glucometer'" :imgUrl="'~/assets/img/projects/Glucometer1.jpg'"/>
-                        <ProjectCard class="home-card" :title = "'Starlink'" :link = "'/projects/Starlink'" :imgUrl="'~/assets/img/projects/Starlink1.jpg'"/>
-                        <ProjectCard class="home-card" :title = "'BioVegan Smoothies'" :link = "'/projects/BioVegan Smoothies'" :imgUrl="'~/assets/img/projects/BioVegan Smoothies1.jpg'"/>
+                        <ProjectCard class="home-card" :title = "'Apple Visor'" :link = "'/projects/Apple Visor'" :imgUrl="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/Apple Visor1.jpg'"/>
+                        <ProjectCard class="home-card" :title = "'Nutella'" :link = "'/projects/Nutella'" :imgUrl="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/Nutella1.jpg'"/>
+                        <ProjectCard class="home-card" :title = "'Glucometer'" :link = "'/projects/Glucometer'" :imgUrl="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/Glucometer1.jpg'"/>
+                        <ProjectCard class="home-card" :title = "'Starlink'" :link = "'/projects/Starlink'" :imgUrl="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/Starlink1.jpg'"/>
+                        <ProjectCard class="home-card" :title = "'BioVegan Smoothies'" :link = "'/projects/BioVegan Smoothies'" :imgUrl="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/BioVegan Smoothies1.jpg'"/>
                     </div>
                     <!-- Button that leads the user to the page containing all the company projects-->
                     <NuxtLink to="/projects" id="home-projects-button">

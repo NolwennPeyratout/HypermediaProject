@@ -16,7 +16,7 @@ PROPS:
           <div class="proj-card">
             <div class="grid-container">
               <div class="img-container">
-                <img :src="imageUrl" alt="Immagine del progetto" />
+                <img :src="imgUrl" alt="Immagine del progetto" />
               </div>
               <div class="text-container">
                 <div class="info-cont">
@@ -37,8 +37,6 @@ PROPS:
     
     const props = defineProps(['title', 'imgUrl', 'link', 'product', 'date', 'location']);
     const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));
-    const u = '~/assets/img/projects/' + props.imgUrl + '1.jpg';
-    const imageUrl = new URL(u.toString(), import.meta.url);
       
     </script>
     
