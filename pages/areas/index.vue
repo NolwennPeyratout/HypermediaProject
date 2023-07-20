@@ -22,13 +22,8 @@
   
   /* Data to be displayed is retrieved here */
   const route = useRoute();
-  const {data: areas} = await fetchDataFromDatabase(); 
+  const {data: areas}= await $fetch( '/api/areas/' + route.params.id)
   
-  async function fetchDataFromDatabase() {
-    const response = await fetch('/api/areas');
-    const data = await response.json();
-    return data;
-  }
   </script>
   
   
