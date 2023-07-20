@@ -17,7 +17,13 @@ In this page we have all the members of the company with some informations like 
         </div>
         <!--We show in a rectangle container all the person of the DB-->
         <div id="rectangle-container">
-            <RectangleTitle v-for = "person in persons" :key="person.name" :title = "person.name" :link = "'/team/' + person.name" :img-url="'~/assets/img/team/'+person.name+'.jpeg'" :subtitle="person.introduction" />
+            <RectangleTitle v-for = "person in persons" 
+            :key="person.name" 
+            :title = "person.name" 
+            :link = "'/team/' + person.name" 
+            :img-url="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/Andrea+Pucci.jpeg?t=2023-07-20T13%3A55%3A56.920Z'" 
+            :subtitle="person.introduction" />
+            
         </div>
     </main>
 </template>
@@ -26,6 +32,7 @@ In this page we have all the members of the company with some informations like 
  const route = useRoute()
     // useRuntimeConfig provide us with environment variables set up in the nuxtconfig file
     // We call the database to get all the members of the company
+    //'~/assets/img/team/'+person.name+'.jpeg'
     const { data: persons } = await useFetch('/api/team' )
 
 </script>
