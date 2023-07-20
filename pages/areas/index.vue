@@ -22,7 +22,7 @@
   
   /* Data to be displayed is retrieved here */
   const route = useRoute();
-  const {data: areas}= await $fetch( '/api/areas/' + route.params.id)
+  const {data: areas}= await $fetch( '/api/areas')
   
   </script>
   
