@@ -21,7 +21,7 @@
   
   /* Data to be displayed is retrieved here */
   const route = useRoute();
-  const {data: areas}= await $fetch('/api/areas')
+  const {data: areas}= await useFetch('/api/areas')
   
   </script>
   
