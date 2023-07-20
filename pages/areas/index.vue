@@ -7,7 +7,7 @@
       </div>
       <div id="areas-container">
         <div v-for="area in areas" :key="area.name">
-        <CircleContainer
+        <HomeCircleComponent
           :title="area.name"
           :link="'/areas/' + area.name"
           :img-url="'~/assets/img/' + area.name + '_area/'+ area.name + '1.jpg'"
