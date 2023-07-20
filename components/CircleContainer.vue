@@ -13,7 +13,7 @@ PROPS:
     <div class="circle-container">
       <NuxtLink :to="link">
         <div class="circle">
-          <img :src="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/Food1.jpg?t=2023-07-20T13%3A26%3A36.019Z'" alt="Immagine del topic">
+          <img :src="src.value" alt="Immagine del topic">
         </div>
       </NuxtLink>
       <p class="title-center">{{ modifiedTitle }}</p>
@@ -25,6 +25,16 @@ PROPS:
     const props = defineProps(['title', 'link','imgUrl'])
     const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));   
 
+    const src = ref('')
+
+    const downloadImage = async () => {
+       try {
+         const { data, error } = await supabase.storage.from('images').download('Food1.jpg')
+         if (error) throw error
+         src.value = URL.createObjectURL(data)
+       } catch (error) {
+         console.error('Error downloading image: ', error.message)
+       }
     /*
     const parts = props.imgUrl.split('/');
     const imgName = parts[parts.length - 1];
