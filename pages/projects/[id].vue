@@ -22,21 +22,21 @@
           <div class="bubbles-container">
             <div class="supervisor-bubble">
                 <SmallCircleContainer :title="'Supervisor: ' + data[2][0].person_name" :link="'/team/' + data[2][0].person_name" 
-                :img-url="'~/assets/img/team/' + data[2][0].person_name + '.jpeg'"/>
+                :img-url="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/' + data[2][0].person_name + '.jpeg'"/>
             </div>
             <div class="area-bubble">
                 <SmallCircleContainer :title="'Project Area: ' + data[1][0].area_name" :link="'/areas/' + data[1][0].area_name" 
-                :img-url="'~/assets/img/' + data[1][0].area_name + '_area/' + data[1][0].area_name + '1.jpg'"/>
+                :img-url="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/' + data[1][0].area_name + '1.jpg'"/>
             </div>
           </div>
         </div>
         
         <!-- Part of the screen in which are displayed the 4 relevant images for the project -->
         <div class = "project-images">
-            <img class = "image" :src = "'~/assets/img/projects/'+ data[0][0].name +'1.jpg'"  />
-            <img class = "image" :src = "'~/assets/img/projects/'+ data[0][0].name +'2.jpg'"   />
-            <img class = "image" :src = "'~/assets/img/projects/'+ data[0][0].name +'3.jpg'"   />
-            <img class = "image" :src = "'~/assets/img/projects/'+ data[0][0].name +'4.jpg'"   />
+            <img class = "image" :src = "'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/'+ data[0][0].name +'1.jpg'"  />
+            <img class = "image" :src = "'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/'+ data[0][0].name +'2.jpg'"   />
+            <img class = "image" :src = "'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/'+ data[0][0].name +'3.jpg'"   />
+            <img class = "image" :src = "'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/'+ data[0][0].name +'4.jpg'"   />
         </div>
         
     </main>

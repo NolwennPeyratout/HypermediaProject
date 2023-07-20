@@ -13,11 +13,11 @@
         </div>
         <div id="mr-projects-container">
             <!-- Cards containing data of each relevant project-->
-            <ProjectCard class="card-element" :title = "'Apple Visor'" :link = "'/projects/Apple°Visor'" :img-url="'~/assets/img/projects/Apple+Visor1.jpg'"/>
-            <ProjectCard class="card-element" :title = "'Nutella'" :link = "'/projects/Nutella'" :img-url="'~/assets/img/projects/Nutella1.jpg'"/>
-            <ProjectCard class="card-element" :title = "'Glucometer'" :link = "'/projects/Glucometer'" :img-url="'~/assets/img/projects/Glucometer1.jpg'"/>
-            <ProjectCard class="card-element" :title = "'Starlink'" :link = "'/projects/Starlink'" :img-url="'~/assets/img/projects/Starlink1.jpg'"/>
-            <ProjectCard class="card-element" :title = "'BioVegan Smoothies'" :link = "'/projects/BioVegan+Smoothies'" :img-url="'~/assets/img/projects/BioVegan+Smoothies1.jpg'"/>
+            <ProjectCard class="card-element" :title = "'Apple Visor'" :link = "'/projects/Apple°Visor'" :img-url="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/Apple+Visor1.jpg'"/>
+            <ProjectCard class="card-element" :title = "'Nutella'" :link = "'/projects/Nutella'" :img-url="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/Nutella1.jpg'"/>
+            <ProjectCard class="card-element" :title = "'Glucometer'" :link = "'/projects/Glucometer'" :img-url="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/Glucometer1.jpg'"/>
+            <ProjectCard class="card-element" :title = "'Starlink'" :link = "'/projects/Starlink'" :img-url="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/Starlink1.jpg'"/>
+            <ProjectCard class="card-element" :title = "'BioVegan Smoothies'" :link = "'/projects/BioVegan+Smoothies'" :img-url="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/BioVegan+Smoothies1.jpg'"/>
         </div>
     </main>
 </template>

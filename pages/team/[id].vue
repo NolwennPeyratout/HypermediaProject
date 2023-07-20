@@ -8,7 +8,7 @@
       <!--There are all the personal information of one person, with its role, img, name and cv-->
         <div id = "info-group">
           <div id="container-img-person">
-           <img id = "img-person" :src = "'/~/assets/img/team/'+data[0][0].name+'.jpeg'"  />
+           <img id = "img-person" :src = "'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/'+data[0][0].name+'.jpeg'"  />
           </div>
           <div id="presentation-person">
             
@@ -26,7 +26,7 @@
                   <p>Project: {{ data[1][0].project_name }}</p>
                 </div>
                 <div id="image-project">
-                  <img :src="'/~/assets/img/projects/'+ data[1][0].project_name +'1.jpg'" />
+                  <img :src="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/'+ data[1][0].project_name +'1.jpg'" />
                 </div>
               </NuxtLink>
         </div>
@@ -39,7 +39,7 @@
                   <p>Project: {{project.project_name }}</p>
                 </div>
                 <div id="image-project">
-                  <img :src="'/~/assets/img/projects/'+ project.project_name +'1.jpg'" class="carousel__item_person" :class="{ 'responsive-image': true }"/>
+                  <img :src="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/'+ project.project_name +'1.jpg'" class="carousel__item_person" :class="{ 'responsive-image': true }"/>
                 </div>
               </NuxtLink>
               </Slide>

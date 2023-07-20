@@ -18,7 +18,7 @@
         </div>
         <div id="projects-container">
             <!-- Card component repeated as many times as the number of projects -->
-            <ProjectCard v-for = "project in projects" :key="project.name" :title = "project.name" :link = "'/projects/' + project.name" :img-url="'~/assets/img/projects/'+ project.name +'1.jpg'" class="card-element"/>
+            <ProjectCard v-for = "project in projects" :key="project.name" :title = "project.name" :link = "'/projects/' + project.name" :img-url="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/'+ project.name +'1.jpg'" class="card-element"/>
         </div>
         <!-- Button-like link that leads the user to the most relevant projects of the company-->
         <NuxtLink to="/projects/MostRelevant" id="mostRelevant-button">
@@ -27,22 +27,6 @@
 </template>
 
 <script setup>
-
-    import '~/assets/img/projects/Apple+Visor1.jpg';
-    import '~/assets/img/projects/BioVegan+Smoothies1.jpg';
-    import '~/assets/img/projects/Cancer+Destroyer1.jpg';
-    import '~/assets/img/projects/DetectionSystem1.jpg';
-    import '~/assets/img/projects/Doriano+Crackers1.jpg';
-    import '~/assets/img/projects/Glucometer1.jpg';
-    import '~/assets/img/projects/Heartless1.jpg';
-    import '~/assets/img/projects/Knox1.jpg';
-    import '~/assets/img/projects/Lidar+Scanner1.jpg';
-    import '~/assets/img/projects/Nutella1.jpg';
-    import '~/assets/img/projects/Paracetamolo1.jpg';
-    import '~/assets/img/projects/Ringo1.jpg';
-    import '~/assets/img/projects/Starlink1.jpg';
-    import '~/assets/img/projects/The+Next+Hamburger1.jpg';
-    import '~/assets/img/projects/VotaMi1.jpg';
 
  const route = useRoute()
 

@@ -44,9 +44,9 @@
                 <div id="follow">
                     <h1>Follow us on:</h1>
                     <div id="icones">
-                        <img id=icone-follow src="../assets/img/facebook-logo.png" alt="Icone of Facebook">
-                        <img id=icone-follow src="../assets/img/twitter-logo.png" alt="Icone of Twitter">
-                        <img id=icone-follow src="../assets/img/linkedin-logo.png" alt="Icone of LinkedIn">
+                        <img id=icone-follow src="https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/facebook-logo.png" alt="Icone of Facebook">
+                        <img id=icone-follow src="https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/twitter-logo.png" alt="Icone of Twitter">
+                        <img id=icone-follow src="https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/linkedin-logo.png" alt="Icone of LinkedIn">
                     </div>
                 </div>
             </div> 
@@ -65,7 +65,7 @@
         width:100%;
     }
     #about-right{
-        background-image: url('../assets/img/company.png');
+        background-image: url('https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/company.png');
         background-size: cover;
         background-position: center;
         width:65%;

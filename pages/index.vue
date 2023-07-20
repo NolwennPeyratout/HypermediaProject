@@ -26,7 +26,7 @@
                             <div id="home-about-link">ABOUT US</div></NuxtLink>
                     </div>
                     <div class="right-intro">
-                        <img src="~/assets/img/home1.jpg" alt="home page image">
+                        <img src="https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/home1.jpg" alt="home page image">
                     </div>
                 </div>
                 <!-- Second part of the home page, in which are displayed the company working areas through a circular component-->
@@ -47,7 +47,7 @@
                 <div id="absolute-container">
                     <div id="home-awards-container">
                         <div class="left-awards">
-                        <img src="~/assets/img/home2.jpg" alt="home page image">
+                        <img src="https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/home2.jpg" alt="home page image">
                         </div>
                         <div id="right-awards">
                             <h1 class="big-text" id="awards-big-text">Awarded as 2023 Best Venture Capital Firm</h1>
@@ -126,9 +126,9 @@
                 <div id="home-prefooter-container">
                     <p id="prefooter-body1">Follow us on:</p>
                     <div id="social-icons">
-                        <img class="social-icon" src="~/assets/img/twitter-logo.png" alt="Twitter logo">
-                        <img class="social-icon" src="~/assets/img/facebook-logo.png" alt="Facebook logo">
-                        <img class="social-icon" src="~/assets/img/linkedin-logo.png" alt="LinkedIn logo">
+                        <img class="social-icon" src="https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/twitter-logo.png" alt="Twitter logo">
+                        <img class="social-icon" src="https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/facebook-logo.png" alt="Facebook logo">
+                        <img class="social-icon" src="https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/linkedin-logo.png" alt="LinkedIn logo">
                     </div>
                     <p id="prefooter-body2">The confidentiality of our website's content is of utmost importance to us,
                     and we strictly uphold the privacy of all information shared. Additionally, all rights for 

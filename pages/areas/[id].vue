@@ -9,7 +9,7 @@ It displays one picture at a time and moves automatically between them
 <div id="carousel-container_area">
   <Carousel id="carousel_area" :autoplay="2000" :wrap-around="true" :items-to-show="1.1">
     <Slide v-for="slide in 3" :key="slide">
-      <img :src="'~/assets/img/' + data[0][0].name + '_area/' + data[0][0].name + slide + '.jpg'" class="carousel__item_area" :class="{ 'responsive-image': true }"/>
+      <img :src="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/' + data[0][0].name + slide + '.jpg'" class="carousel__item_area" :class="{ 'responsive-image': true }"/>
     </Slide>
     <template #addons>
       <Pagination />
@@ -33,7 +33,7 @@ It displays one picture at a time and moves automatically between them
       :key="project"
       :link="'/projects/' + project.name"
       :title="project.name"
-      :img-url="project.name"
+      :img-url="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/' + project.name + '1.jpg'"
       :product="project.product_service"
       :date="project.date"
       :location="project.location"
@@ -42,7 +42,7 @@ It displays one picture at a time and moves automatically between them
       :key="project.name"
       :link="'/projects/' + project.name"
       :title="project.name"
-      :img-url="'~/assets/img/projects/' + project.name + '1.jpg'"
+      :img-url="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/' + project.name + '1.jpg'"
       :product="project.product_service"
       :date="project.date"
       :location="project.location"
