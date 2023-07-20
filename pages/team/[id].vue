@@ -33,13 +33,13 @@
         <!--This carousel is shown only if the person is the supervisor of more than one project-->
         <div v-else id="carousel-container-person">
           <Carousel id="carousel-person" :autoplay="4000" :wrap-around="true" :items-to-show="1.8" :mouse-drag="false">
-            <Slide v-for="project in data[1][0]" :key="project" id="slide-carousel">
+            <Slide v-for="project in data[1]" :key="project" id="slide-carousel">
               <NuxtLink :to="'/projects/' + project.project_name" class="link-box">
                 <div id="textImage-project">
                   <p>Project: {{project.project_name }}</p>
                 </div>
                 <div id="image-project">
-                  <img :src="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/Nutella1.jpg'" class="carousel__item_person" :class="{ 'responsive-image': true }"/>
+                  <img :src="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/'+ project.project_name +'1.jpg'" class="carousel__item_person" :class="{ 'responsive-image': true }"/>
                 </div>
               </NuxtLink>
               </Slide>
