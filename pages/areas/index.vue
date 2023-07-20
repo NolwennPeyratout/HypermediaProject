@@ -7,7 +7,7 @@
       </div>
       <div id="areas-container">
         <div v-for="area in areas" :key="area.name">
-        <HomeCircleComponent
+        <CircleContainer
           :title="area.name"
           :link="'/areas/' + area.name"
           :img-url="'~/assets/img/' + area.name + '_area/'+ area.name + '1.jpg'"
@@ -22,7 +22,7 @@
   
   /* Data to be displayed is retrieved here */
   const route = useRoute();
-  const {data: areas}= await $fetch( '/api/areas')
+  const {data: areas}= await $fetch( '/api/area')
   
   </script>
   
