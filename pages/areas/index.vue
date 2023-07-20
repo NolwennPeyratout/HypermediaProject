@@ -10,7 +10,7 @@
             <CircleContainer
               :title="area.name"
               :link="'/areas/' + area.name"
-              :img-url="'https://fzgzmacqofehsdojhdvf.supabase.co/storage/v1/object/public/images/Health1.jpg?t=2023-07-20T14%3A04%3A50.320Z'"
+              :img-url="'~/assets/img/' + area.name + '_area/'+ area.name + '1.jpg'"
             />
         </template>
       </div>
@@ -29,7 +29,6 @@
     const data = await response.json();
     return data;
   }
-  //              :img-url="'~/assets/img/' + area.name + '_area/'+ area.name + '1.jpg'"
   </script>
   
   
