@@ -25,7 +25,7 @@ PROPS:
     const props = defineProps(['title', 'link','imgUrl'])
     const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));   
 
-    const src = ref('')
+    const src = '';
 
     const downloadImage = async () => {
        try {
