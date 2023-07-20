@@ -13,7 +13,7 @@ PROPS:
     <div class="circle-container">
       <NuxtLink :to="link">
         <div class="circle">
-          <img :src="src.value" alt="Immagine del topic">
+          <img :src="valueOf(src)" alt="Immagine del topic">
         </div>
       </NuxtLink>
       <p class="title-center">{{ modifiedTitle }}</p>
