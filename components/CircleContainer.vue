@@ -10,43 +10,27 @@ PROPS:
     - imgUrl: path to the displayed image -->
 
 <template>
-    <div class="circle-container">
-      <NuxtLink :to="link">
-        <div class="circle">
-          <img :src="src" alt="Immagine del topic">
-        </div>
-      </NuxtLink>
-      <p class="title-center">{{ modifiedTitle }}</p>
-    </div>
-  </template>
-  
-
+      <div class="circle-container">
+        <NuxtLink :to="link">
+          <div class="circle">
+            <img :src="getImageUrl('Food1.jpg')" alt="Immagine del topic">
+          </div>
+        </NuxtLink>
+        <p class="title-center">{{ modifiedTitle }}</p>
+      </div>
+</template>
+    
 <script setup>
-    const props = defineProps(['title', 'link','imgUrl'])
-    const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));   
-
-    const src = '';
-
-    const downloadImage = async () => {
-       try {
-         const { data, error } = await supabase.storage.from('images').download('Food1.jpg')
-         if (error) throw error
-         src.value = URL.createObjectURL(data)
-       } catch (error) {
-         console.error('Error downloading image: ', error.message)
-       }
-    /*
-    const parts = props.imgUrl.split('/');
-    const imgName = parts[parts.length - 1];
-    const { d } = supabase
-      .storage
-      .from('images')
-      .getPublicUrl('Food1.jpg');
+    import { defineProps, computed } from 'vue';
     
-    const img_src = d.url;
-    */
+    const props = defineProps(['title', 'link', 'imgUrl']);
     
+    const getImageUrl = (imageName) => {
+      const bucketBaseUrl = 'https://images.supabase.co/images/';
+      return `${bucketBaseUrl}${imageName}`;
+    };
     
+    const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));
 </script>
 
 <style>
