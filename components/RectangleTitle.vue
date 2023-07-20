@@ -12,7 +12,7 @@ PROPS:
     <div class="rectangleTitle-container">
       <NuxtLink :to="link" class="link-rectangleTitle">
         <div class="rectangleTitle">
-            <img class="img-rectangleTitle" :src="url" :alt="title">
+            <img class="img-rectangleTitle" :src="imgUrl" :alt="title">
             <p id="title">{{ modifiedTitle }}</p>
         </div>
       </NuxtLink>
@@ -25,10 +25,7 @@ PROPS:
 <script setup>
     const props = defineProps(['title', 'link','imgUrl','subtitle'])
     const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));
-
-    const parts = props.imgUrl.split("/");
-    const lastPart = parts[parts.length - 1];
-    const url = await supabase.storage.from('images').getPublicUrl(lastPart);
+    
 </script>
 
 <style>
