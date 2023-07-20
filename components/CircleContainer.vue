@@ -13,7 +13,7 @@ PROPS:
       <div class="circle-container">
         <NuxtLink :to="link">
           <div class="circle">
-            <img :src="getImageUrl('Food1.jpg')" alt="Immagine del topic">
+            <img :src="imgUrl" alt="Immagine del topic">
           </div>
         </NuxtLink>
         <p class="title-center">{{ modifiedTitle }}</p>
@@ -23,13 +23,7 @@ PROPS:
 <script setup>
     import { defineProps, computed } from 'vue';
     
-    const props = defineProps(['title', 'link', 'imgUrl']);
-    
-    const getImageUrl = (imageName) => {
-      const bucketBaseUrl = 'https://images.supabase.co/images/';
-      return `${bucketBaseUrl}${imageName}`;
-    };
-    
+    const props = defineProps(['title', 'link', 'imgUrl']);    
     const modifiedTitle = computed(() => props.title.replace(/\+/g, ' '));
 </script>
 
